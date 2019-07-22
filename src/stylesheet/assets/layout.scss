@@ -1,0 +1,1458 @@
+//colors
+$color_oslo_gray: rgba(123, 138, 151, 1);
+$white: rgba(255, 255, 255, 1);
+$color_shuttle_gray: rgba(96, 102, 118, 1);
+$color_viking: rgba(101, 211, 227, 1);
+$color_cararra: rgba(235, 235, 235, 1);
+$color_geyser: rgba(215, 226, 232, 1);
+$color_manatee: rgba(145, 151, 168, 1);
+$black: rgba(0, 0, 0, 1);
+$color_mine_shaft: rgba(51, 51, 51, 1);
+$color_tiara: rgba(195, 207, 216, 1);
+$white_50: rgba(255, 255, 255, 0.5);
+$color_alto: rgba(221, 221, 221, 1);
+$color_shark: rgba(37, 37, 37, 1);
+$color_pink_swan: rgba(186, 186, 186, 1);
+$color_jacarta: rgba(59, 43, 106, 1);
+$color_jelly_bean: rgba(48, 124, 149, 1);
+$color_jordy_blue: rgba(125, 185, 232, 1);
+$color_jacarta_90: rgba(59, 43, 106, 0.9);
+$color_jelly_bean_90: rgba(48, 124, 149, 0.9);
+$color_jordy_blue_90: rgba(125, 185, 232, 0.9);
+$white_20: rgba(255, 255, 255, 0.2);
+$color_tuna: rgba(54, 58, 69, 1);
+$color_bon_jour: rgba(224, 224, 224, 1);
+$color_viking_80: rgba(101, 211, 227, 0.8);
+$white_30: rgba(255, 255, 255, .3);
+$color_spray: rgba(124, 220, 234, 1);
+$color_java: rgba(36, 182, 182, 1);
+$color_alabaster: rgba(251, 252, 253, 1);
+$black_20: rgba(0, 0, 0, 0.2);
+$color_catskill_white: rgba(242, 245, 248, 1);
+$color_nobel: rgba(180, 180, 180, 1);
+
+//fonts
+$font_0: 'Source Sans Pro';
+$font_1: 'Arial';
+$font_2: 'Helvetica';
+$font_3: 'sans-serif';
+$font_4: 'Source Sans Pro';
+$font_5: 'Arial';
+$font_6: 'Helvetica';
+$font_7: 'sans-serif';
+$font_8: 'FontAwesome';
+$font_9: 'FontAwesome';
+$font_10: 'FontAwesome';
+$font_11: 'FontAwesome';
+$font_12: 'FontAwesome';
+$font_13: 'FontAwesome';
+$font_14: 'FontAwesome';
+
+//urls
+$url_0: url('../img/page-header-bg.jpg');
+$url_1: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==');
+$url_2: url('../img/topbar-bg.jpg');
+$url_3: url('../img/preloder.gif');
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+%extend_1 {
+   margin: 0 0 10px;
+   color: $color_shuttle_gray;
+   font-family: $font_4, $font_5, $font_6, $font_7;
+}
+
+//original selectors
+//.widget .nav-tabs >li >a, .widget .nav-tabs >li >a
+%extend_2 {
+   border: 0;
+   padding: 10px 15px;
+   color: $color_manatee;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 18px;
+}
+
+//original selectors
+//.widget .nav-tabs >li.active >a, .widget .nav-tabs >li.active >a:hover, .widget .nav-tabs >li.active >a:focus
+%extend_3 {
+   cursor: default;
+   background-color: $color_shark;
+   border: 0;
+   color: $white !important;
+}
+
+//original selectors
+//.widget .tab-content span, .widget .tab-content span.author a
+%extend_4 {
+   font-size: 12px;
+   line-height: 24px;
+   margin-right: 10px;
+   color: $color_pink_swan !important;
+   font-style: italic;
+}
+
+//original selectors
+//.more-link a.img-link, .more-link a.page-link
+%extend_5 {
+   position: absolute;
+   top: 0;
+   opacity: 0;
+}
+
+//original selectors
+//.popup-feature:hover .more-link a.img-link, .popup-feature:hover .more-link a.page-link
+%extend_6 {
+   top: 50%;
+   margin-top: -20px;
+   opacity: 1;
+}
+
+//original selectors
+//#status, .status-mes
+%extend_7 {
+   background-image: $url_3;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 200px;
+   left: 50%;
+   margin: -100px 0 0 -100px;
+   position: absolute;
+   top: 50%;
+   width: 200px;
+}
+
+//original selectors
+//.pagination >li:first-child >a, .pagination >li:first-child >span, .pagination >li:last-child >a, .pagination >li:last-child >span
+%extend_8 {
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -o-border-radius: 100%;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 100%;
+}
+
+//original selectors
+//.pagination >li >a:hover, .pagination >li >a:hover, .pagination >li >a:focus, .pagination >li >a:focus
+%extend_9 {
+   color: $white;
+   border: 2px solid $color_viking;
+   background: $color_viking;
+}
+
+//original selectors
+//.pagination >.active >a, .pagination >.active >a:hover, .pagination >.active >span:hover, .pagination >.active >a:focus, .pagination >.active >span:focus
+%extend_10 {
+   color: $white;
+   border: 2px solid $color_viking;
+   background: $color_viking;
+}
+
+//original selectors
+//.pagination >li.disabled >a, .pagination >li.disabled >a:hover, .pagination >li.active >a, .pagination >li.active >a:hover
+%extend_11 {
+   color: $color_bon_jour;
+   background: transparent;
+   border: 2px solid $color_bon_jour;
+}
+
+//original selectors
+//.pagination li a.next, .pagination li a.prev
+%extend_12 {
+   padding: 0 20px;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 30px;
+   width: 100%;
+}
+
+//original selectors
+//.pagination.borderless >li >a, .pagination.borderless >li >span
+%extend_13 {
+   -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 50%;
+   border-color: transparent;
+   margin: 0 1px;
+}
+
+//original selectors
+//.pager li >a:hover, .pager li >a:focus
+%extend_14 {
+   text-decoration: none;
+   color: $white;
+   background-color: $color_viking;
+   border-color: transparent;
+}
+
+
+body {
+   font-family: $font_0, $font_1, $font_2, $font_3;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 30px;
+   color: $color_oslo_gray;
+   background: $white;
+   -webkit-text-size-adjust: 100%;
+   -webkit-overflow-scrolling: touch;
+   -webkit-font-smoothing: antialiased !important;
+}
+
+h1 {
+   @extend %extend_1;
+   font-size: 48px;
+   line-height: 72px;
+
+   &.logo {
+      margin: 0;
+      padding: 0;
+   }
+}
+
+h2 {
+   @extend %extend_1;
+   font-size: 36px;
+   line-height: 54px;
+
+   &.widget-title {
+      font-size: 12px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: inherit;
+   }
+}
+
+h3 {
+   @extend %extend_1;
+   font-size: 24px;
+   line-height: 36px;
+}
+
+h4 {
+   @extend %extend_1;
+   font-size: 18px;
+   line-height: 27px;
+}
+
+h5 {
+   @extend %extend_1;
+   font-size: 14px;
+   line-height: 21px;
+}
+
+h6 {
+   @extend %extend_1;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+a {
+   color: $color_viking;
+   text-decoration: none;
+   -webkit-transition: all 0.3s ease 0s;
+   -moz-transition: all 0.3s ease 0s;
+   -o-transition: all 0.3s ease 0s;
+   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+   transition: all 0.3s ease 0s;
+   text-decoration: none;
+   outline: none;
+
+   &:active {
+      text-decoration: none;
+      outline: none;
+      text-decoration: none;
+      outline: none;
+   }
+
+   &:focus {
+      text-decoration: none;
+      outline: none;
+      color: $color_oslo_gray;
+      text-decoration: none;
+   }
+
+   &:hover {
+      color: $color_oslo_gray;
+      text-decoration: none;
+   }
+
+   &.list-group-item {
+      color: $color_oslo_gray;
+   }
+
+   &.carousel-control {
+      top: 45%;
+      width: 34px;
+      height: 34px;
+      line-height: 32px;
+      text-align: center;
+      opacity: 0;
+
+      i {
+         position: absolute;
+         background: $white_50;
+         color: $color_oslo_gray;
+         display: block;
+         z-index: 5;
+         padding: 0;
+         line-height: 34px;
+         width: 34px;
+         height: 34px;
+         //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+         text-shadow: none;
+         -webkit-transition: all 0.5s;
+         -moz-transition: all 0.5s;
+         -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+         //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+         transition: all 0.5s;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -o-border-radius: 10px;
+         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+         border-radius: 10px;
+
+         &:hover {
+            background: $white;
+            color: $color_viking;
+            //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            text-shadow: none;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -o-border-radius: 2px;
+            //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 2px;
+         }
+      }
+   }
+
+   &.left.carousel-control {
+      background: none;
+      left: 100px;
+   }
+
+   &.right.carousel-control {
+      background: none;
+      right: 100px;
+   }
+}
+
+img {
+   max-width: 100%;
+}
+
+hr {
+   border-top: 1px solid $color_cararra;
+}
+
+.separetor {
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: $color_geyser;
+}
+
+address {
+   line-height: 24px;
+}
+
+.page-header-wrap {
+   padding-bottom: 0;
+   margin: 40px 0 30px;
+   border-bottom: 0;
+}
+
+.page-header {
+   padding-bottom: 0;
+   margin: 0;
+   border-bottom: 0;
+
+   h1 {
+      line-height: 54px;
+      color: $white;
+      margin: 0;
+   }
+}
+
+.breadcrumb {
+   padding: 0;
+   list-style: none;
+   background-color: transparent;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 0;
+
+   a {
+      color: $white;
+
+      &:hover {
+         color: $color_viking;
+         text-decoration: none;
+      }
+   }
+
+   >.active {
+      color: $white;
+   }
+
+   &.separator-arrow>li+li:before {
+      padding: 0 8px;
+      font-family: $font_8;
+      content: '\f105';
+   }
+}
+
+.modal-open {
+   padding-right: 0 !important;
+}
+
+.modal-content {
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 0;
+}
+
+.modal-header {
+   position: relative;
+   border: 0;
+
+   .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      background: transparent;
+      padding: 10px;
+      //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: none;
+      opacity: .2;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+}
+
+label {
+   font-weight: 300;
+   color: $color_manatee;
+}
+
+.close {
+   color: $black;
+}
+
+.btn {
+   font-size: 16px;
+   line-height: 24px;
+   padding: 10px 44px;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 30px;
+   font-weight: 300;
+
+   &:focus {
+      outline: none;
+   }
+
+   &:active:focus {
+      outline: none;
+   }
+}
+
+.btn-primary {
+   color: $white;
+   background-color: $color_viking;
+   border-color: transparent;
+
+   &:hover {
+      background-color: $color_mine_shaft;
+      border-color: transparent;
+   }
+
+   &:focus {
+      background-color: $color_mine_shaft;
+      border-color: transparent;
+   }
+
+   &.readmore {
+      color: $white;
+      border-color: transparent;
+      height: 35px;
+      width: 160px;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 4px;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 30px;
+   }
+}
+
+.btn-lg {
+   padding: 15px 50px !important;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+
+   &.check-square {
+      li {
+         display: list-item;
+         position: relative;
+         line-height: 36px;
+         padding-left: 25px;
+      }
+
+      li::before {
+         content: "\f14a";
+         font-family: $font_9;
+         font-size: 15px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         color: $color_viking;
+      }
+   }
+
+   &.check-square-o {
+      li {
+         display: list-item;
+         position: relative;
+         line-height: 36px;
+         padding-left: 25px;
+      }
+
+      li::before {
+         content: "\f046";
+         font-family: $font_10;
+         font-size: 15px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         color: $color_viking;
+      }
+   }
+
+   &.check {
+      li {
+         display: list-item;
+         position: relative;
+         line-height: 36px;
+         padding-left: 25px;
+      }
+
+      li::before {
+         content: "\f00c";
+         font-family: $font_11;
+         font-size: 15px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         color: $color_viking;
+      }
+   }
+
+   &.check-circle {
+      li {
+         display: list-item;
+         position: relative;
+         line-height: 36px;
+         padding-left: 25px;
+      }
+
+      li::before {
+         content: "\f058";
+         font-family: $font_12;
+         font-size: 15px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         color: $color_viking;
+      }
+   }
+}
+
+.sticky-container {
+   width: 100%;
+}
+
+iframe {
+   width: 100%;
+   min-height: 350px;
+
+   &.audio {
+      min-height: 100px;
+   }
+}
+
+.form-control {
+   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+   box-shadow: none;
+   border: 0;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 0;
+   height: 46px;
+   border-bottom: 1px solid $color_tiara;
+   background: transparent;
+
+   &:focus {
+      border-color: $color_viking;
+      //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      box-shadow: none;
+   }
+}
+
+.carousel-control {
+   &.left {
+      background-image: none;
+   }
+
+   &.right {
+      background-image: none;
+   }
+}
+
+.nav-tabs {
+   border-bottom: 0 $color_alto;
+
+   >li {
+      float: left;
+      margin-bottom: -1px;
+   }
+}
+
+.widget {
+   margin-bottom: 45px;
+
+   .tab-content {
+      background-color: $color_shark;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -o-border-radius: 4px;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 4px;
+      padding: 15px 20px;
+
+      li {
+         margin-top: 15px;
+         padding-bottom: 15px;
+
+         a {
+            font-size: 14px;
+            line-height: 24px;
+            color: $color_oslo_gray;
+            color: $color_viking;
+            color: $color_viking;
+
+            &:hover {
+               color: $color_pink_swan;
+               color: $color_pink_swan;
+            }
+         }
+
+         &:last-child {
+            border-bottom: 0;
+         }
+      }
+
+      .entry-meta {
+         font-size: 14px;
+         line-height: 24px;
+      }
+
+      .tab-post-thumb {
+         width: 40px;
+         height: 40px;
+         float: left;
+         margin-right: 18px;
+         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+         border-radius: 3px;
+         margin-top: 7px;
+      }
+
+      i {
+         margin-right: 2px;
+         color: $color_viking;
+      }
+
+      span {
+         @extend %extend_4;
+
+         &.author a {
+            @extend %extend_4;
+
+            &:hover {
+               color: $color_viking !important;
+            }
+         }
+      }
+   }
+
+   .tab-post-heading {
+      overflow: hidden;
+
+      h3 {
+         font-size: 14px;
+         line-height: 24px;
+         margin: 0;
+         font-weight: 400;
+
+         a {
+            color: $color_oslo_gray;
+         }
+      }
+   }
+
+   .nav-tabs>li {
+      >a {
+         @extend %extend_2;
+         @extend %extend_2;
+
+         &:hover {
+            background-color: $color_shark;
+            color: $white;
+            background-color: $color_shark;
+            color: $white;
+         }
+
+         &:focus {
+            background-color: $color_shark;
+            color: $white;
+            background-color: $color_shark;
+            color: $white;
+         }
+      }
+
+      &.active>a {
+         @extend %extend_3;
+
+         &:hover {
+            @extend %extend_3;
+         }
+
+         &:focus {
+            @extend %extend_3;
+         }
+      }
+   }
+
+   &.tab-content li a:hover {
+      color: $color_viking;
+   }
+
+   li a {
+      color: $color_oslo_gray;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+
+      &:hover {
+         color: $color_viking;
+      }
+   }
+}
+
+.section-padding {
+   padding: 60px 0;
+}
+
+.section-sub {
+   font-size: 18px;
+   line-height: 30px;
+   display: inline-block;
+   position: relative;
+}
+
+.section-sub::after {
+   content: "";
+   width: 65px;
+   height: 3px;
+   background-color: $color_viking;
+   position: absolute;
+   left: 50%;
+   margin-left: -32px;
+   bottom: -25px;
+}
+
+.page-title-section {
+   background: $url_0;
+   background-size: cover;
+}
+
+.overlay-bg {
+   background: $color_jacarta;
+   background: $url_1;
+   background: -moz-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
+   background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color_jacarta), color-stop(100%, $color_jelly_bean), color-stop(100%, $color_jordy_blue));
+   background: -webkit-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
+   background: -o-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
+   background: -ms-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
+   background: linear-gradient(to right, $color_jacarta_90 0, $color_jelly_bean_90 100%, $color_jordy_blue_90 100%);
+   filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_jacarta', endcolorstr='$color_jordy_blue', gradienttype=1);
+}
+
+.top-bar {
+   background: $url_2 no-repeat;
+   background-size: cover;
+
+   .overlay-bg {
+      padding: 8px 0;
+   }
+
+   .social-links i {
+      width: 25px;
+      height: 25px;
+      font-size: 10px;
+      line-height: 25px;
+   }
+}
+
+.call-to-action {
+   i {
+      margin-right: 5px;
+   }
+
+   ul li a {
+      font-size: 12px;
+      color: $white;
+
+      &:hover {
+         color: $color_viking;
+         text-decoration: none;
+      }
+   }
+}
+
+.social-links {
+   li {
+      padding-right: 2px;
+      padding-left: 2px;
+
+      a {
+         color: $white;
+
+         &:hover {
+            color: $color_viking;
+         }
+      }
+   }
+
+   i {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid $white_20;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 50%;
+   }
+}
+
+.lang-support {
+   min-width: 116px;
+   margin-left: 20px;
+}
+
+.img-alignright {
+   float: right;
+   margin: 5px 0 20px 20px;
+}
+
+.img-alignleft {
+   float: left;
+   margin: 5px 20px 20px 0;
+}
+
+.img-alignnone {
+   margin: 5px 20px 20px 0;
+}
+
+.popup-feature {
+   position: relative;
+   overflow: hidden;
+
+   &:hover::before {
+      opacity: 1;
+   }
+
+   &:hover .more-link a {
+      &.img-link {
+         @extend %extend_6;
+         left: 50%;
+         margin-left: -50px;
+      }
+
+      &.page-link {
+         @extend %extend_6;
+         right: 50%;
+         margin-right: -50px;
+      }
+   }
+}
+
+.popup-feature::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: $color_viking_80;
+   display: inline-block;
+   opacity: 0;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -ms-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+   transition: all 0.3s;
+}
+
+.cta-section {
+   background-color: $color_viking;
+   padding: 20px 0;
+}
+
+.quote-btn {
+   background-color: $color_spray !important;
+   font-size: 18px;
+   line-height: 20px;
+   padding: 19px 64px;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 50px;
+   overflow: hidden;
+   position: relative;
+
+   &:hover {
+      background: $color_java !important;
+
+      &:before {
+         left: 80%;
+         opacity: 1;
+      }
+   }
+
+   &:before {
+      content: "\f061";
+      font-family: $font_13;
+      position: absolute;
+      left: 70%;
+      opacity: 0;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all 0.3s;
+   }
+}
+
+#quoteModal {
+   text-align: left;
+
+   .modal-body {
+      padding: 15px 30px;
+   }
+}
+
+.footer-widget-section {
+   background-color: $color_alabaster;
+
+   address {
+      .modal-map {
+         border: 0;
+         font-size: 12px;
+         line-height: 23px;
+         color: $white;
+         padding: 0 16px;
+         margin-top: 12px;
+         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+         border-radius: 30px;
+         background-color: $color_viking;
+
+         &:hover {
+            background-color: $color_mine_shaft;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: 0.3s;
+         }
+      }
+
+      .tel {
+         display: block;
+         margin-top: 35px;
+         position: relative;
+      }
+
+      .tel::before {
+         content: "";
+         width: 35px;
+         height: 1px;
+         background-color: $black_20;
+         position: absolute;
+         top: -10px;
+         left: 0;
+      }
+   }
+}
+
+.footer-widget {
+   h3 {
+      margin-bottom: 22px;
+   }
+
+   ul li {
+      line-height: 32px;
+
+      a {
+         color: $color_oslo_gray;
+         font-size: 14px;
+
+         &:hover {
+            color: $color_viking;
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+.copyright-section {
+   background-color: $color_catskill_white;
+   padding: 45px 0;
+}
+
+.footer-menu {
+   li {
+      line-height: 32px;
+      position: relative;
+      display: inline-block;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      &:last-child::before {
+         content: "";
+      }
+
+      a {
+         color: $color_oslo_gray;
+
+         &:hover {
+            color: $color_viking;
+            text-decoration: none;
+         }
+      }
+   }
+
+   li::before {
+      content: "\f111";
+      font-family: $font_14;
+      color: $black_20;
+      position: absolute;
+      top: 0;
+      right: -6px;
+      font-size: 7px;
+   }
+}
+
+.copyright-info {
+   margin-top: 14px;
+   color: $color_nobel;
+   display: block;
+   font-size: 14px;
+
+   span {
+      color: $color_nobel;
+   }
+}
+
+#googleMap {
+   height: 400px;
+}
+
+#contactMap {
+   height: 300px;
+}
+
+#toTop {
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   color: $color_viking;
+   cursor: pointer;
+   display: none;
+   z-index: 9999;
+   width: 35px;
+   height: 35px;
+   text-align: center;
+   font-size: 16px;
+   line-height: 35px;
+   background: $white;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 10px;
+
+   &:hover {
+      color: $white;
+      background-color: $color_viking;
+      border: 1px solid transparent;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all 0.3s ease 0s;
+   }
+}
+
+#preloader {
+   background: $white;
+   bottom: 0;
+   left: 0;
+   position: fixed;
+   right: 0;
+   top: 0;
+   z-index: 9999;
+}
+
+#status {
+   @extend %extend_7;
+}
+
+.status-mes {
+   @extend %extend_7;
+   background: none;
+   left: 0;
+   margin: 0;
+   text-align: center;
+   top: 65%;
+}
+
+.widget_search {
+   form {
+      input[type="search"] {
+         height: 50px;
+         width: 100%;
+         padding: 5px 40px 5px 10px;
+
+         &:focus {
+            outline: none;
+         }
+      }
+
+      button[type=submit] {
+         position: absolute;
+         top: 22%;
+         right: 0;
+         background: transparent;
+         border: 0;
+         color: $color_viking;
+
+         i {
+            margin-left: 5px;
+         }
+      }
+
+      input[type="submit"]:focus {
+         outline: none;
+      }
+   }
+
+   label {
+      margin-bottom: 0 !important;
+   }
+}
+
+.pagination {
+   >li {
+      margin-right: 5px;
+      display: inline-block;
+
+      >a {
+         color: $color_shuttle_gray;
+         border: 2px solid $color_bon_jour;
+         padding: 0;
+         width: 35px;
+         height: 35px;
+         font-weight: 700;
+         line-height: 30px;
+         text-align: center;
+         -webkit-border-radius: 100%;
+         -moz-border-radius: 100%;
+         -o-border-radius: 100%;
+         //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+         border-radius: 100%;
+
+         &:hover {
+            @extend %extend_9;
+            @extend %extend_9;
+            color: $white;
+         }
+
+         &:focus {
+            @extend %extend_9;
+            @extend %extend_9;
+         }
+      }
+
+      &:first-child {
+         >a {
+            @extend %extend_8;
+         }
+
+         >span {
+            @extend %extend_8;
+         }
+      }
+
+      &:last-child {
+         >a {
+            @extend %extend_8;
+         }
+
+         >span {
+            @extend %extend_8;
+         }
+      }
+
+      &.disabled>a {
+         @extend %extend_11;
+
+         &:hover {
+            @extend %extend_11;
+         }
+      }
+
+      &.active>a {
+         @extend %extend_11;
+
+         &:hover {
+            @extend %extend_11;
+         }
+      }
+   }
+
+   >.active {
+      >a {
+         @extend %extend_10;
+
+         &:hover {
+            @extend %extend_10;
+         }
+
+         &:focus {
+            @extend %extend_10;
+         }
+      }
+
+      >span {
+         &:hover {
+            @extend %extend_10;
+         }
+
+         &:focus {
+            @extend %extend_10;
+         }
+      }
+   }
+
+   li a {
+      &.next {
+         @extend %extend_12;
+      }
+
+      &.prev {
+         @extend %extend_12;
+      }
+   }
+
+   &.borderless>li {
+      >a {
+         @extend %extend_13;
+      }
+
+      >span {
+         @extend %extend_13;
+      }
+   }
+}
+
+.pager {
+   .disabled {
+      >a {
+         border-color: $color_alto;
+
+         &:hover {
+            border-color: $color_alto;
+         }
+
+         &:focus {
+            border-color: $color_alto;
+         }
+      }
+
+      >span {
+         border-color: $color_alto;
+      }
+   }
+
+   li>a {
+      &:hover {
+         @extend %extend_14;
+      }
+
+      &:focus {
+         @extend %extend_14;
+      }
+   }
+}
+
+button:focus {
+   outline: none !important;
+}
+
+.active.btn-primary {
+   background-color: $color_mine_shaft;
+   border-color: transparent;
+}
+
+.list-group-item.active {
+   background-color: $color_viking;
+   border-color: $color_viking;
+
+   &:hover {
+      background-color: $color_viking;
+      border-color: $color_viking;
+   }
+
+   &:focus {
+      background-color: $color_viking;
+      border-color: $color_viking;
+   }
+}
+
+.carousel:hover a {
+   &.carousel-control {
+      opacity: 1;
+   }
+
+   &.left.carousel-control {
+      left: 30px;
+   }
+
+   &.right.carousel-control {
+      right: 30px;
+   }
+}
+
+.social-share ul li {
+   a {
+      color: $color_tuna;
+   }
+
+   i {
+      border: 1px solid $color_bon_jour;
+      //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      box-shadow: none;
+   }
+}
+
+.more-link a {
+   width: 40px;
+   height: 40px;
+   line-height: 36px;
+   display: inline-block;
+   text-align: center;
+   font-size: 18px;
+   border: 2px solid $white_30;
+   color: $white;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 10px;
+
+   &.img-link {
+      @extend %extend_5;
+      left: 0;
+   }
+
+   &.page-link {
+      @extend %extend_5;
+      right: 0;
+   }
+
+   &:hover {
+      background-color: $white;
+      color: $color_viking;
+   }
+}
+
+#contactForm button {
+   display: block;
+   margin: 0 0 10px;
+}
+
+.newsletter-form .form-group {
+   margin: 26px 0 0;
+   position: relative;
+   font-style: italic;
+
+   .form-control {
+      border: 0;
+      border-bottom: 1px solid $color_cararra;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 0;
+
+      &:focus {
+         border-color: $color_viking;
+      }
+   }
+
+   button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      line-height: 24px;
+      background: transparent;
+      color: $color_viking;
+      padding: 10px;
+   }
+}
+
+form.search-form {
+   position: relative;
+   width: 100%;
+
+   label {
+      display: block;
+   }
+}
+
+span.screen-reader-text {
+   display: none;
+}
+
+.widget_tag_cloud ul li {
+   display: inline-block;
+   margin: 0 2px 8px;
+
+   a {
+      display: block;
+      color: $color_oslo_gray;
+      border: 1px solid $color_bon_jour;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 2px 15px;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 14px;
+
+      &:hover {
+         background: $color_viking;
+         color: $white;
+         border: 1px solid transparent;
+      }
+   }
+}
+
+/* ===== RESPONSIVE ===== */ 

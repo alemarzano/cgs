@@ -4,8 +4,10 @@ const sass = require('gulp-sass');
 
 gulp.task('sass', () => {
     return gulp.src([
-            'node_modules/bootstrap/scss/bootstrap.scss',
-            'src/stylesheet/*.scss'
+            'node_modules/bootstrap/dist/css/bootstrap.css',
+            'src/stylesheet/extras.scss',
+            'src/stylesheet/main.scss',
+            'src/stylesheet/theme.scss'
         ])
         .pipe(sass({
             outputStyle: 'compressed'
@@ -17,7 +19,6 @@ gulp.task('sass', () => {
 gulp.task('js', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            'node_modules/jquery/dist/jquery.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js',
             'node_modules/slider-pro/dist/js/jquery.sliderPro.min.js'
         ])
@@ -31,8 +32,8 @@ gulp.task('serve', ['sass'], () => {
     });
 
     gulp.watch([
-        'node_modules/bootstrap/scss/bootstrap.min.scss',
-        'src/stylesheet/*.scss'
+        'src/stylesheet/*.scss',
+        'src/stylesheet/assets/*.scss',
     ], ['sass']);
 
     gulp.watch([
@@ -43,14 +44,9 @@ gulp.task('serve', ['sass'], () => {
 
 });
 
-gulp.task('font-awesome', () => {
-    return gulp.src('node_modules/@fontawesome/fontawesome-free/css/font-awesome.min.css')
-        .pipe(gulp.dest('src/css'));
-})
 
 gulp.task('fonts', () => {
     return gulp.src([
-        'node_modules/@fontawesome/fontawesome-free/webfonts/*',
         'src/stylesheet/fonts/*',
         '!src/stylesheet/fonts/*.*ss',
         '!src/stylesheet/fonts/*.html'
@@ -63,4 +59,4 @@ gulp.task('slider-pro', () => {
     .pipe(gulp.dest('src/css'));
 })
 
-gulp.task('default', ['js', 'serve', 'font-awesome', 'fonts', 'slider-pro'])
+gulp.task('default', ['js', 'serve', 'fonts', 'slider-pro'])
