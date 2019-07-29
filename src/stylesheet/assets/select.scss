@@ -8,12 +8,12 @@ div.cs-select {
    position: relative;
    text-align: left;
    z-index: 100;
-   width: 100px;
+   width: 125px;
    max-width: 500px;
-   border-radius: 30px;
    height: 25px;
    line-height: 25px;
-   border: 1px solid rgba(255, 255, 255, 0.23);
+   border-radius: 20px;
+   border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .cs-select:focus {
@@ -28,7 +28,7 @@ div.cs-select {
 
 .cs-select span {
    display: block;
-   font-size: 10px;
+   font-size: 12px;
    font-weight: 300;
    position: relative;
    cursor: pointer;
@@ -50,40 +50,19 @@ div.cs-select {
 .cs-select span.cs-placeholder:after {
    content: "\f1ab";
    position: absolute;
-   top: -3px;
-   right: -2px;
-   width: 30px;
-   height: 30px;
-   background: #fff;
-   font-size: 14px;
-   line-height: 28px;
-   color: #343434;
-   font-family: FontAwesome;
-}
+   top: -2px;
+   right: -5px;
+   width: 33px;
+   height: 33px;
+   /* background: #fff; */
+   font-size: 22px;
+      line-height: 28px;
+      color:white;
+      font-family: FontAwesome;
+   }
 
-.cs-select span.cs-placeholder[data-current="united-kingdom"]:after,
-.cs-select span.cs-placeholder[data-current="france"]:after,
-.cs-select span.cs-placeholder[data-current="spain"]:after,
-.cs-select span.cs-placeholder[data-current="bangladesh"]:after {
-   text-indent: 1000px;
-   background-size: 70% !important;
-}
 
-.cs-select span.cs-placeholder[data-current="united-kingdom"]:after {
-   background: #fff url(../img/flags/united-kingdom.svg) no-repeat center;
-}
 
-.cs-select span.cs-placeholder[data-current="france"]:after {
-   background: #fff url(../img/flags/france.svg) no-repeat center;
-}
-
-.cs-select span.cs-placeholder[data-current="spain"]:after {
-   background: #fff url(../img/flags/spain.svg) no-repeat center;
-}
-
-.cs-select span.cs-placeholder[data-current="bangladesh"]:after {
-   background: #fff url(../img/flags/bangladesh.svg) no-repeat center;
-}
 
 /* Placeholder and selected option */
 
@@ -97,7 +76,6 @@ div.cs-select {
 
 .cs-select>span::after {
    right: 0;
-   border: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 50%;
    width: 28px;
    height: 28px;
@@ -113,13 +91,22 @@ div.cs-active {
    position: absolute;
    overflow: hidden;
    width: 100%;
-   background: #fff;
+   background: rgba(68, 121, 148, 1);
+   background: -moz-linear-gradient(top, rgba(68, 121, 148, 1) 0%, rgba(54, 41, 97, 1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68, 121, 148, 1)), color-stop(100%, rgba(54, 41, 97, 1)));
+   background: -webkit-linear-gradient(top, rgba(68, 121, 148, 1) 0%, rgba(54, 41, 97, 1) 100%);
+   background: -o-linear-gradient(top, rgba(68, 121, 148, 1) 0%, rgba(54, 41, 97, 1) 100%);
+   background: -ms-linear-gradient(top, rgba(68, 121, 148, 1) 0%, rgba(54, 41, 97, 1) 100%);
+   background: linear-gradient(to bottom, rgba(68, 121, 148, 1) 0%, rgba(54, 41, 97, 1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#447994', endColorstr='#362961', GradientType=0);
    visibility: hidden;
+   box-shadow: 2px 3px 10px #00000057;
+
 }
 
 .cs-select.cs-active .cs-options {
    visibility: visible;
-   border-radius: 5px;
+  
 }
 
 .cs-select ul {
@@ -127,15 +114,24 @@ div.cs-active {
    margin: 0;
    padding: 0;
    width: 100%;
+    span {
+       padding: 0 10px;
+    }
+    li {
+       color:white;
+       span {
+          color:white;
+       }
+    }
+    li.cs-focus span {
+       background-color: #ddd;
+    }
+
 }
 
-.cs-select ul span {
-   padding: 0 10px;
-}
 
-.cs-select ul li.cs-focus span {
-   background-color: #ddd;
-}
+
+.cs-select ul 
 
 .cs-select .cs-options span {
    background-repeat: no-repeat;

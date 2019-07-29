@@ -12,6 +12,11 @@ gulp.task('sass', () => {
         .pipe(sass({
             outputStyle: 'compressed'
         }))
+        .on('error', function (err) {
+            console.log(err.toString());
+
+            this.emit('end');
+        })
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream());
 });

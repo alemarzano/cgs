@@ -1,5 +1,6 @@
 $black:black;
 
+@import 'assets/colors.scss';
 
 * {
   margin: 0;
@@ -76,3 +77,84 @@ a {
   }
 }
 
+/* ===================== LOCATION MENU ===================== */ 
+
+.call-to-action {
+  i {
+     color:$color_viking;
+  }
+ 
+}
+.menu-locations {
+  display: flex;
+  justify-content: flex-end;
+
+  .cs-select  {
+    .cs-options {
+      span {
+        padding:3px 6px;
+        &:hover,
+        &:focus {
+          background-color: $color_viking;
+          color: white;
+        }
+      }
+      .cs-selected {
+        span {
+          background-color: $color_viking;
+          color:white;
+        }
+      }
+      
+    }
+  }
+  .loc {
+    width:150px;
+    span.cs-placeholder {
+      &:after {
+        content:"\f0ac";
+      }
+    }
+  }
+  
+}
+
+/* ===================== NAV MENU ===================== */
+.logo {
+  height:auto;
+  padding:0;
+}
+.navbar-default {
+  min-height:inherit;
+  .mainnav {
+    padding:12px 10px;
+     .navbar-header {
+       display: flex;
+       align-items: center;
+
+       .logo {
+         margin-left: 10px;
+         max-width: 110px;
+       }
+
+       .navbar-toggle {
+         border-color: transparent;
+         color: #7b8a97;
+         font-size: 24px;
+         margin-top: 0;
+         margin-right:6px;
+
+         &:focus,
+         &:hover {
+           background-color: inherti;
+
+           i {
+             color: $color_viking;
+           }
+         }
+       }
+     }
+  }
+ 
+  
+}
