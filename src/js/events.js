@@ -16,8 +16,9 @@ jQuery(document).ready(function ($) {
         forceSize: 'fullWindow',
         breakpoints: {
             500: {
+                width:360,
                 thumbnailWidth: 120,
-                thumbnailHeight: 50,
+                thumbnailHeight: 120,
                 aspectRatio: 0.7
             }
         }

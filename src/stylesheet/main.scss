@@ -1,11 +1,20 @@
 $black:black;
 
 @import 'assets/colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+
+$transition: cubic-bezier(.17,.67,.5,1.03);
+$timing:.4s .15s;
 
 * {
   margin: 0;
   padding: 0;
   color: $black;
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Lato', sans-serif!important;
+    line-height:120%;
+  }
 }
 
 body {
@@ -23,28 +32,212 @@ a {
   }
 }
 
+
+/* =====================  L O C A T I O N  M E N U  ===================== */
+
+.call-to-action {
+  i {
+    color: $color_viking;
+  }
+
+}
+
+.menu-locations {
+  display: flex;
+  justify-content: flex-end;
+
+  .cs-select {
+    .cs-options {
+      background: $color_jelly_bean;
+      background: -moz-linear-gradient(top, $color_jelly_bean, $color_jacarta);
+      background: -webkit-gradient(left top, left bottom, color-stop($color_jelly_bean), color-stop, $color_jacarta);
+      background: -webkit-linear-gradient(top, $color_jelly_bean, $color_jacarta);
+      background: -o-linear-gradient(top, $color_jelly_bean, $color_jacarta);
+      background: -ms-linear-gradient(top, $color_jelly_bean, $color_jacarta);
+      background: linear-gradient(to bottom, $color_jelly_bean, $color_jacarta);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#447994', endColorstr='#362961', GradientType=0);
+      box-shadow: 2px 3px 10px #00000057;      
+      span {
+        padding: 3px 6px;
+
+        &:hover,
+        &:focus {
+          background-color: $color_viking;
+          color: white;
+        }
+      }
+
+      .cs-selected {
+        span {
+          background-color: $color_viking;
+          color: white;
+        }
+      }
+
+
+    }
+
+    .loc {
+      width: 150px;
+
+      span.cs-placeholder {
+        &:after {
+          content: "\f0ac";
+        }
+      }
+    }
+
+  }
+}
+
+/* ===================== N A V  M E N U  ===================== */
+.logo {
+  height: auto;
+  padding: 0;
+}
+
+.navbar-default {
+  min-height: inherit;
+
+  .mainnav {
+    padding: 12px 10px;
+
+    .navbar-header {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-left: 10px;
+        max-width: 110px;
+      }
+
+      .navbar-toggle {
+        border-color: transparent;
+        font-size: 24px;
+        margin-top: 0;
+        margin-right: 6px;
+
+        i {
+          color: $color_jacarta;
+        }
+
+        &:focus,
+        &:hover {
+          background-color: inherit;
+
+          i {
+            color: $color_viking;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.hippo-offcanvas-container {
+  background-color: $color_jacarta_dark;
+  #offcanvasMenu {
+    .back {
+      background-color:$black_20;
+      text-align: right;
+      button {
+        background:none;
+        float:none;
+        width:100%;
+        text-align: right;
+        transition: $timing $transition;
+        &:hover, &:focus {
+          background-color:$black_50;
+          border-radius: 0;
+        }
+        i{
+          color:$color_viking;
+          padding:5px 20px;
+        }
+      }
+    }
+  }
+}
+
+
+/* ===================== S L I D E R  ===================== */
 .container-fluid.main {
   padding: 0;
 }
 
-#my-slider .sp-thumbnail {
-  width: 100%;
-  padding: 8px;
-  background-color: #F0F0F0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-#my-slider .sp-thumbnail-title {
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  color: #333;
-}
-
-#my-slider .sp-thumbnail-description {
-  font-size: 14px;
-  color: #333;
-}
+#my-slider{
+  .sp-thumbnail {
+    width: 100%;
+    padding: 8px;
+    background-color: #F0F0F0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .sp-thumbnail-title {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  .sp-thumbnail-description {
+    font-size: 14px;
+    color: #333;
+  }
+  .sp-layer {
+    left: 0;
+    right: 0;
+    top:inherit!important;
+    margin: 0 20px;
+    bottom: 25%;
+    background-color:$color_jacarta_60;
+    font-size: 14px;
+    white-space: nowrap;
+    min-height: 280px;
+    max-height: 380px;
+    max-width: 540px;
+    border-color: $black_50;
+    overflow-wrap: break-word;
+    padding:20px;
+      > * {
+        margin:0;
+        padding:0;
+        white-space:normal;
+        text-align: left;
+        color:white;
+        position:relative;
+      }
+      hr {
+        border-top: 3px solid $color_viking;
+        max-width: 100px;
+        margin: 20px 0 30px!important;
+      }
+      h3 {
+        border-width: 0px;        
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 36px;       
+      }
+      p {        
+        letter-spacing: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+      }
+      a.btn {
+        float: right;
+        margin-top: 30px;
+        padding: 5px 15px;
+        color:white;
+        font-weight: 700;
+        text-transform: uppercase;
+        i{
+          margin:auto 5px 3px;
+          color:$color_jelly_bean;
+        }
+      }
+  }
+} 
 
 @media (max-width: 860px) {
   #my-slider .hide-medium-screen {
@@ -75,86 +268,4 @@ a {
   #my-slider .sp-thumbnail-description {
     display: none;
   }
-}
-
-/* ===================== LOCATION MENU ===================== */ 
-
-.call-to-action {
-  i {
-     color:$color_viking;
-  }
- 
-}
-.menu-locations {
-  display: flex;
-  justify-content: flex-end;
-
-  .cs-select  {
-    .cs-options {
-      span {
-        padding:3px 6px;
-        &:hover,
-        &:focus {
-          background-color: $color_viking;
-          color: white;
-        }
-      }
-      .cs-selected {
-        span {
-          background-color: $color_viking;
-          color:white;
-        }
-      }
-      
-    }
-  }
-  .loc {
-    width:150px;
-    span.cs-placeholder {
-      &:after {
-        content:"\f0ac";
-      }
-    }
-  }
-  
-}
-
-/* ===================== NAV MENU ===================== */
-.logo {
-  height:auto;
-  padding:0;
-}
-.navbar-default {
-  min-height:inherit;
-  .mainnav {
-    padding:12px 10px;
-     .navbar-header {
-       display: flex;
-       align-items: center;
-
-       .logo {
-         margin-left: 10px;
-         max-width: 110px;
-       }
-
-       .navbar-toggle {
-         border-color: transparent;
-         color: #7b8a97;
-         font-size: 24px;
-         margin-top: 0;
-         margin-right:6px;
-
-         &:focus,
-         &:hover {
-           background-color: inherti;
-
-           i {
-             color: $color_viking;
-           }
-         }
-       }
-     }
-  }
- 
-  
 }
