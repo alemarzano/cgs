@@ -17,9 +17,11 @@ jQuery(document).ready(function ($) {
         breakpoints: {
             500: {
                 width:360,
-                thumbnailWidth: 120,
-                thumbnailHeight: 120,
-                aspectRatio: 0.7
+                height:480,
+                forceSize:'none',
+                thumbnailWidth: 100,
+                thumbnailHeight: 100,
+                // aspectRatio: 0.7
             }
         }
     });
