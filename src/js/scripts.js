@@ -127,7 +127,7 @@ jQuery(function ($) {
         documentPusher : '.st-pusher'
 
         });
-        var ico = $('<i class="fa fa-caret-right"></i>');
+        var ico = $('<i class="fa fa-angle-right"></i>');
         $('#offcanvasMenu li:has(ul) > a').append(ico);
 
         $('#offcanvasMenu > li:has(ul)').on('click',function(){

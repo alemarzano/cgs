@@ -1231,8 +1231,7 @@ Offcanvas Style For Customization
 }
 
 #offcanvasMenu li a .fa {
-   position: absolute;
-   right: 20px;
+   padding-left: 10px;
    font-size: 18px;
    line-height: 35px;
 }
@@ -1247,7 +1246,9 @@ Offcanvas Style For Customization
 #offcanvasMenu>li ul {
    display: none;
 }
-
+#offcanvasMenu li.open a{
+   padding-bottom:0;
+}
 #offcanvasMenu li.open ul {
    display: block;
    padding-left: 30px;
@@ -1264,6 +1265,9 @@ Offcanvas Style For Customization
 
 #offcanvasMenu li.open>a>i {
    transform: rotateZ(90deg);
+       padding-left: 0;
+       padding-bottom: 10px;
+       padding-right: 10px;
 }
 
 .offcanvas-widgets {
