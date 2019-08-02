@@ -28,25 +28,47 @@
 								<div class="row">
 
 									<div class="col-sm-6 col-xs-12">
-										<div class="call-to-action">
-											<ul class="list-inline">
-												<li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a></li>
-												<li><a href="#"><i class="fa fa-envelope"></i> info@cgsgroup.com.ar</a></li>
-											</ul>
-										</div><!-- /.call-to-action -->
-									</div><!-- /.col-sm-6 -->
-
-									<div class="col-sm-6 hidden-xs">
-										<div class="topbar-right menu-locations">
-											<div class="lang-support ">
-												<select class="cs-select cs-skin-elastic loc">
+										<div class="menu-locations">
+											<div class="custom-select">
+												<select onchange="buscarLocations()" id="locations">
 													<option value="ar" selected>Argentina</option>
 													<option value="uk">United Kingdom</option>
 													<option value="fr">France</option>
 												</select>
 											</div>
-											<div class="lang-support ">
-												<select class="cs-select cs-skin-elastic">
+											<div class="call-to-action locations-options">
+												<ul id="ar" class="list-inline visible">
+													<li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a>
+													</li>
+													<li><a href="#"><i class="fa fa-envelope"></i>
+															info@cgsgroup.com.ar</a>
+													</li>
+												</ul>
+												<ul id="uk" class="list-inline">
+													<li><a href="#"><i class="fa fa-phone"></i> (UK) 5199 2225</a>
+													</li>
+													<li><a href="#"><i class="fa fa-envelope"></i>
+															info@cgsgroup.com.uk</a>
+													</li>
+												</ul>
+												<ul id="fr" class="list-inline">
+													<li><a href="#"><i class="fa fa-phone"></i> (FR) 5199 2225</a>
+													</li>
+													<li><a href="#"><i class="fa fa-envelope"></i>
+															info@cgsgroup.com.fr</a>
+													</li>
+												</ul>
+											</div><!-- /.call-to-action -->
+
+										</div>
+
+									</div><!-- /.col-sm-6 -->
+
+									<div class="col-sm-6 hidden-xs">
+										<div class="topbar-right">
+
+											<div class="custom-select lang-support">
+												<select >
 													<option value="es" selected>Español</option>
 													<option value="en">English</option>
 													<option value="fr">French</option>
@@ -73,9 +95,10 @@
 
 						<div class="container mainnav">
 							<div class="navbar-header">
-								<a class="logo hidden-xs navbar-brand" href="index.html"><img src="img/logo-w.png" alt=""></a>
-								<a class=" logo hidden-sm hidden-lg navbar-brand" href="index.html"><img src="img/logo-m.png"
+								<a class="logo hidden-xs navbar-brand" href="index.html"><img src="img/logo-w.png"
 										alt=""></a>
+								<a class=" logo hidden-sm hidden-lg navbar-brand" href="index.html"><img
+										src="img/logo-m.png" alt=""></a>
 
 								<!-- offcanvas-trigger -->
 								<button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
@@ -90,13 +113,16 @@
 
 
 
-								<span class="search-button pull-right"><a href="#search"><i class="fa fa-search"></i> </a></span>
+								
 
 								<ul class="nav navbar-nav navbar-right">
 									<li class=" active"><a href="index.html">Home</a></li>
 									<li><a href="index.html">Servicios</a></li>
 									<li><a href="contact.html">Información</a></li>
 									<li><a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a></li>
+									<li class="find-track">
+										<a href="#search"><p>Cargo Tracking</p><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+									</li>
 								</ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container -->
@@ -112,17 +138,18 @@
 								<img class="sp-image" src="css/images/blank.gif"
 									data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_3.jpg" />
 								<div class="mini-container">
-									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left" data-hide-transition="right"
-										data-show-delay="300">
+									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left"
+										data-hide-transition="right" data-show-delay="300">
 										<h3 data-show-transition="left">Lorem, ipsum dolor. </h3>
 										<hr>
-										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit.
 											Nemo, quo? </p>
 										<a href="#" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"
 												data-show-transition="right"></i></a>
 									</div>
 								</div>
-								
+
 
 
 							</div>
@@ -134,11 +161,12 @@
 
 
 								<div class="mini-container">
-									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left" data-hide-transition="right"
-										data-show-delay="300">
+									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left"
+										data-hide-transition="right" data-show-delay="300">
 										<h3 data-show-transition="left">Lorem, ipsum dolor. </h3>
 										<hr>
-										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit.
 											Nemo, quo? </p>
 										<a href="#" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"
 												data-show-transition="right"></i></a>
@@ -152,11 +180,12 @@
 									data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/11/slider_1.jpg" />
 
 								<div class="mini-container">
-									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left" data-hide-transition="right"
-										data-show-delay="300">
+									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left"
+										data-hide-transition="right" data-show-delay="300">
 										<h3 data-show-transition="left">Lorem, ipsum dolor. </h3>
 										<hr>
-										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit.
 											Nemo, quo? </p>
 										<a href="#" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"
 												data-show-transition="right"></i></a>
@@ -170,11 +199,12 @@
 									data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_4.jpg" />
 
 								<div class="mini-container">
-									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left" data-hide-transition="right"
-										data-show-delay="300">
+									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left"
+										data-hide-transition="right" data-show-delay="300">
 										<h3 data-show-transition="left">Lorem, ipsum dolor. </h3>
 										<hr>
-										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit.
 											Nemo, quo? </p>
 										<a href="#" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"
 												data-show-transition="right"></i></a>
@@ -188,11 +218,12 @@
 									data-retina="https://image.shutterstock.com/z/stock-photo-logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge-in-1388874713.jpg" />
 
 								<div class="mini-container">
-									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left" data-hide-transition="right"
-										data-show-delay="300">
+									<div class="sp-layer frame-home sp-black sp-padding" data-show-transition="left"
+										data-hide-transition="right" data-show-delay="300">
 										<h3 data-show-transition="left">Lorem, ipsum dolor. </h3>
 										<hr>
-										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										<p data-show-transition="left">Lorem ipsum dolor sit amet, consectetur
+											adipisicing elit.
 											Nemo, quo? </p>
 										<a href="#" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"
 												data-show-transition="right"></i></a>
@@ -208,7 +239,8 @@
 						<div class="sp-thumbnails">
 							<div class="sp-thumbnail">
 								<div class="sp-thumbnail-title">
-									<svg height="512pt" viewBox="0 -26 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+									<svg height="512pt" viewBox="0 -26 512 512" width="512pt"
+										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="m296 160c0-5.523438-4.476562-10-10-10h-60c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h60c5.523438 0 10-4.476562 10-10zm0 0" />
 										<path
@@ -296,8 +328,9 @@
 							<div class="sp-thumbnail">
 								<div class="sp-thumbnail-title">
 									<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 472.029 472.029"
-										style="enable-background:new 0 0 472.029 472.029;" xml:space="preserve">
+										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 472.029 472.029" style="enable-background:new 0 0 472.029 472.029;"
+										xml:space="preserve">
 										<g>
 											<g>
 												<path
@@ -340,8 +373,9 @@
 							<div class="sp-thumbnail">
 								<div class="sp-thumbnail-title">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
-										style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+										xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;"
+										xml:space="preserve">
 										<g>
 											<g>
 												<g>
@@ -378,7 +412,8 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<h2 class="section-title">Our 24 Hour’s Services</h2>
-								<span class="section-sub">Nullam ac urna ey felis dapibus<br> condimeytum sit amet</span>
+								<span class="section-sub">Nullam ac urna ey felis dapibus<br> condimeytum sit
+									amet</span>
 							</div>
 						</div> <!-- /.row -->
 
@@ -390,7 +425,8 @@
 									</div>
 
 									<h3>Lorem, ipsum. </h3>
-									<p>Lorem ipsum dolor sit amet consectetur elit.<br> Quia, vel? Lorem ipsum dolor sit amet. <br> embrace
+									<p>Lorem ipsum dolor sit amet consectetur elit.<br> Quia, vel? Lorem ipsum dolor sit
+										amet. <br> embrace
 										funyctionalized </p>
 									<a class="readmore" href="#">Read More &nbsp;<i class="fa fa-angle-right"></i> </a>
 								</div>
@@ -402,7 +438,8 @@
 										<a href="#"><img src="img/moving.jpg" alt=""></a>
 									</div>
 									<h3>Lorem, ipsum. </h3>
-									<p>Lorem ipsum dolor sit amet consectetur elit.<br> Quia, vel? Lorem ipsum dolor sit amet. <br> embrace
+									<p>Lorem ipsum dolor sit amet consectetur elit.<br> Quia, vel? Lorem ipsum dolor sit
+										amet. <br> embrace
 										funyctionalized </p>
 									<a class="readmore" href="#">Read More &nbsp;<i class="fa fa-angle-right"></i> </a>
 								</div>
@@ -415,7 +452,8 @@
 										<a href="#"><img src="img/shipping.jpg" alt=""></a>
 									</div>
 									<h3>Lorem, ipsum. </h3>
-									<p>Lorem ipsum dolor sit amet consectetur elit.<br> Quia, vel? Lorem ipsum dolor sit amet. <br> embrace
+									<p>Lorem ipsum dolor sit amet consectetur elit.<br> Quia, vel? Lorem ipsum dolor sit
+										amet. <br> embrace
 										funyctionalized </p>
 									<a class="readmore" href="#">Read More &nbsp;<i class="fa fa-angle-right"></i> </a>
 								</div>
@@ -432,7 +470,7 @@
 							<div class="col-sm-7 col-xs-12">
 								<h2>Lorem ipsum dolor sit amet. </h2>
 
-								
+
 
 								<a href="#" class="btn btn-primary">View Details</a>
 							</div>
@@ -458,10 +496,12 @@
 
 									<!-- Nav tabs -->
 									<ul class="nav nav-tabs" role="tablist">
-										<li role="presentation" class="active"><a href="#secure" aria-controls="secure" role="tab"
-												data-toggle="tab"><i class="flaticon-logistics15"></i> Seguro</a></li>
-										<li role="presentation"><a href="#trackable" aria-controls="trackable" role="tab"
-												data-toggle="tab"><i class="flaticon-logistics18"></i> Trackeable</a></li>
+										<li role="presentation" class="active"><a href="#secure" aria-controls="secure"
+												role="tab" data-toggle="tab"><i class="flaticon-logistics15"></i>
+												Seguro</a></li>
+										<li role="presentation"><a href="#trackable" aria-controls="trackable"
+												role="tab" data-toggle="tab"><i class="flaticon-logistics18"></i>
+												Trackeable</a></li>
 										<li role="presentation"><a href="#fast" aria-controls="fast" role="tab"
 												data-toggle="tab"><i class="flaticon-logistics16"></i> Rápido</a></li>
 										<li role="presentation"><a href="#reliable" aria-controls="reliable" role="tab"
@@ -480,9 +520,15 @@
 													<div class="col-md-6 content-text">
 														<h3>Lorem, ipsum dolor.</h3>
 
-														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo exercitationem doloremque quibusdam labore earum, soluta autem recusandae laudantium error eaque facilis deserunt, vel inventore eum nihil porro delectus aspernatur ipsum illo omnis nesciunt natus quos? Dolor assumenda corrupti ab.</p>
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+															Minus quo exercitationem doloremque quibusdam labore earum,
+															soluta autem recusandae laudantium error eaque facilis
+															deserunt, vel inventore eum nihil porro delectus aspernatur
+															ipsum illo omnis nesciunt natus quos? Dolor assumenda
+															corrupti ab.</p>
 
-														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, accusamus?</p>
+														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+															Iste, accusamus?</p>
 													</div><!-- /.col-md-6 -->
 												</div><!-- /.row -->
 											</div><!-- /.css-tab-content -->
@@ -497,11 +543,15 @@
 													<div class="col-md-6 content-text">
 														<h3>Lorem, ipsum dolor.</h3>
 
-														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo exercitationem doloremque quibusdam
-															labore earum, soluta autem recusandae laudantium error eaque facilis deserunt, vel inventore eum nihil
-															porro delectus aspernatur ipsum illo omnis nesciunt natus quos? Dolor assumenda corrupti ab.</p>
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+															Minus quo exercitationem doloremque quibusdam
+															labore earum, soluta autem recusandae laudantium error eaque
+															facilis deserunt, vel inventore eum nihil
+															porro delectus aspernatur ipsum illo omnis nesciunt natus
+															quos? Dolor assumenda corrupti ab.</p>
 
-														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, accusamus?</p>
+														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+															Iste, accusamus?</p>
 													</div><!-- /.col-md-6 -->
 												</div><!-- /.row -->
 											</div><!-- /.css-tab-content -->
@@ -516,11 +566,15 @@
 													<div class="col-md-6 content-text">
 														<h3>Lorem, ipsum dolor.</h3>
 
-														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo exercitationem doloremque quibusdam
-															labore earum, soluta autem recusandae laudantium error eaque facilis deserunt, vel inventore eum nihil
-															porro delectus aspernatur ipsum illo omnis nesciunt natus quos? Dolor assumenda corrupti ab.</p>
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+															Minus quo exercitationem doloremque quibusdam
+															labore earum, soluta autem recusandae laudantium error eaque
+															facilis deserunt, vel inventore eum nihil
+															porro delectus aspernatur ipsum illo omnis nesciunt natus
+															quos? Dolor assumenda corrupti ab.</p>
 
-														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, accusamus?</p>
+														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+															Iste, accusamus?</p>
 													</div><!-- /.col-md-6 -->
 												</div><!-- /.row -->
 											</div><!-- /.css-tab-content -->
@@ -535,11 +589,15 @@
 													<div class="col-md-6 content-text">
 														<h3>Lorem, ipsum dolor.</h3>
 
-														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo exercitationem doloremque quibusdam
-															labore earum, soluta autem recusandae laudantium error eaque facilis deserunt, vel inventore eum nihil
-															porro delectus aspernatur ipsum illo omnis nesciunt natus quos? Dolor assumenda corrupti ab.</p>
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+															Minus quo exercitationem doloremque quibusdam
+															labore earum, soluta autem recusandae laudantium error eaque
+															facilis deserunt, vel inventore eum nihil
+															porro delectus aspernatur ipsum illo omnis nesciunt natus
+															quos? Dolor assumenda corrupti ab.</p>
 
-														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, accusamus?</p>
+														<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+															Iste, accusamus?</p>
 													</div><!-- /.col-md-6 -->
 												</div><!-- /.row -->
 											</div><!-- /.css-tab-content -->
@@ -577,11 +635,15 @@
 									<div class="carousel-inner" role="listbox">
 										<div class="item active">
 											<div class="testimonial-content">
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde! Animi eos distinctio, voluptas
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde!
+													Animi eos distinctio, voluptas
 													quia<br>
-													explicabo sequi repellat ducimus voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
-													elit. Aut, unde! Animi eos distinctio, voluptas quia explicabo sequi repellat ducimus voluptatibus. <br>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde! Animi eos distinctio, voluptas quia
+													explicabo sequi repellat ducimus voluptatibus. Lorem ipsum dolor sit
+													amet consectetur adipisicing
+													elit. Aut, unde! Animi eos distinctio, voluptas quia explicabo sequi
+													repellat ducimus voluptatibus. <br>
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde!
+													Animi eos distinctio, voluptas quia
 													explicabo sequi repellat ducimus voluptatibus.
 												</p>
 												<span class="client-title">- Lorem Ipsum -</span>
@@ -589,11 +651,15 @@
 										</div>
 										<div class="item">
 											<div class="testimonial-content">
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde! Animi eos distinctio, voluptas
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde!
+													Animi eos distinctio, voluptas
 													quia<br>
-													explicabo sequi repellat ducimus voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
-													elit. Aut, unde! Animi eos distinctio, voluptas quia explicabo sequi repellat ducimus voluptatibus. <br>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde! Animi eos distinctio, voluptas quia
+													explicabo sequi repellat ducimus voluptatibus. Lorem ipsum dolor sit
+													amet consectetur adipisicing
+													elit. Aut, unde! Animi eos distinctio, voluptas quia explicabo sequi
+													repellat ducimus voluptatibus. <br>
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde!
+													Animi eos distinctio, voluptas quia
 													explicabo sequi repellat ducimus voluptatibus.
 												</p>
 												<span class="client-title">- Lorem Ipsum -</span>
@@ -601,11 +667,15 @@
 										</div>
 										<div class="item">
 											<div class="testimonial-content">
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde! Animi eos distinctio, voluptas
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde!
+													Animi eos distinctio, voluptas
 													quia<br>
-													explicabo sequi repellat ducimus voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
-													elit. Aut, unde! Animi eos distinctio, voluptas quia explicabo sequi repellat ducimus voluptatibus. <br>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde! Animi eos distinctio, voluptas quia
+													explicabo sequi repellat ducimus voluptatibus. Lorem ipsum dolor sit
+													amet consectetur adipisicing
+													elit. Aut, unde! Animi eos distinctio, voluptas quia explicabo sequi
+													repellat ducimus voluptatibus. <br>
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, unde!
+													Animi eos distinctio, voluptas quia
 													explicabo sequi repellat ducimus voluptatibus.
 												</p>
 												<span class="client-title">- Lorem Ipsum -</span>
@@ -671,19 +741,22 @@
 						<div class="row">
 							<div class="col-sm-4 col-xs-12">
 								<div class="counter-block">
-									<span class="count-description flaticon-boat"><strong class="timer">799</strong>order
+									<span class="count-description flaticon-boat"><strong
+											class="timer">799</strong>order
 										delivered</span>
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
 								<div class="counter-block">
-									<span class="count-description flaticon-international"><strong class="timer">19</strong>order
+									<span class="count-description flaticon-international"><strong
+											class="timer">19</strong>order
 										delivered</span>
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-12">
 								<div class="counter-block">
-									<span class="count-description flaticon-compass"><strong class="timer">521</strong>order
+									<span class="count-description flaticon-compass"><strong
+											class="timer">521</strong>order
 										delivered</span>
 								</div>
 							</div>
@@ -695,16 +768,17 @@
 				<!-- cta start -->
 				<section class="cta-section">
 					<div class="container text-center">
-						
+
 						<!-- Modal -->
-						<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel"
-							aria-hidden="true">
+						<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog"
+							aria-labelledby="quoteModalLabel" aria-hidden="true">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
 									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-												aria-hidden="true">&times;</span></button>
-										<h3 class="modal-title" id="quoteModalLabel">Request a rate for the shipping of your
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h3 class="modal-title" id="quoteModalLabel">Request a rate for the shipping of
+											your
 											goods.</h3>
 									</div>
 									<div class="modal-body">
@@ -713,15 +787,15 @@
 												<div class="col-md-6">
 													<div class="form-group">
 														<label for="name">Name</label>
-														<input id="name" name="name" type="text" class="form-control" required=""
-															placeholder="">
+														<input id="name" name="name" type="text" class="form-control"
+															required="" placeholder="">
 													</div>
 												</div>
 												<div class="col-md-6">
 													<div class="form-group">
 														<label for="company">Company Name</label>
-														<input id="company" name="company" type="text" class="form-control"
-															placeholder="">
+														<input id="company" name="company" type="text"
+															class="form-control" placeholder="">
 													</div>
 												</div>
 											</div>
@@ -736,8 +810,8 @@
 												<div class="col-md-6">
 													<div class="form-group">
 														<label for="email">Email address</label>
-														<input id="email" name="email" type="email" class="form-control" required=""
-															placeholder="">
+														<input id="email" name="email" type="email" class="form-control"
+															required="" placeholder="">
 													</div>
 												</div>
 											</div>
@@ -746,21 +820,22 @@
 												<div class="col-md-6">
 													<div class="form-group">
 														<label for="city">City Name</label>
-														<input id="city" name="city" type="text" class="form-control" placeholder="">
+														<input id="city" name="city" type="text" class="form-control"
+															placeholder="">
 													</div>
 												</div>
 												<div class="col-md-6">
 													<div class="form-group">
 														<label for="subject">Subject</label>
-														<input id="subject" name="subject" type="text" class="form-control"
-															required="" placeholder="">
+														<input id="subject" name="subject" type="text"
+															class="form-control" required="" placeholder="">
 													</div>
 												</div>
 											</div>
 											<div class="form-group text-area">
 												<label for="message">Your Message</label>
-												<textarea id="message" name="message" class="form-control" rows="6" required=""
-													placeholder=""></textarea>
+												<textarea id="message" name="message" class="form-control" rows="6"
+													required="" placeholder=""></textarea>
 											</div>
 
 											<button type="submit" class="btn btn-primary">Send Message</button>
@@ -802,7 +877,8 @@
 										<div class="modal-dialog modal-lg">
 											<div class="modal-content">
 												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close"><span
 															aria-hidden="true">&times;</span></button>
 													<h4 class="modal-title" id="myModalLabel">Our Location</h4>
 												</div>
@@ -840,7 +916,8 @@
 											<label class="sr-only" for="InputEmail1">Email</label>
 											<input type="email" class="form-control" id="InputEmail1"
 												placeholder="Tu dirección de mail">
-											<button type="submit" class="">Enviar &nbsp;<i class="fa fa-angle-right"></i></button>
+											<button type="submit" class="">Enviar &nbsp;<i
+													class="fa fa-angle-right"></i></button>
 										</div>
 									</form>
 								</div><!-- /.footer-widget -->
@@ -878,8 +955,8 @@
 				</div>
 				<ul id="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
 					<li class="back">
-						<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn"><i
-								class="fa fa-times" aria-hidden="true"></i></button>
+						<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
+							id="off-canvas-close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
 					</li>
 					<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
 					<li>
@@ -909,13 +986,14 @@
 					</li>
 					<li class="trackeo form-group">
 						<label for="track">Tracking</label>
-						<input type="text" class="form-control" id="track" placeholder="&#xF002; Ingrese número de referencia">
+						<input type="text" class="form-control" id="track"
+							placeholder="&#xF002; Ingrese número de referencia">
 					</li>
-					
+
 				</ul>
 				<div class="offlocation visible-xs visible-sm">
 					<div class="call-to-action">
-						<ul >
+						<ul>
 							<li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a></li>
 							<li><a href="#"><i class="fa fa-envelope"></i> info@cgsgroup.com.ar</a></li>
 						</ul>
@@ -933,7 +1011,8 @@
 						<form class="newsletter-form">
 							<div class="form-group">
 								<label class="sr-only" for="InputEmail1">Email address</label>
-								<input type="email" class="form-control" id="InputEmail2" placeholder="Your email address">
+								<input type="email" class="form-control" id="InputEmail2"
+									placeholder="Your email address">
 								<button type="submit" class="btn">Send &nbsp;<i class="fa fa-angle-right"></i></button>
 							</div>
 						</form>
@@ -969,8 +1048,6 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- classie -->
 	<script src="js/classie.js"></script>
-	<!-- selectFx -->
-	<script src="js/selectFx.js"></script>
 	<!-- sticky kit -->
 	<script src="js/jquery.sticky-kit.min.js"></script>
 	<!-- GOGLE MAP -->

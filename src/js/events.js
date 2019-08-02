@@ -16,9 +16,9 @@ jQuery(document).ready(function ($) {
         forceSize: 'fullWindow',
         breakpoints: {
             500: {
-                width:360,
-                height:480,
-                forceSize:'none',
+                width: 360,
+                height: 480,
+                forceSize: 'none',
                 thumbnailWidth: 100,
                 thumbnailHeight: 100,
                 // aspectRatio: 0.7
@@ -26,3 +26,19 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+
+function buscarLocations() {
+    var locations = document.querySelectorAll('.list-inline');
+    var menu = document.querySelector('#locations');
+    var selected = menu.options[menu.selectedIndex].value;
+
+    for (var i = 0; i <= locations.length; i++) {
+        if (locations[i] != undefined) {
+            var option = locations[i];
+            option.classList.remove('visible');
+            if (option.id == selected) {
+                option.classList.add('visible');
+            }
+        }
+    }
+}

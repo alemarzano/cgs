@@ -49,54 +49,83 @@ a {
 
 }
 
+
+.custom-select {
+  position: relative;
+  display: block;
+  width: 160px;
+  border-radius: 20px;
+  background-color: $black_20;
+  z-index: 10;
+  border: 2px solid $white_50;
+  height: 30px;
+
+  select {
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 0 12px;
+    font-size: 14px;
+    color: $white_50;
+    line-height: 26px;
+
+    &:focus {
+      outline: none;
+      border-radius: 20px;
+      box-shadow: 0 0 0pt 1pt white;
+      color:$white_75;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    right: 2px;
+    top: -1px;
+    width: 25px;
+    height: 100%;
+    line-height: 27px;
+    content: "\f0ac";
+    font-family: FontAwesome;
+    text-align: center;
+    color: $white_75;
+    font-size: 21px;
+    z-index: -1;
+  }
+
+}
+
+
 .menu-locations {
   display: flex;
+  justify-content: space-around;
+
+  .locations-options {
+    ul {
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+    }
+  }
+ 
+}
+.topbar-right {
+  display:flex;
   justify-content: flex-end;
-
-  .cs-select {
-    .cs-options {
-      background: $color_jelly_bean;
-      background: -moz-linear-gradient(top, $color_jelly_bean, $color_jacarta);
-      background: -webkit-gradient(left top, left bottom, color-stop($color_jelly_bean), color-stop, $color_jacarta);
-      background: -webkit-linear-gradient(top, $color_jelly_bean, $color_jacarta);
-      background: -o-linear-gradient(top, $color_jelly_bean, $color_jacarta);
-      background: -ms-linear-gradient(top, $color_jelly_bean, $color_jacarta);
-      background: linear-gradient(to bottom, $color_jelly_bean, $color_jacarta);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#447994', endColorstr='#362961', GradientType=0);
-      box-shadow: 2px 3px 10px #00000057;
-
-      span {
-        padding: 3px 6px;
-
-        &:hover,
-        &:focus {
-          background-color: $color_viking;
-          color: white;
-        }
-      }
-
-      .cs-selected {
-        span {
-          background-color: $color_viking;
-          color: white;
-        }
-      }
-
-
+  .custom-select {
+    width: 140px;
+    &::after{
+      content:'\f1ab';
     }
-
-    .loc {
-      width: 150px;
-
-      span.cs-placeholder {
-        &:after {
-          content: "\f0ac";
-        }
-      }
-    }
-
   }
 }
+
 
 /* ===================== N A V  M E N U  ===================== */
 .logo {
@@ -173,7 +202,8 @@ a {
           font-size: 18px;
           text-align: center;
           transition: $timing $transition;
-          height:45px;
+          height: 45px;
+
           .fa {
             color: $color_jordy_60;
           }
@@ -185,24 +215,28 @@ a {
             font-weight: 700;
           }
         }
+
         &.open {
           a {
             color: white;
             font-weight: 700;
           }
         }
+
         .fa {
           color: $black_50;
         }
-         ul {
-           padding:0;
-           margin:auto;
-           li {
-             text-align: center;
-             color:$white_50; 
-            
-           }
-         }
+
+        ul {
+          padding: 0;
+          margin: auto;
+
+          li {
+            text-align: center;
+            color: $white_50;
+
+          }
+        }
       }
 
       .trackeo {
@@ -252,7 +286,7 @@ a {
 
           &::placeholder {
             color: rgba(255, 255, 255, 0.747);
-            font-family:Arial, FontAwesome;
+            font-family: Arial, FontAwesome;
             text-align: center;
           }
         }
@@ -284,8 +318,9 @@ a {
           &:focus {
             background-color: none;
             border-radius: 0;
-            i{
-              color:white;
+
+            i {
+              color: white;
             }
           }
 
@@ -469,18 +504,53 @@ a {
 }
 
 /* ===================== Q U E R I E S ===================== */
+@media only screen and (min-width:768px) {
+  .navbar-collapse.collapse {
+    display:none!important;
+  }
+}
+
 @media only screen and (min-width:1280px) {
   .navbar-default {
     .mainnav {
-      padding:0;
-      max-width:1110px;
+      padding: 0;
+      max-width: 1110px;
+
       .navbar-header {
         .logo {
           max-width: inherit;
         }
       }
+      .navbar-collapse.collapse {
+        display:flex!important;
+        justify-content: flex-end;
+        ul.nav {
+          float:none;
+        }
+        .find-track {
+         a{
+          display: flex;
+          align-items: center;
+          background-color: $color_jacarta;
+          border-radius: 20px;
+          padding:5px 16px;
+          width:inherit;
+          height:inherit;  
+          font-size: 14px;
+          > * {
+            margin:0 5px;
+            color:$white;
+          
+          }        
+          p{
+            margin-bottom:0;
+          }
+         }
+        }
+      }
     }
   }
+
   #my-slider {
     .mini-container {
       width: 1186px;
@@ -491,56 +561,65 @@ a {
       top: 60px;
       /* transform: translateY(-50%); */
       right: 0;
-       .sp-layer {
-         bottom: 38%;
-       }
+
+      .sp-layer {
+        bottom: 38%;
+      }
     }
-   
+
     .sp-thumbnails-container {
-      left:0;
-      right:0;
-      margin:auto;
-      bottom:20px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 20px;
+
       .sp-thumbnail {
-        padding:16px 0 0 0 ;
+        padding: 16px 0 0 0;
         position: relative;
-        top:inherit;
+        top: inherit;
+
         .sp-thumbnail-title {
           display: flex;
-          flex-direction:column;
+          flex-direction: column;
           align-items: center;
+
           svg {
-            width:72px;
-            height:72px;
-            fill:$white_50;
+            width: 72px;
+            height: 72px;
+            fill: $white_50;
           }
         }
+
         .sp-thumbnail-description {
           color: $white_50;
-          text-align:center;
-          margin-top:10px;
+          text-align: center;
+          margin-top: 10px;
           font-size: 18px;
           letter-spacing: 1px;
-          padding:0 2px;
+          padding: 0 2px;
         }
+
         &:hover {
-          cursor:pointer;
+          cursor: pointer;
         }
       }
+
       .sp-selected-thumbnail {
         &:before {
-          content:none;
+          content: none;
         }
+
         .sp-thumbnail .sp-thumbnail-title svg {
-          fill:white;
+          fill: white;
         }
+
         .sp-thumbnail-description {
-          color:$white;
-          background-color:$color_jacarta_60; 
-          border-top:2px solid $color_viking;
+          color: $white;
+          background-color: $color_jacarta_60;
+          border-top: 2px solid $color_viking;
         }
       }
     }
-    
+
   }
 }
