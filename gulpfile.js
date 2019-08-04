@@ -5,9 +5,9 @@ const sass = require('gulp-sass');
 gulp.task('sass', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.css',
-            'src/stylesheet/extras.scss',
-            'src/stylesheet/main.scss',
-            'src/stylesheet/theme.scss'
+            'docs/stylesheet/extras.scss',
+            'docs/stylesheet/main.scss',
+            'docs/stylesheet/theme.scss'
         ])
         .pipe(sass({
             outputStyle: 'compressed'
@@ -17,7 +17,7 @@ gulp.task('sass', () => {
 
             this.emit('end');
         })
-        .pipe(gulp.dest('src/css'))
+        .pipe(gulp.dest('docs/css'))
         .pipe(browserSync.stream());
 });
 
@@ -27,23 +27,23 @@ gulp.task('js', () => {
             'node_modules/popper.js/dist/umd/popper.min.js',
             'node_modules/slider-pro/dist/js/jquery.sliderPro.min.js'
         ])
-        .pipe(gulp.dest('src/js'))
+        .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.stream());
 });
 
 gulp.task('serve', ['sass'], () => {
     browserSync.init({
-        server: './src'
+        server: './docs'
     });
 
     gulp.watch([
-        'src/stylesheet/*.scss',
-        'src/stylesheet/assets/*.scss',
+        'docs/stylesheet/*.scss',
+        'docs/stylesheet/assets/*.scss',
     ], ['sass']);
 
     gulp.watch([
-        'src/*.html',
-        'src/js/*.js'
+        'docs/*.html',
+        'docs/js/*.js'
     ])
     .on('change', browserSync.reload);
 
@@ -52,16 +52,16 @@ gulp.task('serve', ['sass'], () => {
 
 gulp.task('fonts', () => {
     return gulp.src([
-        'src/stylesheet/fonts/*',
-        '!src/stylesheet/fonts/*.*ss',
-        '!src/stylesheet/fonts/*.html'
+        'docs/stylesheet/fonts/*',
+        '!docs/stylesheet/fonts/*.*ss',
+        '!docs/stylesheet/fonts/*.html'
     ])
-        .pipe(gulp.dest('src/css/fonts'));
+        .pipe(gulp.dest('docs/css/fonts'));
 });
 
 gulp.task('slider-pro', () => {
     return gulp.src('node_modules/slider-pro/dist/css/slider-pro.css')
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest('docs/css'));
 })
 
 gulp.task('default', ['js', 'serve', 'fonts', 'slider-pro'])
