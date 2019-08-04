@@ -504,6 +504,7 @@ a {
 }
 
 /* ===================== Q U E R I E S ===================== */
+
 @media only screen and (min-width:768px) {
   .navbar-collapse.collapse {
     display:none!important;
@@ -525,7 +526,14 @@ a {
         display:flex!important;
         justify-content: flex-end;
         ul.nav {
-          float:none;
+          float:none!important;
+          display: flex;
+          justify-content: flex-end;
+          align-content: center;
+          > li {
+            float:none!important;
+            margin:0 5px;
+          }
         }
         .find-track {
          a{
