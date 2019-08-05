@@ -15,8 +15,14 @@ jQuery(document).ready(function ($) {
         autoScaleLayers: false,
         forceSize: 'fullWindow',
         breakpoints: {
+            768: {
+                waitForLayers: true,
+                thumbnailWidth: 170,
+                thumbnailHeight: 170,
+                thumbnailPointer: true
+            },
             500: {
-                width: 360,
+                width: "100vw",
                 height: 480,
                 forceSize: 'none',
                 thumbnailWidth: 100,
