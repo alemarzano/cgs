@@ -692,12 +692,18 @@ a {
 
 @media only screen and (min-width:1280px) {
 	.navbar-default {
+		padding:10px 0;
 		.mainnav {
 			padding: 0;
-
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			&:after , &:before {
+				content:none;
+			}
 			.navbar-header {
 				.logo {
-					max-width: inherit;
+					max-width: 200px;
 				}
 			}
 
@@ -712,7 +718,7 @@ a {
 					justify-content: flex-end;
 					align-content: center;
 					margin-right: 0;
-
+					padding-top:0;
 					>li {
 						float: none !important;
 						margin: 0 5px;
@@ -758,6 +764,17 @@ a {
 
 			.sp-layer {
 				bottom: 38%;
+				max-width:50vw;
+				min-height:210px;
+				h3 {
+					font-size: 40px;
+				}
+				p {
+					font-size:22px;
+				}
+				a.btn {
+					font-size: 20px;
+				}
 			}
 		}
 
