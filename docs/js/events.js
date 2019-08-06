@@ -1,6 +1,8 @@
 'use strict'
 
 jQuery(document).ready(function ($) {
+    console.log('Esta es la altura de ventana: '+window.innerHeight);
+    console.log('Esta es el ancho de ventana: '+window.innerWidth);
     $('#my-slider').sliderPro({
 
         width: "100vw",
