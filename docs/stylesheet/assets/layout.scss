@@ -2,7 +2,7 @@
 $color_oslo_gray: rgba(123, 138, 151, 1);
 $white: rgba(255, 255, 255, 1);
 $color_shuttle_gray: rgba(96, 102, 118, 1);
-$color_viking: rgba(101, 211, 227, 1);
+$color_viking: rgba(137, 210, 220, 1);
 $color_cararra: rgba(235, 235, 235, 1);
 $color_geyser: rgba(215, 226, 232, 1);
 $color_manatee: rgba(145, 151, 168, 1);
@@ -22,7 +22,7 @@ $color_jordy_blue_90: rgba(125, 185, 232, 0.9);
 $white_20: rgba(255, 255, 255, 0.2);
 $color_tuna: rgba(54, 58, 69, 1);
 $color_bon_jour: rgba(224, 224, 224, 1);
-$color_viking_80: rgba(101, 211, 227, 0.8);
+$color_viking_80: rgba(137, 210, 220, 0.8);
 $white_30: rgba(255, 255, 255, .3);
 $color_spray: rgba(124, 220, 234, 1);
 $color_java: rgba(36, 182, 182, 1);
@@ -50,7 +50,6 @@ $font_14: 'FontAwesome';
 
 //urls
 $url_0: url('../img/page-header-bg.jpg');
-$url_1: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==');
 $url_2: url('../img/topbar-bg.jpg');
 $url_3: url('../img/preloder.gif');
 
@@ -449,7 +448,7 @@ label {
    line-height: 24px;
    padding: 10px 44px;
    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-   border-radius: 30px;
+   border-radius:0;
    font-weight: 300;
 
    &:focus {
@@ -782,17 +781,7 @@ iframe {
    background-size: cover;
 }
 
-.overlay-bg {
-   background: $color_jacarta;
-   background: $url_1;
-   background: -moz-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
-   background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color_jacarta), color-stop(100%, $color_jelly_bean), color-stop(100%, $color_jordy_blue));
-   background: -webkit-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
-   background: -o-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
-   background: -ms-linear-gradient(left, $color_jacarta 0, $color_jelly_bean 100%, $color_jordy_blue 100%);
-   background: linear-gradient(to right, $color_jacarta_90 0, $color_jelly_bean_90 100%, $color_jordy_blue_90 100%);
-   filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_jacarta', endcolorstr='$color_jordy_blue', gradienttype=1);
-}
+
 
 .top-bar {
    background: $url_2 no-repeat;

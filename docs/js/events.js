@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
         breakpoints: {
             1440: {
                 height: 600,
-                thumbnailWidth:200
+                thumbnailWidth:160
             },
             768: {
                 waitForLayers: true,

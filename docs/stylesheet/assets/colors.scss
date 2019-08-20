@@ -10,15 +10,39 @@ $black_20: rgba(0, 0, 0, 0.2);
 $white: rgba(255, 255, 255, 1);
 $white_20: rgba(255, 255, 255, .2);
 $white_50: rgba(255, 255, 255, .5);
+$white_60: rgba(255, 255, 255, .6);
 $white_75: rgba(255, 255, 255, .75);
 
-$color_viking: #65d3e3;
-$color_viking_70: rgba(101, 211, 227, 0.7);
-$color_viking_80: rgba(101, 211, 227, 0.8);
 
-$color_jacarta: rgba(58, 46, 117, 1);
-$color_jacarta_60: rgba(58, 46, 117, 0.6);
-$color_jacarta_dark: rgba(48, 37, 90, 1);
+$color_viking_bold:#2660A4;
+$color_viking_medium:#0EB1D2;
+$color_viking_regular:#34E4EA;
+$color_viking: #89D2DC;
+$color_viking_70: rgba(137, 210, 220, 0.7);
+$color_viking_80: rgba(137, 210, 220, 0.8);
+
+$color_jacarta_dark: #251B40;
+$color_jacarta_medium: #362968;
+$color_jacarta:#5C4689;
+$color_jacarta_light:#9C79B0;
+$color_jacarta_60: rgba(54, 41, 104, 0.6);
+$color_jacarta_fluor:#6564DB;
+
+$green_bold:#0D3A15;
+$green_medium : #135F1A;
+$green_regular : #3E8C56;
+$green_light : #3CAA73;
+$green_fluor: #4ed8a3;
+$green_fluor_5: rgba(79, 216, 163, 0.5);
+
+$magenta_bold:#541733;
+$magenta_medium:#9C2769;
+$magenta_regular:#B54B6E;
+$magenta_light:#D27F80;
+$magenta_fluor:#F56476;
+
+$seashell: #EDF7F6;
+
 
 
 $color_jelly_bean: rgba(48, 124, 149, 1);
@@ -34,7 +58,7 @@ $color_gallery: rgba(234, 236, 238, 1);
 $color_loblolly: rgba(191, 196, 210, 1);
 
 $color_wild_sand: rgba(242, 243, 245, 1);
-$seashell: rgba(241, 241, 241, 1);
+
 $color-black-haze: rgba(241, 241, 241, 1);
 $color_blue_haze: rgba(192, 195, 212, 1);
 

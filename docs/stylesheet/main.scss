@@ -4,8 +4,11 @@ $black:black;
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 
+$url_1: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==');
+
 $transition: cubic-bezier(.17, .67, .5, 1.03);
 $timing:.4s .15s;
+
 
 * {
 	margin: 0;
@@ -39,8 +42,26 @@ a {
 	}
 }
 
-
+.btn-primary {
+	background-color:$color_viking;
+	transition: $timing $transition;
+	
+	&:hover {
+		background-color:$color_viking_medium;
+	}
+}
 /* =====================  L O C A T I O N  M E N U  ===================== */
+.overlay-bg {
+	background: $color_jacarta_medium;
+	background: $url_1;
+	background: -moz-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color_jacarta_medium), color-stop(100%, $magenta_medium));
+	background: -webkit-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium);
+	background: -o-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium);
+	background: -ms-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium 100%);
+	background: linear-gradient(to right, $color_jacarta_medium 0, $magenta_medium);
+	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_jacarta_medium', endcolorstr='$magenta_medium', gradienttype=1);
+}
 
 .call-to-action {
 	i {
@@ -161,7 +182,7 @@ a {
 				margin-right: 6px;
 
 				i {
-					color: $color_jacarta;
+					color: $color_jacarta_medium;
 				}
 
 				&:focus,
@@ -174,6 +195,8 @@ a {
 				}
 			}
 		}
+
+
 	}
 
 
@@ -183,12 +206,12 @@ a {
 
 	/* background */
 	background: $color_jacarta_dark;
-	background: -moz-linear-gradient(300deg, $color_jelly_bean, $color_jacarta);
-	background: -webkit-gradient(left top, left bottom, color-stop($color_jelly_bean), color-stop, $color_jacarta);
-	background: -webkit-linear-gradient(300deg, $color_jelly_bean, $color_jacarta);
-	background: -o-linear-gradient(300deg, $color_jelly_bean, $color_jacarta);
-	background: -ms-linear-gradient(300deg, $color_jelly_bean, $color_jacarta);
-	background: linear-gradient(300deg, $color_jelly_bean, $color_jacarta);
+	background: -moz-linear-gradient(300deg, $color_jacarta_dark, $color_jacarta_medium);
+	background: -webkit-gradient(left top, left bottom, color-stop($color_jacarta_dark), color-stop, $color_jacarta_medium);
+	background: -webkit-linear-gradient(300deg, $color_jacarta_dark, $color_jacarta_medium);
+	background: -o-linear-gradient(300deg, $color_jacarta_dark, $color_jacarta_medium);
+	background: -ms-linear-gradient(300deg, $color_jacarta_dark, $color_jacarta_medium);
+	background: linear-gradient(300deg, $color_jacarta_dark, $color_jacarta_medium);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#447994', endColorstr='#362961', GradientType=0);
 	/* background */
 
@@ -236,7 +259,7 @@ a {
 				transition: $timing $transition;
 
 				a {
-					color: $color_jordy_60;
+					color: $color_viking;
 					padding: 8px 15px;
 					box-shadow: none;
 					font-size: 18px;
@@ -245,7 +268,7 @@ a {
 					height: 45px;
 
 					.fa {
-						color: $color_jordy_60;
+						color: $color_viking_70;
 					}
 				}
 
@@ -324,15 +347,16 @@ a {
 				flex-direction: column;
 				/* justify-content: center; */
 				align-items: center;
-				padding-top: 15px;
+				padding-top: 25px;
 				position: relative;
+				margin-top: 20px;
 
 				&:after {
 					content: '';
 					position: absolute;
 					height: 2px;
-					width: 50%;
-					top: 0;
+					width: 100%;
+					top: 0px;
 					left: 0;
 					right: 0;
 					margin: auto;
@@ -367,7 +391,7 @@ a {
 
 				input {
 					max-width: 75%;
-					border-bottom: 2px solid #7bc0e282;
+					border-bottom: 1px solid $color_jacarta;
 					color: white;
 					padding-top: 0;
 					margin: 8px auto;
@@ -394,6 +418,10 @@ a {
 
 					input {
 						color: $color_viking;
+					}
+
+					&::after {
+						content: none;
 					}
 				}
 			}
@@ -443,7 +471,7 @@ a {
 				svg {
 					width: 48px;
 					height: 48px;
-					fill: $color_jacarta;
+					fill: $color_jacarta_medium;
 				}
 			}
 
@@ -506,7 +534,7 @@ a {
 		}
 
 		hr {
-			border-top: 3px solid $color_viking;
+			border-top: 3px solid $green_fluor;
 			max-width: 100px;
 			margin: 10px 0 15px !important;
 		}
@@ -534,7 +562,13 @@ a {
 
 			i {
 				margin: auto 5px 3px;
-				color: $color_jelly_bean;
+				color: $green_fluor;
+			}
+			&:hover {
+				background-color:$green_fluor;
+				i {
+					color:white;
+				}
 			}
 		}
 	}
@@ -613,7 +647,8 @@ a {
 				}
 
 				.trackeo {
-					padding-top:42px;
+					padding-top: 42px;
+
 					&:after {
 						width: 35%;
 					}
@@ -668,18 +703,22 @@ a {
 @media only screen and (min-width:1024px) {
 	#my-slider {
 		.sp-layer {
-			max-width:75vw;
+			max-width: 75vw;
+
 			h3 {
 				font-size: 64px;
 			}
+
 			p {
 				font-size: 32px;
 			}
+
 			a.btn {
-				margin:0;
+				margin: 0;
 				font-size: 32px;
+
 				i {
-					margin:0;
+					margin: 0;
 				}
 			}
 		}
@@ -690,17 +729,22 @@ a {
 	}
 }
 
-@media only screen and (min-width:1280px) {
+/* ----------- Non Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
 	.navbar-default {
-		padding:10px 0;
+		padding: 10px 0;
+
 		.mainnav {
 			padding: 0;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			&:after , &:before {
-				content:none;
+
+			&:after,
+			&:before {
+				content: none;
 			}
+
 			.navbar-header {
 				.logo {
 					max-width: 200px;
@@ -718,35 +762,90 @@ a {
 					justify-content: flex-end;
 					align-content: center;
 					margin-right: 0;
-					padding-top:0;
+					padding-top: 0;
+
+					.open a {
+						background-color: $color_jacarta_fluor;
+						color: white;
+
+						&:hover,
+						&:focus {
+							background-color: $color_jacarta_fluor;
+							color: white;
+						}
+					}
+
 					>li {
 						float: none !important;
 						margin: 0 5px;
-					}
-				}
 
-				.find-track {
-					a {
-						display: flex;
-						align-items: center;
-						background-color: $color_jacarta;
-						border-radius: 20px;
-						padding: 5px 16px;
-						width: inherit;
-						height: inherit;
-						font-size: 14px;
-						color: $white;
-						position: relative;
+						a {
+							border-radius: 0;
+							background-color: inherit;
+							color: $color_jacarta;
+						}
 
-						&::after {
+						a:hover {
+							background-color: $color_jacarta_fluor;
+							color: white;
+						}
 
-							content: '\f041';
-							font-family: FontAwesome;
-							margin-left: 12px;
+						&.active {
+							a {
+								border-bottom: 3px solid $color_jacarta_fluor;
 
+								&:hover,
+								&:focus {
+									background-color: $color_jacarta_fluor;
+									color: white;
+								}
+							}
+						}
+
+						&.find-track {
+							margin-right: 0;
+
+							a {
+								display: flex;
+								align-items: center;
+								background-color: $magenta_fluor;
+								border-radius: 20px;
+								padding: 5px 16px;
+								width: inherit;
+								height: inherit;
+								color: $white;
+								position: relative;
+								transition: $timing $transition;
+								// font-weight: 700;
+								padding-bottom: 3px;
+								padding-right: 8px;
+
+								&::after {
+
+									content: '\f041';
+									font-family: FontAwesome;
+									font-size: 14px;
+									margin-left: 12px;
+									height: 22px;
+									width: 22px;
+									border-radius: 50%;
+									text-align: center;
+									color: white;
+									transition: .1s;
+
+								}
+
+								&:hover,
+								&:focus {
+									background-color: $magenta_medium;
+									color: white;
+								}
+							}
 						}
 					}
 				}
+
+
 			}
 		}
 	}
@@ -764,14 +863,17 @@ a {
 
 			.sp-layer {
 				bottom: 38%;
-				max-width:40vw;
-				min-height:210px;
+				max-width: 40vw;
+				min-height: 210px;
+
 				h3 {
 					font-size: 40px;
 				}
+
 				p {
-					font-size:22px;
+					font-size: 22px;
 				}
+
 				a.btn {
 					font-size: 20px;
 				}
@@ -784,10 +886,14 @@ a {
 			margin: auto;
 			bottom: 20px;
 
+
 			.sp-thumbnail {
 				padding: 16px 0 0 0;
 				position: relative;
 				top: inherit;
+				min-width: 100%;
+				transition: $timing $transition;
+
 
 				.sp-thumbnail-title {
 					display: flex;
@@ -797,27 +903,44 @@ a {
 					svg {
 						width: 72px;
 						height: 72px;
-						fill: $white_50;
+						fill: $white_60;
+						transition: $timing $transition;
 					}
 				}
 
 				.sp-thumbnail-description {
-					color: $white_50;
+					color: $white_60;
 					text-align: center;
 					margin-top: 10px;
 					font-size: 18px;
 					letter-spacing: 1px;
 					padding: 0 2px;
+					transition: $timing $transition;
 				}
 
 				&:hover {
 					cursor: pointer;
+					background-color:$green_fluor;
+					
+
+					.sp-thumbnail-title {
+						svg {
+							fill: $white;
+						}
+					}
+
+					.sp-thumbnail-description {
+						color: $white;
+					}
 				}
 			}
 
 			.sp-selected-thumbnail {
 				&:before {
 					content: none;
+				}
+				&:hover {
+					background:inherit;
 				}
 
 				.sp-thumbnail .sp-thumbnail-title svg {
@@ -826,11 +949,99 @@ a {
 
 				.sp-thumbnail-description {
 					color: $white;
-					background-color: $color_jacarta_60;
-					border-top: 2px solid $color_viking;
+					background-color: $color_jacarta_medium;
+					border-top: 3px solid $green_fluor;
 				}
 			}
 		}
 
 	}
 }
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) //   and (-webkit-min-device-pixel-ratio: 2)
+
+//   and (min-resolution: 192dpi) 
+	{
+
+	.top-bar {
+		.overlay-bg {
+			padding: 5px 0;
+		}
+	}
+
+	.navbar-default {
+		padding: 5px 0;
+
+		.mainnav {
+			.navbar-header {
+				.logo {
+					max-width: 160px;
+				}
+			}
+		}
+	}
+
+	#my-slider {
+		.mini-container {
+			width: 816px;
+
+			.sp-layer {
+				top: 0 !important;
+				max-width: 30vw;
+				min-height: 210px;
+				margin-left: 0;
+				bottom: inherit;
+
+				h3 {
+					font-size: 32px;
+				}
+
+				p {
+					font-size: 20px;
+				}
+
+				a.btn {
+					font-size: 20px;
+					position: absolute;
+					bottom: 20px;
+					right: 20px;
+				}
+			}
+		}
+
+		.sp-thumbnails-container {
+			left: 0;
+			right: 0;
+			margin: auto;
+			bottom: 20px;
+
+
+			.sp-thumbnail {
+				padding: 16px 0 0 0;
+				position: relative;
+				top: inherit;
+				min-width: 100%;
+
+
+				.sp-thumbnail-title {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					svg {
+						width: 64px;
+						height: 64px;
+					}
+				}
+
+
+			}
+
+
+		}
+
+	}
+}
+
+
