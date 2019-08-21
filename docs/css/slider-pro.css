@@ -792,7 +792,10 @@ a.sp-video:after {
 
 .slider-pro a {
 	position: static;
-	
+	transition: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-o-transition: none !important;
 }
 
 .slider-pro iframe,

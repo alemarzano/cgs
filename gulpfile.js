@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+var fileinclude = require('gulp-file-include');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
@@ -49,7 +50,14 @@ gulp.task('serve', ['sass'], () => {
 
 });
 
-
+gulp.task('fileinclude', function() {
+    gulp.src(['docs/index.html'])
+    .pipe(fileinclude({
+        prefix:'@@',
+        basepath: './docs'
+    }))
+    .pipe(gulp.dest('./'));
+})
 gulp.task('fonts', () => {
     return gulp.src([
         'docs/stylesheet/fonts/*',
@@ -64,4 +72,4 @@ gulp.task('slider-pro', () => {
     .pipe(gulp.dest('docs/css'));
 })
 
-gulp.task('default', ['js', 'serve', 'fonts', 'slider-pro'])
+gulp.task('default', ['js','fileinclude','serve', 'fonts', 'slider-pro'])
