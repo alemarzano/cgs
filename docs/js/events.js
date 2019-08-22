@@ -1,43 +1,5 @@
 'use strict'
 
-jQuery(document).ready(function ($) {
-    console.log('Esta es la altura de ventana: '+window.innerHeight);
-    console.log('Esta es el ancho de ventana: '+window.innerWidth);
-    $('#my-slider').sliderPro({
-
-        width: "100vw",
-        height: "80vh",
-        arrows: true,
-        buttons: false,
-        waitForLayers: true,
-        thumbnailWidth: 234,
-        thumbnailHeight: 130,
-        thumbnailPointer: true,
-        autoplay: false,
-        autoScaleLayers: false,
-        forceSize: 'fullWindow',
-        breakpoints: {
-            1440: {
-                height: 600,
-                thumbnailWidth:160
-            },
-            768: {
-                waitForLayers: true,
-                thumbnailWidth: 170,
-                thumbnailHeight: 170,
-                thumbnailPointer: true
-            },
-            500: {
-                width: "100vw",
-                height: 480,
-                forceSize: 'none',
-                thumbnailWidth: 100,
-                thumbnailHeight: 100,
-                // aspectRatio: 0.7
-            }
-        }
-    });
-});
 
 function buscarLocations() {
     var locations = document.querySelectorAll('.list-inline');
