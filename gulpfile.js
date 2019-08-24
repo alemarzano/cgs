@@ -78,7 +78,7 @@ gulp.task('serve', ['sass', 'fileinclude'], () => {
     gulp.watch([        
         'docs/js/*.js'
 
-    ], ['js']);
+    ], ['js-watch']);
 
     gulp.watch([
         'docs/includes/*.html',
@@ -91,4 +91,4 @@ gulp.task('serve', ['sass', 'fileinclude'], () => {
 
 
 
-gulp.task('default', ['js','fileinclude','serve', 'fonts', 'slider-pro'])
+gulp.task('default', ['js','slider-pro','fonts','fileinclude','serve'])

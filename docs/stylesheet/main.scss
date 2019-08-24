@@ -13,7 +13,6 @@ $timing:.4s .15s;
 * {
 	margin: 0;
 	padding: 0;
-	color: $black;
 
 	h1,
 	h2,
@@ -61,6 +60,7 @@ a {
 	background: -ms-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium 100%);
 	background: linear-gradient(to right, $color_jacarta_medium 0, $magenta_medium);
 	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_jacarta_medium', endcolorstr='$magenta_medium', gradienttype=1);
+	opacity: .9;
 }
 
 .call-to-action {
