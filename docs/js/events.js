@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
         forceSize: 'fullWindow',
         breakpoints: {
             1440: {
-                height: 600,
+                height: 800,
                 thumbnailWidth:160
             },
             768: {
@@ -36,6 +36,24 @@ jQuery(document).ready(function ($) {
             }
         }
     });
+
+    /* slice p slider */
+    var jmediaquery = window.matchMedia("(max-width: 768px)")
+    if (jmediaquery.matches) {
+        var p = $('#my-slider .sp-layer p');
+
+        p.each(function () {
+            var text = $(this).html();
+            var cut = text.slice(0, 210) + " ...";
+            if (text.length >= 211) {
+                $(this).html(cut);
+            }
+        });
+    } else {
+        
+    }
+    
+   
 });
 
 function buscarLocations() {
