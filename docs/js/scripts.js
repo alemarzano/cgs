@@ -136,6 +136,7 @@ jQuery(function ($) {
         $('.partner-carousel').owlCarousel({
             loop:true,
             margin:15,
+            autoplay:true,
             responsive:{
                 0:{
                     items:2

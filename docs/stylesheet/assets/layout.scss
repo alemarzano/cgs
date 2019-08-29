@@ -763,13 +763,14 @@ iframe {
    line-height: 30px;
    display: inline-block;
    position: relative;
+   max-width:800px;
 }
 
 .section-sub::after {
    content: "";
    width: 65px;
    height: 3px;
-   background-color: $color_viking;
+   background-color: #4ed8a3;
    position: absolute;
    left: 50%;
    margin-left: -32px;
@@ -901,10 +902,6 @@ iframe {
    transition: all 0.3s;
 }
 
-.cta-section {
-   background-color: $color_viking;
-   padding: 20px 0;
-}
 
 .quote-btn {
    background-color: $color_spray !important;
@@ -947,7 +944,6 @@ iframe {
 }
 
 .footer-widget-section {
-   background-color: $color_alabaster;
 
    address {
       .modal-map {
@@ -1009,10 +1005,7 @@ iframe {
    }
 }
 
-.copyright-section {
-   background-color: $color_catskill_white;
-   padding: 45px 0;
-}
+
 
 .footer-menu {
    li {

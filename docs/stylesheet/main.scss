@@ -22,7 +22,7 @@ $timing:.4s .15s;
 	h6,
 	p {
 		font-family: 'Lato', sans-serif !important;
-		line-height: 120%;
+		line-height: 130%;
 	}
 }
 
@@ -42,30 +42,42 @@ a {
 }
 
 .btn-primary {
-	background-color:$color_viking;
+	background-color: $color_viking;
 	transition: $timing $transition;
-	
+
 	&:hover {
-		background-color:$color_viking_medium;
+		background-color: $color_viking_medium;
 	}
 }
+
+
+section {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $color_jacarta_medium;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: $color_fuscous_gray;
+		letter-spacing: .2px;
+	}
+}
+
 /* =====================  L O C A T I O N  M E N U  ===================== */
 .overlay-bg {
 	background: $color_jacarta_medium;
-	background: $url_1;
-	background: -moz-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color_jacarta_medium), color-stop(100%, $magenta_medium));
-	background: -webkit-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium);
-	background: -o-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium);
-	background: -ms-linear-gradient(left, $color_jacarta_medium 0, $magenta_medium 100%);
-	background: linear-gradient(to right, $color_jacarta_medium 0, $magenta_medium);
-	filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_jacarta_medium', endcolorstr='$magenta_medium', gradienttype=1);
-	opacity: .9;
 }
 
 .call-to-action {
 	i {
-		color: $color_viking;
+		color: $green_fluor;
+		;
 	}
 
 }
@@ -74,11 +86,11 @@ a {
 .custom-select {
 	position: relative;
 	display: block;
-	width: 160px;
+	width: 150px;
 	border-radius: 20px;
-	background-color: $black_20;
+	// background-color: $black_20;
 	z-index: 10;
-	border: 2px solid $white_50;
+	border: 2px solid $white;
 	height: 30px;
 
 	select {
@@ -92,7 +104,7 @@ a {
 		width: 100%;
 		padding: 0 12px;
 		font-size: 14px;
-		color: $white_50;
+		color: $white;
 		line-height: 26px;
 
 		&:focus {
@@ -101,21 +113,22 @@ a {
 			box-shadow: 0 0 0pt 1pt white;
 			color: $white_75;
 		}
-	}
 
-	&:after {
-		position: absolute;
-		right: 2px;
-		top: -1px;
-		width: 25px;
-		height: 100%;
-		line-height: 27px;
-		content: "\f0ac";
-		font-family: FontAwesome;
-		text-align: center;
-		color: $white_75;
-		font-size: 21px;
-		z-index: -1;
+
+		&:after {
+			position: absolute;
+			right: 2px;
+			top: -1px;
+			width: 25px;
+			height: 100%;
+			line-height: 27px;
+			content: "\f0ac";
+			font-family: FontAwesome;
+			text-align: center;
+			color: $white_75;
+			font-size: 21px;
+			z-index: -1;
+		}
 	}
 
 }
@@ -145,10 +158,10 @@ a {
 	justify-content: flex-end;
 
 	.custom-select {
-		width: 140px;
 
 		&::after {
 			content: '\f1ab';
+
 		}
 	}
 }
@@ -550,7 +563,7 @@ a {
 			letter-spacing: 0px;
 			font-weight: 400;
 			font-size: 14px;
-			text-align: left;			
+			text-align: left;
 		}
 
 		a.btn {
@@ -564,10 +577,12 @@ a {
 				margin: auto 5px 3px;
 				color: $green_fluor;
 			}
+
 			&:hover {
-				background-color:$green_fluor;
+				background-color: $green_fluor;
+
 				i {
-					color:white;
+					color: white;
 				}
 			}
 		}
@@ -602,6 +617,121 @@ a {
 
 	#my-slider .sp-thumbnail-description {
 		display: none;
+	}
+}
+
+/* ===================== M I S I O N ===================== */
+
+.service-home {
+	.service {
+		h3 {
+			font-size: 36px;
+			text-transform: uppercase;
+			color: $color_jacarta_medium;
+
+			&::before {
+				content: '';
+				border-bottom: 3px solid $green_fluor;
+				width: 50px;
+				display: block;
+				margin-bottom: 33px;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				-ms-border-radius: 2px;
+				border-radius: 2px;
+			}
+		}
+
+		p {
+			max-width: 520px;
+
+		}
+	}
+
+	.service-pic {
+		height: 280px;
+		-webkit-mask-clip: padding;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+	}
+}
+
+.agentes {
+	background-color: $color_wild_sand;
+
+	iframe {
+		margin: 60px auto;
+	}
+}
+
+.cta-section {
+	background-color: $color_jacarta_medium;
+	padding: 20px 0;
+}
+
+.quote-btn {
+	background-color: $magenta_fluor !important;
+
+	&:hover {
+		background-color: $magenta_medium !important;
+	}
+}
+
+.footer-widget-section {
+
+	address {
+		.modal-map {
+			background-color: $green_fluor;
+			&:hover, &:focus {
+				background-color:$color_jacarta_medium;
+			}
+		}
+	}
+
+	.newsletter-form {
+		.form-group {
+			.form-control {
+				width:80%;
+			}
+			button {
+				background-color: $green_fluor;
+				border-radius: 50px;
+				color: white;
+				font-style: normal;
+				padding: 0 20px;
+				height: 40px;
+				top:inherit;
+				bottom:0;
+				&:hover,
+				&:focus {
+					background-color: $color_jacarta_medium;
+				}
+			}
+		}
+	}
+}
+
+.copyright-section {
+	background-color: $color_wild_sand;
+	padding: 45px 0;
+}
+
+#contactForm button {
+	margin-left: auto;
+	background-color: $color_jacarta_medium;
+	color: white;
+	transition: $timing $transition;
+
+	&:hover,
+	&:focus {
+		background-color: $magenta_fluor;
 	}
 }
 
@@ -876,9 +1006,10 @@ a {
 
 				a.btn {
 					font-size: 20px;
-					background-color:$green_fluor;
+					background-color: $green_fluor;
+
 					i {
-						color:white;
+						color: white;
 					}
 				}
 			}
@@ -924,8 +1055,8 @@ a {
 
 				&:hover {
 					cursor: pointer;
-					background-color:$green_fluor;
-					
+					background-color: $green_fluor;
+
 
 					.sp-thumbnail-title {
 						svg {
@@ -943,8 +1074,9 @@ a {
 				&:before {
 					content: none;
 				}
+
 				&:hover {
-					background:inherit;
+					background: inherit;
 				}
 
 				.sp-thumbnail .sp-thumbnail-title svg {
@@ -1003,14 +1135,14 @@ a {
 
 				p {
 					font-size: 16px;
-					padding-bottom:40px;
+					padding-bottom: 40px;
 				}
 
 				a.btn {
 					font-size: 20px;
 					position: absolute;
 					bottom: 20px;
-					right: 20px;				
+					right: 20px;
 				}
 			}
 		}
@@ -1048,5 +1180,3 @@ a {
 
 	}
 }
-
-
