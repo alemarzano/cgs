@@ -520,6 +520,9 @@ section {
 		}
 	}
 
+	img.sp-image {
+		filter: grayscale(.5);
+	}
 
 	.sp-layer {
 		left: 0;
@@ -536,6 +539,7 @@ section {
 		border-color: $black_50;
 		overflow-wrap: break-word;
 		padding: 20px;
+		
 
 		>* {
 			margin: 0;
