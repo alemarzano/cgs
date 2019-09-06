@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/slider-pro.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/extras.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Meta  -->
+    <title>CGS Group</title>
+    <meta name="description" content="Su solución en transporte de carga">
+    <meta property="og:title" content="Bienvenidos a CGS GROUP" />
+    <meta property="og:url" content="alemarzano.github.io/cgs" />
+    <meta property="og:description" content="Su solución en transporte de carga">
+    <meta property="og:image"
+        content="https://cdn6.aptoide.com/imgs/3/6/2/362b03b054f84b74083d3929a7d700ac_icon.png?w=256">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_UK" />
+</head>
+
+
+
+<body id="page-top">
+
+
+    
+<div id="st-container" class="st-container">
+        <div class="st-pusher">
+            <div class="st-content">
+            <header class="header">
+                <nav class="top-bar visible-lg">
+                    <div class="overlay-bg">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-sm-8 col-xs-12">
+                                    <div class="menu-locations">
+                                        <div class="custom-select">
+                                            <select onchange="buscarLocations()" id="locations">
+                                                <option style="color:#757482;" value="ar" selected>Argentina</option>
+                                                <option style="color:#757482;" value="uk">United Kingdom</option>
+                                                <option style="color:#757482;" value="fr">France</option>
+                                            </select>
+                                        </div>
+                                        <div class="call-to-action locations-options">
+                                            <ul id="ar" class="list-inline visible">
+                                                <li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-envelope"></i>
+                                                        info@cgsgroup.com.ar</a>
+                                                </li>
+                                            </ul>
+                                            <ul id="uk" class="list-inline">
+                                                <li><a href="#"><i class="fa fa-phone"></i> (UK) 5199 2225</a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-envelope"></i>
+                                                        info@cgsgroup.com.uk</a>
+                                                </li>
+                                            </ul>
+                                            <ul id="fr" class="list-inline">
+                                                <li><a href="#"><i class="fa fa-phone"></i> (FR) 5199 2225</a>
+                                                </li>
+                                                <li><a href="#"><i class="fa fa-envelope"></i>
+                                                        info@cgsgroup.com.fr</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- /.call-to-action -->
+
+                                    </div>
+
+                                </div><!-- /.col-sm-6 -->
+
+                                <div class="col-sm-4 hidden-xs">
+                                    <div class="topbar-right">
+
+                                        <div class="custom-select lang-support">
+                                            <select>
+                                                <option style="color:#757482;" value="es" selected>Español</option>
+                                                <option style="color:#757482;" value="en">English</option>
+                                                <option style="color:#757482;" value="fr">French</option>
+                                            </select>
+                                        </div>
+
+                                    </div><!-- /.social-links -->
+                                </div><!-- /.col-sm-6 -->
+
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.overlay-bg -->
+                </nav><!-- /.top-bar -->
+
+                <div id="search">
+                    <button type="button" class="close">×</button>
+                    <form>
+                        <input type="search" value="" placeholder="Nombre de Usuario" />
+                        <input type="search" value="" placeholder="Contraseña" />
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </form>
+                </div>
+
+                <nav class="navbar navbar-default" role="navigation">
+
+                    <div class="container mainnav">
+                        <div class="navbar-header">
+                            <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a>
+                            <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a>
+
+                            <!-- offcanvas-trigger -->
+                            <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-bars"></i>
+                            </button>
+
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-collapse">
+
+
+
+
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class=" active"><a href="index.html">Home</a></li>
+                                <li><a href="servicios.html">Servicios</a></li>
+                                 <!-- Services 
+                                 <li class="dropdown active"><a href="#">Servicios <span class="fa fa-angle-down"></span></a>
+                                    <div class="submenu-wrapper">
+                                        <div class="submenu-inner">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="servicios.html#">Air transportation</a></li>
+                                                <li><a href="servicios.html#">Marine transportation</a></li>
+                                                <li><a href="servicios.html#">Moving & storage</a></li>
+                                                <li><a href="sservicios.html#">Shipping & operations</a></li>
+                                                <li class="active"><a href="servicios.html#">Transportation logistics</a></li>
+                                                <li><a href="servicios.html#">Trucking</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                -->
+                                <li><a href="contact.html">Información</a></li>
+                                <li><a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a></li>
+                                <li class="find-track">
+                                    <a href="#search">Seguimiento</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container -->
+
+
+                </nav>
+            </header>
+
+
+
+    <section class="page-title-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header-wrap">
+                        <div class="page-header">
+                            <h1>Servicios</h1>
+                        </div>
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li class="active">Servicios</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Single-Service-Start -->
+    <section class="single-service-contents">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-5 col-xs-12">
+                    <div class="service-sidebar sidebar-wrapper">
+
+                        <div class="widget">
+                            <h2 class="widget-title">Servicios</h2>
+                            <ul class="service-list ">
+                                <li class="active"><a data-toggle="tab" href="#marino" class="icon-marine">Marítimo</a>
+                                </li>
+                                <li><a data-toggle="tab" href="#terrestre" class="icon-trucking">Terrestre</a></li>
+                                <li><a data-toggle="tab" href="#aereo" class="icon-air">Aéreo</a>
+                                </li>
+                                <li><a data-toggle="tab" href="#aduana" class="icon-store">Despacho de Aduana</a></li>
+
+                                <li><a data-toggle="tab" href="#seguros" class="icon-transportation">Seguros</a></li>
+
+                            </ul>
+                        </div><!-- /.widget -->
+
+                        <div class="widget">
+                            <div class="download-wrap company">
+                                <a href="#">Formulario Solicitud <br>de Seguro <span>Download</span><i
+                                        class="fa fa-download"></i></a>
+                            </div> <!-- /.download-wrap -->
+                        </div><!-- /.widget -->
+
+                        <div class="widget">
+                            <h2 class="widget-title">Horarios</h2>
+                            <div class="textwidget">
+                                <p>Lunes -
+                                    Viernes: 9:00 - 18:00<br>
+                                    Sábados: 9:00 - 2:00<br>
+                                    Vacaciones: 9:00 - 12:00</p>
+                            </div>
+                        </div><!-- /.widget -->
+                    </div><!-- /.sidebar-wrapper -->
+                </div><!-- /.col -->
+                <div class="col-md-9 col-sm-7 col-xs-12 tab-content">
+                    <div class="row accordion js-accordion">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="accordion__item js-accordion-item">
+                                <div class="accordion-header js-accordion-header">20 Standard</div>
+                                <div class="accordion-body js-accordion-body">
+                                    <div class="accordion js-accordion">
+                                        <div class="accordion__item js-accordion-item">
+                                            <div class="accordion-header js-accordion-header">DIMENSIONES EXTERNAS</div>
+                                            <div class="accordion-body js-accordion-body">
+                                                <div class="accordion-body__contents">
+                                                    <ul>
+                                                        <li>20' x 8' x 8'6"</li>
+                                                        <li>6,058m x 2,438m x 2,591m</li>
+                                                    </ul>
+                                                </div><!-- end of sub accordion item body contents -->
+                                            </div><!-- end of sub accordion item body -->
+                                        </div><!-- end of sub accordion item -->
+                                        <div class="accordion__item js-accordion-item">
+                                            <div class="accordion-header js-accordion-header">DIMENSIONES INTERNAS</div>
+                                            <div class="accordion-body js-accordion-body">
+                                                <div class="accordion-body__contents">
+                                                    <ul>
+                                                        <li>19'4 x 7'9" x7'10"</li>
+                                                        <li>5,710m x 2,352m x 2,385m</li>
+                                                    </ul>
+                                                </div><!-- end of sub accordion item body contents -->
+                                            </div><!-- end of sub accordion item body -->
+                                        </div><!-- end of sub accordion item -->
+                                        <div class="accordion__item js-accordion-item">
+                                            <div class="accordion-header js-accordion-header">APERTURA DE PUERTA</div>
+                                            <div class="accordion-body js-accordion-body">
+                                                <div class="accordion-body__contents">
+                                                    <ul>
+                                                        <li>7'8 1/8" x 7'5 3/4"</li>
+                                                        <li>2,343m x 2,280m</li>
+                                                    </ul>
+                                                </div><!-- end of sub accordion item body contents -->
+                                            </div><!-- end of sub accordion item body -->
+                                        </div><!-- end of sub accordion item -->
+                                        <div class="accordion__item js-accordion-item">
+                                            <div class="accordion-header js-accordion-header">TARA</div>
+                                            <div class="accordion-body js-accordion-body">
+                                                <div class="accordion-body__contents">
+                                                    <ul>
+                                                        <li>5,070lb</li>
+                                                        <li>2,300kg</li>
+                                                    </ul>
+                                                </div><!-- end of sub accordion item body contents -->
+                                            </div><!-- end of sub accordion item body -->
+                                        </div><!-- end of sub accordion item -->
+                                        <div class="accordion__item js-accordion-item">
+                                            <div class="accordion-header js-accordion-header">PESO MÁXMO</div>
+                                            <div class="accordion-body js-accordion-body">
+                                                <div class="accordion-body__contents">
+                                                    <ul>
+                                                        <li>62,130lb</li>
+                                                        <li>28,180kg</li>
+                                                    </ul>
+                                                </div><!-- end of sub accordion item body contents -->
+                                            </div><!-- end of sub accordion item body -->
+                                        </div><!-- end of sub accordion item -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+    <!-- Single-Service-End-->
+
+
+
+
+     <!-- cta start -->
+ <section class="cta-section">
+     <div class="container text-center">
+         <a data-toggle="modal" data-target="#quoteModal" href="#" class="btn btn-primary quote-btn">Contactanos</a>
+
+         <!-- Modal -->
+         <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                 aria-hidden="true">&times;</span></button>
+                         <h4 class="modal-title" id="quoteModalLabel">
+                             Solicite una tarifa para el envío de sus productos.
+                         </h4>
+                     </div>
+                     <div class="modal-body">
+                         <form id="contactForm" action="sendemail.php" method="POST">
+                             <div class="row">
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <label for="name">Nombre</label>
+                                         <input id="name" name="name" type="text" class="form-control" required=""
+                                             placeholder="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <label for="company">Empresa</label>
+                                         <input id="company" name="company" type="text" class="form-control"
+                                             placeholder="">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <label for="phone">Teléfono</label>
+                                         <input id="phone" name="phone" type="text" class="form-control" placeholder="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <label for="email">Email</label>
+                                         <input id="email" name="email" type="email" class="form-control" required=""
+                                             placeholder="">
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <div class="row">
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <label for="city">Ciudad</label>
+                                         <input id="city" name="city" type="text" class="form-control" placeholder="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <label for="subject">Asunto</label>
+                                         <input id="subject" name="subject" type="text" class="form-control" required=""
+                                             placeholder="">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="form-group text-area">
+                                 <label for="message">Su mensaje</label>
+                                 <textarea id="message" name="message" class="form-control" rows="6" required=""
+                                     placeholder=""></textarea>
+                             </div>
+
+                             <button type="submit" class="btn">Enviar Mensaje</button>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+     </div><!-- /.container -->
+ </section><!-- /.cta-section -->
+ <!-- cta end -->
+ 
+<!-- footer-widget-section start -->
+<section class="footer-widget-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3  col-sm-4">
+                <div class="footer-widget">
+                    <h3>CGS Group</h3>
+
+                    <address>
+                        Uruguay 265, 2°A<br>
+                        CABA, C1015ABE<br>
+                        Buenos Aires - Argentina<br>
+                        (54 11) 5199 2225 <br> 
+                        <!-- Google Map Modal Trigger -->
+                        <button type="button" class="modal-map" data-toggle="modal" data-target="#cssMapModal">Location
+                            Map</button>
+
+                        
+                    </address>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Our Location</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div id="googleMap"></div>
+
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- End Modal -->
+                </div><!-- /.footer-widget -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-3 col-sm-4">
+                <div class="footer-widget">
+                    <h3>&amp;</h3>
+
+                    <ul>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Información</a></li>
+                        <li><a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a></li>
+                        <li><a href="#">FAQ Page</a></li>
+                    </ul>
+                </div><!-- /.footer-widget -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-6 col-sm-4">
+                <div class="footer-widget">
+                    <h3>Mantenete informado</h3>
+                    <p>Ingresá tu mail para suscribirte a nuestro newsletter</p>
+
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <label class="sr-only" for="InputEmail1">Email</label>
+                            <input type="email" class="form-control" id="InputEmail1"
+                                placeholder="Tu dirección de mail">
+                            <button type="submit" class="">Enviar &nbsp;<i class="fa fa-angle-right"></i></button>
+                        </div>
+                    </form>
+                </div><!-- /.footer-widget -->
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.cta-section -->
+<!-- footer-widget-section end -->
+
+<!-- copyright-section start -->
+<footer class="copyright-section">
+    <div class="container text-center">
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Privacidad &amp; Cookies</a></li>
+                <li><a href="#">Legales</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright-info">
+            <!-- <span>Copyright © 2015 Unship. All Rights Reserved. Designed by <a
+                        href="https://uicookies.com">uiCookies</a><br> Proudly powered by <a
+                        href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
+                        href="getbootstrap.com">Bootstrap3</a></span> -->
+        </div>
+    </div><!-- /.container -->
+</footer>
+<!-- copyright-section end -->
+
+</div>
+</div>
+<!-- OFF CANVAS MENU -->
+<div class="offcanvas-menu offcanvas-effect">
+    <div class="offcanvas-wrap">
+        <div class="off-canvas-header">
+            <div class="back">
+                <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
+                    id="off-canvas-close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <ul id="offcanvasMenu" class="list-unstyled hidden-lg">
+
+            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <li>
+                <a href="#">Servicios</a>
+            </li>
+            <li>
+                <a href="#">Información</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+            <li>
+                <a href="#">Idioma</a>
+                <ul>
+                    <li>Español</li>
+                    <li>Inglés</li>
+                    <li>French</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Ubicación</a>
+                <ul class="locations-ul">
+                    <li> Argentina
+                        <ul class="locations-canvas">
+                            <li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> info@cgsgroup.com.ar</a></li>
+                        </ul>
+                    </li>
+                    <li> United Kingdom
+                        <ul class="locations-canvas">
+                            <li><a href="#"><i class="fa fa-phone"></i> (UK) 5199 2225</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>
+                                    info@cgsgroup.com.uk</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> France
+                        <ul class="locations-canvas">
+                            <li><a href="#"><i class="fa fa-phone"></i> (FR) 5199 2225</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>
+                                    info@cgsgroup.com.fr</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li class=" form-group">
+                <form class="trackeo" action="">
+                    <label for="track">Seguimiento</label>
+                    <input type="text" class="form-control" id="track" placeholder=" Nombre de Usuario">
+                    <input type="password" class="form-control" id="pass" placeholder=" Contraseña">
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                </form>
+            </li>
+
+        </ul>
+    </div>
+</div><!-- .offcanvas-menu -->
+</div>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
+
+    
+	<script src="js/popper.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.sliderPro.min.js"></script>
+	<!-- owl.carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific-popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Offcanvas Menu -->
+	<script src="js/hippo-offcanvas.js"></script>
+	<!-- inview -->
+	<script src="js/jquery.inview.min.js"></script>
+	<!-- stellar -->
+	<script src="js/jquery.stellar.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- classie -->
+	<script src="js/classie.js"></script>
+	<!-- sticky kit -->
+	<script src="js/jquery.sticky-kit.min.js"></script>
+	<!-- GOGLE MAP -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!--TWITTER FETCHER-->
+	<script src="js/twitterFetcher_min.js"></script>
+	<!-- Custom Script -->
+	<script src="js/scripts.js"></script>
+
+	<script src="js/events.js"></script>
+
+</body>
