@@ -7,6 +7,7 @@ var reload = browserSync.reload;
 gulp.task('sass', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.css',
+            'node_modules/tiny-slider/dist/tiny-slider.css',
             'docs/stylesheet/extras.scss',
             'docs/stylesheet/main.scss',
             'docs/stylesheet/theme.scss'
@@ -27,7 +28,8 @@ gulp.task('js', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js',
-            'node_modules/slider-pro/dist/js/jquery.sliderPro.min.js'
+            'node_modules/slider-pro/dist/js/jquery.sliderPro.min.js',
+            'node_modules/tiny-slider/dist/min/tiny-slider.js'
         ])
         .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.stream());

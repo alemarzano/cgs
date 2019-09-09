@@ -12,7 +12,8 @@
   "dependencies": {
     "bootstrap": "^3.3.0",
     "gulp-file-include": "^2.1.0",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "tiny-slider": "^2.9.2"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
