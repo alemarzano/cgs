@@ -1031,7 +1031,8 @@ $url_8: url('../img/carousel-indicator-green.png');
 
          i {
             position: absolute;
-            top: 9px;
+            top: 50%;
+            transform:translateY(-50%);
             right: 8px;
             width: 38px;
             height: 38px;

@@ -101,9 +101,27 @@ jQuery(document).ready(function ($) {
       })();
       
       $(document).ready(function(){
-        accordion.init({ speed: 150, oneOpen: true });
+        accordion.init({ speed: 250, oneOpen: true });
       });
     
+    function activarTablas() {
+      var tabs = $('.table-father')
+      tabs.each(function () {
+        $(this).addClass('active');
+        var body = $(this).children('.accordion-body');
+        // $(body).addClass('active');
+        $(body).css('display', 'block')
+      });
+    }
+  
+    activarTablas();
+    var menu = $('.service-list li')
+
+    var menu_a = menu.children('a');
+    menu_a.click(function(){
+      activarTablas();
+    })
+
    
 });
 
