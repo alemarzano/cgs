@@ -156,8 +156,11 @@ tables.each(function(index, value){
     responsive: {
       640: {
         items: 3, 
-        fixedWidth:280,     
-        center: false
+        fixedWidth:280,  
+        controls:true,  
+        controlsText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+        center: false,
+        mouseDrag:true  
       }
   
     }

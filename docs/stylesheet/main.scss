@@ -824,6 +824,37 @@ section {
 		}
 		
 	}
+	.tns-outer {
+		position: relative;
+		.tns-controls {
+			position: absolute;
+			bottom: -30px;
+			right: 0;
+			z-index: 99;
+			button {
+				
+				background-color: white;
+				color: $magenta_fluor;
+				border: none;
+				line-height: 20px;
+				padding: 5px 8px;
+				font-size: 20px;
+				box-shadow: 2px 1px 7px #e2e2e2;
+				margin: 5px;
+				text-align: center;
+				transition: $timing $transition;
+				&:last-of-type {
+					margin-right:0;
+				}
+				&:hover, &:focus {
+					background-color:$magenta_fluor;
+					box-shadow: 2px 4px 7px #e2e2e2;
+					color:white;
+
+				}
+			}
+		}
+	}
 	.tns-ovh {
 		overflow: visible;
 	}
@@ -831,11 +862,33 @@ section {
 		// min-width: 300px;
 		box-shadow: 5px 3px 9px rgba(168, 168, 168, 0.5);
 		// margin-right: 20px;
+		.accordion-header {
+			text-align: center;
+			border-radius: 5px 5px 0 0;
+			span {
+				display: block;
+				margin:auto;
+				font-size:12px;
+				opacity: .8;
+				margin-top: -5px;
+			}
+		}
 		
 	}
+	
+
 }
 
-
+#iconterms {
+	.tns-outer {
+		.tns-controls {
+			position: relative;
+			text-align:right;
+			bottom:inherit;
+			margin-bottom: 10px;
+		}
+	}
+}
 
 
 .accordion-header,
@@ -869,6 +922,11 @@ section {
 .accordion-body__contents {
 	padding: 1.5em 20px;
 	font-size: .85em;
+	ul {
+		li {
+			color:$color_mid_gray;
+		}
+	}
 }
 
 .accordion__item {
@@ -880,9 +938,11 @@ section {
 }
 
 .accordion:first-child>.accordion__item>.accordion-header {
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid #ececec;
 	font-size: 12px;
-	padding: 10px 20px;
+	padding: 10px 25px;
+	line-height: 150%;
+	color:$color_mid_gray;
 }
 
 .accordion__item {
@@ -912,8 +972,7 @@ section {
 	.accordion__item {
 		.accordion-header {
 			background: #f1f1f1;
-			color: black;
-
+			
 			&:after {
 				color: #757482;
 				transform: rotate(0deg);
@@ -1081,6 +1140,7 @@ section {
 
 				li {
 					padding: .7em 20px;
+					text-align: center;
 					&:first-of-type {
 						border-bottom: 1px solid #dadada;
 					}
@@ -1356,6 +1416,10 @@ section {
 			}
 		}
 
+	}
+
+	.accordion .tns-ovh {
+		overflow-x:hidden;
 	}
 }
 
