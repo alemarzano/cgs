@@ -122,6 +122,44 @@ jQuery(document).ready(function ($) {
     activarTablas();
   })
 
+  try {
+    var status = $('ol.breadcrumb > li');
+    var status = status.last();
+    var status = status[0].innerText;
+  }
+
+  catch (error) {
+    console.error(error)
+  }
+
+
+  var menu_activo = $('header ul.nav > li');
+  // menu_activo.each(function() {
+  //   if ($(this).hasClass('active')) {
+  //     console.log($(this))
+  //     var txt = $(this).text();
+  //     $(this).removeClass('active');
+  //     if ( txt == status ) {
+  //       $(this).addClass('active');
+  //     }
+  //     console.log(status)
+  //   }
+  // })
+  for (var i = 0; i<=menu_activo.length; i++) {
+    var active = menu_activo[i];
+    $(active).removeClass('active');
+    if (typeof active !== 'undefined') {
+      var text = active.innerText;
+      if (text == status) {
+        $(active).addClass('active');
+      }
+    }
+    
+    
+    
+  }
+
+
 
 });
 
@@ -160,12 +198,16 @@ tables.each(function(index, value){
         controls:true,  
         controlsText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
         center: false,
-        mouseDrag:true  
+        mouseDrag:true ,
+        edgePadding:50 
       }
   
     }
   })
 })
+
+
+
 
 
 
