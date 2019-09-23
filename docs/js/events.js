@@ -100,12 +100,15 @@ jQuery(document).ready(function ($) {
     }
   })();
 
-  accordion.init({ speed: 250, oneOpen: true });
+  accordion.init({
+    speed: 250,
+    oneOpen: true
+  });
 
 
 
   function activarTablas() {
-    var tabs = $('.table-father')
+    var tabs = $('.tab-pane .table-father')
     tabs.each(function () {
       $(this).addClass('active');
       var body = $(this).children('.accordion-body');
@@ -120,44 +123,54 @@ jQuery(document).ready(function ($) {
   var menu_a = menu.children('a');
   menu_a.click(function () {
     activarTablas();
+  });
+
+  var info_direct = $('.direct');
+
+  info_direct.click(function(){ 
+      var containers = $('.service-list li');
+      $(info_direct).removeClass('active');
+      $(containers).each(function(){
+        if ($(this).hasClass('active')){
+          $(this).removeClass('active');
+        }
+      })
+      if(($(this).hasClass('accordion__item'))!=true){
+        $(info_direct).each(function(){
+          if($(this).hasClass('accordion__item')){
+            $(this).find('> .js-accordion-body').slideUp()
+          }
+        })
+      }
+      $(this).addClass('active');
+       
   })
 
-  try {
-    var status = $('ol.breadcrumb > li');
+
+  var status = $('ol.breadcrumb > li');
+  var menu_activo = $('header ul.nav > li');
+
+  if (status == 'undefined' || !status.length) {
+    $(menu_activo[0]).addClass('active');
+  } else {
     var status = status.last();
     var status = status[0].innerText;
-  }
-
-  catch (error) {
-    console.error(error)
-  }
-
-
-  var menu_activo = $('header ul.nav > li');
-  // menu_activo.each(function() {
-  //   if ($(this).hasClass('active')) {
-  //     console.log($(this))
-  //     var txt = $(this).text();
-  //     $(this).removeClass('active');
-  //     if ( txt == status ) {
-  //       $(this).addClass('active');
-  //     }
-  //     console.log(status)
-  //   }
-  // })
-  for (var i = 0; i<=menu_activo.length; i++) {
-    var active = menu_activo[i];
-    $(active).removeClass('active');
-    if (typeof active !== 'undefined') {
-      var text = active.innerText;
-      if (text == status) {
-        $(active).addClass('active');
+    for (var i = 0; i <= menu_activo.length; i++) {
+      var active = menu_activo[i];
+      $(active).removeClass('active');
+      if (typeof active !== 'undefined') {
+        var text = active.innerText;
+        if (text == status) {
+          $(active).addClass('active');
+        }
       }
     }
-    
-    
-    
   }
+
+
+
+
+
 
 
 
@@ -180,34 +193,28 @@ function buscarLocations() {
 }
 var tables = $('.slider-tables');
 
-tables.each(function(index, value){  
+tables.each(function (index, value) {
   var slider = tns({
     container: value,
     items: 1,
     center: false,
     nav: false,
     edgePadding: 0,
-    controls:false, 
+    controls: false,
     gutter: 20,
     fixedWidth: 300,
     loop: false,
     responsive: {
       640: {
-        items: 3, 
-        fixedWidth:280,  
-        controls:true,  
+        items: 3,
+        fixedWidth: 280,
+        controls: true,
         controlsText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
         center: false,
-        mouseDrag:true ,
-        edgePadding:50 
+        mouseDrag: true,
+        edgePadding: 0
       }
-  
+
     }
   })
 })
-
-
-
-
-
-
