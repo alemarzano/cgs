@@ -1,4 +1,4 @@
-{% macro active(activePage = 'home') %}
+{% macro active(activePage = 'home', lang = '') %}
 
    <header class="header">
       <nav class="top-bar visible-lg">
@@ -10,37 +10,44 @@
                      <div class="menu-locations">
                         <div class="custom-select">
                            <select onchange="buscarLocations()" id="locations">
-                              <option style="color:#757482;" value="ar" selected="selected">Argentina</option>
-                              <option style="color:#757482;" value="uk">United Kingdom</option>
-                              <option style="color:#757482;" value="fr">France</option>
-                           </select>
-                        </div>
-                        <div class="call-to-action locations-options">
-                           <ul id="ar" class="list-inline visible">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (54 11) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.ar</a>
-                              </li>
-                           </ul>
-                           <ul id="uk" class="list-inline">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (UK) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.uk</a>
-                              </li>
-                           </ul>
-                           <ul id="fr" class="list-inline">
+                              {%if lang == 'es' %}
+                                 <option style="color:#757482;" value="ar" selected="selected">Argentina</option>
+                                 <option style="color:#757482;" value="uk">United Kingdom</option>
+                                 {%endif%}
+                                 {%if lang == 'en' %}
+                                    <option style="color:#757482;" value="ar">Argentina</option>
+                                    <option style="color:#757482;" value="uk" selected="selected">United Kingdom</option>
+                                    {%endif%}
+
+                                    {# <option style="color:#757482;" value="fr" selected="{%if lang == 'fr' %} selected {%endif%}">France</option> #}
+                                 </select>
+                              </div>
+                              <div class="call-to-action locations-options">
+                                 <ul id="ar" class="list-inline visible">
+                                    <li>
+                                       <a href="#">
+                                          <i class="fa fa-phone"></i>
+                                          (54 11) 5199 2225</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">
+                                          <i class="fa fa-envelope"></i>
+                                          info@cgsgroup.com.ar</a>
+                                    </li>
+                                 </ul>
+                                 <ul id="uk" class="list-inline">
+                                    <li>
+                                       <a href="#">
+                                          <i class="fa fa-phone"></i>
+                                          (UK) 5199 2225</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">
+                                          <i class="fa fa-envelope"></i>
+                                          info@cgsgroup.com.uk</a>
+                                    </li>
+                                 </ul>
+                                 {# <ul id="fr" class="list-inline">
                               <li>
                                  <a href="#">
                                     <i class="fa fa-phone"></i>
@@ -51,152 +58,159 @@
                                     <i class="fa fa-envelope"></i>
                                     info@cgsgroup.com.fr</a>
                               </li>
-                           </ul>
+                           </ul> #}
+                              </div>
+                              <!-- /.call-to-action -->
+
+                           </div>
+
                         </div>
-                        <!-- /.call-to-action -->
+                        <!-- /.col-sm-6 -->
 
-                     </div>
+                        <div class="col-sm-4 hidden-xs">
+                           <div class="topbar-right">
 
-                  </div>
-                  <!-- /.col-sm-6 -->
+                              <div class="custom-select lang-support">
+                                 <select id="languages">
+                                    {%if lang == 'es' %}
+                                       <option style="color:#757482;" value="index.html" selected>Español</option>
+                                       <option style="color:#757482;" value="eng_index.html">English</option>
+                                    {%endif%}
+                                    {%if lang == 'en' %}
+                                       <option style="color:#757482;" value="index.html" >Español</option>
+                                       <option style="color:#757482;" value="eng_index.html" selected>English</option>
+                                    {%endif%}
 
-                  <div class="col-sm-4 hidden-xs">
-                     <div class="topbar-right">
+                                    </select>
+                                 </div>
 
-                        <div class="custom-select lang-support">
-                           <select>
-                              <option style="color:#757482;" value="es" selected="selected">Español</option>
-                              <option style="color:#757482;" value="en">English</option>
-                              <option style="color:#757482;" value="fr">French</option>
-                           </select>
+                              </div>
+                              <!-- /.social-links -->
+                           </div>
+                           <!-- /.col-sm-6 -->
+
                         </div>
-
+                        <!-- /.row -->
                      </div>
-                     <!-- /.social-links -->
+                     <!-- /.container -->
                   </div>
-                  <!-- /.col-sm-6 -->
+                  <!-- /.overlay-bg -->
+               </nav>
+               <!-- /.top-bar -->
 
+               <div class="seguimiento" id="search">
+                  <button type="button" class="close">×</button>
+                  <form>
+                     <input type="search" value="" placeholder="Nombre de Usuario"/>
+                     <input type="search" value="" placeholder="Contraseña"/>
+                     <button type="submit" class="btn btn-primary">Ingresar</button>
+                  </form>
                </div>
-               <!-- /.row -->
-            </div>
-            <!-- /.container -->
-         </div>
-         <!-- /.overlay-bg -->
-      </nav>
-      <!-- /.top-bar -->
 
-      <div class="seguimiento" id="search">
-         <button type="button" class="close">×</button>
-         <form>
-            <input type="search" value="" placeholder="Nombre de Usuario"/>
-            <input type="search" value="" placeholder="Contraseña"/>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-         </form>
-      </div>
+               <div class="seguimiento" id="quote">
+                  <button type="button" class="close">×</button>
+                  <form>
+                     <input type="text" value="" placeholder="Empresa"/>
+                     <select name="" id="">
+                        <option value="">Marítimo FCL</option>
+                        <option value="">Maritimo FCL</option>
+                        <option value="">Aereo</option>
+                        <option value="">Terrestre</option>
+                        <option value="">Multimodal</option>
+                     </select>
+                     <input type="text" value="value" placeholder="Origen">
+                     <input type="text" value="value" placeholder="Destino">
+                     <select name="" id="">
+                        <option value="">Equipo
+                        </option>
+                     </select>
+                     <input type="text" value="value" placeholder="Obs / Nota adicional">
 
-      <div class="seguimiento" id="quote">
-         <button type="button" class="close">×</button>
-         <form>
-            <input type="text" value="" placeholder="Empresa"/>
-            <select name="" id="">
-               <option value="">Marítimo FCL</option>
-               <option value="">Maritimo FCL</option>
-               <option value="">Aereo</option>
-               <option value="">Terrestre</option>
-               <option value="">Multimodal</option>
-            </select>
-            <input type="text" value placeholder="Origen">
-            <input type="text" value placeholder="Destino">
-            <select name="" id="">
-               <option value="">Equipo </option>               
-            </select>
-            <input type="text" value placeholder="Obs / Nota adicional">
+                     <button type="submit" class="btn btn-primary">Ingresar</button>
+                  </form>
+               </div>
+               <div class="seguimiento" id="book">
+                  <button type="button" class="close">×</button>
+                  <form>
+                     <input type="text" value="" placeholder="Cotizacion"/>
+                     <input type="text" value="" placeholder="Empresa"/>
+                     <select name="" id="">
+                        <option value="">Marítimo FCL</option>
+                        <option value="">Maritimo FCL</option>
+                        <option value="">Aereo</option>
+                        <option value="">Terrestre</option>
+                        <option value="">Multimodal</option>
+                     </select>
+                     <input type="text" value="value" placeholder="Origen">
+                     <input type="text" value="value" placeholder="Destino">
+                     <select name="" id="">
+                        <option value="">Equipo
+                        </option>
+                     </select>
+                     <input type="text" value="value" placeholder="Obs / Nota adicional">
+                  </form>
+               </div>
 
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-         </form>
-      </div>
-      <div class="seguimiento" id="book">
-         <button type="button" class="close">×</button>
-         <form>
-            <input type="text" value="" placeholder="Cotizacion"/>
-            <input type="text" value="" placeholder="Empresa"/>
-            <select name="" id="">
-               <option value="">Marítimo FCL</option>
-               <option value="">Maritimo FCL</option>
-               <option value="">Aereo</option>
-               <option value="">Terrestre</option>
-               <option value="">Multimodal</option>
-            </select>
-            <input type="text" value placeholder="Origen">
-            <input type="text" value placeholder="Destino">
-            <select name="" id="">
-               <option value="">Equipo </option>               
-            </select>
-            <input type="text" value placeholder="Obs / Nota adicional">
-         </form>
-      </div>
+               <nav class="navbar navbar-default" role="navigation">
 
-      <nav class="navbar navbar-default" role="navigation">
+                  <div class="container mainnav">
+                     <div class="navbar-header">
+                        <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
+                        <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
+                        <!-- offcanvas-trigger -->
+                        <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
+                           <span class="sr-only">Toggle navigation</span>
+                           <i class="fa fa-bars"></i>
+                        </button>
 
-         <div class="container mainnav">
-            <div class="navbar-header">
-               <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
-               <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
-               <!-- offcanvas-trigger -->
-               <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
-                  <span class="sr-only">Toggle navigation</span>
-                  <i class="fa fa-bars"></i>
-               </button>
+                     </div>
 
-            </div>
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse navbar-collapse">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                           <li class="{%if activePage == 'home' %} active {%endif%} ">
+                              <a href="index.html">Home</a>
+                           </li>
+                           <li class="{%if activePage == 'servicios' %} active {%endif%} ">
+                              <a href="servicios.html">Servicios</a>
+                           </li>
 
-               <ul class="nav navbar-nav navbar-right">
-                  <li class="{%if activePage == 'home' %} active {%endif%} ">
-                     <a href="index.html">Home</a>
-                  </li>
-                  <li class="{%if activePage == 'servicios' %} active {%endif%} ">
-                     <a href="servicios.html">Servicios</a>
-                  </li>
-                 
-
-                  <li class="{%if activePage == 'informacion' %} active {%endif%} ">
-                     <a href="informacion.html">Información</a>
-                  </li>
-                  <li >
-                     <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
-                  </li>
-                  {# <li class="find-track">
+                           <li class="{%if activePage == 'informacion' %} active {%endif%} ">
+                              <a href="informacion.html">Información</a>
+                           </li>
+                           <li >
+                              <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
+                           </li>
+                           {# <li class="find-track">
                      <a href="#search">Seguimiento</a>
                   </li> #}
 
-                   <li class=" dropdown ">
-                     <a >Seguimiento<span class="fa fa-angle-down"></span></a>
-                     <div class="submenu-wrapper">
-                        <div class="submenu-inner">
-                           <ul class="dropdown-menu">
-                              <li>
-                                 <a href="#quote">Quote</a>
-                              </li>
-                              <li>
-                                 <a href="#book">Book</a>
-                              </li>
-                              <li>
-                                 <a href="#search">Track</a>
-                              </li>                              
-                           </ul>
-                        </div>
+                           <li class=" dropdown ">
+                              <a >Seguimiento<span class="fa fa-angle-down"></span></a>
+                              <div class="submenu-wrapper">
+                                 <div class="submenu-inner">
+                                    <ul class="dropdown-menu trackeo">
+                                       <li>
+                                          <a href="#quote">Quote</a>
+                                       </li>
+                                       <li>
+                                          <a href="#book">Book</a>
+                                       </li>
+                                       <li>
+                                          <a href="#search">Track</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
                      </div>
-                  </li>
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-         </div>
-         <!-- /.container -->
+                     <!-- /.navbar-collapse -->
+                  </div>
+                  <!-- /.container -->
 
-      </nav>
-   </header>
+               </nav>
+            </header>
 
-{% endmacro %}
+         {% endmacro %}
