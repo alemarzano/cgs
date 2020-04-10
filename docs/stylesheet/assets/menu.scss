@@ -80,7 +80,7 @@ NAVIGATION
    color: #fff;
 }
 
-#search {
+.seguimiento {
    position: fixed;
    top: 0px;
    left: 0px;
@@ -167,7 +167,7 @@ DROPDOWN CSS
    display: block;
    float: none;
    width: 100%;
-   background: #11151c;
+   background: #251B40;
    margin: 0;
    padding: 15px 0;
    box-shadow: none;
@@ -181,10 +181,11 @@ li.dropdown a span {
 .nav.navbar-nav li ul.dropdown-menu li a {
    padding: 7px 20px;
    font-size: 15px;
-   color: #7e828b;
+   color: white !important;
    line-height: 24px;
    display: inline-block;
    text-transform: capitalize;
+   font-weight: bold;
 }
 
 .nav.navbar-nav li ul.dropdown-menu li a:hover,
@@ -244,7 +245,6 @@ li.dropdown>.submenu-wrapper.no-pointer-events {
 }
 
 li.dropdown>.submenu-wrapper>.submenu-inner {
-   margin-top: 25px;
    opacity: 0;
    filter: alpha(opacity=0);
    /* For IE8 and earlier */
@@ -315,6 +315,7 @@ li.dropdown>.submenu-sub-wrapper {
 }
 
 li.dropdown>.submenu-sub-wrapper>.submenu-sub-inner {
+   
    opacity: 0;
    filter: alpha(opacity=0);
    /* For IE8 and earlier */

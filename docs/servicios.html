@@ -1,173 +1,239 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>CGS GROUP | Servicios</title>
+      <!-- styles -->
+      <link rel="stylesheet" href="css/slider-pro.css">
+      <link rel="stylesheet" href="css/tiny-slider.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/extras.css">
+      <link rel="stylesheet" href="css/theme.css">
+      <!-- -->
+      <link rel="stylesheet" href="css/main.css">
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    <!-- styles -->
-    <link rel="stylesheet" href="css/slider-pro.css">
-    <link rel="stylesheet" href="css/tiny-slider.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/extras.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <!--  -->
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- Meta  -->
-    <title>CGS Group</title>
-    <meta name="description" content="Su solución en transporte de carga">
-    <meta property="og:title" content="Bienvenidos a CGS GROUP" />
-    <meta property="og:url" content="alemarzano.github.io/cgs" />
-    <meta property="og:description" content="Su solución en transporte de carga">
-    <meta property="og:image"
-        content="https://cdn6.aptoide.com/imgs/3/6/2/362b03b054f84b74083d3929a7d700ac_icon.png?w=256">
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="es_AR" />
-    <meta property="og:locale:alternate" content="fr_FR" />
-    <meta property="og:locale:alternate" content="en_UK" />
-</head>
-
-
-
-<body id="page-top">
-
-
-   
-<div id="st-container" class="st-container">
-        <div class="st-pusher">
+      <!-- Meta -->
+      <meta name="description" content="Su solución en transporte de carga">
+      <meta property="og:title" content="Bienvenidos a CGS GROUP"/>
+      <meta property="og:url" content="alemarzano.github.io/cgs"/>
+      <meta property="og:description" content="Su solución en transporte de carga">
+      <meta property="og:image" content="https://cdn6.aptoide.com/imgs/3/6/2/362b03b054f84b74083d3929a7d700ac_icon.png?w=256">
+      <meta property="og:type" content="website"/>
+      <meta property="og:locale" content="es_AR"/>
+      <meta property="og:locale:alternate" content="fr_FR"/>
+      <meta property="og:locale:alternate" content="en_UK"/>
+   </head>
+   <body>
+      <div id="st-container" class="st-container">
+         <div class="st-pusher">
             <div class="st-content">
-            <header class="header">
-                <nav class="top-bar visible-lg">
-                    <div class="overlay-bg">
-                        <div class="container">
-                            <div class="row">
+               
+   
+   
 
-                                <div class="col-sm-8 col-xs-12">
-                                    <div class="menu-locations">
-                                        <div class="custom-select">
-                                            <select onchange="buscarLocations()" id="locations">
-                                                <option style="color:#757482;" value="ar" selected>Argentina</option>
-                                                <option style="color:#757482;" value="uk">United Kingdom</option>
-                                                <option style="color:#757482;" value="fr">France</option>
-                                            </select>
-                                        </div>
-                                        <div class="call-to-action locations-options">
-                                            <ul id="ar" class="list-inline visible">
-                                                <li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a>
-                                                </li>
-                                                <li><a href="#"><i class="fa fa-envelope"></i>
-                                                        info@cgsgroup.com.ar</a>
-                                                </li>
-                                            </ul>
-                                            <ul id="uk" class="list-inline">
-                                                <li><a href="#"><i class="fa fa-phone"></i> (UK) 5199 2225</a>
-                                                </li>
-                                                <li><a href="#"><i class="fa fa-envelope"></i>
-                                                        info@cgsgroup.com.uk</a>
-                                                </li>
-                                            </ul>
-                                            <ul id="fr" class="list-inline">
-                                                <li><a href="#"><i class="fa fa-phone"></i> (FR) 5199 2225</a>
-                                                </li>
-                                                <li><a href="#"><i class="fa fa-envelope"></i>
-                                                        info@cgsgroup.com.fr</a>
-                                                </li>
-                                            </ul>
-                                        </div><!-- /.call-to-action -->
+   <header class="header">
+      <nav class="top-bar visible-lg">
+         <div class="overlay-bg">
+            <div class="container">
+               <div class="row">
 
-                                    </div>
+                  <div class="col-sm-8 col-xs-12">
+                     <div class="menu-locations">
+                        <div class="custom-select">
+                           <select onchange="buscarLocations()" id="locations">
+                              <option style="color:#757482;" value="ar" selected="selected">Argentina</option>
+                              <option style="color:#757482;" value="uk">United Kingdom</option>
+                              <option style="color:#757482;" value="fr">France</option>
+                           </select>
+                        </div>
+                        <div class="call-to-action locations-options">
+                           <ul id="ar" class="list-inline visible">
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    (54 11) 5199 2225</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                    info@cgsgroup.com.ar</a>
+                              </li>
+                           </ul>
+                           <ul id="uk" class="list-inline">
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    (UK) 5199 2225</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                    info@cgsgroup.com.uk</a>
+                              </li>
+                           </ul>
+                           <ul id="fr" class="list-inline">
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    (FR) 5199 2225</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                    info@cgsgroup.com.fr</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- /.call-to-action -->
 
-                                </div><!-- /.col-sm-6 -->
+                     </div>
 
-                                <div class="col-sm-4 hidden-xs">
-                                    <div class="topbar-right">
+                  </div>
+                  <!-- /.col-sm-6 -->
 
-                                        <div class="custom-select lang-support">
-                                            <select>
-                                                <option style="color:#757482;" value="es" selected>Español</option>
-                                                <option style="color:#757482;" value="en">English</option>
-                                                <option style="color:#757482;" value="fr">French</option>
-                                            </select>
-                                        </div>
+                  <div class="col-sm-4 hidden-xs">
+                     <div class="topbar-right">
 
-                                    </div><!-- /.social-links -->
-                                </div><!-- /.col-sm-6 -->
-
-                            </div><!-- /.row -->
-                        </div><!-- /.container -->
-                    </div><!-- /.overlay-bg -->
-                </nav><!-- /.top-bar -->
-
-                <div id="search">
-                    <button type="button" class="close">×</button>
-                    <form>
-                        <input type="search" value="" placeholder="Nombre de Usuario" />
-                        <input type="search" value="" placeholder="Contraseña" />
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                    </form>
-                </div>
-
-                <nav class="navbar navbar-default" role="navigation">
-
-                    <div class="container mainnav">
-                        <div class="navbar-header">
-                            <!-- Logo Nuevo 
-                            <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a>
-                            <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a>
-                             -->   
-                             <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
-                            <!-- offcanvas-trigger -->
-                            <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
-                                <span class="sr-only">Toggle navigation</span>
-                                <i class="fa fa-bars"></i>
-                            </button>
-
+                        <div class="custom-select lang-support">
+                           <select>
+                              <option style="color:#757482;" value="es" selected="selected">Español</option>
+                              <option style="color:#757482;" value="en">English</option>
+                              <option style="color:#757482;" value="fr">French</option>
+                           </select>
                         </div>
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-collapse">
+                     </div>
+                     <!-- /.social-links -->
+                  </div>
+                  <!-- /.col-sm-6 -->
+
+               </div>
+               <!-- /.row -->
+            </div>
+            <!-- /.container -->
+         </div>
+         <!-- /.overlay-bg -->
+      </nav>
+      <!-- /.top-bar -->
+
+      <div class="seguimiento" id="search">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="search" value="" placeholder="Nombre de Usuario"/>
+            <input type="search" value="" placeholder="Contraseña"/>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+         </form>
+      </div>
+
+      <div class="seguimiento" id="quote">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="text" value="" placeholder="Empresa"/>
+            <select name="" id="">
+               <option value="">Marítimo FCL</option>
+               <option value="">Maritimo FCL</option>
+               <option value="">Aereo</option>
+               <option value="">Terrestre</option>
+               <option value="">Multimodal</option>
+            </select>
+            <input type="text" value placeholder="Origen">
+            <input type="text" value placeholder="Destino">
+            <select name="" id="">
+               <option value="">Equipo </option>               
+            </select>
+            <input type="text" value placeholder="Obs / Nota adicional">
+
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+         </form>
+      </div>
+      <div class="seguimiento" id="book">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="text" value="" placeholder="Cotizacion"/>
+            <input type="text" value="" placeholder="Empresa"/>
+            <select name="" id="">
+               <option value="">Marítimo FCL</option>
+               <option value="">Maritimo FCL</option>
+               <option value="">Aereo</option>
+               <option value="">Terrestre</option>
+               <option value="">Multimodal</option>
+            </select>
+            <input type="text" value placeholder="Origen">
+            <input type="text" value placeholder="Destino">
+            <select name="" id="">
+               <option value="">Equipo </option>               
+            </select>
+            <input type="text" value placeholder="Obs / Nota adicional">
+         </form>
+      </div>
+
+      <nav class="navbar navbar-default" role="navigation">
+
+         <div class="container mainnav">
+            <div class="navbar-header">
+               <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
+               <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
+               <!-- offcanvas-trigger -->
+               <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
+                  <span class="sr-only">Toggle navigation</span>
+                  <i class="fa fa-bars"></i>
+               </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-collapse">
+
+               <ul class="nav navbar-nav navbar-right">
+                  <li class=" ">
+                     <a href="index.html">Home</a>
+                  </li>
+                  <li class=" active  ">
+                     <a href="servicios.html">Servicios</a>
+                  </li>
+                 
+
+                  <li class=" ">
+                     <a href="informacion.html">Información</a>
+                  </li>
+                  <li >
+                     <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
+                  </li>
+                  
+
+                   <li class=" dropdown ">
+                     <a >Seguimiento<span class="fa fa-angle-down"></span></a>
+                     <div class="submenu-wrapper">
+                        <div class="submenu-inner">
+                           <ul class="dropdown-menu">
+                              <li>
+                                 <a href="#quote">Quote</a>
+                              </li>
+                              <li>
+                                 <a href="#book">Book</a>
+                              </li>
+                              <li>
+                                 <a href="#search">Track</a>
+                              </li>                              
+                           </ul>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+
+      </nav>
+   </header>
 
 
 
 
-
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class=" active"><a href="index.html">Home</a></li>
-                                <li><a href="servicios.html">Servicios</a></li>
-                                 <!-- <li class="dropdown "><a href="servicios.html">Servicios <span
-                                             class="fa fa-angle-down"></span></a>
-                                    <div class="submenu-wrapper">
-                                        <div class="submenu-inner">
-                                            <ul class="dropdown-menu">
-                                                <li><a href="servicios.html#">Air transportation</a></li>
-                                                <li><a href="servicios.html#">Marine transportation</a></li>
-                                                <li><a href="servicios.html#">Moving & storage</a></li>
-                                                <li><a href="sservicios.html#">Shipping & operations</a></li>
-                                                <li class="active"><a href="servicios.html#">Transportation logistics</a></li>
-                                                <li><a href="servicios.html#">Trucking</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li> -->
-                               
-                                <li><a href="informacion.html">Información</a></li>
-                                <li><a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a></li>
-                                <li class="find-track">
-                                    <a href="#search">Seguimiento</a>
-                                </li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container -->
-
-
-                </nav>
-            </header>
-
-
+               
 
    <section class="page-title-section">
       <div class="container">
@@ -178,7 +244,9 @@
                      <h1>Servicios</h1>
                   </div>
                   <ol class="breadcrumb">
-                     <li><a href="#">Home</a></li>
+                     <li>
+                        <a href="#">Home</a>
+                     </li>
                      <li class="active">Servicios</li>
                   </ol>
                </div>
@@ -199,50 +267,62 @@
                         <div class="accordion-header js-accordion-header">Servicios</div>
                         <div class="accordion-body js-accordion-body">
                            <div class="accordion__item js-accordion-item">
-                               <ul class="service-list ">
-                                  <li class="active"><a data-toggle="tab" href="#marino"
-                                        class="icon-marine">Marítimo</a></li>
-                                  <li><a data-toggle="tab" href="#terrestre" class="icon-trucking">Terrestre</a></li>
-                                  <li><a data-toggle="tab" href="#aereo" class="icon-air">Aéreo</a>
-                                  </li>
-                                  <li><a data-toggle="tab" href="#aduana" class="icon-store">Despacho de Aduana</a></li>
+                              <ul class="service-list ">
+                                 <li class="active">
+                                    <a data-toggle="tab" href="#marino" class="icon-marine">Marítimo</a>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="tab" href="#terrestre" class="icon-trucking">Terrestre</a>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="tab" href="#aereo" class="icon-air">Aéreo</a>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="tab" href="#aduana" class="icon-store">Despacho de Aduana</a>
+                                 </li>
 
-                                  <li><a data-toggle="tab" href="#seguros" class="icon-transportation">Seguros</a></li>
+                                 <li>
+                                    <a data-toggle="tab" href="#seguros" class="icon-transportation">Seguros</a>
+                                 </li>
 
-                               </ul>
+                              </ul>
                            </div>
                         </div>
                      </div>
-                    
-                  </div><!-- /.widget -->
+
+                  </div>
+                  <!-- /.widget -->
 
                   <div class="widget">
                      <div class="download-wrap company">
-                        <a href="#">Formulario Solicitud <br>de Seguro <span>Download</span><i class="fa fa-download"></i></a>
-                     </div> <!-- /.download-wrap -->                     
-                  </div><!-- /.widget -->
+                        <a href="#">Formulario Solicitud
+                           <br>de Seguro
+                           <span>Download</span>
+                           <i class="fa fa-download"></i>
+                        </a>
+                     </div>
+                     <!-- /.download-wrap -->
+                  </div>
+                  <!-- /.widget -->
 
                   <div class="widget">
                      <h2 class="widget-title">Horarios</h2>
                      <div class="textwidget">
-                        <p>Lunes -
-                           Viernes: 9:00 - 18:00<br>
+                        <p>Lunes - Viernes: 9:00 - 18:00<br>
                            Sábados: 9:00 - 2:00<br>
                            Vacaciones: 9:00 - 12:00</p>
                      </div>
-                  </div><!-- /.widget -->
-               </div><!-- /.sidebar-wrapper -->
-            </div><!-- /.col -->
+                  </div>
+                  <!-- /.widget -->
+               </div>
+               <!-- /.sidebar-wrapper -->
+            </div>
+            <!-- /.col -->
             <div class="col-md-9 col-sm-7 col-xs-12 tab-content">
 
                <div id="marino" class="single-service-content tab-pane fade in active">
-                  <h2>COBERTURA GLOBAL</h2>
-                  <p>Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una
-                     cobertura global completa para el tráfico de sus mercaderías.</p>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ducimus possimus culpa eum
-                     tempora! Eum ipsum cum labore nisi expedita minus quam sunt corporis modi eaque, exercitationem
-                     nulla ipsa velit unde libero eveniet accusamus placeat voluptates odit officiis veritatis? Ipsam
-                     sit veniam quasi quam fugiat eos magnam ratione repudiandae. Cupiditate.</p>
+                  <p>Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una cobertura global completa para el tráfico de sus mercaderías.</p>
+                  
                   <br>
                   <div class="row">
 
@@ -264,24 +344,23 @@
                            <li>- Puerta a puerta</li>
                            <li>- Despacho de Aduana</li>
                         </ul>
-                     </div><!-- /.col -->
+                     </div>
+                     <!-- /.col -->
                      <div class="col-sm-5 col-xs-12">
                         <div class="single-service-thumb">
-                           <img src="img/service/marinethumb.jpg" alt="image" />
+                           <img src="img/service/marinethumb.jpg" alt="image"/>
                         </div>
                      </div>
-                  </div><!-- /.row -->
+                  </div>
+                  <!-- /.row -->
 
-               </div><!-- /.single-service-content -->
+               </div>
+               <!-- /.single-service-content -->
 
                <div id="terrestre" class="single-service-content tab-pane fade">
                   <img class="img-alignnone" src="img/service/truckingthumb.png" alt="image">
-                  <h2>SEGUIMIENTO DE PUNTA A PUNTA</h2>
-                  <p>Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada
-                     unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa
-                     homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de
-                     cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
-                     <br>
+                  
+                  <br>
                   <div class="row">
 
                      <div class="col-sm-7 col-xs-12">
@@ -295,25 +374,23 @@
                            <li>- Recogida y Entrega</li>
                            <li>- Unidades con generadores de fr&iacute;o</li>
                         </ul>
-                     </div><!-- /.col -->
+                     </div>
+                     <!-- /.col -->
                      <div class="col-sm-5 col-xs-12">
                         <div class="single-service-thumb">
-                           <img src="https://via.placeholder.com/335x420" alt="image" />
+                           <img src="https://via.placeholder.com/335x420" alt="image"/>
                         </div>
                      </div>
-                  </div><!-- /.row -->
+                  </div>
+                  <!-- /.row -->
 
                </div>
 
                <div id="aereo" class="single-service-content tab-pane fade ">
                   <div class="single-service-thumb">
-                     <img src="img/service/airthumb.jpg" alt="image" />
+                     <img src="img/service/airthumb.jpg" alt="image"/>
                   </div>
-                  <h2>DESDE Y HACIA CUALQUIER AEROPUERTO</h2>
-                  <p>Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros
-                     especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito,
-                     optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia,
-                     informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p><br>
+                  
                   <div class="row">
 
                      <div class="col-sm-7 col-xs-12">
@@ -326,15 +403,18 @@
                            <li>- Manejo especial&nbsp;</li>
                            <li>- Consolidaci&oacute;n / Desconsolidaci&oacute;n</li>
                         </ul>
-                     </div><!-- /.col -->
+                     </div>
+                     <!-- /.col -->
                      <div class="col-sm-5 col-xs-12">
                         <div class="single-service-thumb">
-                           <img src="https://via.placeholder.com/335x420" alt="image" />
+                           <img src="https://via.placeholder.com/335x420" alt="image"/>
                         </div>
                      </div>
-                  </div><!-- /.row -->
+                  </div>
+                  <!-- /.row -->
 
-               </div><!-- /.single-service-content -->
+               </div>
+               <!-- /.single-service-content -->
 
                <div id="aduana" class="single-service-content tab-pane fade">
                   <img class="img-alignnone" src="img/service/logisticthumb.png" alt="image">
@@ -347,336 +427,402 @@
                   </p>
                   <p>Declaraciones Juradas Anticipadas de Importación, Licencias no Automáticas.</p>
                   <br>
-                  <br>
-                  <h3>Lorem ipsum dolor sit.</h3>
-                  <p><img class="img-alignleft" src="img/service/movingthumb2.png" alt="image">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at modi nostrum, voluptas non perspiciatis iusto? Suscipit quis consequuntur vero eius quod neque saepe. Reprehenderit incidunt pariatur, reiciendis in quaerat blanditiis laborum libero nulla voluptatibus repellat dolorum ab harum facere.</p>
-               </div><!-- /.single-service-content -->
+                  
+               </div>
+               <!-- /.single-service-content -->
 
-               <div id="seguros" class="single-service-content tab-pane fade">                
-                 
+               <div id="seguros" class="single-service-content tab-pane fade">
+
                   <div class="row">
                      <div class="col-xs-12 col-sm-6">
-                           <img class="img-alignleft" src="img/service/shippingthumb.png" alt="image">
+                        <img class="img-alignleft" src="img/service/shippingthumb.png" alt="image">
                      </div>
                      <div class="col-xs-12 col-sm-6">
-                           <h2>COBERTURA TOTAL</h2>
-                           <p>Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
-                           <p>El seguro de transporte cubre la mercadería transportada, de todos los riesgos que pudieran surgir en la travesía tales como robos, roturas, pérdidas, depósitos intermedios, huelgas, guerras, averías gruesas, etc.</p>
-                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, debitis in dolores tenetur totam distinctio voluptates dignissimos minus architecto cumque nesciunt, quibusdam voluptas. Autem aspernatur fugit, facilis soluta at magnam. Saepe, quo iure doloribus excepturi quis aliquid repellat. Rem, assumenda.</p>                  
-                           <p>Para consultar o solicitar cobertura, completá el siguiente formulario:</p>
-                           <div class="widget">
-                                 <div class="download-wrap company">
-                                    <a href="#">Formulario Solicitud <br>de Seguro <span>Download</span><i class="fa fa-download"></i></a>
-                                 </div> <!-- /.download-wrap -->                     
-                              </div><!-- /.widget -->
-                           <br>
+                        <h2>COBERTURA TOTAL</h2>
+                        <p>Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
+                        <p>El seguro de transporte cubre la mercadería transportada, de todos los riesgos que pudieran surgir en la travesía tales como robos, roturas, pérdidas, depósitos intermedios, huelgas, guerras, averías gruesas, etc.</p>
+                       
+                        <p>Para consultar o solicitar cobertura, completá el siguiente formulario:</p>
+                        <div class="widget">
+                           <div class="download-wrap company">
+                              <a href="#">Formulario Solicitud
+                                 <br>de Seguro
+                                 <span>Download</span>
+                                 <i class="fa fa-download"></i>
+                              </a>
+                           </div>
+                           <!-- /.download-wrap -->
+                        </div>
+                        <!-- /.widget -->
+                        <br>
                      </div>
                   </div>
-                  
-               </div><!-- /.single-service-content -->
 
+               </div>
+               <!-- /.single-service-content -->
 
-            </div><!-- /.col -->
-         </div><!-- /.row -->
-      </div><!-- /.container -->
+            </div>
+            <!-- /.col -->
+         </div>
+         <!-- /.row -->
+      </div>
+      <!-- /.container -->
    </section>
    <!-- Single-Service-End-->
 
 
-  
 
-    <!-- cta start -->
- <section class="cta-section">
-     <div class="container text-center">
-         <a data-toggle="modal" data-target="#quoteModal" href="#" class="btn btn-primary quote-btn">Contactanos</a>
+               <!-- cta start -->
+               <section class="cta-section">
+                  <div class="container text-center">
+                     <a data-toggle="modal" data-target="#quoteModal" href="#" class="btn btn-primary quote-btn">Contactanos</a>
 
-         <!-- Modal -->
-         <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel"
-             aria-hidden="true">
-             <div class="modal-dialog modal-lg">
-                 <div class="modal-content">
-                     <div class="modal-header">
-                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                 aria-hidden="true">&times;</span></button>
-                         <h4 class="modal-title" id="quoteModalLabel">
-                             Solicite una tarifa para el envío de sus productos.
-                         </h4>
-                     </div>
-                     <div class="modal-body">
-                         <form id="contactForm" action="sendemail.php" method="POST">
-                             <div class="row">
-                                 <div class="col-md-6">
-                                     <div class="form-group">
-                                         <label for="name">Nombre</label>
-                                         <input id="name" name="name" type="text" class="form-control" required=""
-                                             placeholder="">
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                     <div class="form-group">
-                                         <label for="company">Empresa</label>
-                                         <input id="company" name="company" type="text" class="form-control"
-                                             placeholder="">
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="row">
-                                 <div class="col-md-6">
-                                     <div class="form-group">
-                                         <label for="phone">Teléfono</label>
-                                         <input id="phone" name="phone" type="text" class="form-control" placeholder="">
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                     <div class="form-group">
-                                         <label for="email">Email</label>
-                                         <input id="email" name="email" type="email" class="form-control" required=""
-                                             placeholder="">
-                                     </div>
-                                 </div>
-                             </div>
-
-                             <div class="row">
-                                 <div class="col-md-6">
-                                     <div class="form-group">
-                                         <label for="city">Ciudad</label>
-                                         <input id="city" name="city" type="text" class="form-control" placeholder="">
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                     <div class="form-group">
-                                         <label for="subject">Asunto</label>
-                                         <input id="subject" name="subject" type="text" class="form-control" required=""
-                                             placeholder="">
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="form-group text-area">
-                                 <label for="message">Su mensaje</label>
-                                 <textarea id="message" name="message" class="form-control" rows="6" required=""
-                                     placeholder=""></textarea>
-                             </div>
-
-                             <button type="submit" class="btn">Enviar Mensaje</button>
-                         </form>
-                     </div>
-                 </div>
-             </div>
-         </div>
-
-     </div><!-- /.container -->
- </section><!-- /.cta-section -->
- <!-- cta end -->
- 
-<!-- footer-widget-section start -->
-<section class="footer-widget-section section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3  col-sm-4">
-                <div class="footer-widget">
-                    <h3>CGS Group</h3>
-
-                    <address>
-                        Uruguay 265, 2°A<br>
-                        CABA, C1015ABE<br>
-                        Buenos Aires - Argentina<br>
-                        (54 11) 5199 2225 <br> 
-                        <!-- Google Map Modal Trigger -->
-                        <button type="button" class="modal-map" data-toggle="modal" data-target="#cssMapModal">Location
-                            Map</button>
-
-                        
-                    </address>
-
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
+                     <!-- Modal -->
+                     <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                            aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="myModalLabel">Our Location</h4>
-                                </div>
-                                <div class="modal-body">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button>
+                                 <h4 class="modal-title" id="quoteModalLabel">
+                                    Solicite una tarifa para el envío de sus productos.
+                                 </h4>
+                              </div>
+                              <div class="modal-body">
+                                 <form id="contactForm" action="sendemail.php" method="POST">
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label for="name">Nombre</label>
+                                             <input id="name" name="name" type="text" class="form-control" required="" placeholder="">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label for="company">Empresa</label>
+                                             <input id="company" name="company" type="text" class="form-control" placeholder="">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label for="phone">Teléfono</label>
+                                             <input id="phone" name="phone" type="text" class="form-control" placeholder="">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label for="email">Email</label>
+                                             <input id="email" name="email" type="email" class="form-control" required="" placeholder="">
+                                          </div>
+                                       </div>
+                                    </div>
 
-                                    <div id="googleMap"></div>
+                                    <div class="row">
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label for="city">Ciudad</label>
+                                             <input id="city" name="city" type="text" class="form-control" placeholder="">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label for="subject">Asunto</label>
+                                             <input id="subject" name="subject" type="text" class="form-control" required="" placeholder="">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="form-group text-area">
+                                       <label for="message">Su mensaje</label>
+                                       <textarea id="message" name="message" class="form-control" rows="6" required="" placeholder=""></textarea>
+                                    </div>
 
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- End Modal -->
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-md-4 -->
+                                    
+                                 </form>
 
-            <div class="col-md-3 col-sm-4">
-                <div class="footer-widget">
-                    <h3>&amp;</h3>
-
-                    <ul>
-                        <li><a href="sercios.html">Servicios</a></li>
-                        <li><a href="informacion.html">Información</a></li>
-                        <li><a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a></li>
-                        <li><a href="#">FAQ Page</a></li>
-                    </ul>
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-md-4 -->
-
-            <div class="col-md-6 col-sm-4">
-                <div class="footer-widget">
-                    <h3>Mantenete informado</h3>
-                    <p>Ingresá tu mail para suscribirte a nuestro newsletter</p>
-
-                    <form class="newsletter-form">
-                        <div class="form-group">
-                            <label class="sr-only" for="InputEmail1">Email</label>
-                            <input type="email" class="form-control" id="InputEmail1"
-                                placeholder="Tu dirección de mail">
-                            <button type="submit" class="">Enviar &nbsp;<i class="fa fa-angle-right"></i></button>
+                                 <div class="contact-datos">
+                                    <div class="row">
+                                       <div class="col-12 col-md-4">
+                                          <h5>Departamento comercial</h5>
+                                          <a href="mailto:sales@cgsgroup.com.ar">sales@cgsgroup.com.ar</a>
+                                          <p>011 5199-2225 - Opción 1</p>
+                                       </div>
+                                       <div class="col-12 col-md-4">
+                                          <h5>Departamento de  Operaciones</h5>
+                                          <a href="mailto:operaciones@cgsgroup.com.ar">operaciones@cgsgroup.com.ar</a>
+                                          <p>011 5199-2225 - Opción 2</p>
+                                       </div>
+                                       <div class="col-12 col-md-4">
+                                          <h5>Departamento de Administración</h5>
+                                          <a href="mailto:admin@cgsgroup.com.ar">admin@cgsgroup.com.ar</a>
+                                          <p>011 5199-2225 - Opción 3</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="submit" class="btn">Enviar Mensaje</button>
+                              </div>
+                           </div>
                         </div>
-                    </form>
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-md-4 -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</section><!-- /.cta-section -->
-<!-- footer-widget-section end -->
+                     </div>
 
-<!-- copyright-section start -->
-<footer class="copyright-section">
-    <div class="container text-center">
-        <div class="footer-menu">
-            <ul>
-                <li><a href="#">Privacidad &amp; Cookies</a></li>
-                <li><a href="#">Legales</a></li>
-            </ul>
-        </div>
+                  </div>
+                  <!-- /.container -->
+               </section>
+               <!-- /.cta-section -->
+               <!-- cta end -->
 
-        <div class="copyright-info">
-            <!-- <span>Copyright © 2015 Unship. All Rights Reserved. Designed by <a
-                        href="https://uicookies.com">uiCookies</a><br> Proudly powered by <a
-                        href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
-                        href="getbootstrap.com">Bootstrap3</a></span> -->
-        </div>
-    </div><!-- /.container -->
-</footer>
-<!-- copyright-section end -->
+               <!-- footer-widget-section start -->
+               <section class="footer-widget-section section-padding">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-3  col-sm-4">
+                           <div class="footer-widget">
+                              <h3>CGS Group</h3>
 
-</div>
-</div>
-<!-- OFF CANVAS MENU -->
-<div class="offcanvas-menu offcanvas-effect">
-    <div class="offcanvas-wrap">
-        <div class="off-canvas-header">
-            <div class="back">
-                <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
-                    id="off-canvas-close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                              <address>
+                                 Uruguay 265, 2°A<br>
+                                 CABA, C1015ABE<br>
+                                 Buenos Aires - Argentina<br>
+                                 (54 11) 5199 2225
+                                 <br>
+                                 <!-- Google Map Modal Trigger -->
+                                 
+
+                              </address>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                 <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                       <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span></button>
+                                          <h4 class="modal-title" id="myModalLabel">Our Location</h4>
+                                       </div>
+                                       <div class="modal-body">
+
+                                          <div id="googleMap"></div>
+
+                                       </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                 </div>
+                                 <!-- /.modal-dialog -->
+                              </div>
+                              <!-- End Modal -->
+                           </div>
+                           <!-- /.footer-widget -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+                        <div class="col-md-3 col-sm-4">
+                           <div class="footer-widget">
+                              <h3>&amp;</h3>
+
+                              <ul>
+                                 <li>
+                                    <a href="sercios.html">Servicios</a>
+                                 </li>
+                                 <li>
+                                    <a href="informacion.html">Información</a>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
+                                 </li>
+                                 <li>
+                                    <a href="#">FAQ Page</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <!-- /.footer-widget -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+                        <div class="col-md-6 col-sm-4">
+                           <div class="footer-widget">
+                              <h3>Mantenete informado</h3>
+                              <p>Ingresá tu mail para suscribirte a nuestro newsletter</p>
+
+                              <form class="newsletter-form">
+                                 <div class="form-group">
+                                    <label class="sr-only" for="InputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="InputEmail1" placeholder="Tu dirección de mail">
+                                    <button type="submit" class="">Enviar &nbsp;<i class="fa fa-angle-right"></i>
+                                    </button>
+                                 </div>
+                              </form>
+                           </div>
+                           <!-- /.footer-widget -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                     </div>
+                     <!-- /.row -->
+                  </div>
+                  <!-- /.container -->
+               </section>
+               <!-- /.cta-section -->
+               <!-- footer-widget-section end -->
+
+               <!-- copyright-section start -->
+               <footer class="copyright-section">
+                  <div class="container text-center">
+                     <div class="footer-menu">
+                        <ul>
+                           <li>
+                              <a href="#">Privacidad &amp; Cookies</a>
+                           </li>
+                           <li>
+                              <a href="#">Legales</a>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="copyright-info">
+                        <!-- <span>Copyright © 2015 Unship. All Rights Reserved. Designed by <a href="https://uicookies.com">uiCookies</a><br> Proudly powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a href="getbootstrap.com">Bootstrap3</a></span> -->
+                     </div>
+                  </div>
+                  <!-- /.container -->
+               </footer>
+               <!-- copyright-section end -->
+
             </div>
-        </div>
-        <ul id="offcanvasMenu" class="list-unstyled hidden-lg">
+         </div>
+         <!-- OFF CANVAS MENU -->
+         <div class="offcanvas-menu offcanvas-effect">
+            <div class="offcanvas-wrap">
+               <div class="off-canvas-header">
+                  <div class="back">
+                     <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                     </button>
+                  </div>
+               </div>
+               <ul id="offcanvasMenu" class="list-unstyled hidden-lg">
 
-            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-            <li>
-                <a href="servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="informacion.html">Información</a>
-            </li>
-            <li>
-                <a href="#">Contacto</a>
-            </li>
-            <li>
-                <a href="#">Idioma</a>
-                <ul>
-                    <li>Español</li>
-                    <li>Inglés</li>
-                    <li>French</li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Ubicación</a>
-                <ul class="locations-ul">
-                    <li> Argentina
-                        <ul class="locations-canvas">
-                            <li><a href="#"><i class="fa fa-phone"></i> (54 11) 5199 2225</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> info@cgsgroup.com.ar</a></li>
-                        </ul>
-                    </li>
-                    <li> United Kingdom
-                        <ul class="locations-canvas">
-                            <li><a href="#"><i class="fa fa-phone"></i> (UK) 5199 2225</a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i>
+                  <li class="active">
+                     <a href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li>
+                     <a href="servicios.html">Servicios</a>
+                  </li>
+                  <li>
+                     <a href="informacion.html">Información</a>
+                  </li>
+                  <li>
+                     <a href="#">Contacto</a>
+                  </li>
+                  <li>
+                     <a href="#">Idioma</a>
+                     <ul>
+                        <li>Español</li>
+                        <li>Inglés</li>
+                        <li>French</li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#">Ubicación</a>
+                     <ul class="locations-ul">
+                        <li>
+                           Argentina
+                           <ul class="locations-canvas">
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    (54 11) 5199 2225</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-envelope"></i>
+                                    info@cgsgroup.com.ar</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           United Kingdom
+                           <ul class="locations-canvas">
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    (UK) 5199 2225</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-envelope"></i>
                                     info@cgsgroup.com.uk</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li> France
-                        <ul class="locations-canvas">
-                            <li><a href="#"><i class="fa fa-phone"></i> (FR) 5199 2225</a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           France
+                           <ul class="locations-canvas">
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-phone"></i>
+                                    (FR) 5199 2225</a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <i class="fa fa-envelope"></i>
                                     info@cgsgroup.com.fr</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
 
-            </li>
-            <li class=" form-group">
-                <form class="trackeo" action="">
-                    <label for="track">Seguimiento</label>
-                    <input type="text" class="form-control" id="track" placeholder=" Nombre de Usuario">
-                    <input type="password" class="form-control" id="pass" placeholder=" Contraseña">
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
-                </form>
-            </li>
+                  </li>
+                  <li class=" form-group">
+                     <form class="trackeo" action="">
+                        <label for="track">Seguimiento</label>
+                        <input type="text" class="form-control" id="track" placeholder=" Nombre de Usuario">
+                        <input type="password" class="form-control" id="pass" placeholder=" Contraseña">
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                     </form>
+                  </li>
 
-        </ul>
-    </div>
-</div><!-- .offcanvas-menu -->
-</div>
+               </ul>
+            </div>
+         </div>
+         <!-- .offcanvas-menu -->
+      </div>
 
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status">
-        <div class="status-mes"></div>
-    </div>
-</div>
+      <!-- Preloader -->
+      <div id="preloader">
+         <div id="status">
+            <div class="status-mes"></div>
+         </div>
+      </div>
+      <script src="js/popper.min.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.sliderPro.min.js"></script>
+      <!-- owl.carousel -->
+      <script src="js/owl.carousel.min.js"></script>
 
-   
-	<script src="js/popper.min.js"></script>
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.sliderPro.min.js"></script>
-	<!-- owl.carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	
-	<script src="js/tiny-slider.js"></script>
-	<!-- Magnific-popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!-- Offcanvas Menu -->
-	<script src="js/hippo-offcanvas.js"></script>
-	<!-- inview -->
-	<script src="js/jquery.inview.min.js"></script>
-	<!-- stellar -->
-	<script src="js/jquery.stellar.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- classie -->
-	<script src="js/classie.js"></script>
-	<!-- sticky kit -->
-	<script src="js/jquery.sticky-kit.min.js"></script>
-	<!-- GOGLE MAP -->
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<!--TWITTER FETCHER-->
-	<script src="js/twitterFetcher_min.js"></script>
-	<!-- Custom Script -->
-	<script src="js/scripts.js"></script>
+      <script src="js/tiny-slider.js"></script>
+      <!-- Magnific-popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Offcanvas Menu -->
+      <script src="js/hippo-offcanvas.js"></script>
+      <!-- inview -->
+      <script src="js/jquery.inview.min.js"></script>
+      <!-- stellar -->
+      <script src="js/jquery.stellar.js"></script>
+      <!-- countTo -->
+      <script src="js/jquery.countTo.js"></script>
+      <!-- classie -->
+      <script src="js/classie.js"></script>
+      <!-- sticky kit -->
+      <script src="js/jquery.sticky-kit.min.js"></script>
+      <!-- GOGLE MAP -->
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <!--TWITTER FETCHER-->
+      <script src="js/twitterFetcher_min.js"></script>
+      <!-- Custom Script -->
+      <script src="js/scripts.js"></script>
 
-	<script src="js/events.js"></script>
-
-</body>
-
+      <script src="js/events.js"></script>
+   </body>
 </html>

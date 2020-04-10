@@ -185,7 +185,7 @@ section {
 
 			.logo {
 				margin-left: 10px;
-				max-width: 110px;
+				max-width: 240px;
 			}
 
 			.navbar-toggle {
@@ -708,7 +708,7 @@ section {
 			}
 
 			button {
-				background-color: $green_fluor;
+				background-color: $magenta_fluor;
 				border-radius: 50px;
 				color: white;
 				font-style: normal;
@@ -731,16 +731,43 @@ section {
 	padding: 45px 0;
 }
 
-#contactForm button {
-	margin-left: auto;
-	background-color: $color_jacarta_medium;
-	color: white;
-	transition: $timing $transition;
+#quoteModal {
 
-	&:hover,
-	&:focus {
-		background-color: $magenta_fluor;
+	font-family: 'Lato',sans-serif !important;
+	button.btn {
+		margin-left: auto;
+		background-color: $color_jacarta_medium;
+		color: white;
+		transition: $timing $transition;
+		border-radius: 24px;
+
+		&:hover,
+		&:focus {
+			background-color: $magenta_fluor;
+		}
 	}
+	.modal-title {
+		text-align: center;
+		
+	}
+	.contact-datos {
+		margin-top:32px;
+		
+		.col-md-4{
+			padding:0 10px;
+		}
+		h5 {
+			color:$color_viking_bold;
+			margin-bottom:0;
+		}
+		a,p {
+			color:$color_fuscous_gray;
+		}
+		a:hover {
+			color:$color_viking_medium;
+		}
+	}
+	
 }
 
 .page-title-section {
@@ -1345,7 +1372,7 @@ section {
 
 			.navbar-header {
 				.logo {
-					max-width: 200px;
+					max-width: 400px;
 				}
 			}
 
@@ -1370,6 +1397,7 @@ section {
 						&:focus {
 							background-color: $color_jacarta_fluor;
 							color: white;
+
 						}
 					}
 
@@ -1380,7 +1408,8 @@ section {
 						a {
 							border-radius: 0;
 							background-color: inherit;
-							color: $color_jacarta;
+							color: $color_jacarta_dark;
+							font-weight: 400;
 						}
 
 						a:hover {
@@ -1399,11 +1428,24 @@ section {
 								}
 							}
 						}
+						&.dropdown {
+							&:hover {
+								cursor: pointer;
+								.dropdown-menu {
+									a {
+										background-color: inherit;
+									}
+									li:hover {
+										background-color: white;
+										a {
+											color:#362968!important;
+										}
+									}
+								}
+							}
+						}
 
-						&.find-track {
-							margin-right: 0;
-
-							a {
+							a.find-track {
 								display: flex;
 								align-items: center;
 								background-color: $magenta_fluor;
@@ -1439,7 +1481,6 @@ section {
 									color: white;
 								}
 							}
-						}
 					}
 				}
 
@@ -1590,7 +1631,7 @@ section {
 		.mainnav {
 			.navbar-header {
 				.logo {
-					max-width: 160px;
+					max-width: 320px;
 				}
 			}
 		}

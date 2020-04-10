@@ -360,7 +360,7 @@ $url_8: url('../img/carousel-indicator-green.png');
 
       >li {
          >a {
-            color: $color_oslo_gray;
+            color: $color_shuttle_gray;
             font-size: 18px;
             //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
             border-radius: 30px;
@@ -380,7 +380,7 @@ $url_8: url('../img/carousel-indicator-green.png');
             }
 
             &:hover {
-               color: $white;
+               color: $green_bold;
                background: #4ed8a3;
                border: 0;
 
@@ -401,12 +401,12 @@ $url_8: url('../img/carousel-indicator-green.png');
          }
 
          &.active>a {
-            color: $white;
+            color: $green_bold;
             background: #4ed8a3;
             border: 0;
 
             &:hover {
-               color: $white;
+               color: $green_bold;
                background: #4ed8a3;
                border: 0;
 
