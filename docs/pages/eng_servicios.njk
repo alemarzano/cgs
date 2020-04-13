@@ -4,7 +4,7 @@
 
 {% block navbar %}
    {% import "macros/navbar.njk" as nav %}
-   {{nav.active('servicios')}}
+   {{nav.active('servicios', 'es')}}
 {% endblock %}
 
 {% block secciones %}
@@ -95,6 +95,7 @@
             <div class="col-md-9 col-sm-7 col-xs-12 tab-content">
 
                <div id="marino" class="single-service-content tab-pane fade in active">
+                  <h2>Ocean Freight:</h2>
                   <p>We work on all international sea routes in order to guarantee to our customers a complete global coverage for the traffic of their goods.</p>
 
                   <br>
@@ -133,6 +134,7 @@
 
                <div id="terrestre" class="single-service-content tab-pane fade">
                   <img class="img-alignnone" src="img/service/truckingthumb.png" alt="image">
+                  <h2>Overland</h2>
                   <p>Short, medium and long distance services, with units according to each specific need. Each unit has Global Positioning System, provided and administered by certified company. Our operations department coordinates, manages and tracks each trip and informs to our customers of the status of their cargo at every time.</p>
                   <br>
                   <div class="row">
@@ -165,6 +167,7 @@
                   <div class="single-service-thumb">
                      <img src="img/service/airthumb.jpg" alt="image"/>
                   </div>
+                  <h2>Air Freight</h2>
                   <p>Our air freight service covers to and from any airport in the world. Our specialists coordinate your air transport in order to minimize transit time, optimize the cost of transport and ensure the integrity of the goods in our custody, reporting accurately and detailed the movement of your cargo all the way.</p><br>
                   <div class="row">
 

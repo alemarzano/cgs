@@ -36,198 +36,144 @@
    <header class="header">
       <nav class="top-bar visible-lg">
          <div class="overlay-bg">
-            <div class="container">
-               <div class="row">
+            <ul class="container">
+               <li>
+                  <a href="index.html">ESP</a>
+               </li>
+               <li>
+                  <a href="eng_index.html">ENG</a>
+               </li>
+            </ul>
+         </div>
 
-                  <div class="col-sm-8 col-xs-12">
-                     <div class="menu-locations">
-                        <div class="custom-select">
-                           <select onchange="buscarLocations()" id="locations">
-                              
-                                 <option style="color:#757482;" value="ar" selected="selected">Argentina</option>
-                                 <option style="color:#757482;" value="uk">United Kingdom</option>
-                                 
-                                 
+         <!-- /.overlay-bg -->
+      </nav>
+      <!-- /.top-bar -->
 
-                                    
-                                 </select>
-                              </div>
-                              <div class="call-to-action locations-options">
-                                 <ul id="ar" class="list-inline visible">
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-phone"></i>
-                                          (54 11) 5199 2225</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-envelope"></i>
-                                          info@cgsgroup.com.ar</a>
-                                    </li>
-                                 </ul>
-                                 <ul id="uk" class="list-inline">
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-phone"></i>
-                                          (UK) 5199 2225</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-envelope"></i>
-                                          info@cgsgroup.com.uk</a>
-                                    </li>
-                                 </ul>
-                                 
-                              </div>
-                              <!-- /.call-to-action -->
+      <div class="seguimiento" id="search">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="search" value="" placeholder="Nombre de Usuario"/>
+            <input type="search" value="" placeholder="Contraseña"/>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+         </form>
+      </div>
 
+      <div class="seguimiento" id="quote">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="text" value="" placeholder="Empresa"/>
+            <select name="" id="">
+               <option value="">Marítimo FCL</option>
+               <option value="">Maritimo FCL</option>
+               <option value="">Aereo</option>
+               <option value="">Terrestre</option>
+               <option value="">Multimodal</option>
+            </select>
+            <input type="text" value="value" placeholder="Origen">
+            <input type="text" value="value" placeholder="Destino">
+            <select name="" id="">
+               <option value="">Equipo
+               </option>
+            </select>
+            <input type="text" value="value" placeholder="Obs / Nota adicional">
+
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+         </form>
+      </div>
+      <div class="seguimiento" id="book">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="text" value="" placeholder="Cotizacion"/>
+            <input type="text" value="" placeholder="Empresa"/>
+            <select name="" id="">
+               <option value="">Marítimo FCL</option>
+               <option value="">Maritimo FCL</option>
+               <option value="">Aereo</option>
+               <option value="">Terrestre</option>
+               <option value="">Multimodal</option>
+            </select>
+            <input type="text" value="value" placeholder="Origen">
+            <input type="text" value="value" placeholder="Destino">
+            <select name="" id="">
+               <option value="">Equipo
+               </option>
+            </select>
+            <input type="text" value="value" placeholder="Obs / Nota adicional">
+         </form>
+      </div>
+
+      <nav class="navbar navbar-default" role="navigation">
+
+         <div class="container mainnav">
+            <div class="navbar-header">
+               <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
+               <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
+               <!-- offcanvas-trigger -->
+               <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
+                  <span class="sr-only">Toggle navigation</span>
+                  <i class="fa fa-bars"></i>
+               </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-collapse">
+
+               <ul class="nav navbar-nav navbar-right">
+                  
+                     <li class=" active  ">
+                        <a href="index.html">Home</a>
+                     </li>
+                     <li class=" ">
+                        <a href="servicios.html">Servicios</a>
+                     </li>
+
+                     <li class=" ">
+                        <a href="#">Información</a>
+                     </li>
+                     <li >
+                        <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
+                     </li>
+                     
+
+                     <li class=" dropdown">
+                        <a class="btn-cgs">Mi CGS<span class="fa fa-angle-down"></span></a>
+                        <div class="submenu-wrapper">
+                           <div class="submenu-inner">
+                              <ul class="dropdown-menu trackeo">
+                                 <li>
+                                    <a href="#quote">Cotización</a>
+                                 </li>
+                                 <li>
+                                    <a href="#book">Reservar</a>
+                                 </li>
+                                 <li>
+                                    <a href="#search">Rastreo</a>
+                                 </li>
+                              </ul>
                            </div>
-
                         </div>
-                        <!-- /.col-sm-6 -->
 
-                        <div class="col-sm-4 hidden-xs">
-                           <div class="topbar-right">
+                     </li>
+                  
+                  
 
-                              <div class="custom-select lang-support">
-                                 <select id="languages">
-                                    
-                                       <option style="color:#757482;" value="index.html" selected>Español</option>
-                                       <option style="color:#757482;" value="eng_index.html">English</option>
-                                    
-                                    
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
 
-                                    </select>
-                                 </div>
+      </nav>
 
-                              </div>
-                              <!-- /.social-links -->
-                           </div>
-                           <!-- /.col-sm-6 -->
+      
 
-                        </div>
-                        <!-- /.row -->
-                     </div>
-                     <!-- /.container -->
-                  </div>
-                  <!-- /.overlay-bg -->
-               </nav>
-               <!-- /.top-bar -->
+   </header>
+   
+   
 
-               <div class="seguimiento" id="search">
-                  <button type="button" class="close">×</button>
-                  <form>
-                     <input type="search" value="" placeholder="Nombre de Usuario"/>
-                     <input type="search" value="" placeholder="Contraseña"/>
-                     <button type="submit" class="btn btn-primary">Ingresar</button>
-                  </form>
-               </div>
 
-               <div class="seguimiento" id="quote">
-                  <button type="button" class="close">×</button>
-                  <form>
-                     <input type="text" value="" placeholder="Empresa"/>
-                     <select name="" id="">
-                        <option value="">Marítimo FCL</option>
-                        <option value="">Maritimo FCL</option>
-                        <option value="">Aereo</option>
-                        <option value="">Terrestre</option>
-                        <option value="">Multimodal</option>
-                     </select>
-                     <input type="text" value="value" placeholder="Origen">
-                     <input type="text" value="value" placeholder="Destino">
-                     <select name="" id="">
-                        <option value="">Equipo
-                        </option>
-                     </select>
-                     <input type="text" value="value" placeholder="Obs / Nota adicional">
-
-                     <button type="submit" class="btn btn-primary">Ingresar</button>
-                  </form>
-               </div>
-               <div class="seguimiento" id="book">
-                  <button type="button" class="close">×</button>
-                  <form>
-                     <input type="text" value="" placeholder="Cotizacion"/>
-                     <input type="text" value="" placeholder="Empresa"/>
-                     <select name="" id="">
-                        <option value="">Marítimo FCL</option>
-                        <option value="">Maritimo FCL</option>
-                        <option value="">Aereo</option>
-                        <option value="">Terrestre</option>
-                        <option value="">Multimodal</option>
-                     </select>
-                     <input type="text" value="value" placeholder="Origen">
-                     <input type="text" value="value" placeholder="Destino">
-                     <select name="" id="">
-                        <option value="">Equipo
-                        </option>
-                     </select>
-                     <input type="text" value="value" placeholder="Obs / Nota adicional">
-                  </form>
-               </div>
-
-               <nav class="navbar navbar-default" role="navigation">
-
-                  <div class="container mainnav">
-                     <div class="navbar-header">
-                        <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
-                        <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
-                        <!-- offcanvas-trigger -->
-                        <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
-                           <span class="sr-only">Toggle navigation</span>
-                           <i class="fa fa-bars"></i>
-                        </button>
-
-                     </div>
-
-                     <!-- Collect the nav links, forms, and other content for toggling -->
-                     <div class="collapse navbar-collapse navbar-collapse">
-
-                        <ul class="nav navbar-nav navbar-right">
-                           <li class=" active  ">
-                              <a href="index.html">Home</a>
-                           </li>
-                           <li class=" ">
-                              <a href="servicios.html">Servicios</a>
-                           </li>
-
-                           <li class=" ">
-                              <a href="informacion.html">Información</a>
-                           </li>
-                           <li >
-                              <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
-                           </li>
-                           
-
-                           <li class=" dropdown ">
-                              <a >Seguimiento<span class="fa fa-angle-down"></span></a>
-                              <div class="submenu-wrapper">
-                                 <div class="submenu-inner">
-                                    <ul class="dropdown-menu trackeo">
-                                       <li>
-                                          <a href="#quote">Quote</a>
-                                       </li>
-                                       <li>
-                                          <a href="#book">Book</a>
-                                       </li>
-                                       <li>
-                                          <a href="#search">Track</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- /.navbar-collapse -->
-                  </div>
-                  <!-- /.container -->
-
-               </nav>
-            </header>
-
-         
 
 
                
@@ -281,7 +227,7 @@
             </div>
             <!-- ADUANA -->
             <div class="sp-slide">
-               <img class="sp-image" src="css/images/blank.gif" data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_4.jpg" data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_4.jpg"/>
+               <img class="sp-image" src="css/images/blank.gif" data-src="https://dsfph.com/admin/uploads/service/BROKERAGE%20SERVICES%20&%20PROCESSING.jpg" data-retina="https://dsfph.com/admin/uploads/service/BROKERAGE%20SERVICES%20&%20PROCESSING.jpg"/>
 
                <div class="mini-container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
@@ -296,7 +242,7 @@
             </div>
             <!-- SEGURO -->
             <div class="sp-slide">
-               <img class="sp-image" src="css/images/blank.gif" data-src="https://image.shutterstock.com/z/stock-photo-logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge-in-1388874713.jpg" data-retina="https://image.shutterstock.com/z/stock-photo-logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge-in-1388874713.jpg"/>
+               <img class="sp-image" src="css/images/blank.gif" data-src="img/slider/secure.jpg" data-retina="img/slider/secure.jpg"/>
 
                <div class="mini-container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
@@ -483,19 +429,19 @@
             <div class="col-sm-4 col-xs-12">
                <div class="counter-block">
                   <span class="count-description flaticon-boat">
-                     <strong class="timer">80</strong>Vehículos en curso</span>
+                     <strong >+<span class="timer">200</span></strong>Embarques en curso</span>
                </div>
             </div>
             <div class="col-sm-4 col-xs-12">
                <div class="counter-block">
                   <span class="count-description flaticon-international">
-                     <strong class="timer">72</strong>Clientes Mundiales</span>
+                     <strong>+<span class="timer">5000</span></strong>Clientes Mundiales</span>
                </div>
             </div>
             <div class="col-sm-4 col-xs-12">
                <div class="counter-block">
                   <span class="count-description flaticon-compass">
-                     <strong class="timer">521</strong>Entregas realizadas</span>
+                     <strong>+<span class="timer">150</span></strong>Entregas realizadas</span>
                </div>
             </div>
          </div>
@@ -511,7 +457,7 @@
       <div class="container">
          <div class="row text-center">
             <div class="col-xs-12">
-               <h2 class="section-title">¿Por qué elegirnos?</h2>
+               <h3 class="section-title">¿Por qué elegirnos?</h3>
                <span class="section-sub">CGS GROUP SRL opera como agente de carga, conformado por personal altamente capacitado en el rubro del transporte internacional, con vasta experiencia en coordinación de servicios logísticos integrales.</span>
             </div>
          </div>
@@ -557,7 +503,7 @@
                               <!-- /.col-md-6 -->
 
                               <div class="col-md-5 content-text">
-                                 <h3>Seguro</h3>
+                                 <h4>Seguro</h4>
 
                                  <p>Consideramos de importancia extrema la convicción de nuestros clientes al confiarnos el transporte de sus cargas y actuamos de igual manera a la hora de seleccionar a nuestros proveedores de servicios. </p>
 
@@ -577,7 +523,7 @@
                               <!-- /.col-md-6 -->
 
                               <div class="col-md-5 content-text">
-                                 <h3>Trackeable</h3>
+                                 <h4>Trackeable</h4>
 
                                  <p>¡Siga sus embarques! Manténgase informado de los eventos importantes durante el todo el trayecto. Use nuestra herramienta de seguimiento para monitorear el estado de sus cargas. Reciba notificaciones por email en cada actualización. </p>
 
@@ -597,7 +543,7 @@
                               <!-- /.col-md-6 -->
 
                               <div class="col-md-6 content-text">
-                                 <h3>Rápido</h3>
+                                 <h4>Rápido</h4>
 
                                  <p></p>
                               </div>
@@ -616,7 +562,7 @@
                               <!-- /.col-md-6 -->
 
                               <div class="col-md-6 content-text">
-                                 <h3>Confianza</h3>
+                                 <h4>Confianza</h4>
 
                                  <p></p>
                               </div>
@@ -644,7 +590,7 @@
       <div class="container">
          <div class="row text-center">
             <div class="col-xs-12">
-               <h2 class="section-title">Agentes</h2>
+               <h3 class="section-title">Agentes</h3>
                <span class="section-sub">Contamos con el respaldo y el mismo compromiso de CGS Group en distintas agencias localizadas en las más importantes cuidades del mundo. De esta forma podemos garantizar un servicio de calidad tanto en origen como en destino.</span>
             </div>
          </div>
@@ -731,7 +677,6 @@
                                        <textarea id="message" name="message" class="form-control" rows="6" required="" placeholder=""></textarea>
                                     </div>
 
-                                    
                                  </form>
 
                                  <div class="contact-datos">
@@ -742,7 +687,7 @@
                                           <p>011 5199-2225 - Opción 1</p>
                                        </div>
                                        <div class="col-12 col-md-4">
-                                          <h5>Departamento de  Operaciones</h5>
+                                          <h5>Departamento de Operaciones</h5>
                                           <a href="mailto:operaciones@cgsgroup.com.ar">operaciones@cgsgroup.com.ar</a>
                                           <p>011 5199-2225 - Opción 2</p>
                                        </div>
@@ -902,7 +847,7 @@
                      <a href="servicios.html">Servicios</a>
                   </li>
                   <li>
-                     <a href="informacion.html">Información</a>
+                     <a href="#">Información</a>
                   </li>
                   <li>
                      <a href="#">Contacto</a>
@@ -912,67 +857,21 @@
                      <ul>
                         <li>Español</li>
                         <li>Inglés</li>
-                        <li>French</li>
                      </ul>
                   </li>
                   <li>
-                     <a href="#">Ubicación</a>
-                     <ul class="locations-ul">
+                     <a >MI CGS</a>
+                     <ul >
                         <li>
-                           Argentina
-                           <ul class="locations-canvas">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (54 11) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.ar</a>
-                              </li>
-                           </ul>
+                           Cotización
                         </li>
                         <li>
-                           United Kingdom
-                           <ul class="locations-canvas">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (UK) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.uk</a>
-                              </li>
-                           </ul>
+                           Reservar
                         </li>
                         <li>
-                           France
-                           <ul class="locations-canvas">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (FR) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.fr</a>
-                              </li>
-                           </ul>
+                           Rastreo
                         </li>
                      </ul>
-
-                  </li>
-                  <li class=" form-group">
-                     <form class="trackeo" action="">
-                        <label for="track">Seguimiento</label>
-                        <input type="text" class="form-control" id="track" placeholder=" Nombre de Usuario">
-                        <input type="password" class="form-control" id="pass" placeholder=" Contraseña">
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                     </form>
                   </li>
 
                </ul>

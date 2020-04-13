@@ -188,8 +188,7 @@ $url_3: url('../img/preloder.gif');
 
 
 body {
-   font-family: $font_0, $font_1, $font_2, $font_3;
-   font-weight: 400;
+  
    font-size: 16px;
    line-height: 30px;
    color: $color_oslo_gray;
@@ -784,37 +783,6 @@ iframe {
 
 
 
-.top-bar {
-   background: $url_2 no-repeat;
-   background-size: cover;
-
-   .overlay-bg {
-      padding: 8px 0;
-   }
-
-   .social-links i {
-      width: 25px;
-      height: 25px;
-      font-size: 10px;
-      line-height: 25px;
-   }
-}
-
-.call-to-action {
-   i {
-      margin-right: 5px;
-   }
-
-   ul li a {
-      font-size: 12px;
-      color: $white;
-
-      &:hover {
-         color: $color_viking;
-         text-decoration: none;
-      }
-   }
-}
 
 .social-links {
    li {

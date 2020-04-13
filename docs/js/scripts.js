@@ -565,8 +565,8 @@ jQuery(function ($) {
                   width: "100vw",
                   height: 480,
                   forceSize: 'none',
-                  thumbnailWidth: 100,
-                  thumbnailHeight: 100,
+                  thumbnailWidth: 70,
+                  thumbnailHeight: 70,
                   // aspectRatio: 0.7
               }
           }

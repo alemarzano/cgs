@@ -36,192 +36,109 @@
    <header class="header">
       <nav class="top-bar visible-lg">
          <div class="overlay-bg">
-            <div class="container">
-               <div class="row">
+            <ul class="container">
+               <li>
+                  <a href="index.html">ESP</a>
+               </li>
+               <li>
+                  <a href="eng_index.html">ENG</a>
+               </li>
+            </ul>
+         </div>
 
-                  <div class="col-sm-8 col-xs-12">
-                     <div class="menu-locations">
-                        <div class="custom-select">
-                           <select onchange="buscarLocations()" id="locations">
-                              
-                                 
+         <!-- /.overlay-bg -->
+      </nav>
+      <!-- /.top-bar -->
 
-                                    
-                                 </select>
-                              </div>
-                              <div class="call-to-action locations-options">
-                                 <ul id="ar" class="list-inline visible">
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-phone"></i>
-                                          (54 11) 5199 2225</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-envelope"></i>
-                                          info@cgsgroup.com.ar</a>
-                                    </li>
-                                 </ul>
-                                 <ul id="uk" class="list-inline">
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-phone"></i>
-                                          (UK) 5199 2225</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">
-                                          <i class="fa fa-envelope"></i>
-                                          info@cgsgroup.com.uk</a>
-                                    </li>
-                                 </ul>
-                                 
-                              </div>
-                              <!-- /.call-to-action -->
+      <div class="seguimiento" id="search">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="search" value="" placeholder="Nombre de Usuario"/>
+            <input type="search" value="" placeholder="Contraseña"/>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+         </form>
+      </div>
 
-                           </div>
+      <div class="seguimiento" id="quote">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="text" value="" placeholder="Empresa"/>
+            <select name="" id="">
+               <option value="">Marítimo FCL</option>
+               <option value="">Maritimo FCL</option>
+               <option value="">Aereo</option>
+               <option value="">Terrestre</option>
+               <option value="">Multimodal</option>
+            </select>
+            <input type="text" value="value" placeholder="Origen">
+            <input type="text" value="value" placeholder="Destino">
+            <select name="" id="">
+               <option value="">Equipo
+               </option>
+            </select>
+            <input type="text" value="value" placeholder="Obs / Nota adicional">
 
-                        </div>
-                        <!-- /.col-sm-6 -->
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+         </form>
+      </div>
+      <div class="seguimiento" id="book">
+         <button type="button" class="close">×</button>
+         <form>
+            <input type="text" value="" placeholder="Cotizacion"/>
+            <input type="text" value="" placeholder="Empresa"/>
+            <select name="" id="">
+               <option value="">Marítimo FCL</option>
+               <option value="">Maritimo FCL</option>
+               <option value="">Aereo</option>
+               <option value="">Terrestre</option>
+               <option value="">Multimodal</option>
+            </select>
+            <input type="text" value="value" placeholder="Origen">
+            <input type="text" value="value" placeholder="Destino">
+            <select name="" id="">
+               <option value="">Equipo
+               </option>
+            </select>
+            <input type="text" value="value" placeholder="Obs / Nota adicional">
+         </form>
+      </div>
 
-                        <div class="col-sm-4 hidden-xs">
-                           <div class="topbar-right">
+      <nav class="navbar navbar-default" role="navigation">
 
-                              <div class="custom-select lang-support">
-                                 <select id="languages">
-                                    
-                                    
+         <div class="container mainnav">
+            <div class="navbar-header">
+               <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
+               <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
+               <!-- offcanvas-trigger -->
+               <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
+                  <span class="sr-only">Toggle navigation</span>
+                  <i class="fa fa-bars"></i>
+               </button>
 
-                                    </select>
-                                 </div>
+            </div>
 
-                              </div>
-                              <!-- /.social-links -->
-                           </div>
-                           <!-- /.col-sm-6 -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-collapse">
 
-                        </div>
-                        <!-- /.row -->
-                     </div>
-                     <!-- /.container -->
-                  </div>
-                  <!-- /.overlay-bg -->
-               </nav>
-               <!-- /.top-bar -->
+               <ul class="nav navbar-nav navbar-right">
+                  
+                  
 
-               <div class="seguimiento" id="search">
-                  <button type="button" class="close">×</button>
-                  <form>
-                     <input type="search" value="" placeholder="Nombre de Usuario"/>
-                     <input type="search" value="" placeholder="Contraseña"/>
-                     <button type="submit" class="btn btn-primary">Ingresar</button>
-                  </form>
-               </div>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
 
-               <div class="seguimiento" id="quote">
-                  <button type="button" class="close">×</button>
-                  <form>
-                     <input type="text" value="" placeholder="Empresa"/>
-                     <select name="" id="">
-                        <option value="">Marítimo FCL</option>
-                        <option value="">Maritimo FCL</option>
-                        <option value="">Aereo</option>
-                        <option value="">Terrestre</option>
-                        <option value="">Multimodal</option>
-                     </select>
-                     <input type="text" value="value" placeholder="Origen">
-                     <input type="text" value="value" placeholder="Destino">
-                     <select name="" id="">
-                        <option value="">Equipo
-                        </option>
-                     </select>
-                     <input type="text" value="value" placeholder="Obs / Nota adicional">
+      </nav>
 
-                     <button type="submit" class="btn btn-primary">Ingresar</button>
-                  </form>
-               </div>
-               <div class="seguimiento" id="book">
-                  <button type="button" class="close">×</button>
-                  <form>
-                     <input type="text" value="" placeholder="Cotizacion"/>
-                     <input type="text" value="" placeholder="Empresa"/>
-                     <select name="" id="">
-                        <option value="">Marítimo FCL</option>
-                        <option value="">Maritimo FCL</option>
-                        <option value="">Aereo</option>
-                        <option value="">Terrestre</option>
-                        <option value="">Multimodal</option>
-                     </select>
-                     <input type="text" value="value" placeholder="Origen">
-                     <input type="text" value="value" placeholder="Destino">
-                     <select name="" id="">
-                        <option value="">Equipo
-                        </option>
-                     </select>
-                     <input type="text" value="value" placeholder="Obs / Nota adicional">
-                  </form>
-               </div>
+      
 
-               <nav class="navbar navbar-default" role="navigation">
+   </header>
+   
+   
 
-                  <div class="container mainnav">
-                     <div class="navbar-header">
-                        <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
-                        <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
-                        <!-- offcanvas-trigger -->
-                        <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
-                           <span class="sr-only">Toggle navigation</span>
-                           <i class="fa fa-bars"></i>
-                        </button>
 
-                     </div>
-
-                     <!-- Collect the nav links, forms, and other content for toggling -->
-                     <div class="collapse navbar-collapse navbar-collapse">
-
-                        <ul class="nav navbar-nav navbar-right">
-                           <li class=" ">
-                              <a href="index.html">Home</a>
-                           </li>
-                           <li class=" active  ">
-                              <a href="servicios.html">Servicios</a>
-                           </li>
-
-                           <li class=" ">
-                              <a href="informacion.html">Información</a>
-                           </li>
-                           <li >
-                              <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
-                           </li>
-                           
-
-                           <li class=" dropdown ">
-                              <a >Seguimiento<span class="fa fa-angle-down"></span></a>
-                              <div class="submenu-wrapper">
-                                 <div class="submenu-inner">
-                                    <ul class="dropdown-menu trackeo">
-                                       <li>
-                                          <a href="#quote">Quote</a>
-                                       </li>
-                                       <li>
-                                          <a href="#book">Book</a>
-                                       </li>
-                                       <li>
-                                          <a href="#search">Track</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- /.navbar-collapse -->
-                  </div>
-                  <!-- /.container -->
-
-               </nav>
-            </header>
-
-         
 
 
                
@@ -251,48 +168,31 @@
       <div class="container">
          <div class="row">
             <div class="col-md-3 col-sm-5 col-xs-12">
-               <div class="service-sidebar sidebar-wrapper">
+               <div class="service-sidebar">
 
                   <div class="widget">
-                     <div class="table-father direct accordion__item js-accordion-item active">
-                        <div class="accordion-header js-accordion-header">Servicios</div>
-                        <div class="accordion-body js-accordion-body">
-                           <div class="accordion__item js-accordion-item">
-                              <ul class="service-list ">
-                                 <li class="active">
-                                    <a data-toggle="tab" href="#marino" class="icon-marine">Marítimo</a>
-                                 </li>
-                                 <li>
-                                    <a data-toggle="tab" href="#terrestre" class="icon-trucking">Terrestre</a>
-                                 </li>
-                                 <li>
-                                    <a data-toggle="tab" href="#aereo" class="icon-air">Aéreo</a>
-                                 </li>
-                                 <li>
-                                    <a data-toggle="tab" href="#aduana" class="icon-store">Despacho de Aduana</a>
-                                 </li>
+                     <div class="table-father direct  active">
+                           <ul class="service-list ">
+                              <li class="active">
+                                 <a data-toggle="tab" href="#marino" class="icon-marine">Marítimo</a>
+                              </li>
+                              <li>
+                                 <a data-toggle="tab" href="#terrestre" class="icon-trucking">Terrestre</a>
+                              </li>
+                              <li>
+                                 <a data-toggle="tab" href="#aereo" class="icon-air">Aéreo</a>
+                              </li>
+                              <li>
+                                 <a data-toggle="tab" href="#aduana" class="icon-store">Despacho de Aduana</a>
+                              </li>
 
-                                 <li>
-                                    <a data-toggle="tab" href="#seguros" class="icon-transportation">Seguros</a>
-                                 </li>
+                              <li>
+                                 <a data-toggle="tab" href="#seguros" class="icon-transportation">Seguros</a>
+                              </li>
 
-                              </ul>
-                           </div>
-                        </div>
+                           </ul>
                      </div>
 
-                  </div>
-                  <!-- /.widget -->
-
-                  <div class="widget">
-                     <div class="download-wrap company">
-                        <a href="#">Formulario Solicitud
-                           <br>de Seguro
-                           <span>Download</span>
-                           <i class="fa fa-download"></i>
-                        </a>
-                     </div>
-                     <!-- /.download-wrap -->
                   </div>
                   <!-- /.widget -->
 
@@ -312,8 +212,9 @@
             <div class="col-md-9 col-sm-7 col-xs-12 tab-content">
 
                <div id="marino" class="single-service-content tab-pane fade in active">
+                  <h2>COBERTURA GLOBAL</h2>
                   <p>Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una cobertura global completa para el tráfico de sus mercaderías.</p>
-                  
+
                   <br>
                   <div class="row">
 
@@ -350,10 +251,8 @@
 
                <div id="terrestre" class="single-service-content tab-pane fade">
                   <img class="img-alignnone" src="img/service/truckingthumb.png" alt="image">
-                  <p>Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada
-                     unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa
-                     homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de
-                     cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
+                  <h2>SEGUIMIENTO DE PUNTA A PUNTA</h2>
+                  <p>Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
                   <br>
                   <div class="row">
 
@@ -384,10 +283,8 @@
                   <div class="single-service-thumb">
                      <img src="img/service/airthumb.jpg" alt="image"/>
                   </div>
-                  <p>Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros
-                     especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito,
-                     optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia,
-                     informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p><br>
+                  <h2>DESDE Y HACIA CUALQUIER AEROPUERTO</h2>
+                  <p>Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito, optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia, informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p><br>
                   <div class="row">
 
                      <div class="col-sm-7 col-xs-12">
@@ -424,7 +321,7 @@
                   </p>
                   <p>Declaraciones Juradas Anticipadas de Importación, Licencias no Automáticas.</p>
                   <br>
-                  
+
                </div>
                <!-- /.single-service-content -->
 
@@ -438,19 +335,9 @@
                         <h2>COBERTURA TOTAL</h2>
                         <p>Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
                         <p>El seguro de transporte cubre la mercadería transportada, de todos los riesgos que pudieran surgir en la travesía tales como robos, roturas, pérdidas, depósitos intermedios, huelgas, guerras, averías gruesas, etc.</p>
-                       
+
                         <p>Para consultar o solicitar cobertura, completá el siguiente formulario:</p>
-                        <div class="widget">
-                           <div class="download-wrap company">
-                              <a href="#">Formulario Solicitud
-                                 <br>de Seguro
-                                 <span>Download</span>
-                                 <i class="fa fa-download"></i>
-                              </a>
-                           </div>
-                           <!-- /.download-wrap -->
-                        </div>
-                        <!-- /.widget -->
+
                         <br>
                      </div>
                   </div>
@@ -535,7 +422,6 @@
                                        <textarea id="message" name="message" class="form-control" rows="6" required="" placeholder=""></textarea>
                                     </div>
 
-                                    
                                  </form>
 
                                  <div class="contact-datos">
@@ -546,7 +432,7 @@
                                           <p>011 5199-2225 - Opción 1</p>
                                        </div>
                                        <div class="col-12 col-md-4">
-                                          <h5>Departamento de  Operaciones</h5>
+                                          <h5>Departamento de Operaciones</h5>
                                           <a href="mailto:operaciones@cgsgroup.com.ar">operaciones@cgsgroup.com.ar</a>
                                           <p>011 5199-2225 - Opción 2</p>
                                        </div>
@@ -706,7 +592,7 @@
                      <a href="servicios.html">Servicios</a>
                   </li>
                   <li>
-                     <a href="informacion.html">Información</a>
+                     <a href="#">Información</a>
                   </li>
                   <li>
                      <a href="#">Contacto</a>
@@ -716,67 +602,21 @@
                      <ul>
                         <li>Español</li>
                         <li>Inglés</li>
-                        <li>French</li>
                      </ul>
                   </li>
                   <li>
-                     <a href="#">Ubicación</a>
-                     <ul class="locations-ul">
+                     <a >MI CGS</a>
+                     <ul >
                         <li>
-                           Argentina
-                           <ul class="locations-canvas">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (54 11) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.ar</a>
-                              </li>
-                           </ul>
+                           Cotización
                         </li>
                         <li>
-                           United Kingdom
-                           <ul class="locations-canvas">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (UK) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.uk</a>
-                              </li>
-                           </ul>
+                           Reservar
                         </li>
                         <li>
-                           France
-                           <ul class="locations-canvas">
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-phone"></i>
-                                    (FR) 5199 2225</a>
-                              </li>
-                              <li>
-                                 <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    info@cgsgroup.com.fr</a>
-                              </li>
-                           </ul>
+                           Rastreo
                         </li>
                      </ul>
-
-                  </li>
-                  <li class=" form-group">
-                     <form class="trackeo" action="">
-                        <label for="track">Seguimiento</label>
-                        <input type="text" class="form-control" id="track" placeholder=" Nombre de Usuario">
-                        <input type="password" class="form-control" id="pass" placeholder=" Contraseña">
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                     </form>
                   </li>
 
                </ul>
