@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600&family=Open+Sans:wght@600;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   text-transform: uppercase;
+   color: $indigo-700;
+   font-weight: 700;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 130%;
+}
+
+a, button {
+   font-weight: 600;
+   font-family: 'Baloo Chettan 2', cursive !important;
+   transition: $transition $timing;
+}
+
+p {
+   letter-spacing: .2px;
+   color: $gray-700;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 120%;
+   font-family: 'Baloo Chettan 2', cursive !important;
+   font-weight: 400;
+   font-size: 1em;
+}
+
+
+
+.section-title {
+   // font-size: 26px;
+   text-transform: uppercase;
+   margin-bottom: 1em;
+   text-align: left;
+
+   &::after {
+      content: '';
+      border-bottom: 3px solid;
+      width: 50px;
+      display: block;
+      margin-top: .5em;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+   }
+}
+
+@media (min-width:768px) {
+   p {
+      font-size: 1.25em;
+   }
+}

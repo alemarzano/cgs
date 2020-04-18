@@ -1,0 +1,422 @@
+// @import 'imports/colors', 'imports/mixin';
+
+/* ===================== N A V  M E N U  ===================== */
+
+.topnavbar {
+   width: 100%;
+   height: 65px;
+   position: fixed;
+   text-align: center;
+   z-index: 10;
+
+   .container {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .logo {
+      padding: 8px 0;
+
+      img {
+         max-width: 100%;
+         width: 15em;
+      }
+   }
+
+   ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 0;
+      overflow-x: hidden;
+      position: fixed;
+      top: 52px;
+      transition: height .5s;
+      width: 100vw;
+      left: 0;
+      flex-direction: column;
+      background-color: white;
+      height: 0;
+      justify-content: center;
+      box-shadow: $soft-shadow;
+      li {
+         width: 100%;
+         text-align: right;
+         padding: 0;
+         margin: .5em 0;
+         text-align: center;
+         font-size: 1.25em;
+
+         a {
+            text-align: center;
+            width: 100%;
+            
+            padding: 8px 16px;
+            color: $gray-700;
+            text-transform: uppercase;
+            &.dropdown-item.active {
+               background-color: $indigo-600;
+            }
+         }
+
+         &.active {
+            a {
+               color: $indigo-600;
+               font-weight: bold;
+
+            }
+         }
+         button.dropdown-toggle {
+            font-size: 1.5em;
+            color:$gray-700;
+            border:none;
+            &::after {
+               content:none;
+               
+            }
+            i {
+               position: relative;
+               padding-right:1em;
+               &::after{
+                  content: "\f078";
+                  font-size: 0.5em;
+                  margin-left: 8px;
+                  position: absolute;
+                  top:8px;
+               }
+            }
+         }
+
+      }
+   }
+
+}
+
+/* Home section */
+
+
+.navTrigger {
+   display: block;
+}
+
+
+@media screen and (min-width:768px) {
+   
+   .topnavbar {
+      background-color: white;
+      .logo img {
+         width: 20em;
+      }
+      ul {
+         li {
+            a {
+               font-size: 1.5em;
+               &.btn {
+                  width:240px;
+               }
+            }
+         }
+      }
+   }
+   
+}
+
+@media screen and (min-width:1200px) {
+
+   .topnavbar {
+      background-color: transparent;
+      .container {
+         box-shadow: $shadow;
+         height:5em;
+         .navTrigger {
+            display: none;
+         }
+
+         ul.navlinks {
+            position: relative;
+            height: auto !important;
+            top: inherit;
+            flex-direction: row;
+            box-shadow: none;
+            align-items: center;
+            justify-content: flex-end;
+            overflow:visible;
+
+            li {
+               margin: 0 .5em;
+               width: auto;
+               a{
+                  font-size: 1.25em;
+                  &.btn {
+                     max-width: inherit;
+                     width: auto;
+                  }
+               }
+            }
+         }
+         .logo {
+            img {
+               width:28em;
+            }
+         }
+      }
+      
+   }
+   .counter-section {
+      .counter-block {
+         display:flex;
+         justify-content: center;
+         span.count-description {
+            padding-left:8em;
+            &::before {
+               font-size: 8em;
+            }
+            .text {
+               font-size: 1.25em;
+            }
+         }
+      }
+   }
+   .cgs-tabs .nav-pills .nav-item a {
+      font-size:1.25em;
+   }
+}
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+   cursor: pointer;
+   width: 30px;
+   height: 25px;
+}
+
+.navTrigger i {
+   background-color: $indigo-700;
+   border-radius: 2px;
+   content: '';
+   display: block;
+   width: 100%;
+   height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+   -webkit-animation: outT 0.8s backwards;
+   animation: outT 0.8s backwards;
+   -webkit-animation-direction: reverse;
+   animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+   margin: 5px 0;
+   -webkit-animation: outM 0.8s backwards;
+   animation: outM 0.8s backwards;
+   -webkit-animation-direction: reverse;
+   animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+   -webkit-animation: outBtm 0.8s backwards;
+   animation: outBtm 0.8s backwards;
+   -webkit-animation-direction: reverse;
+   animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+   -webkit-animation: inT 0.8s forwards;
+   animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+   -webkit-animation: inM 0.8s forwards;
+   animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+   -webkit-animation: inBtm 0.8s forwards;
+   animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+   50% {
+      -webkit-transform: rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: rotate(45deg);
+   }
+}
+
+@keyframes inM {
+   50% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(45deg);
+   }
+}
+
+@-webkit-keyframes outM {
+   50% {
+      -webkit-transform: rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: rotate(45deg);
+   }
+}
+
+@keyframes outM {
+   50% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(45deg);
+   }
+}
+
+@-webkit-keyframes inT {
+   0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      -webkit-transform: translateY(9px) rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: translateY(9px) rotate(135deg);
+   }
+}
+
+@keyframes inT {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(9px) rotate(0deg);
+   }
+
+   100% {
+      transform: translateY(9px) rotate(135deg);
+   }
+}
+
+@-webkit-keyframes outT {
+   0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      -webkit-transform: translateY(9px) rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: translateY(9px) rotate(135deg);
+   }
+}
+
+@keyframes outT {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(9px) rotate(0deg);
+   }
+
+   100% {
+      transform: translateY(9px) rotate(135deg);
+   }
+}
+
+@-webkit-keyframes inBtm {
+   0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      -webkit-transform: translateY(-9px) rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: translateY(-9px) rotate(135deg);
+   }
+}
+
+@keyframes inBtm {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(-9px) rotate(0deg);
+   }
+
+   100% {
+      transform: translateY(-9px) rotate(135deg);
+   }
+}
+
+@-webkit-keyframes outBtm {
+   0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      -webkit-transform: translateY(-9px) rotate(0deg);
+   }
+
+   100% {
+      -webkit-transform: translateY(-9px) rotate(135deg);
+   }
+}
+
+@keyframes outBtm {
+   0% {
+      transform: translateY(0px) rotate(0deg);
+   }
+
+   50% {
+      transform: translateY(-9px) rotate(0deg);
+   }
+
+   100% {
+      transform: translateY(-9px) rotate(135deg);
+   }
+}
+
+.affix {
+   padding: 0;
+   background-color: #111;
+}
+
+
+
+
+
+
+.myH2 {
+   text-align: center;
+   font-size: 4rem;
+}
+
+.myP {
+   text-align: justify;
+   padding-left: 15%;
+   padding-right: 15%;
+   font-size: 20px;
+}
+
+@media all and (max-width:700px) {
+   .myP {
+      padding: 2%;
+   }
+}

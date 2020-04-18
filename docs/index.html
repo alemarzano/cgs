@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>CGS GROUP | Home</title>
       <!-- styles -->
+      <script src="https://kit.fontawesome.com/ae45b49eac.js" crossorigin="anonymous"></script>
+      <script src="js/jquery.js"></script>
       <link rel="stylesheet" href="css/slider-pro.css">
-      <link rel="stylesheet" href="css/tiny-slider.css">
       <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/extras.css">
-      <link rel="stylesheet" href="css/theme.css">
       <!-- -->
       <link rel="stylesheet" href="css/main.css">
 
@@ -22,174 +21,78 @@
       <meta property="og:image" content="https://cdn6.aptoide.com/imgs/3/6/2/362b03b054f84b74083d3929a7d700ac_icon.png?w=256">
       <meta property="og:type" content="website"/>
       <meta property="og:locale" content="es_AR"/>
-      <meta property="og:locale:alternate" content="fr_FR"/>
       <meta property="og:locale:alternate" content="en_UK"/>
    </head>
    <body>
-      <div id="st-container" class="st-container">
-         <div class="st-pusher">
-            <div class="st-content">
-               
+      <header>
+         
    
    
 
-   <header class="header">
-      <nav class="top-bar visible-lg">
-         <div class="overlay-bg">
-            <ul class="container">
-               <li>
-                  <a href="index.html">ESP</a>
+   <nav class="nav topnavbar">
+      <div class="container">
+         <a class=" logo" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
+         <ul class="navlinks">
+            
+
+               <li class=" ">
+                  <a href="servicios.html">Servicios</a>
+               </li>
+
+               <li class=" ">
+                  <a href="#">Información</a>
+               </li>
+               <li >
+                  <a class=" " href="#">Contacto</a>
+               </li>
+               <li class="text-center">
+                  <button type="button" class="btn btn-first">Mi CGS</button>
+                  
                </li>
                <li>
-                  <a href="eng_index.html">ENG</a>
+                  <div class="btn-group">
+                     <button type="button" class="btn btn-third dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-language"></i>
+                        
+                     </button>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item active" href="#">Spanish</a>
+                        <a class="dropdown-item " href="#">English</a>
+                        
+                     </div>
+                  </div>
                </li>
-            </ul>
-         </div>
+            
+            
 
-         <!-- /.overlay-bg -->
-      </nav>
-      <!-- /.top-bar -->
-
-      <div class="seguimiento" id="search">
-         <button type="button" class="close">×</button>
-         <form>
-            <input type="search" value="" placeholder="Nombre de Usuario"/>
-            <input type="search" value="" placeholder="Contraseña"/>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-         </form>
+         </ul>
+         <span onclick="openNav()" class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+         </span>
       </div>
-
-      <div class="seguimiento" id="quote">
-         <button type="button" class="close">×</button>
-         <form>
-            <input type="text" value="" placeholder="Empresa"/>
-            <select name="" id="">
-               <option value="">Marítimo FCL</option>
-               <option value="">Maritimo FCL</option>
-               <option value="">Aereo</option>
-               <option value="">Terrestre</option>
-               <option value="">Multimodal</option>
-            </select>
-            <input type="text" value="value" placeholder="Origen">
-            <input type="text" value="value" placeholder="Destino">
-            <select name="" id="">
-               <option value="">Equipo
-               </option>
-            </select>
-            <input type="text" value="value" placeholder="Obs / Nota adicional">
-
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-         </form>
-      </div>
-      <div class="seguimiento" id="book">
-         <button type="button" class="close">×</button>
-         <form>
-            <input type="text" value="" placeholder="Cotizacion"/>
-            <input type="text" value="" placeholder="Empresa"/>
-            <select name="" id="">
-               <option value="">Marítimo FCL</option>
-               <option value="">Maritimo FCL</option>
-               <option value="">Aereo</option>
-               <option value="">Terrestre</option>
-               <option value="">Multimodal</option>
-            </select>
-            <input type="text" value="value" placeholder="Origen">
-            <input type="text" value="value" placeholder="Destino">
-            <select name="" id="">
-               <option value="">Equipo
-               </option>
-            </select>
-            <input type="text" value="value" placeholder="Obs / Nota adicional">
-         </form>
-      </div>
-
-      <nav class="navbar navbar-default" role="navigation">
-
-         <div class="container mainnav">
-            <div class="navbar-header">
-               <!-- Logo Nuevo <a class="logo visible-lg navbar-brand" href="index.html"><img src="img/logo_color_w.png" alt=""></a> <a class=" logo hidden-lg navbar-brand" href="index.html"><img src="img/logo_color_m.png" alt=""></a> -->
-               <a class=" logo navbar-brand" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
-               <!-- offcanvas-trigger -->
-               <button type="button" class="navbar-toggle collapsed pull-right hidden-lg">
-                  <span class="sr-only">Toggle navigation</span>
-                  <i class="fa fa-bars"></i>
-               </button>
-
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-collapse">
-
-               <ul class="nav navbar-nav navbar-right">
-                  
-                     <li class=" active  ">
-                        <a href="index.html">Home</a>
-                     </li>
-                     <li class=" ">
-                        <a href="servicios.html">Servicios</a>
-                     </li>
-
-                     <li class=" ">
-                        <a href="#">Información</a>
-                     </li>
-                     <li >
-                        <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
-                     </li>
-                     
-
-                     <li class=" dropdown">
-                        <a class="btn-cgs">Mi CGS<span class="fa fa-angle-down"></span></a>
-                        <div class="submenu-wrapper">
-                           <div class="submenu-inner">
-                              <ul class="dropdown-menu trackeo">
-                                 <li>
-                                    <a href="#quote">Cotización</a>
-                                 </li>
-                                 <li>
-                                    <a href="#book">Reservar</a>
-                                 </li>
-                                 <li>
-                                    <a href="#search">Rastreo</a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-
-                     </li>
-                  
-                  
-
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-         </div>
-         <!-- /.container -->
-
-      </nav>
-
-      
-
-   </header>
-   
-   
+   </nav>
 
 
 
+      </header>
 
-               
+      <main>
+         
    <div class="container-fluid main">
       <div id="my-slider" class="slider-pro">
          <div class="sp-slides">
             <!-- MARITIMO -->
             <div class="sp-slide">
                <img class="sp-image" src="css/images/blank.gif" data-src="img/maritimo.jpg"/>
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
                      <h3 data-show-transition="left">COBERTURA GLOBAL</h3>
                      <hr>
                      <p data-show-transition="left">Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una cobertura global completa para el tráfico de sus mercaderías.</p>
-                     <a href="servicios.html" class="btn">
-                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-second">
+                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -199,13 +102,13 @@
             <div class="sp-slide">
                <img class="sp-image" src="css/images/blank.gif" data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_1.jpg" data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_1.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
                      <h3 data-show-transition="left">SEGUIMIENTO DE PUNTA A PUNTA</h3>
                      <hr>
                      <p data-show-transition="left">Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
-                     <a href="servicios.html" class="btn">
-                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-first">
+                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -214,13 +117,13 @@
             <div class="sp-slide">
                <img class="sp-image" src="css/images/blank.gif" data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/11/slider_1.jpg" data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/11/slider_1.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
                      <h3 data-show-transition="left">DESDE Y HACIA CUALQUIER AEROPUERTO</h3>
                      <hr>
                      <p data-show-transition="left">Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito, optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia, informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p>
-                     <a href="servicios.html" class="btn">
-                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-first">
+                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -229,13 +132,13 @@
             <div class="sp-slide">
                <img class="sp-image" src="css/images/blank.gif" data-src="https://dsfph.com/admin/uploads/service/BROKERAGE%20SERVICES%20&%20PROCESSING.jpg" data-retina="https://dsfph.com/admin/uploads/service/BROKERAGE%20SERVICES%20&%20PROCESSING.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
                      <h3 data-show-transition="left">ASESORAMIENTO INTEGRAL</h3>
                      <hr>
                      <p data-show-transition="left">Asesoramiento en Régimen Legal Aduanero, clasificación Arancelaria de todo tipo de mercadería.</p>
-                     <a href="servicios.html" class="btn">
-                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-first">
+                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -244,13 +147,13 @@
             <div class="sp-slide">
                <img class="sp-image" src="css/images/blank.gif" data-src="img/slider/secure.jpg" data-retina="img/slider/secure.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
                      <h3 data-show-transition="left">COBERTURA TOTAL</h3>
                      <hr>
                      <p data-show-transition="left">Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
-                     <a href="servicios.html" class="btn">
-                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-first">
+                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -269,7 +172,7 @@
                      <path d="m266 330c0 5.523438-4.476562 10-10 10s-10-4.476562-10-10 4.476562-10 10-10 10 4.476562 10 10zm0 0"/>
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">MARITIMO</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen ">MARITIMO</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -307,7 +210,7 @@
                      </g>
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">TERRESTRE</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen ">TERRESTRE</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -322,7 +225,7 @@
                      <path d="m110.902344 147.980469c2.910156 2.90625 7.765625 2.90625 10.675781 0l28.179687-28.179688c2.945313-2.949219 2.945313-7.726562 0-10.675781-2.949218-2.945312-7.726562-2.945312-10.675781 0l-28.179687 28.179688c-2.945313 2.949218-2.945313 7.726562 0 10.675781zm0 0"/>
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">AÉREO</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen ">AÉREO</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -360,7 +263,7 @@
 
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">ADUANA</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen ">ADUANA</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -381,7 +284,7 @@
 
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">SEGUROS</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen ">SEGUROS</h5>
             </div>
 
          </div>
@@ -389,14 +292,14 @@
    </div>
 
    <!-- services start -->
-   <section class="service-home section-padding">
+   <section class="service-home ">
       <div class="container ">
 
          <div class="row ">
             <div class="col-xs-12 col-sm-6">
                <div class="service">
 
-                  <h3>Misión, Valores y Visión
+                  <h3 class="section-title">Misión, Valores y Visión
                   </h3>
                   <p>Nuestra misión es brindar soluciones integrales en materia de transporte internacional, satisfaciendo las necesidades crecientes de nuestros clientes.</p>
 
@@ -416,96 +319,88 @@
             </div>
 
          </div>
-         <!-- /.row -->
       </div>
-      <!-- /.container -->
    </section>
    <!-- services end -->
 
    <!-- counter start -->
-   <section class="counter-section" data-stellar-background-ratio="0.5">
+   <section class="counter-section">
       <div class="container">
          <div class="row">
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-boat">
-                     <strong >+<span class="timer">200</span></strong>Embarques en curso</span>
+                     <strong >+<span class="timer">200</span></strong><span class="text">Embarques en curso</span></span>
                </div>
             </div>
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-international">
-                     <strong>+<span class="timer">5000</span></strong>Clientes Mundiales</span>
+                     <strong>+<span class="timer">150</span></strong><span class="text">Clientes Mundiales</span></span>
                </div>
             </div>
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-compass">
-                     <strong>+<span class="timer">150</span></strong>Entregas realizadas</span>
+                     <strong>+<span class="timer">5000</span></strong><span class="text">Entregas realizadas</span></span>
                </div>
             </div>
          </div>
          <!-- /.row -->
       </div>
-      <!-- /.container -->
    </section>
-   <!-- /.counter-section -->
    <!-- counter end -->
 
    <!-- why-us-setion start -->
-   <section class="why-us-setion section-padding">
+   <section class="why-us">
       <div class="container">
-         <div class="row text-center">
-            <div class="col-xs-12">
+         <div class="row">
+            <div class="col-12 col-xl-4">
                <h3 class="section-title">¿Por qué elegirnos?</h3>
-               <span class="section-sub">CGS GROUP SRL opera como agente de carga, conformado por personal altamente capacitado en el rubro del transporte internacional, con vasta experiencia en coordinación de servicios logísticos integrales.</span>
+               <p class="section-sub">CGS GROUP SRL opera como agente de carga, conformado por personal altamente capacitado en el rubro del transporte internacional, con vasta experiencia en coordinación de servicios logísticos integrales.</pn>
             </div>
-         </div>
-         <!-- /.row -->
-
-         <div class="row content-row">
-            <div class="col-md-12">
-               <div class="css-tab" role="tabpanel">
-
+            <div class="col-12 col-xl-8 mt-5 mt-xl-0">
+               <div class="cgs-tabs">
                   <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" role="tablist">
-                     <li role="presentation" class="active">
-                        <a href="#secure" aria-controls="secure" role="tab" data-toggle="tab">
-                           <i class="flaticon-logistics15"></i>
+                  <ul class="nav nav-pills">
+                     <li class="nav-item">
+                        <a href="#secure" aria-controls="secure" role="tab" data-toggle="pill" class="nav-link active" aria-selected="true">
+                           <i class="fas fa-lock"></i>
                            Seguro</a>
                      </li>
-                     <li role="presentation">
-                        <a href="#trackable" aria-controls="trackable" role="tab" data-toggle="tab">
-                           <i class="flaticon-logistics18"></i>
+                     <li class="nav-item">
+                        <a href="#trackable" aria-controls="trackable" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                           <i class="fas fa-map-pin"></i>
                            Trackeable</a>
                      </li>
-                     <li role="presentation">
-                        <a href="#fast" aria-controls="fast" role="tab" data-toggle="tab">
-                           <i class="flaticon-logistics16"></i>
+                     <li class="nav-item">
+                        <a href="#fast" aria-controls="fast" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                           <i class="fas fa-shipping-fast"></i>
                            Rápido</a>
                      </li>
-                     <li role="presentation">
-                        <a href="#reliable" aria-controls="reliable" role="tab" data-toggle="tab">
-                           <i class="flaticon-broken43"></i>
+                     <li class="nav-item">
+                        <a href="#reliable" aria-controls="reliable" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                           <i class="fas fa-hands-helping"></i>
                            Confianza</a>
                      </li>
-                     
+
                   </ul>
 
                   <!-- Tab panes -->
-                  <div class="tab-content">
-                     <div role="tabpanel" class="tab-pane active fade in" id="secure">
+                  <div class="tab-content  mt-5">
+                     <div role="tabpanel" class="tab-pane active fade show" id="secure" aria-labelledby="secure-tab">
                         <div class="css-tab-content">
                            <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/secure.png" alt="">
+                              <div class="col-12 col-md-6">
+                                 <img class="img-fluid" src="img/secure.png" alt="">
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-5 content-text">
+                              <div class="col-md-6 mt-5 mt-xl-0">
                                  <h4>Seguro</h4>
 
-                                 <p>Consideramos de importancia extrema la convicción de nuestros clientes al confiarnos el transporte de sus cargas y actuamos de igual manera a la hora de seleccionar a nuestros proveedores de servicios. </p>
+                                 <p>Consideramos de importancia extrema la convicción de nuestros clientes al confiarnos el transporte de sus cargas y actuamos de igual manera a la hora de seleccionar a nuestros proveedores de servicios.
+                                 </p>
 
                               </div>
                               <!-- /.col-md-6 -->
@@ -514,18 +409,19 @@
                         </div>
                         <!-- /.css-tab-content -->
                      </div>
-                     <div role="tabpanel" class="tab-pane fade" id="trackable">
+                     <div role="tabpanel" class="tab-pane fade" id="trackable" aria-labelledby="trackable-tab">
                         <div class="css-tab-content">
                            <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/track.png" alt="">
+                              <div class="col-12 col-md-6">
+                                 <img class="img-fluid" src="img/track.png" alt="">
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-5 content-text">
+                              <div class="col-md-6 mt-5 mt-xl-0">
                                  <h4>Trackeable</h4>
 
-                                 <p>¡Siga sus embarques! Manténgase informado de los eventos importantes durante el todo el trayecto. Use nuestra herramienta de seguimiento para monitorear el estado de sus cargas. Reciba notificaciones por email en cada actualización. </p>
+                                 <p>¡Siga sus embarques! Manténgase informado de los eventos importantes durante el todo el trayecto. Use nuestra herramienta de seguimiento para monitorear el estado de sus cargas. Reciba notificaciones por email en cada actualización.
+                                 </p>
 
                               </div>
                               <!-- /.col-md-6 -->
@@ -534,15 +430,15 @@
                         </div>
                         <!-- /.css-tab-content -->
                      </div>
-                     <div role="tabpanel" class="tab-pane fade" id="fast">
+                     <div role="tabpanel" class="tab-pane fade" id="fast" aria-labelledby="fast-tab">
                         <div class="css-tab-content">
                            <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/fast.png" alt="">
+                              <div class="col-12 col-md-6">
+                                 <img class="img-fluid" src="img/fast.png" alt="">
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 content-text">
+                              <div class="col-md-6 mt-5 mt-xl-0">
                                  <h4>Rápido</h4>
 
                                  <p></p>
@@ -553,368 +449,154 @@
                         </div>
                         <!-- /.css-tab-content -->
                      </div>
-                     <div role="tabpanel" class="tab-pane fade" id="reliable">
-                        <div class="css-tab-content">
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/reliable.png" alt="">
-                              </div>
-                              <!-- /.col-md-6 -->
+                     <div role="tabpanel" class="tab-pane fade" id="reliable" aria-labelledby="-tab">
+                        <div role="tabpanel" class="tab-pane fade" id="reliable" aria-labelledby="-tab">
+                           <div class="css-tab-content">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <img class="img-fluid" src="img/reliable.png" alt="">
+                                 </div>
+                                 <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 content-text">
-                                 <h4>Confianza</h4>
+                                 <div class="col-md-6 mt-5 mt-xl-0">
+                                    <h4>Confianza</h4>
 
-                                 <p></p>
+                                    <p></p>
+                                 </div>
+                                 <!-- /.col-md-6 -->
                               </div>
-                              <!-- /.col-md-6 -->
+                              <!-- /.row -->
                            </div>
-                           <!-- /.row -->
+                           <!-- /.css-tab-content -->
                         </div>
-                        <!-- /.css-tab-content -->
                      </div>
                   </div>
+                  <!-- /.css-tab -->
                </div>
-               <!-- /.css-tab -->
-            </div>
-            <!-- /.col-md-12 -->
-         </div>
-         <!-- /.row -->
-
-      </div>
-      <!-- /.container -->
-   </section>
-   <!-- why-us-setion end -->
-
-   <!-- agentes start -->
-   <section class="agentes section-padding">
-      <div class="container">
-         <div class="row text-center">
-            <div class="col-xs-12">
-               <h3 class="section-title">Agentes</h3>
-               <span class="section-sub">Contamos con el respaldo y el mismo compromiso de CGS Group en distintas agencias localizadas en las más importantes cuidades del mundo. De esta forma podemos garantizar un servicio de calidad tanto en origen como en destino.</span>
+               <!-- /.col-md-12 -->
             </div>
          </div>
-         <!-- /.row -->
 
-         <div class="row content-row">
-            <div class="col-md-12">
-               <iframe src="https://www.google.com/maps/d/embed?mid=12ffp4Y49njvLWoQNdSd4-FAJ_NM" width="100%" height="480"></iframe>
-            </div>
-            <!-- /.col-md-12 -->
+         <div class="row mt-5">
+            
+
          </div>
-         <!-- /.row -->
+      </section>
+      <!-- why-us-setion end -->
 
-      </div>
-      <!-- /.container -->
-   </section>
+      <!-- agentes start -->
+      <section class="agentes section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <h3 class="section-title">Agentes</h3>
+                  <p class="section-sub">Contamos con el respaldo y el mismo compromiso de CGS Group en distintas agencias localizadas en las más importantes cuidades del mundo. De esta forma podemos garantizar un servicio de calidad tanto en origen como en destino.</p>
+               </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row content-row">
+               <div class="col-md-12">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=12ffp4Y49njvLWoQNdSd4-FAJ_NM" width="100%" height="480"></iframe>
+               </div>
+               <!-- /.col-md-12 -->
+            </div>
+            <!-- /.row -->
+
+         </div>
+         <!-- /.container -->
+      </section>
+
    
-   
+      </main>
 
+    
+      <footer >
+         <div class="main-footer">
+            <div class="container">
+               <div class="row">
 
-               <!-- cta start -->
-               <section class="cta-section">
-                  <div class="container text-center">
-                     <a data-toggle="modal" data-target="#quoteModal" href="#" class="btn btn-primary quote-btn">Contactanos</a>
-
-                     <!-- Modal -->
-                     <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                           <div class="modal-content">
-                              <div class="modal-header">
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span></button>
-                                 <h4 class="modal-title" id="quoteModalLabel">
-                                    Solicite una tarifa para el envío de sus productos.
-                                 </h4>
-                              </div>
-                              <div class="modal-body">
-                                 <form id="contactForm" action="sendemail.php" method="POST">
-                                    <div class="row">
-                                       <div class="col-md-6">
-                                          <div class="form-group">
-                                             <label for="name">Nombre</label>
-                                             <input id="name" name="name" type="text" class="form-control" required="" placeholder="">
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="form-group">
-                                             <label for="company">Empresa</label>
-                                             <input id="company" name="company" type="text" class="form-control" placeholder="">
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="row">
-                                       <div class="col-md-6">
-                                          <div class="form-group">
-                                             <label for="phone">Teléfono</label>
-                                             <input id="phone" name="phone" type="text" class="form-control" placeholder="">
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="form-group">
-                                             <label for="email">Email</label>
-                                             <input id="email" name="email" type="email" class="form-control" required="" placeholder="">
-                                          </div>
-                                       </div>
-                                    </div>
-
-                                    <div class="row">
-                                       <div class="col-md-6">
-                                          <div class="form-group">
-                                             <label for="city">Ciudad</label>
-                                             <input id="city" name="city" type="text" class="form-control" placeholder="">
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="form-group">
-                                             <label for="subject">Asunto</label>
-                                             <input id="subject" name="subject" type="text" class="form-control" required="" placeholder="">
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="form-group text-area">
-                                       <label for="message">Su mensaje</label>
-                                       <textarea id="message" name="message" class="form-control" rows="6" required="" placeholder=""></textarea>
-                                    </div>
-
-                                 </form>
-
-                                 <div class="contact-datos">
-                                    <div class="row">
-                                       <div class="col-12 col-md-4">
-                                          <h5>Departamento comercial</h5>
-                                          <a href="mailto:sales@cgsgroup.com.ar">sales@cgsgroup.com.ar</a>
-                                          <p>011 5199-2225 - Opción 1</p>
-                                       </div>
-                                       <div class="col-12 col-md-4">
-                                          <h5>Departamento de Operaciones</h5>
-                                          <a href="mailto:operaciones@cgsgroup.com.ar">operaciones@cgsgroup.com.ar</a>
-                                          <p>011 5199-2225 - Opción 2</p>
-                                       </div>
-                                       <div class="col-12 col-md-4">
-                                          <h5>Departamento de Administración</h5>
-                                          <a href="mailto:admin@cgsgroup.com.ar">admin@cgsgroup.com.ar</a>
-                                          <p>011 5199-2225 - Opción 3</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="modal-footer">
-                                 <button type="submit" class="btn">Enviar Mensaje</button>
-                              </div>
-                           </div>
-                        </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                     <div class="widget subscribe no-box">
+                        <h5 class="widget-title">CGS GROUP<span></span></h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum.
+                        </p>
                      </div>
-
                   </div>
-                  <!-- /.container -->
-               </section>
-               <!-- /.cta-section -->
-               <!-- cta end -->
 
-               <!-- footer-widget-section start -->
-               <section class="footer-widget-section section-padding">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-3  col-sm-4">
-                           <div class="footer-widget">
-                              <h3>CGS Group</h3>
-
-                              <address>
-                                 Uruguay 265, 2°A<br>
-                                 CABA, C1015ABE<br>
-                                 Buenos Aires - Argentina<br>
-                                 (54 11) 5199 2225
-                                 <br>
-                                 <!-- Google Map Modal Trigger -->
-                                 
-
-                              </address>
-
-                              <!-- Modal -->
-                              <div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                       <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                             <span aria-hidden="true">&times;</span></button>
-                                          <h4 class="modal-title" id="myModalLabel">Our Location</h4>
-                                       </div>
-                                       <div class="modal-body">
-
-                                          <div id="googleMap"></div>
-
-                                       </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                 </div>
-                                 <!-- /.modal-dialog -->
-                              </div>
-                              <!-- End Modal -->
-                           </div>
-                           <!-- /.footer-widget -->
-                        </div>
-                        <!-- /.col-md-4 -->
-
-                        <div class="col-md-3 col-sm-4">
-                           <div class="footer-widget">
-                              <h3>&amp;</h3>
-
-                              <ul>
-                                 <li>
-                                    <a href="sercios.html">Servicios</a>
-                                 </li>
-                                 <li>
-                                    <a href="informacion.html">Información</a>
-                                 </li>
-                                 <li>
-                                    <a data-toggle="modal" data-target="#quoteModal" href="#">Contacto</a>
-                                 </li>
-                                 <li>
-                                    <a href="#">FAQ Page</a>
-                                 </li>
-                              </ul>
-                           </div>
-                           <!-- /.footer-widget -->
-                        </div>
-                        <!-- /.col-md-4 -->
-
-                        <div class="col-md-6 col-sm-4">
-                           <div class="footer-widget">
-                              <h3>Mantenete informado</h3>
-                              <p>Ingresá tu mail para suscribirte a nuestro newsletter</p>
-
-                              <form class="newsletter-form">
-                                 <div class="form-group">
-                                    <label class="sr-only" for="InputEmail1">Email</label>
-                                    <input type="email" class="form-control" id="InputEmail1" placeholder="Tu dirección de mail">
-                                    <button type="submit" class="">Enviar &nbsp;<i class="fa fa-angle-right"></i>
-                                    </button>
-                                 </div>
-                              </form>
-                           </div>
-                           <!-- /.footer-widget -->
-                        </div>
-                        <!-- /.col-md-4 -->
-                     </div>
-                     <!-- /.row -->
-                  </div>
-                  <!-- /.container -->
-               </section>
-               <!-- /.cta-section -->
-               <!-- footer-widget-section end -->
-
-               <!-- copyright-section start -->
-               <footer class="copyright-section">
-                  <div class="container text-center">
-                     <div class="footer-menu">
-                        <ul>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                     <div class="widget no-box">
+                        <h5 class="widget-title">Sitio<span></span></h5>
+                        <ul class="thumbnail-widget">
                            <li>
-                              <a href="#">Privacidad &amp; Cookies</a>
+                              <div class="thumb-content">
+                                 <a href="#.">Home</a>
+                              </div>
                            </li>
                            <li>
-                              <a href="#">Legales</a>
+                              <div class="thumb-content">
+                                 <a href="#.">Servicios</a>
+                              </div>
                            </li>
+                           <li>
+                              <div class="thumb-content">
+                                 <a href="#.">Información</a>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="thumb-content">
+                                 <a href="#.">Contacto</a>
+                              </div>
+                           </li>
+                           
                         </ul>
                      </div>
+                  </div>
 
-                     <div class="copyright-info">
-                        <!-- <span>Copyright © 2015 Unship. All Rights Reserved. Designed by <a href="https://uicookies.com">uiCookies</a><br> Proudly powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a href="getbootstrap.com">Bootstrap3</a></span> -->
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                     <div class="widget no-box">
+                        <h5 class="widget-title">Ingreso<span></span></h5>
+                        <p>Conocé el estado de tus pedidos</p>
+                        <a class="btn btn-second light" href="#." target="_blank">MI CGS</a>
                      </div>
                   </div>
-                  <!-- /.container -->
-               </footer>
-               <!-- copyright-section end -->
 
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+
+                     <div class="widget no-box">
+                        <h5 class="widget-title">Contacto<span></span></h5>
+
+                        <p>
+                           <a href="mailto:info@domain.com" title="glorythemes">info@cgsgroup.com</a>
+                        </p>
+                       
+                     </div>
+                  </div>
+
+               </div>
             </div>
          </div>
-         <!-- OFF CANVAS MENU -->
-         <div class="offcanvas-menu offcanvas-effect">
-            <div class="offcanvas-wrap">
-               <div class="off-canvas-header">
-                  <div class="back">
-                     <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                     </button>
+
+         <div class="footer-copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 text-center">
+                     <p>CGS GROUP® 2020. Todos los derechos reservados.</p>
                   </div>
                </div>
-               <ul id="offcanvasMenu" class="list-unstyled hidden-lg">
-
-                  <li class="active">
-                     <a href="index.html">Home<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li>
-                     <a href="servicios.html">Servicios</a>
-                  </li>
-                  <li>
-                     <a href="#">Información</a>
-                  </li>
-                  <li>
-                     <a href="#">Contacto</a>
-                  </li>
-                  <li>
-                     <a href="#">Idioma</a>
-                     <ul>
-                        <li>Español</li>
-                        <li>Inglés</li>
-                     </ul>
-                  </li>
-                  <li>
-                     <a >MI CGS</a>
-                     <ul >
-                        <li>
-                           Cotización
-                        </li>
-                        <li>
-                           Reservar
-                        </li>
-                        <li>
-                           Rastreo
-                        </li>
-                     </ul>
-                  </li>
-
-               </ul>
             </div>
          </div>
-         <!-- .offcanvas-menu -->
-      </div>
+      </footer>
 
-      <!-- Preloader -->
-      <div id="preloader">
-         <div id="status">
-            <div class="status-mes"></div>
-         </div>
-      </div>
       <script src="js/popper.min.js"></script>
-      <script src="js/jquery.js"></script>
+
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.sliderPro.min.js"></script>
-      <!-- owl.carousel -->
-      <script src="js/owl.carousel.min.js"></script>
-
-      <script src="js/tiny-slider.js"></script>
-      <!-- Magnific-popup -->
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <!-- Offcanvas Menu -->
-      <script src="js/hippo-offcanvas.js"></script>
-      <!-- inview -->
-      <script src="js/jquery.inview.min.js"></script>
-      <!-- stellar -->
-      <script src="js/jquery.stellar.js"></script>
-      <!-- countTo -->
+      <script src="js/inview.js"></script>
       <script src="js/jquery.countTo.js"></script>
-      <!-- classie -->
-      <script src="js/classie.js"></script>
-      <!-- sticky kit -->
-      <script src="js/jquery.sticky-kit.min.js"></script>
-      <!-- GOGLE MAP -->
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
-      <!--TWITTER FETCHER-->
-      <script src="js/twitterFetcher_min.js"></script>
+
       <!-- Custom Script -->
       <script src="js/scripts.js"></script>
 
-      <script src="js/events.js"></script>
    </body>
 </html>

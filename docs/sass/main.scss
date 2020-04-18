@@ -1,0 +1,333 @@
+@import 'imports/colors', 'imports/mixin', 'imports/typography', 'imports/flaticon';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	border: none;
+	min-height: 100vh;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+section {
+	padding: 2em 0;
+}
+
+
+
+
+
+
+@import 'components/navbar', 'components/slider', 'components/footer';
+
+
+/* ===================== H O M E ===================== */
+
+.service-home {
+	.service {
+
+		p {
+			max-width: 520px;
+
+		}
+	}
+
+	.service-pic {
+		height: 280px;
+		-webkit-mask-clip: padding;
+		mask-clip: padding;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+	}
+}
+
+.counter-section {
+	background: url("../img/counter-bg.jpg") no-repeat 30% center fixed;
+	background-size: cover;
+
+	span.count-description {
+		position: relative;
+		display: inline-block;
+		color: $gray-400;
+		font-size: 1.25em;
+		line-height: 28px;
+		padding: 0 0 0 100px;
+		font-weight: 400;
+		margin: 1.5em 0;
+
+		strong {
+			display: block;
+			font-size: 2.25em;
+			line-height: 40px;
+			color: $indigo-100;
+			margin-bottom:.25em;
+		}
+		.text {
+			background-color: $indigo-100;
+			color:$indigo-800;
+			padding:0 4px 4px;
+			
+		}
+		&:before {
+
+			content: "\e01d";
+			font-family: "Flaticon";
+			font-size: 100px;
+			line-height: 70px;
+			float: left;
+			color: $indigo-200;
+			margin-right: 10px
+		}
+
+		&.flaticon-boat:before {
+			content: "\e006"
+		}
+
+		&.flaticon-international:before {
+			content: "\e01d"
+		}
+
+		&.flaticon-compass:before {
+			content: "\e013"
+		}
+	}
+
+
+}
+
+.why-us {
+	background-color: $gray-200;
+	h4 {
+		color:$indigo-600;
+	}
+}
+
+.cgs-tabs {
+	.nav-pills {
+		justify-content: space-between;
+
+		.nav-item {
+			flex: 1 1 45%;
+			margin: 4px;
+
+			a {
+				background-color: $gray-400;
+				color: $gray-100;
+				border-radius: 0;
+				border-bottom: 2px solid transparent;
+				display: flex;
+				align-items: center;
+				transition: $transition $timing;
+
+				&.active {
+					background-color: $gray-200;
+					color: $indigo-600;
+					border-color: $indigo-500;
+					box-shadow: $shadow;
+
+					i {
+						color: $indigo-300;
+					}
+				}
+
+				i {
+					font-size: 24px;
+					margin-right: 16px;
+					color: $gray-300;
+
+				}
+			}
+		}
+	}
+
+}
+
+.agentes {
+
+
+	iframe {
+		margin: 60px auto;
+	}
+}
+
+
+
+#quoteModal {
+
+	font-family: 'Lato', sans-serif !important;
+
+	button.btn {
+		margin-left: auto;
+
+
+		transition: $timing $transition;
+		border-radius: 24px;
+
+	}
+
+	.modal-title {
+		text-align: center;
+
+	}
+
+	.contact-datos {
+		margin-top: 32px;
+
+		.col-md-4 {
+			padding: 0 10px;
+		}
+
+		h5 {
+
+			margin-bottom: 0;
+		}
+
+	}
+
+}
+
+
+
+
+/* ===================== Q U E R I E S ===================== */
+
+@media only screen and (min-width:768px) {
+		
+	.single-service-contents {
+		padding-top: 100px;
+
+		.widget-title {
+			text-transform: uppercase !important;
+		}
+
+		.widget:first-of-type {
+			margin-bottom: 45px;
+
+			.service-list {
+				flex-direction: column;
+				overflow-x: hidden;
+
+				li {
+					width: fit-content;
+					margin-right: 15px;
+					margin-bottom: 0;
+
+					&.active {
+
+						border-bottom: none;
+
+					}
+
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+	}
+
+	.accordion {
+		.pic-container {
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+
+			h2 {
+				margin-left: 0;
+			}
+		}
+
+		.accordion-body__contents {
+			padding: 0;
+
+			ul {
+
+				li {
+					padding: .7em 20px;
+					text-align: center;
+
+
+					&:first-of-type {
+						border-bottom: 1px solid #f2f2f2;
+					}
+				}
+
+
+			}
+		}
+	}
+
+	.counter-section span.count-description {
+		font-size: 1em;
+		padding-left:4.5em;
+		&::before {
+			font-size: 5em;
+		}
+	}
+	.cgs-tabs .nav-pills .nav-item {
+		flex:1 1 20%;
+	}
+}
+
+
+/* ----------- Non Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+	section {
+		padding:6em 0;
+	}
+	h3 {
+		font-size: 2em;
+	}
+	html {
+		overflow-x: hidden;
+	}
+
+}
+
+
+
+
+/* ----------- Retina Screens ----------- */
+
+
+@media screen and (min-device-width:1600px) {
+
+	#my-slider {
+		.mini-container {
+
+			.sp-layer {
+				max-width: 40vw;
+				min-height: 340px;
+
+				h3 {
+					font-size: 36px;
+				}
+
+				p {
+					font-size: 20px;
+				}
+
+
+			}
+		}
+	}
+}

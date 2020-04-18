@@ -1,0 +1,336 @@
+// @import 'imports/colors';
+
+/* ===================== S L I D E R  ===================== */
+
+.container-fluid.main {
+   padding: 0;
+}
+
+#my-slider {
+   position: relative;
+
+
+
+   img.sp-image {
+      filter: grayscale(1) brightness(0.9);
+   }
+
+   .sp-layer {
+      left: 0;
+      right: 0;
+      top: inherit !important;
+      margin: 0 20px;
+      bottom: 100px;
+      white-space: nowrap;
+      min-height: 180px;
+      max-height: 380px;
+      max-width: 540px;
+      overflow-wrap: break-word;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 0 16px;
+
+
+      >* {
+         margin: 0;
+         padding: 0;
+         white-space: normal;
+         text-align: left;
+         position: relative;
+      }
+
+      hr {
+         border-top: 3px solid $indigo-500;
+         max-width: 100px;
+         margin: 10px 0 15px !important;
+      }
+
+      h3 {
+         border-width: 0px;
+         letter-spacing: 2px;
+         font-size: 1.25em;
+         font-weight: 700;
+         color: $indigo-700;
+      }
+
+      p {
+         letter-spacing: 0px;
+         font-weight: 500;
+         text-align: left;
+         color: $gray-600;
+      }
+
+      a.btn {
+         float: right;
+         margin-top: 20px;
+         text-transform: uppercase;
+
+         i {
+            margin: auto 5px 3px;
+         }
+
+         &:hover {
+
+            i {
+               color: $indigo-500;
+            }
+         }
+      }
+   }
+
+   .sp-thumbnails-container {
+      position: absolute;
+      bottom: 0;
+      background-color: $gray-800;
+      width: 100vw !important;
+      box-shadow: inset 0px 4px 4px;
+
+      .sp-thumbnails {
+         margin-left: 16px;
+      }
+
+      .sp-thumbnail {
+         width: 100%;
+         padding-top: 8px;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         top: 8px;
+
+         .sp-thumbnail-title {
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: #333;
+
+            svg {
+               width: 40px;
+               height: 40px;
+               fill: $gray-700;
+            }
+         }
+
+
+      }
+
+      .sp-selected-thumbnail {
+         .sp-thumbnail {
+            .sp-thumbnail-title {
+               svg {
+                  fill: $gray-400;
+               }
+            }
+         }
+
+         &:before {
+            width: 100%;
+            border-bottom: 3px solid $gray-400;
+            margin-top: 13px;
+            left: 0;
+            right: 0;
+            margin: auto;
+         }
+
+         &:after {
+            content: none;
+         }
+      }
+
+      .sp-thumbnail-description {
+         font-size: 14px;
+         color: #333;
+      }
+   }
+}
+
+@media only screen and (min-width:768px) {
+   #my-slider {
+      .sp-layer {
+         top: 43% !important;
+         transform: translateY(-50%) !important;
+         bottom: inherit;
+         left: 9px !important;
+         padding: 20px 16px;
+
+         h3 {
+            font-size: 2em;
+         }
+      }
+
+      .sp-thumbnails-container {
+         .sp-thumbnail {
+            margin-right: 10px;
+
+            .sp-thumbnail-title {
+               text-align: center;
+
+               svg {
+                  width: 80px;
+                  height: 80px;
+               }
+            }
+         }
+      }
+   }
+
+}
+
+@media only screen and (min-width:1024px) {
+   #my-slider {
+      .sp-layer {
+         max-width: 60vw;
+         top: 43% !important;
+         transform: translateY(-50%) !important;
+         bottom: inherit;
+         left: 5% !important;
+         padding: 20px 16px;
+
+      }
+
+      .sp-thumbnails-container .sp-thumbnails {
+         margin: 0 auto;
+         
+      }
+
+   }
+}
+
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+
+   #my-slider {
+      .container {
+         height: 320px;
+         position: absolute;
+         left: 0;
+         margin: auto;
+         top: 45%;
+         transform: translateY(-50%);
+         right: 0;
+
+         .sp-layer {
+           bottom:inherit;
+           top:inherit!important;
+           position: relative;
+           left:inherit!important;
+           max-width:600px;
+           padding:2em 1em;
+           text-align:right;
+           a.btn {
+              float:none;
+           }
+         }
+      }
+
+      .sp-thumbnails-container .sp-thumbnails {
+         .sp-thumbnail-description {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 0 2px;
+            transition: $timing $transition;
+            color: $gray-600;
+         }
+
+         .sp-selected-thumbnail {
+            .sp-thumbnail-description {
+               color: $gray-400;
+            }
+         }
+         
+      }
+
+   }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) //   and (-webkit-min-device-pixel-ratio: 2) //   and (min-resolution: 192dpi) 
+
+   {
+
+
+   #my-slider {
+      .mini-container {
+         .sp-layer {
+            top: 20px !important;
+            max-width: 50vw;
+            min-height: 210px;
+            bottom: inherit;
+
+            h3 {
+               font-size: 32px;
+            }
+
+            p {
+               font-size: 16px;
+               padding-bottom: 40px;
+            }
+
+            a.btn {
+               font-size: 20px;
+               position: absolute;
+               bottom: 20px;
+               right: 20px;
+            }
+         }
+      }
+
+      .sp-thumbnails-container {
+         left: 0;
+         right: 0;
+         margin: auto;
+         bottom: 0;
+
+
+         .sp-thumbnail {
+            padding: 16px 0 0 0;
+            position: relative;
+            top: inherit;
+            min-width: 100%;
+
+
+            .sp-thumbnail-title {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+
+               svg {
+                  width: 64px;
+                  height: 64px;
+               }
+            }
+
+
+         }
+
+
+      }
+
+   }
+}
+
+@media (max-width: 1024px) {
+   #my-slider .hide-medium-screen {
+      display: none;
+   }
+}
+
+@media (max-width: 640px) {
+
+   #my-slider .hide-small-screen {
+      display: none;
+   }
+}
+
+@media (max-width: 500px) {
+   #my-slider .sp-thumbnail {
+      text-align: center;
+   }
+
+   #my-slider .sp-thumbnail-title {
+      font-size: 12px;
+      text-transform: uppercase;
+   }
+
+   #my-slider .sp-thumbnail-description {
+      display: none;
+   }
+}
