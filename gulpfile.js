@@ -7,13 +7,11 @@ var reload = browserSync.reload;
 gulp.task('sass', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.css',
-            'node_modules/tiny-slider/dist/tiny-slider.css',
-            'docs/stylesheet/extras.scss',
-            'docs/stylesheet/main.scss',
-            'docs/stylesheet/theme.scss'
+            'node_modules/slider-pro/dist/css/slider-pro.css',
+            'docs/sass/main.scss'
         ])
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'nested'
         }))
         .on('error', function (err) {
             console.log(err.toString());
@@ -28,8 +26,8 @@ gulp.task('js', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js',
+            'node_modules/jquery/dist/jquery.js',
             'node_modules/slider-pro/dist/js/jquery.sliderPro.min.js',
-            'node_modules/tiny-slider/dist/min/tiny-slider.js'
         ])
         .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.stream());
@@ -45,20 +43,6 @@ gulp.task('nunjucks', function () {
 });
 
 
-gulp.task('fonts', () => {
-    return gulp.src([
-            'docs/stylesheet/fonts/*',
-            '!docs/stylesheet/fonts/*.*ss',
-            '!docs/stylesheet/fonts/*.html'
-        ])
-        .pipe(gulp.dest('docs/css/fonts'));
-});
-
-gulp.task('slider-pro', () => {
-    return gulp.src('node_modules/slider-pro/dist/css/slider-pro.css')
-        .pipe(gulp.dest('docs/css'));
-});
-
 
 gulp.task('js-watch', ['js'], reload);
 gulp.task('css-watch', ['sass'], reload);
@@ -70,9 +54,9 @@ gulp.task('server', ['sass'], () => {
     });
 
     gulp.watch([
-        'docs/stylesheet/*.scss',
-        'docs/stylesheet/assets/*.scss',
-    ], ['sass']);
+        'docs/sass/*.scss',
+        'docs/sass/*/*.scss'
+    ], ['css-watch']);
 
     gulp.watch([
         'docs/js/*.js'
@@ -83,6 +67,7 @@ gulp.task('server', ['sass'], () => {
         'docs/pages' + '/**/*.+(html|njk)',
         'docs/templates' + '/**/*.+(html|njk)'
     ], ['nunjucks']);
+
     gulp.watch('./docs/*.html')
         .on('change', browserSync.reload);
 
@@ -90,4 +75,4 @@ gulp.task('server', ['sass'], () => {
 
 
 
-gulp.task('default', ['js', 'slider-pro', 'fonts', 'nunjucks', 'server'])
+gulp.task('default', ['js', 'nunjucks', 'server'])

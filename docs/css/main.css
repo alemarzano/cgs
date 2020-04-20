@@ -528,12 +528,15 @@ section {
           margin: 0 .5em;
           width: auto; }
           .topnavbar .container ul.navlinks li a {
-            font-size: 1.25em; }
+            font-size: 1em;
+            font-weight: 500; }
             .topnavbar .container ul.navlinks li a.btn {
               max-width: inherit;
               width: auto; }
       .topnavbar .container .logo img {
-        width: 28em; }
+        width: 32em;
+        height: 100%;
+        max-width: 100%; }
   .counter-section .counter-block {
     display: flex;
     justify-content: center; }
@@ -545,6 +548,10 @@ section {
         font-size: 1.25em; }
   .cgs-tabs .nav-pills .nav-item a {
     font-size: 1.25em; } }
+
+@media screen and (min-width: 1400px) {
+  .topnavbar .container .logo img {
+    width: 36em; } }
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
@@ -844,6 +851,10 @@ section {
     color: #7b7a8a; }
   #my-slider .sp-thumbnails-container .sp-thumbnails .sp-selected-thumbnail .sp-thumbnail-description {
     color: #bbbaca; } }
+
+@media screen and (min-width: 1400px) {
+  #my-slider .sp-layer p {
+    font-size: 1.2em; } }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   #my-slider .mini-container .sp-layer {

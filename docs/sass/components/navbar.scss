@@ -150,7 +150,8 @@
                margin: 0 .5em;
                width: auto;
                a{
-                  font-size: 1.25em;
+                  font-size: 1em;
+                  font-weight:500;
                   &.btn {
                      max-width: inherit;
                      width: auto;
@@ -160,7 +161,9 @@
          }
          .logo {
             img {
-               width:28em;
+               width:32em;
+               height:100%;
+               max-width:100%;
             }
          }
       }
@@ -183,6 +186,18 @@
    }
    .cgs-tabs .nav-pills .nav-item a {
       font-size:1.25em;
+   }
+}
+
+@media screen and (min-width:1400px) {
+   .topnavbar {
+      .container {
+         .logo{
+            img {
+               width:36em;
+            }
+         }
+      }
    }
 }
 

@@ -4,15 +4,15 @@
   "description": "",
   "main": "js/events.js",
   "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "author": "alemarzano",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.12.9",
-    "tiny-slider": "^2.9.2"
+    "slider-pro": "^1.5.0"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
@@ -20,7 +20,6 @@
     "gulp-cli": "^2.0.1",
     "gulp-compass": "^2.1.0",
     "gulp-nunjucks-render": "^2.2.3",
-    "gulp-sass": "^3.1.0",
-    "slider-pro": "^1.5.0"
+    "gulp-sass": "^3.1.0"
   }
 }
