@@ -60,7 +60,7 @@ section {
 }
 
 .counter-section {
-	background: url("../img/counter-bg.jpg") no-repeat 30% center fixed;
+	background: url("../img/counter-bg.jpg") no-repeat center top fixed;
 	background-size: cover;
 
 	span.count-description {
@@ -77,23 +77,20 @@ section {
 			display: block;
 			font-size: 2.25em;
 			line-height: 40px;
-			color: $indigo-100;
+			color: $secondary-400;
 			margin-bottom:.25em;
 		}
 		.text {
-			background-color: $indigo-100;
-			color:$indigo-800;
+			color:$primary-100;
 			padding:0 4px 4px;
-			
 		}
 		&:before {
-
 			content: "\e01d";
 			font-family: "Flaticon";
 			font-size: 100px;
 			line-height: 70px;
 			float: left;
-			color: $indigo-200;
+			color: $secondary-100;
 			margin-right: 10px
 		}
 
@@ -114,9 +111,11 @@ section {
 }
 
 .why-us {
-	background-color: $gray-200;
 	h4 {
-		color:$indigo-600;
+		color:$primary-400;
+	}
+	p {
+		color:$gray-600;
 	}
 }
 
@@ -129,31 +128,31 @@ section {
 			margin: 4px;
 
 			a {
-				background-color: $gray-400;
-				color: $gray-100;
+				background-color: $gray-500;
+				color: $gray-300;
 				border-radius: 0;
-				border-bottom: 2px solid transparent;
 				display: flex;
 				align-items: center;
 				transition: $transition $timing;
-
-				&.active {
-					background-color: $gray-200;
-					color: $indigo-600;
-					border-color: $indigo-500;
-					box-shadow: $shadow;
-
-					i {
-						color: $indigo-300;
-					}
-				}
-
+				border-radius: 5px;
 				i {
 					font-size: 24px;
 					margin-right: 16px;
 					color: $gray-300;
+					transition: $transition $timing;
 
 				}
+				&.active {
+					background-color: $secondary-500;
+					color: white;
+					box-shadow: $soft-shadow;
+
+					i {
+						color: $secondary-200;
+					}
+				}
+
+				
 			}
 		}
 	}
@@ -161,13 +160,21 @@ section {
 }
 
 .agentes {
-
+	background-color: $gray-200;
 
 	iframe {
 		margin: 60px auto;
 	}
 }
 
+.contacto {
+	background-color: $primary-700;
+	padding:3em 0;
+	.btn {
+		font-size: 1.5em;
+		padding:.25em 1em !important;
+	}
+}
 
 
 #quoteModal {
@@ -288,17 +295,51 @@ section {
 	}
 }
 
+@media only screen and (min-width:1024px) {
+	.cgs-tabs {
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	section {
+		padding: 6em 0;
+		&.hero {
+			padding:3em 0;
+		}
+	}
+	.counter-section {
+		.counter-block {
+			display: flex;
+			justify-content: center;
+
+			span.count-description {
+				padding-left: 8em;
+
+				&::before {
+					font-size: 8em;
+				}
+
+				.text {
+					font-size: 1.25em;
+				}
+			}
+		}
+	}
+}
 
 /* ----------- Non Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-	section {
-		padding:6em 0;
-	}
+	
 	h3 {
 		font-size: 2em;
 	}
 	html {
 		overflow-x: hidden;
+	}
+	
+
+	.cgs-tabs .nav-pills .nav-item a {
+		font-size: 1.25em;
 	}
 
 }

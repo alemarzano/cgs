@@ -4,13 +4,53 @@
 
 .topnavbar {
    width: 100%;
-   height: 65px;
    position: fixed;
    text-align: center;
    z-index: 10;
+   background-color: white;
+  
+   .container.langs {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border-bottom:1px solid $gray-200;
+      a {
+         font-size: 1em;
+         color:$gray-400;
+         margin:0 4px;
+         padding:0 4px;
+         &.active {
+            color:$primary-700
+         }
+         &:first-of-type {
+            margin-left:16px;
+            position: relative;
+            padding-left:16px;
+            &::before{
+               content:'|';
+               position: absolute;
+               left:0;
+               display: block;
+               // height:100%;
+               // width:1px;
+               color:$primary-200;
+               top:-1px;
 
+               // background-color:$primary-300;
+            }
+         }
+         &:last-of-type {
+            margin-right:0;
+         }
+      }
+      i {
+         color:$gray-300;
+         font-size: 1.25em;
+         padding-top:2px;
+      }
+   }
    .container {
-      background-color: white;
+      
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -30,19 +70,16 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      width: 100%;
       height: 0;
       overflow-x: hidden;
       position: fixed;
-      top: 52px;
-      transition: height .5s;
-      width: 100vw;
+      top: 80px;
+      transition: width .5s;
+      width: 0;
       left: 0;
       flex-direction: column;
-      background-color: white;
-      height: 0;
+      background-color: $primary-800;
       justify-content: center;
-      box-shadow: $soft-shadow;
       li {
          width: 100%;
          text-align: right;
@@ -50,48 +87,34 @@
          margin: .5em 0;
          text-align: center;
          font-size: 1.25em;
-
          a {
             text-align: center;
             width: 100%;
-            
             padding: 8px 16px;
-            color: $gray-700;
+            color: $primary-200;
             text-transform: uppercase;
             &.dropdown-item.active {
-               background-color: $indigo-600;
+               background-color: $primary-600;
             }
          }
 
          &.active {
             a {
-               color: $indigo-600;
+               color: $primary-600;
                font-weight: bold;
 
             }
          }
-         button.dropdown-toggle {
-            font-size: 1.5em;
-            color:$gray-700;
-            border:none;
-            &::after {
-               content:none;
-               
-            }
-            i {
-               position: relative;
-               padding-right:1em;
-               &::after{
-                  content: "\f078";
-                  font-size: 0.5em;
-                  margin-left: 8px;
-                  position: absolute;
-                  top:8px;
-               }
-            }
+         button {
+            font-size: 1.25em;
+            background-color:$secondary-500;
+            color:white;
          }
 
       }
+   }
+   &.scrolled {
+      box-shadow: $soft-shadow;
    }
 
 }
@@ -107,7 +130,6 @@
 @media screen and (min-width:768px) {
    
    .topnavbar {
-      background-color: white;
       .logo img {
          width: 20em;
       }
@@ -128,10 +150,9 @@
 @media screen and (min-width:1200px) {
 
    .topnavbar {
-      background-color: transparent;
+      transition: $timing $transition;
       .container {
-         box-shadow: $shadow;
-         height:5em;
+         padding:1em 0;
          .navTrigger {
             display: none;
          }
@@ -145,48 +166,52 @@
             align-items: center;
             justify-content: flex-end;
             overflow:visible;
+            width: 100%;
+            background-color: transparent;
 
             li {
                margin: 0 .5em;
                width: auto;
                a{
-                  font-size: 1em;
+                  font-size: .9em;
                   font-weight:500;
-                  &.btn {
-                     max-width: inherit;
-                     width: auto;
-                  }
+                  color:$gray-500;
+               }
+               .btn {
+                  font-size: .9em;
                }
             }
          }
          .logo {
             img {
-               width:32em;
-               height:100%;
-               max-width:100%;
+               width:26em;
+            }
+         }
+         .btn {
+            background-color:$primary-500;
+         }
+         &.langs {
+            padding:8px 0 ;
+            i {
+               padding-top:0;
             }
          }
       }
-      
-   }
-   .counter-section {
-      .counter-block {
-         display:flex;
-         justify-content: center;
-         span.count-description {
-            padding-left:8em;
-            &::before {
-               font-size: 8em;
-            }
-            .text {
-               font-size: 1.25em;
+      &.transparent {
+         background-color: rgba($primary-900, 0.3);
+         ul.navlinks li a {color:white}
+         .container.langs {
+            border-color:rgba($gray-500, .6);
+            a {
+               color:rgba($gray-500,.6);
+               &.active {
+                  color:rgba($gray-300, 1)
+               }
             }
          }
       }
    }
-   .cgs-tabs .nav-pills .nav-item a {
-      font-size:1.25em;
-   }
+   
 }
 
 @media screen and (min-width:1400px) {
@@ -211,7 +236,7 @@
 }
 
 .navTrigger i {
-   background-color: $indigo-700;
+   background-color: $primary-500;
    border-radius: 2px;
    content: '';
    display: block;

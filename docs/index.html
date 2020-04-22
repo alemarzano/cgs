@@ -22,6 +22,25 @@
       <meta property="og:type" content="website"/>
       <meta property="og:locale" content="es_AR"/>
       <meta property="og:locale:alternate" content="en_UK"/>
+
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
    </head>
    <body>
       <header>
@@ -29,9 +48,15 @@
    
    
 
-   <nav class="nav topnavbar">
-      <div class="container">
-         <a class=" logo" href="index.html"><img src="img/logo_viejo.jpg" alt=""></a>
+   <nav class="nav topnavbar transparent">
+
+      <div class="container langs">
+         <i class="fas fa-language"></i>
+         <a class=" active " href="index.html">ESP</a>
+         <a class="" href="#">ENG</a>
+      </div>
+      <div class="container py-md-2">
+         <a class=" logo" href="index.html"><img src="img/logo.png" alt=""></a>
          <ul class="navlinks">
             
 
@@ -46,22 +71,10 @@
                   <a class=" " href="#">Contacto</a>
                </li>
                <li class="text-center">
-                  <button type="button" class="btn btn-first">Mi CGS</button>
-                  
+                  <button type="button" class="btn">Mi CGS</button>
+
                </li>
-               <li>
-                  <div class="btn-group">
-                     <button type="button" class="btn btn-third dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-language"></i>
-                        
-                     </button>
-                     <div class="dropdown-menu">
-                        <a class="dropdown-item active" href="#">Spanish</a>
-                        <a class="dropdown-item " href="#">English</a>
-                        
-                     </div>
-                  </div>
-               </li>
+               
             
             
 
@@ -91,8 +104,8 @@
                      <h3 data-show-transition="left">COBERTURA GLOBAL</h3>
                      <hr>
                      <p data-show-transition="left">Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una cobertura global completa para el tráfico de sus mercaderías.</p>
-                     <a href="servicios.html" class="btn btn-second">
-                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-mag-second light">
+                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -107,8 +120,8 @@
                      <h3 data-show-transition="left">SEGUIMIENTO DE PUNTA A PUNTA</h3>
                      <hr>
                      <p data-show-transition="left">Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
-                     <a href="servicios.html" class="btn btn-first">
-                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-mag-second light">
+                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -122,8 +135,8 @@
                      <h3 data-show-transition="left">DESDE Y HACIA CUALQUIER AEROPUERTO</h3>
                      <hr>
                      <p data-show-transition="left">Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito, optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia, informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p>
-                     <a href="servicios.html" class="btn btn-first">
-                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-mag-second light">
+                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -137,8 +150,8 @@
                      <h3 data-show-transition="left">ASESORAMIENTO INTEGRAL</h3>
                      <hr>
                      <p data-show-transition="left">Asesoramiento en Régimen Legal Aduanero, clasificación Arancelaria de todo tipo de mercadería.</p>
-                     <a href="servicios.html" class="btn btn-first">
-                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-mag-second light">
+                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -152,8 +165,8 @@
                      <h3 data-show-transition="left">COBERTURA TOTAL</h3>
                      <hr>
                      <p data-show-transition="left">Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
-                     <a href="servicios.html" class="btn btn-first">
-                        <i class="fa fa-plus text-indigo-200" aria-hidden="true" data-show-transition="right"></i>
+                     <a href="servicios.html" class="btn btn-mag-second light">
+                        <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
                </div>
@@ -313,7 +326,7 @@
             </div>
             <!-- /.col-sm-4 -->
             <div class="col-xs-12 col-sm-6">
-               <div class="service-pic">
+               <div class="service-pic mt-lg-5">
                   <img src="img/misionvalores.jpg" alt="">
                </div>
             </div>
@@ -324,25 +337,28 @@
    <!-- services end -->
 
    <!-- counter start -->
-   <section class="counter-section">
+   <section class="counter-section hero">
       <div class="container">
          <div class="row">
             <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-boat">
-                     <strong >+<span class="timer">200</span></strong><span class="text">Embarques en curso</span></span>
+                     <strong >+<span class="timer">200</span></strong>
+                     <span class="text">Embarques en curso</span></span>
                </div>
             </div>
             <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-international">
-                     <strong>+<span class="timer">150</span></strong><span class="text">Clientes Mundiales</span></span>
+                     <strong>+<span class="timer">150</span></strong>
+                     <span class="text">Clientes Mundiales</span></span>
                </div>
             </div>
             <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-compass">
-                     <strong>+<span class="timer">5000</span></strong><span class="text">Entregas realizadas</span></span>
+                     <strong>+<span class="timer">5000</span></strong>
+                     <span class="text">Entregas realizadas</span></span>
                </div>
             </div>
          </div>
@@ -356,13 +372,13 @@
       <div class="container">
          <div class="row">
             <div class="col-12 col-xl-4">
-               <h3 class="section-title">¿Por qué elegirnos?</h3>
+               <h3 class="section-title center">¿Por qué elegirnos?</h3>
                <p class="section-sub">CGS GROUP SRL opera como agente de carga, conformado por personal altamente capacitado en el rubro del transporte internacional, con vasta experiencia en coordinación de servicios logísticos integrales.</pn>
             </div>
-            <div class="col-12 col-xl-8 mt-5 mt-xl-0">
+            <div class="col-12 col-xl-8 mt-5 mt-lg-0">
                <div class="cgs-tabs">
                   <!-- Nav tabs -->
-                  <ul class="nav nav-pills">
+                  <ul class="nav nav-pills mt-5">
                      <li class="nav-item">
                         <a href="#secure" aria-controls="secure" role="tab" data-toggle="pill" class="nav-link active" aria-selected="true">
                            <i class="fas fa-lock"></i>
@@ -396,7 +412,7 @@
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 mt-5 mt-xl-0">
+                              <div class="col-md-6 mt-5 mt-lg-0">
                                  <h4>Seguro</h4>
 
                                  <p>Consideramos de importancia extrema la convicción de nuestros clientes al confiarnos el transporte de sus cargas y actuamos de igual manera a la hora de seleccionar a nuestros proveedores de servicios.
@@ -417,7 +433,7 @@
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 mt-5 mt-xl-0">
+                              <div class="col-md-6 mt-5 mt-lg-0">
                                  <h4>Trackeable</h4>
 
                                  <p>¡Siga sus embarques! Manténgase informado de los eventos importantes durante el todo el trayecto. Use nuestra herramienta de seguimiento para monitorear el estado de sus cargas. Reciba notificaciones por email en cada actualización.
@@ -438,7 +454,7 @@
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 mt-5 mt-xl-0">
+                              <div class="col-md-6 mt-5 mt-lg-0">
                                  <h4>Rápido</h4>
 
                                  <p></p>
@@ -458,7 +474,7 @@
                                  </div>
                                  <!-- /.col-md-6 -->
 
-                                 <div class="col-md-6 mt-5 mt-xl-0">
+                                 <div class="col-md-6 mt-5 mt-lg-0">
                                     <h4>Confianza</h4>
 
                                     <p></p>
@@ -476,50 +492,58 @@
                <!-- /.col-md-12 -->
             </div>
          </div>
-
-         <div class="row mt-5">
-            
-
-         </div>
-      </section>
-      <!-- why-us-setion end -->
-
-      <!-- agentes start -->
-      <section class="agentes section-padding">
-         <div class="container">
-            <div class="row flex-lg-row-reverse">
-               <div class="col-12 col-lg-4">
-                  <h3 class="section-title">Agentes</h3>
-                  <p class="section-sub">Contamos con el respaldo y el mismo compromiso de CGS Group en distintas agencias localizadas en las más importantes cuidades del mundo. De esta forma podemos garantizar un servicio de calidad tanto en origen como en destino.</p>
-               </div>
-               <div class="col-12 col-lg-8">
-                  <iframe src="https://www.google.com/maps/d/embed?mid=12ffp4Y49njvLWoQNdSd4-FAJ_NM" width="100%" height="480" class="mt-lg-0"></iframe>
-               </div>
+   </section>
+   <!-- why-us-setion end -->
+   <section class="contacto text-center hero">
+      <button class="btn btn-two-first btn-rounded">Contactanos</button>
+   </section>
+   <!-- agentes start -->
+   <section class="agentes">
+      <div class="container">
+         <div class="row flex-lg-row-reverse">
+            <div class="col-12">
+               <h3 class="section-title center">Agentes</h3>
+               <p class="section-sub">Contamos con el respaldo y el mismo compromiso de CGS Group en distintas agencias localizadas en las más importantes cuidades del mundo. De esta forma podemos garantizar un servicio de calidad tanto en origen como en destino.</p>
             </div>
-
-
+            <div class="col-12 mt-5">
+               <iframe src="https://www.google.com/maps/d/embed?mid=12ffp4Y49njvLWoQNdSd4-FAJ_NM" width="100%" height="480" class="mt-lg-0"></iframe>
+            </div>
          </div>
-         <!-- /.container -->
-      </section>
+
+      </div>
+      <!-- /.container -->
+   </section>
+
+   
 
    
       </main>
 
-    
       <footer >
          <div class="main-footer">
             <div class="container">
                <div class="row">
 
-                  <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-md-6">
                      <div class="widget subscribe no-box">
-                        <h5 class="widget-title">CGS GROUP<span></span></h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum.
+                     <div class="widget-title"><img class="img-fluid mb-2" src="img/logo-w.png" alt=""><span></span></div>
+                        
+                        <p class="mb-1">
+                           <span>
+                              Buenos Aires - Argentina<br>
+                              CABA, C1015ABE<br>
+                              (54 11) 5199 2225
+                              <br>
+                             
+
+                           </span>
+                            
                         </p>
+                        <a href="mailto:info@domain.com">info@cgsgroup.com</a>
                      </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-md-3">
                      <div class="widget no-box">
                         <h5 class="widget-title">Sitio<span></span></h5>
                         <ul class="thumbnail-widget">
@@ -543,28 +567,16 @@
                                  <a href="#.">Contacto</a>
                               </div>
                            </li>
-                           
+
                         </ul>
                      </div>
                   </div>
 
-                  <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="col-xs-12 col-md-3">
                      <div class="widget no-box">
                         <h5 class="widget-title">Ingreso<span></span></h5>
                         <p>Conocé el estado de tus pedidos</p>
                         <a class="btn btn-second light" href="#." target="_blank">MI CGS</a>
-                     </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6 col-md-3">
-
-                     <div class="widget no-box">
-                        <h5 class="widget-title">Contacto<span></span></h5>
-
-                        <p>
-                           <a href="mailto:info@domain.com" title="glorythemes">info@cgsgroup.com</a>
-                        </p>
-                       
                      </div>
                   </div>
 

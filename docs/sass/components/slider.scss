@@ -12,7 +12,7 @@
 
 
    img.sp-image {
-      filter: grayscale(1) brightness(0.9);
+      filter: grayscale(0.2) brightness(0.9);
    }
 
    .sp-layer {
@@ -27,7 +27,7 @@
       max-width: 540px;
       overflow-wrap: break-word;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba($primary-700, 0.9);
       margin: 0 16px;
 
 
@@ -40,7 +40,7 @@
       }
 
       hr {
-         border-top: 3px solid $indigo-500;
+         border-top: 3px solid $secondary-400;
          max-width: 100px;
          margin: 10px 0 15px !important;
       }
@@ -50,29 +50,28 @@
          letter-spacing: 2px;
          font-size: 1.25em;
          font-weight: 700;
-         color: $indigo-700;
+         color: $primary-100;
       }
 
       p {
-         letter-spacing: 0px;
          font-weight: 500;
          text-align: left;
-         color: $gray-600;
+         color: $primary-200;
       }
 
       a.btn {
          float: right;
          margin-top: 20px;
          text-transform: uppercase;
-
+         color:$secondary-400;
+         border-color:$secondary-400;
          i {
             margin: auto 5px 3px;
          }
 
          &:hover {
-
             i {
-               color: $indigo-500;
+               color: $secondary-400;
             }
          }
       }
@@ -81,7 +80,7 @@
    .sp-thumbnails-container {
       position: absolute;
       bottom: 0;
-      background-color: $gray-800;
+      background-color: rgba($primary-700, 0.9);
       width: 100vw !important;
       box-shadow: inset 0px 4px 4px;
 
@@ -104,7 +103,7 @@
             svg {
                width: 40px;
                height: 40px;
-               fill: $gray-700;
+               fill: $gray-600;
             }
          }
 
@@ -115,14 +114,14 @@
          .sp-thumbnail {
             .sp-thumbnail-title {
                svg {
-                  fill: $gray-400;
+                  fill: $gray-300;
                }
             }
          }
 
          &:before {
             width: 100%;
-            border-bottom: 3px solid $gray-400;
+            border-bottom: 3px solid $secondary-400;
             margin-top: 13px;
             left: 0;
             right: 0;
@@ -204,6 +203,7 @@
          top: 45%;
          transform: translateY(-50%);
          right: 0;
+         padding-left:0;
 
          .sp-layer {
            bottom:inherit;
@@ -213,33 +213,62 @@
            max-width:600px;
            padding:2em 1em;
            text-align:right;
+           margin-left:0;
            a.btn {
               float:none;
            }
          }
       }
 
-      .sp-thumbnails-container .sp-thumbnails {
-         .sp-thumbnail-description {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 1em;
-            font-weight: 500;
-            letter-spacing: 1px;
-            padding: 0 2px;
-            transition: $timing $transition;
-            color: $gray-600;
-         }
+      .sp-thumbnails-container{
+         background-color: transparent;
+         box-shadow: none;
 
-         .sp-selected-thumbnail {
+         .sp-thumbnails {
+            background-color: rgba($primary-700, 0.9);
             .sp-thumbnail-description {
-               color: $gray-400;
+               text-align: center;
+               margin-top: 10px;
+               font-size: 1em;
+               font-weight: 500;
+               letter-spacing: 1px;
+               padding: 0 2px;
+               transition: $timing $transition;
+               color: $gray-600;
+            }
+            .sp-selected-thumbnail {
+               .sp-thumbnail-description {
+                  color: $gray-300;
+                  font-weight: 600;
+               }
+               &::before {
+                  content:none;
+               }
+               &::after {
+                  display:block;
+                  content:'';
+                  width: 75%;
+                  height: 3px;
+                  background-color: $secondary-400;
+                  border:none;
+                  margin-bottom: 13px;
+                  position:absolute;
+                  bottom:-53px;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+               }
             }
          }
          
+      } 
+         
+
+         
+         
       }
 
-   }
+   
 }
 @media screen and (min-width:1400px) {
    #my-slider .sp-layer p {
@@ -282,7 +311,7 @@
          right: 0;
          margin: auto;
          bottom: 0;
-
+         
 
          .sp-thumbnail {
             padding: 16px 0 0 0;
@@ -316,6 +345,7 @@
       display: none;
    }
 }
+
 
 @media (max-width: 640px) {
 

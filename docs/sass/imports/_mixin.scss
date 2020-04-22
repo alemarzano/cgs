@@ -1,0 +1,61 @@
+$transition: cubic-bezier(.17, .67, .5, 1.03);
+$timing:.4s .15s;
+$shadow: 2px 3px 4px $gray-600;
+$soft-shadow:-1px 6px 6px #5c5c5c5e;
+
+.btn {
+   transition: $transition $timing;
+   
+}
+.btn-first {
+   background-color: $primary-700;
+   color:white;
+}
+.btn-second {
+   color:$primary-600;
+   border:2px solid $primary-600;
+   &:hover{
+      background-color: $primary-600;
+      color:$primary-100;
+   }
+   &.light {
+      color:$primary-100;
+      border-color:$primary-200;
+       &:hover {
+          background-color: $primary-100;
+          color:$primary-600;
+          border-color:$primary-100;
+       }
+   }
+}
+.btn-third {
+   color:$primary-600;
+   text-decoration: underline;
+}
+
+.btn-two-first {
+   background-color: $secondary-500;
+   color:white;
+   font-weight: 600;
+   &:hover {
+      background-color: $secondary-400;
+      color:$primary-600
+   }
+}
+.btn-two-second {
+   color:$secondary-600;
+   border:2px solid $secondary-600;
+   &:hover{
+      background-color: $secondary-600;
+      color:$secondary-100;
+   }
+   
+}
+.btn-two-third {
+   color:$secondary-600;
+   text-decoration: underline;
+}
+
+.btn-rounded {
+   border-radius:24px;
+}

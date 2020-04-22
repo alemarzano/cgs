@@ -59,20 +59,23 @@ jQuery(function ($) {
         autoScaleLayers: false,
         forceSize: 'fullWindow',
         breakpoints: {
-            1440: {
+
+            1366: {
                 height: 720,
                 forceSize: 'none',
-                thumbnailWidth: 160
+                thumbnailWidth: 160,
+                thumbnailHeight: 120,
             },
-            1366: {
-                height: 580,
-                    forceSize: 'none',
+            1024: {
+                height: 720,
+                thumbnailWidth: 144,
+                thumbnailHeight: 120,
+                forceSize: 'none',
             },
             768: {
                 waitForLayers: true,
-                thumbnailWidth: 144,
-                thumbnailHeight: 120,
-                thumbnailPointer:   true,
+
+                thumbnailPointer: true,
                 height: 720,
                 forceSize: 'none',
             },
@@ -101,22 +104,58 @@ jQuery(function ($) {
         });
     }
 
+    $();
+    var header = $(".topnavbar");
+    var viewport = $(window).width();
+    var pic = header.find('img');
+
+    function scrolled() {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                header.addClass('scrolled');
+                header.removeClass('transparent');
+                pic.attr('src', 'img/logo.png');
+
+            } else {
+                header.removeClass("scrolled");
+                header.addClass('transparent');
+                pic.attr('src', 'img/logo-w.png');
+            }
+        });
+
+    }
+
+    if (viewport > 1200) {
+        pic.attr('src', 'img/logo-w.png')
+        scrolled();
+        var thumbs = $('.sp-thumbnails').width().toString();
+        var slide = $('.sp-slide').find('.container');
+        slide.css('width', thumbs + 'px');
+        slide.css('maxWidth', thumbs + 'px');
+    }
+
 
 })
 var icon = $('.navTrigger');
 // var overlay = $("#overlay");
+var h = $('.topnavbar').height().toString();
 
 function openNav() {
-    $(".navlinks").css('height', '25em');
+    $(".navlinks").css('width', '100vw');
+    $(".navlinks").css({
+        height: `calc(100% - ${h}px)`
+    });
     $('body').css('overflow', "hidden");
-    // overlay.style.opacity = '.7'
-    // overlay.style.height = '100vh'
     icon.attr('onclick', 'closeNav()');
+    // overlay.style.opacity = '.7'
+    // overlay.style.width0vh'100vw    icon.attr('onclick', 'closeNav()');
 
 }
 
 function closeNav() {
-    $(".navlinks").css('height', '0');
+    $(".navlinks").css('width', '0');
     $('body').css('overflow', "inherit");
     // overlay.style.opacity = '0';
     // overlay.style.height = '0'
