@@ -74,9 +74,10 @@ jQuery(function ($) {
             },
             768: {
                 waitForLayers: true,
-
                 thumbnailPointer: true,
                 height: 720,
+                thumbnailWidth: 120,
+                thumbnailHeight: 120,
                 forceSize: 'none',
             },
             500: {
@@ -140,12 +141,13 @@ jQuery(function ($) {
 })
 var icon = $('.navTrigger');
 // var overlay = $("#overlay");
-var h = $('.topnavbar').height().toString();
+var h = $('nav').height().toString();
 
 function openNav() {
     $(".navlinks").css('width', '100vw');
     $(".navlinks").css({
-        height: `calc(100% - ${h}px)`
+        height: `calc(100% - ${h}px)`,
+        // top: `${h}px`,
     });
     $('body').css('overflow', "hidden");
     icon.attr('onclick', 'closeNav()');

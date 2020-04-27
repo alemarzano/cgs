@@ -78,12 +78,14 @@ section {
 			font-size: 2.25em;
 			line-height: 40px;
 			color: $secondary-400;
-			margin-bottom:.25em;
+			margin-bottom: .25em;
 		}
+
 		.text {
-			color:$primary-100;
-			padding:0 4px 4px;
+			color: $primary-100;
+			padding: 0 4px 4px;
 		}
+
 		&:before {
 			content: "\e01d";
 			font-family: "Flaticon";
@@ -112,10 +114,11 @@ section {
 
 .why-us {
 	h4 {
-		color:$primary-400;
+		color: $primary-400;
 	}
+
 	p {
-		color:$gray-600;
+		color: $gray-600;
 	}
 }
 
@@ -128,13 +131,14 @@ section {
 			margin: 4px;
 
 			a {
-				background-color: $gray-500;
-				color: $gray-300;
+				background-color: $gray-400;
+				color: $gray-200;
 				border-radius: 0;
 				display: flex;
 				align-items: center;
 				transition: $transition $timing;
 				border-radius: 5px;
+
 				i {
 					font-size: 24px;
 					margin-right: 16px;
@@ -142,6 +146,7 @@ section {
 					transition: $transition $timing;
 
 				}
+
 				&.active {
 					background-color: $secondary-500;
 					color: white;
@@ -152,7 +157,7 @@ section {
 					}
 				}
 
-				
+
 			}
 		}
 	}
@@ -160,22 +165,39 @@ section {
 }
 
 .agentes {
-	background-color: $gray-200;
+	background-color: $primary-100;
 
 	iframe {
-		margin: 60px auto;
+		margin: 16px auto 32px;
+		height: 320px;
+
 	}
 }
 
 .contacto {
 	background-color: $primary-700;
-	padding:3em 0;
+	padding: 3em 0;
+
 	.btn {
 		font-size: 1.5em;
-		padding:.25em 1em !important;
+		padding: .25em 1em !important;
 	}
 }
 
+.jumbotron {
+	height: 360px;
+	display: flex;
+	align-items: center;
+	background-position: 60% center;
+	background-size: cover;
+	margin-bottom: 0;
+
+	h1 {
+		// margin-bottom:-64px;
+		padding-top: 64px;
+		color: white;
+	}
+}
 
 #quoteModal {
 
@@ -211,13 +233,48 @@ section {
 
 }
 
+.servicios {
+	.tab-content {
+		.img-service {
+			height: 160px;
+			width: 100%;
+			background-position: center;
+			background-size: cover;
+			margin-bottom: 24px;
+		}
 
+		h2 {
+			color: $primary-500;
+			font-size: 24px;
+			margin:16px 0;
+		}
+
+		p {
+			color: $gray-500;
+			font-weight: 500;
+			font-size: 18px;
+			margin:16px 0;
+		}
+
+		ul {
+			li {
+				color: $gray-700;
+				font-weight: 400;
+				font-family: $parrafos;
+				font-size: 1.15em;
+				span {
+					color: $secondary-400
+				}
+			}
+		}
+	}
+}
 
 
 /* ===================== Q U E R I E S ===================== */
 
 @media only screen and (min-width:768px) {
-		
+
 	.single-service-contents {
 		padding-top: 100px;
 
@@ -285,13 +342,15 @@ section {
 
 	.counter-section span.count-description {
 		font-size: 1em;
-		padding-left:4.5em;
+		padding-left: 4.5em;
+
 		&::before {
 			font-size: 5em;
 		}
 	}
+
 	.cgs-tabs .nav-pills .nav-item {
-		flex:1 1 20%;
+		flex: 1 1 20%;
 	}
 }
 
@@ -301,12 +360,15 @@ section {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	section {
 		padding: 6em 0;
-		&.hero {
-			padding:3em 0;
+
+		&.hero, &.servicios {
+			padding: 3em 0;
 		}
 	}
+
 	.counter-section {
 		.counter-block {
 			display: flex;
@@ -325,18 +387,33 @@ section {
 			}
 		}
 	}
+	.agentes {
+
+		iframe {
+			height: 480px;
+
+		}
+	}
+
+	.jumbotron {
+		height:480px;
+			h1 {
+				font-size: 3.5em;
+			}
+	}
 }
 
 /* ----------- Non Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-	
+
 	h3 {
 		font-size: 2em;
 	}
+
 	html {
 		overflow-x: hidden;
 	}
-	
+
 
 	.cgs-tabs .nav-pills .nav-item a {
 		font-size: 1.25em;
