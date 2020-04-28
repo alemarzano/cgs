@@ -1,0 +1,130 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Contacto' %}
+
+{% block navbar %}
+   {% import "macros/navbar.njk" as nav %}
+   {{nav.active('contacto', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+  <div class="jumbotron jumbotron-fluid" style="background-image:url('img/header_contact.jpg')">
+      <div class="container">
+         <h1>Contacto</h1>
+      </div>
+   </div>
+   <section class="section-contact">
+      <div class="container mx-auto">
+         <div class="row flex-col-reverse flex-md-row mw-100 mx-auto">
+            <div class="col-12 col-md-6 p-0 background">
+               <div class="departamentos">
+                  <ul >
+                     <li class="box">
+                        <p>Departamento Comercial</p>
+                        <ol class="fa-ul">
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-envelope-open-text"></i>
+                              </span><a href="mailto:sales@cgsgroup.com.ar">sales@cgsgroup.com.ar</a></li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-phone"></i>
+                              </span><a href="tel:+5491151992225">011 5199-2225 - Opción 1</a> </li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fab fa-whatsapp"></i>
+                              </span><a href="">Whatsapp</a></li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fab fa-skype"></i>
+                              </span><a href="">Skype</a></li>
+                        </ol>
+                     </li>
+                     <li class="box">
+                        <p>Departamento de Operaciones</p>
+                        <ol class="fa-ul">
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-envelope-open-text"></i>
+                              </span><a href="mailto:operaciones@cgsgroup.com.ar">operaciones@cgsgroup.com.ar</a></li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-phone"></i>
+                              </span><a href="tel:+5491151992225">011 5199-2225 - Opción 2</a> </li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fab fa-whatsapp"></i>
+                              </span><a href="">Whatsapp</a></li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fab fa-skype"></i>
+                              </span><a href="">Skype</a></li>
+                        </ol>
+                     </li>
+                     <li class="box">
+                        <p>Departamento de Administración</p>
+                        <ol class="fa-ul">
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-envelope-open-text"></i>
+                              </span><a href="mailto:admin@cgsgroup.com.ar">admin@cgsgroup.com.ar</a></li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-phone"></i>
+                              </span><a href="tel:+5491151992225">011 5199-2225 - Opción 3</a> </li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fab fa-whatsapp"></i>
+                              </span><a href="">Whatsapp</a></li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fab fa-skype"></i>
+                              </span><a href="">Skype</a></li>
+                        </ol>
+                     </li>
+                    
+
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-md-6">
+               <form class="my-4 p-lg-4">
+                  <div class="form-group">
+                     <label for="nombre">Nombre</label>
+                     <input type="text" class="form-control" id="nombre">
+                     
+                  </div>
+                  <div class="form-group">
+                     <label for="empresa">Empresa</label>
+                     <input type="text" class="form-control" id="empresa">
+                  </div>
+                  <div class="form-group">
+                     <label for="telefono">Teléfono</label>
+                     <input type="text" class="form-control" id="telefono">
+                  </div>
+                  <div class="form-group">
+                     <label for="mail">Email</label>
+                     <input type="mail" class="form-control" id="mail">
+                  </div>
+                  <div class="form-group">
+                     <label for="ciudad">Ciudad</label>
+                     <input type="text" class="form-control" id="ciudad">
+                  </div>
+                  <div class="form-group">
+                     <label for="asunto">Asunto</label>
+                     <input type="text" class="form-control" id="asunto">
+                  </div>
+                  <div class="form-group">
+                     <label for="mensaje">Mensaje</label>
+                     <textarea type="text" class="form-control" id="mensaje" rows="3"></textarea>
+                  </div>
+                  
+                 
+                  <button type="submit" class="btn btn-first mt-4">Enviar Consulta</button>
+               </form>
+            </div>
+         </div>
+
+      </div>
+   </section>
+{% endblock %}

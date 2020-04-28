@@ -1,0 +1,83 @@
+.section-contact {
+   padding-top: 80px;
+   // background-color:$gray-200;
+
+   .row {
+      background-color: white;
+      box-shadow: $soft-shadow;
+
+      .background {
+         background-image: url('../img/bg-contact.jpg');
+         background-position: center;
+         background-size: cover;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+
+         .departamentos {
+            padding: 32px 0;
+
+            li.box {
+               margin: 16px auto 32px;
+               color: white;
+               border-left: 3px solid rgba($primary-400, 0.6);
+               background-color: rgba($primary-900, 0.5);
+               padding: 16px;
+
+               p {
+                  color: white;
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  margin-bottom: 4px;
+               }
+
+               i {
+                  color: $secondary-400;
+               }
+
+               ol {
+                  li {
+                     a {
+                        color: rgba($primary-300, 0.7);
+                        padding: 2px 0;
+                        &:hover, &:focus {
+                            color: rgba($secondary-300, 1)
+                        }
+                     }
+                     span {
+                        left: -2.5em;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      form {
+         label {
+            color: $gray-500;
+         }
+
+         .form-control {
+            border-color: transparent;
+            border-radius: 0;
+            border-bottom: 2px solid $gray-300;
+            font-weight: 600;
+            transition: $transition $timing;
+
+            &:focus {
+               border-bottom-color: transparent;
+               box-shadow: 0 0 0 0.25rem rgba($secondary-500, 0.5);
+            }
+         }
+      }
+   }
+
+}
+
+@media screen and (min-width:768px) {
+   .section-contact {
+      background-color: $primary-100;
+   }
+}

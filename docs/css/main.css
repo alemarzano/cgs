@@ -509,6 +509,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+ol, ul {
+  list-style: none; }
+
 section {
   padding: 2em 0; }
 
@@ -663,7 +666,7 @@ section {
 
 @media screen and (min-width: 1400px) {
   .topnavbar .container .logo img {
-    width: 36em; } }
+    width: 30em; } }
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
@@ -1071,6 +1074,56 @@ footer {
   footer .widget .thumb-content {
     margin: .5em 0; } }
 
+.section-contact {
+  padding-top: 80px; }
+  .section-contact .row {
+    background-color: white;
+    box-shadow: -1px 6px 6px #5c5c5c5e; }
+    .section-contact .row .background {
+      background-image: url("../img/bg-contact.jpg");
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section-contact .row .background .departamentos {
+        padding: 32px 0; }
+        .section-contact .row .background .departamentos li.box {
+          margin: 16px auto 32px;
+          color: white;
+          border-left: 3px solid rgba(110, 99, 163, 0.6);
+          background-color: rgba(9, 7, 20, 0.5);
+          padding: 16px; }
+          .section-contact .row .background .departamentos li.box p {
+            color: white;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 4px; }
+          .section-contact .row .background .departamentos li.box i {
+            color: #60d5a8; }
+          .section-contact .row .background .departamentos li.box ol li a {
+            color: rgba(158, 151, 194, 0.7);
+            padding: 2px 0; }
+            .section-contact .row .background .departamentos li.box ol li a:hover, .section-contact .row .background .departamentos li.box ol li a:focus {
+              color: #95e3c5; }
+          .section-contact .row .background .departamentos li.box ol li span {
+            left: -2.5em; }
+    .section-contact .row form label {
+      color: #838384; }
+    .section-contact .row form .form-control {
+      border-color: transparent;
+      border-radius: 0;
+      border-bottom: 2px solid #c1c1c2;
+      font-weight: 600;
+      transition: cubic-bezier(0.17, 0.67, 0.5, 1.03) 0.4s 0.15s; }
+      .section-contact .row form .form-control:focus {
+        border-bottom-color: transparent;
+        box-shadow: 0 0 0 0.25rem rgba(43, 199, 139, 0.5); }
+
+@media screen and (min-width: 768px) {
+  .section-contact {
+    background-color: #eceaf3; } }
+
 /* ===================== H O M E ===================== */
 .service-home .service p {
   max-width: 520px; }
@@ -1140,8 +1193,7 @@ footer {
       border-radius: 0;
       display: flex;
       align-items: center;
-      transition: cubic-bezier(0.17, 0.67, 0.5, 1.03) 0.4s 0.15s;
-      border-radius: 5px; }
+      transition: cubic-bezier(0.17, 0.67, 0.5, 1.03) 0.4s 0.15s; }
       .cgs-tabs .nav-pills .nav-item a i {
         font-size: 24px;
         margin-right: 16px;
@@ -1153,6 +1205,32 @@ footer {
         box-shadow: -1px 6px 6px #5c5c5c5e; }
         .cgs-tabs .nav-pills .nav-item a.active i {
           color: #caf1e2; }
+  .cgs-tabs .nav-pills.nav-services .nav-item a {
+    background-color: white;
+    color: #a2a2a3;
+    font-size: 1em;
+    position: relative; }
+    .cgs-tabs .nav-pills.nav-services .nav-item a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 3px;
+      background-color: #3d2f84;
+      width: 0;
+      transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .cgs-tabs .nav-pills.nav-services .nav-item a i {
+      color: #a2a2a3; }
+    .cgs-tabs .nav-pills.nav-services .nav-item a.active {
+      color: #6e63a3;
+      background-color: white;
+      box-shadow: none; }
+      .cgs-tabs .nav-pills.nav-services .nav-item a.active i {
+        color: #3d2f84; }
+      .cgs-tabs .nav-pills.nav-services .nav-item a.active::after {
+        width: 100%; }
 
 .agentes {
   background-color: #eceaf3; }
@@ -1264,6 +1342,19 @@ footer {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto; }
+    .cgs-tabs .nav-pills.nav-services .nav-item a::after {
+      right: 0;
+      left: inherit;
+      margin: inherit;
+      height: 0;
+      bottom: inherit;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #3d2f84;
+      width: 3px !important;
+      transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03); }
+    .cgs-tabs .nav-pills.nav-services .nav-item a.active::after {
+      height: 75%; }
   section {
     padding: 6em 0; }
     section.hero, section.servicios {
@@ -1280,9 +1371,11 @@ footer {
   .agentes iframe {
     height: 480px; }
   .jumbotron {
-    height: 480px; }
+    align-items: flex-end; }
     .jumbotron h1 {
-      font-size: 3.5em; } }
+      font-size: 3.5em; }
+  .servicios .tab-content .img-service {
+    height: 240px; } }
 
 /* ----------- Non Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {

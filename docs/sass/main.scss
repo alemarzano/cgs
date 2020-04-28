@@ -19,6 +19,9 @@ a {
 		text-decoration: none;
 	}
 }
+ol, ul {
+	list-style: none;
+}
 
 section {
 	padding: 2em 0;
@@ -29,7 +32,7 @@ section {
 
 
 
-@import 'components/navbar', 'components/slider', 'components/footer';
+@import 'components/navbar', 'components/slider', 'components/footer', 'components/contact';
 
 
 /* ===================== H O M E ===================== */
@@ -137,7 +140,6 @@ section {
 				display: flex;
 				align-items: center;
 				transition: $transition $timing;
-				border-radius: 5px;
 
 				i {
 					font-size: 24px;
@@ -158,6 +160,47 @@ section {
 				}
 
 
+			}
+		}
+
+		&.nav-services {
+			.nav-item {
+				a {
+					background-color: white;
+					color: $gray-400;
+					font-size: 1em;
+					position: relative;
+
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						height: 3px;						
+						background-color: $primary-500;
+						width: 0;
+						transition: $timing $transition;
+						left:0;
+						right:0;
+						margin:auto;
+					}
+
+					i {
+						color: $gray-400;
+					}
+
+					&.active {
+						color: $primary-400;
+						background-color: white;
+						box-shadow: none;
+						i {
+							color: $primary-500;
+						}
+
+						&::after {
+							width: 100%;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -246,14 +289,14 @@ section {
 		h2 {
 			color: $primary-500;
 			font-size: 24px;
-			margin:16px 0;
+			margin: 16px 0;
 		}
 
 		p {
 			color: $gray-500;
 			font-weight: 500;
 			font-size: 18px;
-			margin:16px 0;
+			margin: 16px 0;
 		}
 
 		ul {
@@ -262,6 +305,7 @@ section {
 				font-weight: 400;
 				font-family: $parrafos;
 				font-size: 1.15em;
+
 				span {
 					color: $secondary-400
 				}
@@ -359,12 +403,37 @@ section {
 		max-width: 720px;
 		margin-left: auto;
 		margin-right: auto;
+
+		.nav-pills.nav-services {
+			.nav-item {
+				a {
+					&::after {						
+						right: 0;
+						left:inherit;
+						margin:inherit;
+						height: 0;
+						bottom:inherit;
+						top: 50%;
+						transform: translateY(-50%);
+						background-color: $primary-500;
+						width: 3px!important;
+						transition: $timing $transition;
+					}
+					&.active {
+						&::after {
+							height:75%;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	section {
 		padding: 6em 0;
 
-		&.hero, &.servicios {
+		&.hero,
+		&.servicios {
 			padding: 3em 0;
 		}
 	}
@@ -387,6 +456,7 @@ section {
 			}
 		}
 	}
+
 	.agentes {
 
 		iframe {
@@ -396,10 +466,18 @@ section {
 	}
 
 	.jumbotron {
-		height:480px;
-			h1 {
-				font-size: 3.5em;
+		align-items: flex-end;
+		h1 {
+			font-size: 3.5em;
+		}
+	}
+
+	.servicios {
+		.tab-content {
+			.img-service {
+				height: 240px;
 			}
+		}
 	}
 }
 
