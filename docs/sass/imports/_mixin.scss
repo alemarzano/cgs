@@ -11,6 +11,9 @@ $soft-shadow:-1px 6px 6px #5c5c5c5e;
 .btn-first {
    background-color: $primary-700;
    color:white;
+   &:hover, &:focus {
+      background-color: $primary-500;
+   }
 }
 .btn-second {
    color:$primary-600;

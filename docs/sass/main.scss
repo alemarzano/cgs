@@ -134,8 +134,8 @@ section {
 			margin: 4px;
 
 			a {
-				background-color: $gray-400;
-				color: $gray-200;
+				// background-color: $gray-400;
+				color: $gray-300;
 				border-radius: 0;
 				display: flex;
 				align-items: center;
@@ -150,12 +150,18 @@ section {
 				}
 
 				&.active {
-					background-color: $secondary-500;
+					background-color: $secondary-700;
 					color: white;
 					box-shadow: $soft-shadow;
 
 					i {
 						color: $secondary-200;
+					}
+				}
+				&:hover {
+					color:$secondary-600;
+					i {
+						color:$secondary-600;
 					}
 				}
 
@@ -166,39 +172,39 @@ section {
 		&.nav-services {
 			.nav-item {
 				a {
-					background-color: white;
-					color: $gray-400;
-					font-size: 1em;
-					position: relative;
+					// background-color: white;
+					// color: $gray-400;
+					// font-size: 1em;
+					// position: relative;
 
-					&::after {
-						content: '';
-						position: absolute;
-						bottom: 0;
-						height: 3px;						
-						background-color: $primary-500;
-						width: 0;
-						transition: $timing $transition;
-						left:0;
-						right:0;
-						margin:auto;
-					}
+					// &::after {
+					// 	content: '';
+					// 	position: absolute;
+					// 	bottom: 0;
+					// 	height: 3px;						
+					// 	background-color: $primary-500;
+					// 	width: 0;
+					// 	transition: $timing $transition;
+					// 	left:0;
+					// 	right:0;
+					// 	margin:auto;
+					// }
 
-					i {
-						color: $gray-400;
-					}
+					// i {
+					// 	color: $gray-400;
+					// }
 
 					&.active {
-						color: $primary-400;
-						background-color: white;
+						// color: $primary-400;
+						// background-color: white;
 						box-shadow: none;
-						i {
-							color: $primary-500;
-						}
+						// i {
+						// 	color: $primary-500;
+						// }
 
-						&::after {
-							width: 100%;
-						}
+						// &::after {
+						// 	width: 100%;
+						// }
 					}
 				}
 			}
@@ -218,12 +224,18 @@ section {
 }
 
 .contacto {
-	background-color: $primary-700;
+	background-color: $primary-900;
 	padding: 3em 0;
 
 	.btn {
 		font-size: 1.5em;
 		padding: .25em 1em !important;
+		background-color: $secondary-700;
+		transition: $timing $transition;
+		&:hover {
+			background-color: $secondary-600;
+			color:$primary-800
+		}
 	}
 }
 
@@ -234,6 +246,7 @@ section {
 	background-position: 60% center;
 	background-size: cover;
 	margin-bottom: 0;
+	margin-top:80px;
 
 	h1 {
 		// margin-bottom:-64px;
@@ -242,53 +255,20 @@ section {
 	}
 }
 
-#quoteModal {
-
-	font-family: 'Lato', sans-serif !important;
-
-	button.btn {
-		margin-left: auto;
-
-
-		transition: $timing $transition;
-		border-radius: 24px;
-
-	}
-
-	.modal-title {
-		text-align: center;
-
-	}
-
-	.contact-datos {
-		margin-top: 32px;
-
-		.col-md-4 {
-			padding: 0 10px;
-		}
-
-		h5 {
-
-			margin-bottom: 0;
-		}
-
-	}
-
-}
 
 .servicios {
 	.tab-content {
 		.img-service {
 			height: 160px;
 			width: 100%;
-			background-position: center;
+			background-position: center bottom;
 			background-size: cover;
 			margin-bottom: 24px;
 		}
 
 		h2 {
 			color: $primary-500;
-			font-size: 24px;
+			font-size: 2em;
 			margin: 16px 0;
 		}
 
@@ -305,6 +285,7 @@ section {
 				font-weight: 400;
 				font-family: $parrafos;
 				font-size: 1.15em;
+				margin:12px 0 ;
 
 				span {
 					color: $secondary-400
@@ -314,6 +295,21 @@ section {
 	}
 }
 
+.newsletter {
+	i {
+		font-size: 3em;
+		color:$primary-500;
+		margin-bottom:.5em;
+	}
+	form {
+		.form-group {
+			width:100%;
+		}
+		button {
+			width:100%;
+		}
+	}
+}
 
 /* ===================== Q U E R I E S ===================== */
 
@@ -479,6 +475,21 @@ section {
 			}
 		}
 	}
+	.newsletter {
+		form {
+			width:480px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.form-group {
+				width:65%;
+				margin-bottom: 0;
+			}
+			button {
+				width:30%;
+			}
+		}
+	}
 }
 
 /* ----------- Non Retina Screens ----------- */
@@ -496,7 +507,10 @@ section {
 	.cgs-tabs .nav-pills .nav-item a {
 		font-size: 1.25em;
 	}
-
+	.jumbotron {
+		margin-top:0;
+		height:460px;
+	}
 }
 
 

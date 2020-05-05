@@ -164,8 +164,8 @@
                   text-align: center;
 
                   svg {
-                     width: 80px;
-                     height: 80px;
+                     width: 64px;
+                     height: 64px;
                   }
                }
             }
@@ -196,7 +196,7 @@
    }
 }
 
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px)  {
 
    #my-slider {
       .container {
@@ -204,17 +204,19 @@
          position: absolute;
          left: 0;
          margin: auto;
-         top: 45%;
+         top: 50%;
          transform: translateY(-50%);
          right: 0;
          padding-left:0;
+         width: auto !important;
+         max-width: 1140px !important;
 
          .sp-layer {
            bottom:inherit;
            top:inherit!important;
            position: relative;
            left:inherit!important;
-           max-width:600px;
+           max-width:720px;
            padding:2em 1em;
            text-align:right;
            margin-left:0;

@@ -73,6 +73,22 @@ footer {
       .thumb-content {
          margin: 1em 0;
       }
+      .social {
+         display:flex;
+         margin-bottom: 0;
+         li {
+                   
+         }
+         a {
+            font-size: 2em;
+             padding:6px;
+              margin:0 12px;
+             &:first-of-type {
+                padding-left:0;
+                margin-left:0;
+             }
+         }
+      }
    }
 
    p {
@@ -85,15 +101,16 @@ footer {
 }
 
 @media (min-width:768px) {
-   p {
-      font-size: 1em;
+   footer {
+      p,a {
+         font-size: .85em;
+      }
+      .widget h5.widget-title {
+         padding-top: 8px;
+      }
+      .widget .thumb-content {
+         margin: .5em 0;
+      }
    }
 
-   footer .widget h5.widget-title {
-      padding-top: 8px;
-   }
-
-   footer .widget .thumb-content {
-      margin: .5em 0;
-   }
 }

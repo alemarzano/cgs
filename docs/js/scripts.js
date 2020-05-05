@@ -64,20 +64,20 @@ jQuery(function ($) {
                 height: 720,
                 forceSize: 'none',
                 thumbnailWidth: 160,
-                thumbnailHeight: 120,
+                thumbnailHeight: 114,
             },
             1024: {
                 height: 720,
-                thumbnailWidth: 144,
-                thumbnailHeight: 120,
+               thumbnailWidth: 144,
+                   thumbnailHeight: 96,
                 forceSize: 'none',
             },
             768: {
                 waitForLayers: true,
                 thumbnailPointer: true,
                 height: 720,
-                thumbnailWidth: 120,
-                thumbnailHeight: 120,
+                thumbnailWidth: 130,
+                thumbnailHeight: 96,
                 forceSize: 'none',
             },
             500: {
@@ -163,3 +163,15 @@ function closeNav() {
     // overlay.style.height = '0'
     icon.attr('onclick', 'openNav()');
 }
+
+// Link tabs //
+
+var url = document.location.toString();
+if (url.match('#')) {
+    $('.nav-services a[href="#' + url.split('#')[1] + '"]').tab('show');
+}
+
+// Change hash for page-reload
+$('.nav-services a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+})
