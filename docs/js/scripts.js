@@ -60,11 +60,11 @@ jQuery(function ($) {
         forceSize: 'fullWindow',
         breakpoints: {
 
-            1366: {
+            1280: {
                 height: 720,
                 forceSize: 'none',
                 thumbnailWidth: 160,
-                thumbnailHeight: 114,
+                thumbnailHeight: 130,
             },
             1024: {
                 height: 720,

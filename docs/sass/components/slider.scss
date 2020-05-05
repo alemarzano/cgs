@@ -98,12 +98,12 @@
          .sp-thumbnail-title {
             margin-bottom: 5px;
             text-transform: uppercase;
-            color: #333;
+            color: $gray-400;
 
             svg {
                width: 40px;
                height: 40px;
-               fill: $gray-500;
+               fill: $gray-400;
             }
          }
 
@@ -135,7 +135,7 @@
 
       .sp-thumbnail-description {
          font-size: 14px;
-         color: #333;
+         color: $gray-400;
       }
    }
 }
@@ -229,8 +229,9 @@
       .sp-thumbnails-container{
          .sp-thumbnails {
             .sp-thumbnail {
-               top:0;
-               padding-top:4px;
+               top: 50%;
+               padding-top: 4px;
+               transform: translateY(-50%);
             }
             .sp-thumbnail-description {
                text-align: center;              
@@ -240,7 +241,7 @@
                letter-spacing: 1px;
                padding: 0 2px;
                transition: $timing $transition;
-               color: $gray-600;
+               // color: $gray-600;
             }
             .sp-selected-thumbnail {
                .sp-thumbnail-description {
