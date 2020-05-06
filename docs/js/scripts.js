@@ -48,28 +48,31 @@ jQuery(function ($) {
     $('#my-slider').sliderPro({
 
         width: "100vw",
-        height: "70vh",
+        height: "90vh",
         arrows: true,
         buttons: false,
         waitForLayers: true,
-        thumbnailWidth: 234,
-        thumbnailHeight: 130,
+        thumbnailWidth: 160,
+        thumbnailHeight: 100,
         thumbnailPointer: true,
         autoplay: false,
         autoScaleLayers: false,
         forceSize: 'fullWindow',
         breakpoints: {
-
+            1366: {
+                height: "95vh",
+                forceSize: 'none',
+            },
             1280: {
-                height: 720,
+                height: "95vh",
                 forceSize: 'none',
                 thumbnailWidth: 160,
-                thumbnailHeight: 130,
+                thumbnailHeight: 100,
             },
             1024: {
                 height: 720,
-               thumbnailWidth: 144,
-                   thumbnailHeight: 96,
+                thumbnailWidth: 144,
+                thumbnailHeight: 96,
                 forceSize: 'none',
             },
             768: {

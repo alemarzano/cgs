@@ -964,20 +964,26 @@ section {
       padding: 2em 1em;
       text-align: right;
       margin-left: 0; }
+      #my-slider .container .sp-layer p {
+        font-size: 1.15em; }
+      #my-slider .container .sp-layer h3 {
+        font-size: 1.75em; }
       #my-slider .container .sp-layer a.btn {
         float: none; }
   #my-slider .sp-thumbnails-container .sp-thumbnails .sp-thumbnail {
     top: 50%;
-    padding-top: 4px;
     transform: translateY(-50%); }
-  #my-slider .sp-thumbnails-container .sp-thumbnails .sp-thumbnail-description {
-    text-align: center;
-    font-size: 1em;
-    padding-top: 8px !important;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 0 2px;
-    transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03); }
+    #my-slider .sp-thumbnails-container .sp-thumbnails .sp-thumbnail .sp-thumbnail-title svg {
+      height: 48px;
+      width: 48px; }
+    #my-slider .sp-thumbnails-container .sp-thumbnails .sp-thumbnail .sp-thumbnail-description {
+      text-align: center;
+      font-size: 1em;
+      padding-top: 8px !important;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 0 2px;
+      transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03); }
   #my-slider .sp-thumbnails-container .sp-thumbnails .sp-selected-thumbnail .sp-thumbnail-description {
     color: #c1c1c2;
     font-weight: 600;

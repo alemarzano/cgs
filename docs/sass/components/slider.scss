@@ -220,6 +220,12 @@
            padding:2em 1em;
            text-align:right;
            margin-left:0;
+           p {
+              font-size: 1.15em;
+           }
+           h3 {
+              font-size: 1.75em;
+           }
            a.btn {
               float:none;
            }
@@ -230,19 +236,26 @@
          .sp-thumbnails {
             .sp-thumbnail {
                top: 50%;
-               padding-top: 4px;
                transform: translateY(-50%);
+               .sp-thumbnail-title {
+                  svg {
+                     height: 48px;
+                     width: 48px;
+                  }
+               }
+               .sp-thumbnail-description {
+                  text-align: center;
+                  font-size: 1em;
+                  padding-top: 8px !important;
+                  font-weight: 500;
+                  letter-spacing: 1px;
+                  padding: 0 2px;
+                  transition: $timing $transition;
+                  // color: $gray-600;
+               }
+               
             }
-            .sp-thumbnail-description {
-               text-align: center;              
-               font-size: 1em;
-                padding-top:8px !important;
-               font-weight: 500;
-               letter-spacing: 1px;
-               padding: 0 2px;
-               transition: $timing $transition;
-               // color: $gray-600;
-            }
+            
             .sp-selected-thumbnail {
                .sp-thumbnail-description {
                   color: $gray-300;
