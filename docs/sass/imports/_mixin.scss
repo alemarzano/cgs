@@ -6,13 +6,18 @@ $soft-shadow:-1px 6px 6px #5c5c5c5e;
 .btn {
    transition: $transition $timing;
    border-radius:0;
+   letter-spacing: 1px;
+   &:hover {
+      box-shadow:3px 3px 6px rgba($gray-400, 0.7);
+   }
    
 }
 .btn-first {
-   background-color: $primary-700;
+   background-color: $primary-600;
    color:white;
    &:hover, &:focus {
       background-color: $primary-500;
+      color:white;
    }
 }
 .btn-second {

@@ -22,11 +22,20 @@
                <li class="{%if activePage == 'contacto' %} active {%endif%}">
                   <a href="contacto.html">Contacto</a>
                </li>
-               <li class="text-center">
-                  <button type="button" class="btn btn-two-first">Mi CGS</button>
-
+               <li class="">
+                  <div class="dropdown">
+                     <button class="btn btn-two-first dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mi CGS
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="micgs.html#cotizacion">Cotización</a>
+                        <a class="dropdown-item" href="micgs.html#reserva">Reserva</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="micgs.html#seguimiento">Seguimiento</a>
+                     </div>
+                  </div>
                </li>
-               
+
             {% endif %}
             {%if lang =='en'%}
                <li class="{%if activePage == 'home' %} active {%endif%} ">

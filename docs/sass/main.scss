@@ -19,7 +19,9 @@ a {
 		text-decoration: none;
 	}
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
 
@@ -140,6 +142,7 @@ section {
 				display: flex;
 				align-items: center;
 				transition: $transition $timing;
+				font-weight: 400;
 
 				i {
 					font-size: 24px;
@@ -152,16 +155,18 @@ section {
 				&.active {
 					background-color: $secondary-700;
 					color: white;
-					box-shadow: $soft-shadow;
+					// box-shadow: $soft-shadow;
 
 					i {
 						color: $secondary-200;
 					}
 				}
+
 				&:hover {
-					color:$secondary-600;
+					color: $secondary-600;
+
 					i {
-						color:$secondary-600;
+						color: $secondary-600;
 					}
 				}
 
@@ -232,9 +237,10 @@ section {
 		padding: .25em 1em !important;
 		background-color: $secondary-700;
 		transition: $timing $transition;
+
 		&:hover {
 			background-color: $secondary-600;
-			color:$primary-800
+			color: $primary-800
 		}
 	}
 }
@@ -246,12 +252,29 @@ section {
 	background-position: 60% center;
 	background-size: cover;
 	margin-bottom: 0;
-	margin-top:80px;
+	margin-top: 80px;
+	position: relative;
 
-	h1 {
-		// margin-bottom:-64px;
-		padding-top: 64px;
-		color: white;
+	.container {
+		z-index: 2;
+
+		h1 {
+			// margin-bottom:-64px;
+			padding-top: 64px;
+			color: white;
+
+		}
+	}
+
+
+	.overlay {
+		position: absolute;
+		bottom: 0;
+		height: 100%;
+		width: 100vw;
+		background: rgb(6, 1, 25);
+		background: linear-gradient(0deg, rgba(6, 1, 25, 0.8) 0%, rgba(255, 255, 255, 0) 54%);
+		z-index: 1;
 	}
 }
 
@@ -285,7 +308,7 @@ section {
 				font-weight: 400;
 				font-family: $parrafos;
 				font-size: 1.15em;
-				margin:12px 0 ;
+				margin: 12px 0;
 
 				span {
 					color: $secondary-400
@@ -298,18 +321,146 @@ section {
 .newsletter {
 	i {
 		font-size: 3em;
-		color:$primary-500;
-		margin-bottom:.5em;
+		color: $primary-500;
+		margin-bottom: .5em;
 	}
+
 	form {
 		.form-group {
-			width:100%;
+			width: 100%;
 		}
+
 		button {
-			width:100%;
+			width: 100%;
 		}
 	}
 }
+
+form {
+	text-align: right;
+	.form-group, .form-row {
+		text-align: left;
+	}
+}
+.micgs {
+
+	#reserva {
+		h4{
+			text-transform: inherit;
+			color:$gray-500
+		}
+		.button-cover {
+			font-size: 24px;
+
+			.button {
+				position: relative;
+				top: 50%;
+				width: 88px;
+				height: 40px;
+				overflow: hidden;
+				border-radius: 2px;
+
+				.checkbox {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					padding: 0;
+					margin: 0;
+					opacity: 0;
+					cursor: pointer;
+					z-index: 3;
+
+					&:checked+.knobs span {
+						color: $gray-400;
+					}
+					&:checked+.layer {
+						background-color: black;
+					}
+
+					&:checked+.knobs:before {
+						left: 42px;
+						background-color: $primary-600;
+					}
+
+					&:checked+.knobs:after {
+						color: #fff;
+					}
+
+
+				}
+
+				.knobs {
+					z-index: 2;
+
+					&:before,
+					&:after,
+					span {
+						position: absolute;
+						top: 4px;
+						width: 36px;
+						height: 30px;
+						font-size: 20px;
+						font-weight: bold;
+						text-align: center;
+						line-height: .8;
+						padding: 6px 8px;
+						border-radius: 2px;
+						transition: 0.3s ease all;
+					}
+
+					&:before {
+						content: '';
+						left: 4px;
+						background-color: $secondary-700;
+					}
+
+					&:after {
+						content: 'NO';
+						right: 16px;
+						color: $gray-400;
+					}
+
+					span {
+						display: inline-block;
+						left: 4px;
+						color: #fff;
+						z-index: 1;
+					}
+				}
+
+				.layer {
+					width: 100%;
+					background-color: $gray-100;
+					box-shadow: $soft-shadow;
+					transition: 0.3s ease all;
+					z-index: 1;
+				}
+
+				.knobs,
+				.layer {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+				}
+			}
+
+
+
+		}
+
+		form#formSinReserva {
+			display: none;
+		}
+
+
+
+	}
+}
+
+
+
 
 /* ===================== Q U E R I E S ===================== */
 
@@ -392,6 +543,7 @@ section {
 	.cgs-tabs .nav-pills .nav-item {
 		flex: 1 1 20%;
 	}
+
 }
 
 @media only screen and (min-width:1024px) {
@@ -403,21 +555,22 @@ section {
 		.nav-pills.nav-services {
 			.nav-item {
 				a {
-					&::after {						
+					&::after {
 						right: 0;
-						left:inherit;
-						margin:inherit;
+						left: inherit;
+						margin: inherit;
 						height: 0;
-						bottom:inherit;
+						bottom: inherit;
 						top: 50%;
 						transform: translateY(-50%);
 						background-color: $primary-500;
-						width: 3px!important;
+						width: 3px !important;
 						transition: $timing $transition;
 					}
+
 					&.active {
 						&::after {
-							height:75%;
+							height: 75%;
 						}
 					}
 				}
@@ -463,6 +616,7 @@ section {
 
 	.jumbotron {
 		align-items: flex-end;
+
 		h1 {
 			font-size: 3.5em;
 		}
@@ -475,19 +629,33 @@ section {
 			}
 		}
 	}
+
 	.newsletter {
 		form {
-			width:480px;
+			width: 480px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+
 			.form-group {
-				width:65%;
+				width: 65%;
 				margin-bottom: 0;
 			}
+
 			button {
-				width:30%;
+				width: 30%;
 			}
+		}
+	}
+	.micgs {
+		form {
+			min-height: 860px;
+			display:flex;
+			flex-direction: column;
+			button {
+				align-self:end;
+			}
+			
 		}
 	}
 }
@@ -507,9 +675,10 @@ section {
 	.cgs-tabs .nav-pills .nav-item a {
 		font-size: 1.25em;
 	}
+
 	.jumbotron {
-		margin-top:0;
-		height:460px;
+		margin-top: 0;
+		height: 460px;
 	}
 }
 

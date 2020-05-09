@@ -70,11 +70,20 @@
                <li class=" active ">
                   <a href="contacto.html">Contacto</a>
                </li>
-               <li class="text-center">
-                  <button type="button" class="btn btn-two-first">Mi CGS</button>
-
+               <li class="">
+                  <div class="dropdown">
+                     <button class="btn btn-two-first dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mi CGS
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="micgs.html#cotizacion">Cotización</a>
+                        <a class="dropdown-item" href="micgs.html#reserva">Reserva</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="micgs.html#seguimiento">Seguimiento</a>
+                     </div>
+                  </div>
                </li>
-               
+
             
             
 
@@ -94,6 +103,9 @@
       <main>
          
    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/header_contact.jpg')">
+   <div class="overlay">
+   
+   </div>
       <div class="container">
          <h1>Contacto</h1>
       </div>
@@ -308,22 +320,50 @@
                      <div class="widget no-box ">
                         <h5 class="widget-title">Ingreso<span></span></h5>
                         <p>Conocé el estado de tus pedidos</p>
-                        <a class="btn btn-second light" href="#." target="_blank">MI CGS</a>
+                        <div class="dropdown">
+                           <button class="btn btn-second light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Mi CGS
+                           </button>
+                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="micgs.html#">Cotización</a>
+                              <a class="dropdown-item" href="micgs.html#">Reserva</a>
+                               <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="micgs.html#">Seguimiento</a>
+                           </div>
+                        </div>
                      </div>
                      <div class="widget no-box">
                         <h5 class="widget-title">Redes<span></span></h5>
                         <ul class="social">
-                           <li><a href="https://www.facebook.com/CGSGROUPSRL/?nr"><i class="fab fa-facebook-square"></i></a></li>
-                           <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                           <li><a href="https://twitter.com/SrlCgs"><i class="fab fa-twitter-square"></i></a></li>
-                           <li><a href="https://www.instagram.com/cgsgrouparg/?hl=en"><i class="fab fa-instagram-square"></i></a></li>
-                           <li><a href=""><i class="fab fa-whatsapp-square"></i></a></li>
+                           <li>
+                              <a href="https://www.facebook.com/CGSGROUPSRL/?nr">
+                                 <i class="fab fa-facebook-square"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <i class="fab fa-linkedin"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://twitter.com/SrlCgs">
+                                 <i class="fab fa-twitter-square"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://www.instagram.com/cgsgrouparg/?hl=en">
+                                 <i class="fab fa-instagram-square"></i>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="">
+                                 <i class="fab fa-whatsapp-square"></i>
+                              </a>
+                           </li>
                         </ul>
-                        
+
                      </div>
                   </div>
-
-                 
 
                   <div class="col-xs-12 col-md-3">
                      <div class="widget no-box">
@@ -388,25 +428,25 @@
                   </div>
                   <div class="col-xs-12 col-md-3">
                      <div class="widget subscribe no-box">
-                     <div class="widget-title"><img class="img-fluid mb-2" src="img/logo-w.png" alt=""><span></span></div>
-                        
+                        <div class="widget-title"><img class="img-fluid mb-2" src="img/logo-w.png" alt="">
+                           <span></span></div>
+
                         <p class="mb-1">
                            <span>
                               Buenos Aires - Argentina<br>
                               CABA, C1015ABE<br>
                               (54 11) 5199 2225
                               <br>
-                             
 
                            </span>
-                            
+
                         </p>
                         <a href="mailto:info@domain.com">info@cgsgroup.com</a>
                         <div class="widget-title mt-2">
-                     <a href=""><img class="w-25" src="img/afip.jpg" alt=""></a>
+                           <a href=""><img class="w-25" src="img/afip.jpg" alt=""></a>
+                        </div>
                      </div>
-                     </div>
-                     
+
                   </div>
 
                </div>
@@ -417,7 +457,7 @@
          <div class="footer-copyright">
             <div class="container">
                <div class="row">
-               
+
                   <div class="col-md-12 text-center">
                      <p>CGS GROUP® 2020. Todos los derechos reservados.</p>
                   </div>
@@ -435,6 +475,8 @@
 
       <!-- Custom Script -->
       <script src="js/scripts.js"></script>
+
+      
 
    </body>
 </html>
