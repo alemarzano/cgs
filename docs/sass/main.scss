@@ -34,7 +34,7 @@ section {
 
 
 
-@import 'components/navbar', 'components/slider', 'components/footer', 'components/contact';
+@import 'components/navbar', 'components/slider', 'components/footer', 'components/contact', 'components/tablas';
 
 
 /* ===================== H O M E ===================== */
@@ -174,42 +174,43 @@ section {
 			}
 		}
 
-		&.nav-services {
+		&.nav-two {
 			.nav-item {
+				flex:1 1 100%;
 				a {
-					// background-color: white;
-					// color: $gray-400;
-					// font-size: 1em;
-					// position: relative;
+					background-color: white;
+					color: $gray-400;
+					font-size: 1em;
+					position: relative;
 
-					// &::after {
-					// 	content: '';
-					// 	position: absolute;
-					// 	bottom: 0;
-					// 	height: 3px;						
-					// 	background-color: $primary-500;
-					// 	width: 0;
-					// 	transition: $timing $transition;
-					// 	left:0;
-					// 	right:0;
-					// 	margin:auto;
-					// }
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						height: 3px;						
+						background-color: $primary-500;
+						width: 0;
+						transition: $timing $transition;
+						left:0;
+						right:0;
+						margin:auto;
+					}
 
-					// i {
-					// 	color: $gray-400;
-					// }
+					i {
+						color: $gray-400;
+					}
 
 					&.active {
-						// color: $primary-400;
-						// background-color: white;
+						color: $primary-400;
+						background-color: white;
 						box-shadow: none;
-						// i {
-						// 	color: $primary-500;
-						// }
+						i {
+							color: $primary-500;
+						}
 
-						// &::after {
-						// 	width: 100%;
-						// }
+						&::after {
+							width: 100%;
+						}
 					}
 				}
 			}

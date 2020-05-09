@@ -8,6 +8,7 @@ gulp.task('sass', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'node_modules/slider-pro/dist/css/slider-pro.css',
+            'node_modules/tiny-slider/dist/tiny-slider.css',
             'docs/sass/main.scss'
         ])
         .pipe(sass({
@@ -27,6 +28,7 @@ gulp.task('js', () => {
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js',
             'node_modules/jquery/dist/jquery.js',
+            'node_modules/tiny-slider/dist/tiny-slider.js',
             'node_modules/slider-pro/dist/js/jquery.sliderPro.min.js',
         ])
         .pipe(gulp.dest('docs/js'))

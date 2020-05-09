@@ -1,7 +1,7 @@
 $transition: cubic-bezier(.17, .67, .5, 1.03);
 $timing:.4s .15s;
 $shadow: 2px 3px 4px $gray-600;
-$soft-shadow:-1px 6px 6px #5c5c5c5e;
+$soft-shadow:2px 4px 6px #5c5c5c5e;
 
 .btn {
    transition: $transition $timing;
@@ -43,12 +43,12 @@ $soft-shadow:-1px 6px 6px #5c5c5c5e;
 }
 
 .btn-two-first {
-   background-color: $secondary-500;
+   background-color: $secondary-700;
    color:white;
    font-weight: 600;
-   &:hover {
-      background-color: $secondary-400;
-      color:$primary-600
+   &:hover, &:focus {
+      background-color: $secondary-900;
+      color:white;
    }
 }
 .btn-two-second {
