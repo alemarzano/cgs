@@ -1,6 +1,6 @@
 {% macro active(activePage = '', lang = '') %}
 
-   <nav class="nav topnavbar transparent">
+   <nav class="nav topnavbar ">
 
       <div class="container langs">
          <i class="fas fa-language"></i>
@@ -12,6 +12,9 @@
          <ul class="navlinks">
             {% if lang == 'es' %}
 
+               <li class="{%if activePage == 'home' %} active {%endif%} ">
+                  <a href="index.html">Nosotros</a>
+               </li>
                <li class="{%if activePage == 'servicios' %} active {%endif%} ">
                   <a href="servicios.html">Servicios</a>
                </li>
@@ -27,11 +30,11 @@
                      <button class="btn btn-two-first dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Mi CGS
                      </button>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="micgs.html#cotizacion">Cotización</a>
-                        <a class="dropdown-item" href="micgs.html#reserva">Reserva</a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="micgs.html#cotizacion">Cotización</a>
+                        <a class="dropdown-item text-left" href="micgs.html#reserva">Reserva</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="micgs.html#seguimiento">Seguimiento</a>
+                        <a class="dropdown-item text-left" href="micgs.html#seguimiento">Seguimiento</a>
                      </div>
                   </div>
                </li>

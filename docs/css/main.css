@@ -152,7 +152,7 @@ p {
 
 @media (min-width: 768px) {
   p {
-    font-size: 1.25em; } }
+    font-size: 1.15em; } }
 
 @media (min-width: 1024px) {
   .section-title.center {
@@ -508,7 +508,7 @@ body {
   box-sizing: border-box;
   border: none;
   min-height: 100vh;
-  font-size: 16px; }
+  font-size: 14px; }
 
 a {
   text-decoration: none; }
@@ -997,7 +997,7 @@ section {
     #my-slider .sp-thumbnails-container .sp-thumbnails .sp-selected-thumbnail .sp-thumbnail-description::after {
       display: block;
       content: '';
-      width: 75%;
+      width: 40%;
       height: 3px;
       background-color: #60d5a8;
       border: none;
@@ -1364,7 +1364,7 @@ footer {
     .cgs-tabs .nav-pills.nav-two .nav-item a {
       background-color: white;
       color: #a2a2a3;
-      font-size: 1em;
+      font-size: 1.15em;
       position: relative; }
       .cgs-tabs .nav-pills.nav-two .nav-item a::after {
         content: '';
@@ -1382,7 +1382,8 @@ footer {
       .cgs-tabs .nav-pills.nav-two .nav-item a.active {
         color: #6e63a3;
         background-color: white;
-        box-shadow: none; }
+        box-shadow: none;
+        font-weight: 500; }
         .cgs-tabs .nav-pills.nav-two .nav-item a.active i {
           color: #3d2f84; }
         .cgs-tabs .nav-pills.nav-two .nav-item a.active::after {
@@ -1407,7 +1408,7 @@ footer {
       color: #0f0c21; }
 
 .jumbotron {
-  height: 360px;
+  height: 160px;
   display: flex;
   align-items: center;
   background-position: 60% center;
@@ -1444,7 +1445,7 @@ footer {
 .servicios .tab-content p {
   color: #838384;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1em;
   margin: 16px 0; }
 
 .servicios .tab-content ul li {
@@ -1622,9 +1623,10 @@ form {
   .agentes iframe {
     height: 480px; }
   .jumbotron {
-    align-items: flex-end; }
+    align-items: flex-end;
+    background-position: top; }
     .jumbotron h1 {
-      font-size: 3.5em; }
+      font-size: 3em; }
   .servicios .tab-content .img-service {
     height: 240px; }
   .newsletter form {
@@ -1637,6 +1639,17 @@ form {
       margin-bottom: 0; }
     .newsletter form button {
       width: 30%; }
+  .micgs .cgs-tabs .nav-pills .nav-item a {
+    color: #838384; }
+    .micgs .cgs-tabs .nav-pills .nav-item a.active {
+      color: white;
+      background-color: #1f1842; }
+      .micgs .cgs-tabs .nav-pills .nav-item a.active i {
+        color: #eceaf3; }
+    .micgs .cgs-tabs .nav-pills .nav-item a:hover {
+      color: #1f1842; }
+      .micgs .cgs-tabs .nav-pills .nav-item a:hover i {
+        color: #1f1842; }
   .micgs form {
     min-height: 860px;
     display: flex;
@@ -1654,7 +1667,7 @@ form {
     font-size: 1.25em; }
   .jumbotron {
     margin-top: 0;
-    height: 460px; } }
+    height: 360px; } }
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1600px) {

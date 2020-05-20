@@ -119,20 +119,20 @@ jQuery(function ($) {
 
             if (scroll >= 100) {
                 header.addClass('scrolled');
-                header.removeClass('transparent');
-                pic.attr('src', 'img/logo.png');
+                // header.removeClass('transparent');
+                // pic.attr('src', 'img/logo.png');
 
             } else {
                 header.removeClass("scrolled");
-                header.addClass('transparent');
-                pic.attr('src', 'img/logo-w.png');
+                // header.addClass('transparent');
+                // pic.attr('src', 'img/logo-w.png');
             }
         });
 
     }
 
     if (viewport > 1200) {
-        pic.attr('src', 'img/logo-w.png')
+        // pic.attr('src', 'img/logo-w.png')
         scrolled();
         var thumbs = $('.sp-thumbnails').width().toString();
         var slide = $('.sp-slide').find('.container');
