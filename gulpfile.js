@@ -4,11 +4,25 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 var reload = browserSync.reload;
 
+gulp.task('directories', function () {
+    return gulp.src('*.*', {
+            read: false
+        })
+        .pipe(gulp.dest('./docs/css'))
+        .pipe(gulp.dest('./docs/sass'))
+        .pipe(gulp.dest('./docs/img'))
+        .pipe(gulp.dest('./docs/img/content'))
+        .pipe(gulp.dest('./docs/img/favicon'))
+        .pipe(gulp.dest('./docs/css/fonts'))
+        .pipe(gulp.dest('./docs/js'))
+        .pipe(gulp.dest('./docs/templates'))
+        .pipe(gulp.dest('./docs/pages'));
+});
+
 gulp.task('sass', () => {
     return gulp.src([
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'node_modules/slider-pro/dist/css/slider-pro.css',
-            'node_modules/tiny-slider/dist/tiny-slider.css',
             'docs/sass/main.scss'
         ])
         .pipe(sass({

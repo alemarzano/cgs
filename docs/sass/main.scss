@@ -128,12 +128,15 @@ section {
 }
 
 .cgs-tabs {
-	.nav-pills {
+	.nav-tabs {
 		justify-content: space-between;
-
+		border-bottom:1px solid $gray-200;
 		.nav-item {
 			flex: 1 1 45%;
-			margin: 4px;
+			margin: 0 4px;
+			&:first-of-type{
+				margin-left:0;
+			}
 
 			a {
 				// background-color: $gray-400;
@@ -143,6 +146,7 @@ section {
 				align-items: center;
 				transition: $transition $timing;
 				font-weight: 400;
+				border:none;
 
 				i {
 					font-size: 24px;
@@ -155,10 +159,15 @@ section {
 				&.active {
 					background-color: $secondary-700;
 					color: white;
-					// box-shadow: $soft-shadow;
-
+					
 					i {
 						color: $secondary-200;
+					}
+					&:hover {
+						color:white;
+						i {
+							color:white;
+						}
 					}
 				}
 
@@ -543,7 +552,7 @@ form {
 		}
 	}
 
-	.cgs-tabs .nav-pills .nav-item {
+	.cgs-tabs .nav-tabs .nav-item {
 		flex: 1 1 20%;
 	}
 
@@ -555,7 +564,7 @@ form {
 		margin-left: auto;
 		margin-right: auto;
 
-		.nav-pills.nav-services {
+		.nav-tabs.nav-services {
 			.nav-item {
 				a {
 					&::after {
@@ -653,7 +662,7 @@ form {
 	}
 	.micgs {
 		.cgs-tabs {
-			.nav-pills .nav-item a {
+			.nav-tabs .nav-item a {
 				color:$gray-500;
 				&.active {
 					color:white;
@@ -694,7 +703,7 @@ form {
 	}
 
 
-	.cgs-tabs .nav-pills .nav-item a {
+	.cgs-tabs .nav-tabs .nav-item a {
 		font-size: 1.25em;
 	}
 
