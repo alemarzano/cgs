@@ -9,10 +9,15 @@
 
 {% block secciones %}
    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/bg_micgs.jpg')">
+   
       <div class="overlay"></div>
       <div class="container">
+      <div class="col-12 col-lg-9 mx-auto">
          <h1>MI CGS</h1>
       </div>
+         
+      </div>
+      
    </div>
    <section class="section-contact">
 
@@ -22,26 +27,27 @@
                <img class="img-fluid w-75" src="img/micgs.svg" alt="">
             </div>
             <div class="col-12 col-lg-7 d-flex flex-column justify-content-center cgs-tabs">
-               <ul class="nav nav-pills mt-4 mb-2 justify-content-center">
-                  <li class="nav-item">
-                     <a href="#cotizacion" aria-controls="cotizacion" role="tab" data-toggle="pill" class="nav-link active" aria-selected="true">
+
+               <ul class="nav nav-tabs nav-two mt-4 mb-2 justify-content-center" role="tablist">
+                  <li class="nav-item" role="presentation">
+                     <a href="#cotizacion" aria-controls="cotizacion" id="cotizacion-tab" role="tab" data-toggle="tab" class="nav-link " aria-selected="true">
                         <i class="fas fa-dollar-sign"></i>
                         Cotización</a>
                   </li>
-                  <li class="nav-item">
-                     <a href="#reserva" aria-controls="reserva" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                  <li class="nav-item" role="presentation">
+                     <a href="#reserva" aria-controls="reserva" id="reserva-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
                         <i class="fas fa-calendar-check"></i>
                         Reserva</a>
                   </li>
-                  <li class="nav-item">
-                     <a href="#seguimiento" aria-controls="seguimiento" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                  <li class="nav-item" role="presentation">
+                     <a href="#seguimiento" aria-controls="seguimiento" id="seguimiento-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
                         <i class="fas fa-map-marker-alt"></i>
                         Seguimiento</a>
                   </li>
 
                </ul>
                <div class="tab-content mt-4">
-                  <div role="tabpanel" class="tab-pane active fade show" id="cotizacion" aria-labelledby="secure-tab">
+                  <div role="tabpanel" class="tab-pane active fade" id="cotizacion" aria-labelledby="cotizacion-tab">
                      <form class="p-lg-4 justify-content: center;" id="formCotizacion">
 
                         <div class="form-group">
@@ -111,7 +117,7 @@
                      </form>
                   </div>
 
-                  <div role="tabpanel" class="tab-pane fade show" id="reserva" aria-labelledby="secure-tab">
+                  <div role="tabpanel" class="tab-pane fade" id="reserva" aria-labelledby="reserva-tab">
                      <div class="d-flex flex-column justify-content-center align-items-center">
                         <h4 class="text-center">¿Tiene un número de cotización?</h4>
                         <div class="button-cover">
@@ -200,7 +206,7 @@
                         <button type="submit" class="btn btn-first mt-4">Enviar Consulta</button>
                      </form>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="seguimiento" aria-labelledby="secure-tab">
+                  <div role="tabpanel" class="tab-pane fade" id="seguimiento" aria-labelledby="seguimiento-tab">
                      <form class="my-4 p-lg-4">
                         <div class="form-group">
                            <label for="nombre">Nombre de usuario</label>
@@ -261,6 +267,8 @@
          modal.find('button').click(function(){
             location.reload();
          })
+
+
       });
    </script>
 {% endblock %}

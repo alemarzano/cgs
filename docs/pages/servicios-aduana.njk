@@ -1,0 +1,109 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Servicios' %}
+
+{% block navbar %}
+    {% import "macros/navbar.njk" as nav %}
+    {{nav.active('servicios', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+
+    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-aduana.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mx-auto">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <h1 class="display-1">Servicios /</h1>
+                        </li>
+                        <li class="list-inline-item">
+                            <h1>Aduana</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none scroll">
+        <div class="chevron"></div>
+    </div>
+
+    <!-- Single-Service-Start -->
+    <section class="servicios">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+                    <div class="content">
+
+                        <h3 class="section-title">Asesoramiento Integral.</h3>
+                        <p>Régimen Legal Aduanero, clasificación Arancelaria de todo tipo de mercaderías. Nuestro staff está compuesto por profesionales en materia aduanera y Comercio internacional.</p>
+                        <p>Es permanente nuestra asistencia al cliente y el análisis de cada una de las operaciones documentadas de Exportación, Importación, ante Organismos Oficiales y Gestion Bancaria.</p>
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-6">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Clasificaciones Arancelarias</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Mudanzas Internacionales</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Permisos de Embarque</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Despachos de Importación</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Tránsitos</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Tramitaciones ante Organismos Oficiales</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Asesoramiento en Régimen Aduanero</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Control Operativo en cargas FCL y/o LCL.</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Registro de Importadores y Exportadores</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Presentación y Seguimiento de Reintegros</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>IMO</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="img/servicio_aduana.jpg" alt="image"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}

@@ -1,212 +1,128 @@
-.accordion {
-   margin: 0 auto;
-   border-radius: 5px;
-
-   .pic-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 56px;
-      img {
-         max-width:50%;
-         margin:0 16px;
-      }
-      
+@media screen and (max-width: 1000px) {
+   .accordion {
+      width: 100%;
    }
+}
 
-   .accordion__item {
-      margin-bottom: 20px;
-      font-family: $links;
-
-      .accordion-header {
-         padding: 1em .8em;
-         background: $primary-700;
-         text-transform: uppercase;
-         color: white;
-         font-size: 1em;
-         transition: all .3s;
-         position: relative;
-      }
-
-      .accordion-body {
-         
-         cursor: pointer;
-
-         
-
-         .accordion__item {
-            margin-bottom: 0;
-            .accordion-header {
-               border-bottom: 1px solid transparent;
-               font-size: 0.85em;
-               padding: 10px 20px;
-               background: $primary-100;
-               color: $gray-500;
-               border-radius: 0;
-               padding-right:26px;
-               font-weight: 500;
-
-               &:after {
-                  color: $gray-500;
-                  transform: rotate(0deg);
-                  content: "\f078";
-                  font-family: FontAwesome;
-                  font-size: 12px;
-                  position: absolute;
-                  right: 10px;
-                  top: 50%;
-                  transition: .3s all;
-                  transform: rotate(0deg) translateY(-50%);
-               }
+/*** NUEVAS TABLAS ***/
+.panel {
+   margin:16px 0;
+   box-shadow: $soft-shadow;
+   .panel-heading {
+      padding: 0;
+      border: 0;
+      
+      background-color: rgba($primary-600, .8);
+      transition: .3s ease-in-out;
+     
+      h4.panel-title {
+         margin-bottom: 0;
+         font-size: 1.2em;
+         a {
+            display: block;
+            padding: 15px;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            text-decoration: none;
+   
+            &:before {
+               font-family: 'Glyphicons Halflings';
+               content: "\e114";
+               float: right;
+               transition: all 0.5s;
             }
+         }
+      }
+   
+      &.active {
+         background-color: $primary-600;
+         h4.panel-title {
+            a:before {
+               -webkit-transform: rotate(180deg);
+               -moz-transform: rotate(180deg);
+               transform: rotate(180deg);
+            }
+         }
+   
+      }
+   
+     
+   }
+   .table-father {
 
-            .accordion-body {
-               display: none;
-               .accordion-body__contents {
-                  margin:0!important;
-                  background: $gray-100;
+      .accordion__item {
+         font-family: $links;
+         text-align: center;
 
-                  ul {
-                     margin-bottom: 0;
-                     li {
-                        margin:0;
-                        font-size: .85em !important;
-                        color:$primary-700;
+         .accordion-header {
+            padding: .8em 0;
+            background: $gray-200;
+            text-transform: uppercase;
+            font-size: 1em;
+            transition: all .3s;
+            position: relative;
+            color: $gray-700;
+            font-weight: 500;
+         }
+
+         .accordion-body {
+
+            .accordion-body__contents {
+               margin: 0 !important;
+               background: $gray-100;
+
+               ul {
+                  margin-bottom: 0;
+                  padding: 8px 0;
+
+                  li {
+                     margin: 0;
+                     font-size: 1em !important;
+                     text-align: center;
+                     color: $gray-600;
+                     padding: 4px 0;
+
+                     &:nth-child(1) {
+                        border-bottom: 1px solid rgba($gray-200, 0.2)
                      }
                   }
                }
             }
-            &.active {
-               .accordion-header:after {
-                  transform: rotate(-180deg);
-                  top: 25%;
+         }
+      }
+
+   }
+
+}
+
+@media screen and (min-width:768px) {
+   .panel{
+      .table-father {
+         .accordion__item {
+            display: flex;
+            &:nth-child(2n){
+               background-color:$gray-100;
+            }
+            &:nth-child(2n+1){
+               background-color: $gray-200;
+            }
+            .accordion-header {
+               width:280px;
+               line-height: 48px;
+               background-color:inherit;
+            }
+            .accordion-body {
+               width:100%;
+               background-color:inherit;
+               .accordion-body__contents {
+                  background-color: inherit;
                }
-
-               .accordion-header {
-                  background: $primary-400;
-                  color:$primary-100;
-               }
             }
          }
       }
-
-      
-      &.active {
-
-      }
-
-   }
-
-   &:first-child>.accordion__item>.accordion-header {}
-
-   .slider-tables {
-      padding: 0;
-
-      .owl-stage-outer {
-         overflow-x: visible;
-      }
-
-   }
-
-   .tns-outer {
-      position: relative;
-      overflow-x: hidden;
-      padding-bottom: 56px !important;
-
-      .tns-controls {
-         position: absolute;
-         bottom: 0;
-         right: 0;
-         z-index: 99;
-
-         button {
-
-            background-color: white;
-            color: $primary-300;
-            border: none;
-            line-height: 20px;
-            padding: 5px 8px;
-            font-size: 20px;
-            box-shadow: 2px 1px 7px #e2e2e2;
-            margin: 5px;
-            text-align: center;
-            transition: $timing $transition;
-
-            &:last-of-type {
-               margin-right: 0;
-            }
-
-            &:hover,
-            &:focus {
-               background-color: $primary-300;
-               box-shadow: 2px 4px 7px #e2e2e2;
-               color: white;
-
-            }
-         }
-      }
-   }
-
-   .tns-ovh {
-      overflow: visible;
-   }
-
-   .table-father {
-      // min-width: 300px;
-      box-shadow: $soft-shadow;
-
-      // margin-right: 20px;
-      .accordion-header {
-         text-align: center;
-         border-radius: 5px 5px 0 0;
-
-         span {
-            display: block;
-            margin:4px auto 0;
-            font-size: 12px;
-            opacity: .8;
-         }
-      }
-
-   }
-
-}
-
-.accordion-header,
-.accordion-body {
-   background: white;
-}
-
-
-.accordion__item {
-   width: 100%;
-
-   &.active:last-child .accordion-header {
-      border-radius: none;
-   }
-}
-
-.accordion .accordion__item {
-
-   &.active {
-      
-   }
-
-   .accordion__item {
-      .accordion-header {}
-
-      &.active {
-         .accordion-header:after {
-            transform: rotate(-180deg);
-         }
-      }
-   }
-
-}
-
-@media screen and (max-width: 1000px) {
-   .accordion {
-      width: 100%;
    }
 }

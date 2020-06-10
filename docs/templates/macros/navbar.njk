@@ -12,18 +12,50 @@
          <ul class="navlinks">
             {% if lang == 'es' %}
 
-               <li class="{%if activePage == 'home' %} active {%endif%} ">
-                  <a href="index.html">Nosotros</a>
+               <li class="{%if activePage == 'home' %} active {%endif%}">
+                  <div class="brn-group">
+                     <a type="button" class="mr-1 pr-0 link" href="index.html">Nosotros</a>
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="anchor dropdown-item text-left" href="#mision">Misión, valores y visión</a>
+                        <a class="anchor dropdown-item text-left" href="#whyus">Porqué elegirnos</a>
+                        <a class="anchor dropdown-item text-left" href="#world">En el mundo</a>
+
+                     </div>
+                  </div>
                </li>
                <li class="{%if activePage == 'servicios' %} active {%endif%} ">
-                  <a href="servicios.html">Servicios</a>
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mr-1">Servicios</span> <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="servicios-maritimo.html">Marítimo</a>
+                        <a class="dropdown-item text-left" href="servicios-terrestre.html">Terrestre</a>
+                        <a class="dropdown-item text-left" href="servicios-aereo.html">Aéreo</a>
+                        <a class="dropdown-item text-left" href="servicios-aduana.html">Aduana</a>
+                        <a class="dropdown-item text-left" href="servicios-seguros.html">Seguros</a>
+
+                     </div>
+                  </div>
                </li>
 
                <li class="{%if activePage == 'informacion' %} active {%endif%} ">
-                  <a href="informacion.html">Información</a>
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mr-1">Herramientas</span> <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="info-contenedores.html">Tipo de Contenedores</a>
+                        <a class="dropdown-item text-left" href="#.html">Incoterms</a>
+                        <a class="dropdown-item text-left" href="#">Documentos</a>
+                     </div>
+                  </div>
                </li>
                <li class="{%if activePage == 'contacto' %} active {%endif%}">
-                  <a href="contacto.html">Contacto</a>
+                  <a class=" link" href="contacto.html">Contacto</a>
                </li>
                <li class="">
                   <div class="dropdown">

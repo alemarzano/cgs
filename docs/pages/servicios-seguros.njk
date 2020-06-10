@@ -1,0 +1,105 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Servicios' %}
+
+{% block navbar %}
+    {% import "macros/navbar.njk" as nav %}
+    {{nav.active('servicios', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+
+    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-seguros.jpg')">
+         <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mx-auto">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <h1 class="display-1">Servicios /</h1>
+                        </li>
+                        <li class="list-inline-item">
+                            <h1>Seguros</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none scroll">
+        <div class="chevron"></div>
+    </div>
+
+    <!-- Single-Service-Start -->
+    <section class="servicios">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+                    <div class="content">
+
+                        <h3 class="section-title">Cobertura Total.</h3>
+                        <p>Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
+                        <p>El seguro de transporte cubre la mercadería transportada, de todos los riesgos que pudieran surgir en la travesía tales como robos, roturas, pérdidas, depósitos intermedios, huelgas, guerras, averías gruesas, etc.
+                        </p>
+                        <p>Las mercaderías transportadas están expuestas a riesgos que al convertirse en siniestros, pueden generar grandes perjuicios económicos y pérdidas de mercado. Por ello sus cargas requieren la elección de la mejor cobertura. Una elección acertada representa un paso importante en la prevención de pérdidas y daños.
+                        </p>
+                        <p>La cobertura de seguro comienza cuando la carga es retirada de origen y finaliza en el lugar indicado como destino final pudiendo ser transportada por medios marítimos, aéreos y/o terrestres.</p>
+                       
+
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-6">
+                             <h6>La cobertura contempla:</h6>
+                                <ul class="fa-ul mb-3">
+                                
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Trayecto Puerta a Puerta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Depósitos Intermedios</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Depósitos Fiscales</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Zona Franca</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Puertos y aeropuertos de transbordos</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Operaciones de Carga y Descarga</li>
+
+                                </ul>
+                                <h6>Coberturas de Tránsito Internacional:</h6>
+                                <p class="mt-0"> Cubre todos los transportes de mercaderías y/o efectos provenientes del exterior con destino a cualquier punto dentro del territorio de la República Argentina o viceversa, sean realizados por vía marítima, aérea o terrestre</p>
+                                <p>Puede contratarse una póliza flotante cubriendo todos los embarques.
+                                </p>
+                                <h6>Coberturas de tránsito local:</h6>
+                                <p class="mt-0">Cubre el tránsito de mercaderías dentro del territorio de la República Argentina, sea  realizado vía terrestre y/o aérea y/o ferroviaria. Coberturas de uno o más viajes individuales declarados antes del inicio de los mismos.
+
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="img/servicio_seguros.jpg" alt="image"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}

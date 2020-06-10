@@ -49,10 +49,9 @@ section {
 	}
 
 	.service-pic {
-		height: 280px;
+		height: 100%;
 		-webkit-mask-clip: padding;
 		mask-clip: padding;
-		overflow: hidden;
 		position: relative;
 
 		img {
@@ -185,13 +184,14 @@ section {
 
 		&.nav-two {
 			.nav-item {
-				flex:1 1 100%;
 				
 				a {
 					background-color: white;
 					color: $gray-400;
 					font-size: 1.15em;
 					position: relative;
+					text-align: center;
+					display: inherit;
 
 					&::after {
 						content: '';
@@ -272,8 +272,12 @@ section {
 
 		h1 {
 			// margin-bottom:-64px;
-			padding-top: 64px;
+			// padding-top: 64px;
 			color: white;
+			text-shadow: 0px 2px 6px $gray-800;
+			&.display-1{
+				font-size: 1.5em;
+			}
 
 		}
 	}
@@ -292,7 +296,7 @@ section {
 
 
 .servicios {
-	.tab-content {
+	.content {
 		.img-service {
 			height: 160px;
 			width: 100%;
@@ -301,26 +305,31 @@ section {
 			margin-bottom: 24px;
 		}
 
-		h2 {
+		h3 {
 			color: $primary-500;
 			font-size: 2em;
 			margin: 16px 0;
+			text-transform: unset;
 		}
 
 		p {
-			color: $gray-500;
-			font-weight: 500;
+			color: $gray-600;
+			font-weight: 400;
 			font-size: 1em;
+			line-height: 1.45em;
 			margin: 16px 0;
 		}
 
 		ul {
 			li {
-				color: $gray-700;
+				color: $gray-600;
 				font-weight: 400;
 				font-family: $parrafos;
 				font-size: 1.15em;
 				margin: 12px 0;
+				&:first-of-type {
+					margin:0;
+				}
 
 				span {
 					color: $secondary-400
@@ -629,7 +638,7 @@ form {
 	.jumbotron {
 		align-items: flex-end;
 		background-position: top;
-
+		height:240px;
 		h1 {
 			font-size: 3em;
 		}
@@ -661,24 +670,7 @@ form {
 		}
 	}
 	.micgs {
-		.cgs-tabs {
-			.nav-tabs .nav-item a {
-				color:$gray-500;
-				&.active {
-					color:white;
-					background-color: $primary-700;
-					i {
-						color:$primary-100
-					}
-				}
-				&:hover {
-					color:$primary-700;
-					i {
-						color:$primary-700
-					}
-				}
-			}
-		}
+		// 
 		form {
 			min-height: 860px;
 			display:flex;
@@ -709,7 +701,7 @@ form {
 
 	.jumbotron {
 		margin-top: 0;
-		height: 360px;
+		height: 400px;
 	}
 }
 

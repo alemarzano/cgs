@@ -1,0 +1,124 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Servicios' %}
+
+{% block navbar %}
+    {% import "macros/navbar.njk" as nav %}
+    {{nav.active('servicios', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+
+    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-mar.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mx-auto">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <h1 class="display-1">Servicios /</h1>
+                        </li>
+                        <li class="list-inline-item">
+                            <h1>Marítimo</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none scroll">
+        <div class="chevron"></div>
+    </div>
+
+    <!-- Single-Service-Start -->
+    <section class="servicios">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+                    <div class="content">
+
+                        <h3 class="section-title">Uniendo puertos.</h3>
+                        <p>Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una cobertura global completa para el tráfico de sus mercaderías. Nuestros servicios de flete marítimo son fiables y garantizan que sus mercaderias llegan a cualquier continente del mundo de manera segura y puntual. Ofrecemos soluciones de transporte con carga de contenedor completo (FCL), carga de contenedor consolidado (LCL) y proyectos especiales a medida de sus necesidades.</p>
+                        <p>Fruto de nuestra experiencia y trabajo continuo con los distintos operadores maritimos, podemos ser flexibles, garantizando espacio a bordo y hacer uso de grandes volúmenes para negociar las mejores condiciones para sus envíos por via marítima. Ademas de los embarques convencionales con equipos standard, ofrecemos transporte con temperatura controlada, como tambien equipos especiales para cargas de grandes dimensiones, transporte a granel, transporte de vehículos y otros. El servicio marítimo se puede complementar con servicios de despacho de aduanas y seguros de transporte, como también, servicios de transporte terrestre de ser necesario.
+                        </p>
+                        <p>Cada instancia del trayecto, será informada en tiempo por nuestro equipo de profesionales. A través de Mi CGS, podrá realizar el seguimiento on-line de su carga en todo momento. Nuestros expertos en transporte marítimo tienen una gran experiencia en el envío de todo tipo de mercaderías industriales y de consumo, y estarán a su servicio en todo momento.
+                        </p>
+
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-6">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga suelta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Contenedores</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Break Bulk</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga con extra-medida</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga refrigerada y perecedera</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga a granel</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Flexitank</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Proyectos industriales</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Consolidaci&oacute;n / Desconsolidaci&oacute;n</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Inspecciones de carga</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>IMO</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Isotanque</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Puerta a puerta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Despacho de Aduana</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="img/servicio_mar.jpg" alt="image"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}

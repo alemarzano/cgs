@@ -1,0 +1,122 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Servicios' %}
+
+{% block navbar %}
+    {% import "macros/navbar.njk" as nav %}
+    {{nav.active('servicios', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+
+    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-aereo.jpg'); background-position:center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mx-auto">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <h1 class="display-1">Servicios /</h1>
+                        </li>
+                        <li class="list-inline-item">
+                            <h1>Aéreo</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none scroll">
+        <div class="chevron"></div>
+    </div>
+
+    <!-- Single-Service-Start -->
+    <section class="servicios">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+
+                    <div class="content ">
+
+                        <h3 class="section-title">Desde y hacia cualquier aeropuerto.</h3>
+                        <p>Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito, optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia, informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p>
+                        <p>Encontrara en nosotros el equilibrio optimo entre coste y velocidad. También ofrecemos servicios de flete aéreo especializados para animales vivos, productos sensibles a la temperatura y mercancías peligrosas. Este servicio puede complemehtarse con la gestión aduanera completa, con tramitaciones de diversa índole, habilitaciones y certificaciónes de organismos oficiales, como también con transporte terrestres, cumpliendo con la modadlidad puerta-puerta</p>
+
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-6">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga suelta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Contenedores</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Break Bulk</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga con extra-medida</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga refrigerada y perecedera</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga a granel</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Flexitank</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Proyectos industriales</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Consolidaci&oacute;n / Desconsolidaci&oacute;n</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Inspecciones de carga</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>IMO</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Isotanque</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Puerta a puerta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Despacho de Aduana</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="img/servicio_aereo.jpg" alt="image"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}
