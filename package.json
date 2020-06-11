@@ -4,7 +4,7 @@
   "description": "",
   "main": "js/events.js",
   "scripts": {
-    "start": "gulp"
+    "app": "gulp"
   },
   "author": "alemarzano",
   "license": "ISC",

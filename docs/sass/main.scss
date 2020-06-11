@@ -34,7 +34,7 @@ section {
 
 
 
-@import 'components/navbar', 'components/slider', 'components/footer', 'components/contact', 'components/tablas';
+@import 'components/navbar', 'components/slider', 'components/footer', 'components/contact', 'components/tablas', 'components/incoterms.scss';
 
 
 /* ===================== H O M E ===================== */
@@ -292,7 +292,7 @@ section {
 
 
 .servicios {
-	.tab-content {
+	.content {
 		.img-service {
 			height: 160px;
 			width: 100%;
@@ -301,26 +301,31 @@ section {
 			margin-bottom: 24px;
 		}
 
-		h2 {
+		h3 {
 			color: $primary-500;
 			font-size: 2em;
 			margin: 16px 0;
+			text-transform: unset;
 		}
 
 		p {
-			color: $gray-500;
-			font-weight: 500;
+			color: $gray-600;
+			font-weight: 400;
 			font-size: 1em;
+			line-height: 1.45em;
 			margin: 16px 0;
 		}
 
 		ul {
 			li {
-				color: $gray-700;
+				color: $gray-600;
 				font-weight: 400;
 				font-family: $parrafos;
 				font-size: 1.15em;
 				margin: 12px 0;
+				&:first-of-type {
+					margin:0;
+				}
 
 				span {
 					color: $secondary-400

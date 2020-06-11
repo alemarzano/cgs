@@ -1,0 +1,119 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Servicios' %}
+
+{% block navbar %}
+    {% import "macros/navbar.njk" as nav %}
+    {{nav.active('servicios', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+
+    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/maritimo.jpg')">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mx-auto">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><h1 class="display-1">Servicios /</h1></li>
+                        <li class="list-inline-item"><h1>Terrestre</h1></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none scroll">
+        <div class="chevron"></div>
+    </div>
+
+    <!-- Single-Service-Start -->
+    <section class="servicios">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+                    <div class="content">
+
+                        <h3 class="section-title">Seguimiento de punta a punta.</h3>
+                        <p>Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
+                        <p>Ofrecemos salidas regulares en Argentina, Chile, Uruguay, Brasil, Paraguay y Bolivia. Nuestra amplia flota y gama selecta de operadores garantizan la entrega segura y puntual de sus mercaderias.</p>
+                        <p>Nuestra cartera de servicios por carretera va desde la carga completa (FTL) a la carga consolidada (LTL). Ofrecemos servicios de transporte especializados para toda una gama de mercancías, entre ellas, cargas de grandes dimensiones y sobredimensionadas, alimentos y productos farmacéuticos sensibles a la temperatura, así como cargas frágiles y de alto coste.</p>
+                        <p>Nuestros operadores cuidadosamente seleccionados y nuestros centros operativos idealmente ubicados nos permiten ofrecer la mayor cobertura y flexibilidad.</p>
+                        <p>Ademas del control satelital de unidades, proveemos servicio de custodia durante todo el trayecto, de ser requerido.</p>
+
+                        <div class="row mt-5">
+                            <div class="col-12 col-md-6">
+                                <ul class="fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga suelta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Contenedores</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Break Bulk</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga con extra-medida</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga refrigerada y perecedera</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Carga a granel</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Flexitank</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Proyectos industriales</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Consolidaci&oacute;n / Desconsolidaci&oacute;n</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Inspecciones de carga</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>IMO</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Isotanque</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Puerta a puerta</li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fas fa-check-square"></i>
+                                        </span>Despacho de Aduana</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="img/service/marinethumb.jpg" alt="image"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}
