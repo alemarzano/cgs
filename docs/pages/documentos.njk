@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Incoterms' %}
+
+{% block navbar %}
+   {% import "macros/navbar.njk" as nav %}
+   {{nav.active('incoterms', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+   <div class="jumbotron jumbotron-fluid" style="background-image:url('img/bg_info.jpg')">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-12 mx-auto">
+               <ul class="list-inline">
+                  <li class="list-inline-item">
+                     <h1 class="display-1">Herramientas /</h1>
+                  </li>
+                  <li class="list-inline-item">
+                     <h1>Documentos</h1>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <section class="container pt-5">
+      <div class="row">
+         <div class="col-12 col-lg-12 my-5 mx-auto pt-2">
+            <h3 class="section-title pt-2">Carta de Garantía</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, optio?</p>
+            <a href="" download="download" class="btn btn-second"><i class="far fa-file-pdf"></i>Descargar Documento</a>
+         </div>
+         <div class="col-12 col-lg-12 my-5 mx-auto pt-2">
+            <h3 class="section-title pt-2">Declaración de Embarque</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, optio?</p>
+            <a href="" download="download" class="btn btn-second"><i class="far fa-file-pdf"></i>Descargar Documento</a>
+         </div>
+         <div class="col-12 col-lg-12 my-5 mx-auto pt-2">
+            <h3 class="section-title pt-2">Carta de Frío</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, optio?</p>
+            <a href="" download="download" class="btn btn-second"><i class="far fa-file-pdf"></i>Descargar Documento</a>
+         </div>
+         <div class="col-12 col-lg-12 my-5 mx-auto pt-2">
+            <h3 class="section-title pt-2">Formulario Solicitud de Seguro</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, optio?</p>
+            <a href="" download="download" class="btn btn-second"><i class="far fa-file-pdf"></i>Descargar Documento</a>
+         </div>
+      </div>
+      
+   </section>
+{% endblock %}

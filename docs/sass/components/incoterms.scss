@@ -7,12 +7,12 @@
 
 .incoterms-bg {
    background-image: linear-gradient(90deg, #8ab6cc 0%, #fff 5%, #fff 50%, #c0d6e1 55%, #fff 55%, #fff 100%);
-   background-size: 9.05%;
+   background-size: 9%;
    z-index: -1;
    position: absolute;
    top: 70px;
    bottom: 10px;
-   left: 42px;
+   left: 44px;
    right: 30px;
    opacity: 0.3
 }
@@ -28,8 +28,8 @@
 .incoterm-range {
    // font-weight: bold;
    font-size: .75em;
-   color: $primary-700;
-   width: 14.2857%;
+   color: $gray-500;
+   width: 9.09%;
    text-align: center;
    float: left;
    margin: 24px 0 16px;
@@ -51,23 +51,20 @@
    display: flex
 }
 
-.incoterm-range-2020 {
-   width: 9.09%
-}
 
 .incoterm-modes-title {
    width: 100%;
    text-transform: uppercase;
    text-align: center;
    margin-bottom: 30px;
-   color: #112a4d;
+   color: $gray-400;
    font-weight: bold;
    display: flex;
    justify-content: center
 }
 
 .incoterm-title {
-   color: #112a4d;
+   color: $gray-400;
    font-weight: bold;
    width: 44px;
    float: left;
@@ -75,7 +72,7 @@
 
 .incoterm-bars {
    float: left;
-   width: calc(100% - 77px);
+   width: calc(100% - 79px);
    margin-bottom: 20px
 }
 
@@ -274,67 +271,44 @@
    position: relative;
    overflow: hidden;
    width: 100%;
-   font-family: "Roboto", sans-serif
 }
 
-.cssProgress .cssProgress-bar {
-   display: block;
-   float: left;
-   width: 0%;
-   height: 100%;
-   background: #93c6e5;
-   -webkit-transition: width 0.8s ease-in-out;
-   transition: width 0.8s ease-in-out;
-   border: 2px solid #FFF;
-   box-sizing: border-box
+.cssProgress {
+   .cssProgress-bar {
+      display: block;
+      float: left;
+      width: 0%;
+      height: 100%;
+      background: $secondary-500;
+      -webkit-transition: width 0.8s ease-in-out;
+      transition: width 0.8s ease-in-out;
+      border: 2px solid #FFF;
+      box-sizing: border-box;
+      height: 28px;
+      position: relative;
+
+      .cssProgress-label {
+         position: absolute;
+         overflow: hidden;
+         left: 8px;
+         right: 0px;
+         color: $primary-900;
+         font-size: .75em;
+         line-height: 2.25em;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+      }
+   }
+   .cssProgress-bar-2 {
+      background-color: $primary-500 !important;
+      .cssProgress-label {
+         color: #FFF;
+      }
+   }
+
 }
 
-.cssProgress .cssProgress-label {
-   position: absolute;
-   overflow: hidden;
-   left: 10px;
-   right: 0px;
-   color: #FFF;
-   font-size: 0.75rem
-}
 
-.cssProgress .cssProgress-bar-2 {
-   background-color: #c6e4f7 !important
-}
-
-.cssProgress .cssProgress-costs {
-   background-color: #112a4d !important
-}
-
-.cssProgress .cssProgress-costs-2 {
-   background-color: #909fb5 !important
-}
-
-.cssProgress .cssProgress-costs-3 {
-   background-color: rgba(255, 255, 255, 0) !important
-}
-
-.cssProgress .cssProgress-success {
-   background-color: #66bb6a !important
-}
-
-.cssProgress .cssProgress-warning {
-   background-color: #ffb74d !important
-}
-
-.cssProgress .cssProgress-right {
-   float: right !important
-}
-
-.cssProgress .cssProgress-label-left {
-   margin-left: 10px;
-   text-align: left !important
-}
-
-.cssProgress .cssProgress-label-right {
-   margin-right: 10px;
-   text-align: right !important
-}
 
 .cssProgress .cssProgress-label2 {
    display: block;
@@ -343,13 +317,7 @@
    font-size: 0.8em
 }
 
-.cssProgress .cssProgress-label2.cssProgress-label2-right {
-   text-align: right
-}
 
-.cssProgress .cssProgress-label2.cssProgress-label2-center {
-   text-align: center
-}
 
 .cssProgress .cssProgress-stripes,
 .cssProgress .cssProgress-active,
@@ -449,135 +417,13 @@
 }
 
 .progress2 .cssProgress-bar {
-   height: 24px;
-   border-radius: 12px;
-   position: relative
+   
 }
 
 .progress2 .cssProgress-label {
-   line-height: 20px
+   
 }
 
-.progress3 {
-   width: auto !important;
-   padding: 4px;
-   background-color: rgba(0, 0, 0, 0.1);
-   box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2);
-   border-radius: 3px
-}
-
-.progress3 .cssProgress-bar {
-   height: 16px;
-   border-radius: 3px
-}
-
-.progress3 .cssProgress-label {
-   line-height: 16px
-}
-
-.progress4 {
-   position: relative;
-   width: 100%;
-   background-color: #EEE
-}
-
-.progress4.cssProgress-bg {
-   background-color: #bbdefb !important
-}
-
-.progress4.cssProgress-bg-info {
-   background-color: #d1c4e9 !important
-}
-
-.progress4.cssProgress-bg-danger {
-   background-color: #ffcdd2 !important
-}
-
-.progress4.cssProgress-bg-success {
-   background-color: #c8e6c9 !important
-}
-
-.progress4.cssProgress-bg-warning {
-   background-color: #ffecb3 !important
-}
-
-.progress4 .cssProgress-bar {
-   display: block;
-   float: none;
-   width: 0%;
-   height: 4px;
-   background: #3798d9
-}
-
-.progress4 .cssProgress-bar.cssProgress-lg {
-   height: 6px
-}
-
-.progress4 .cssProgress-bar.cssProgress-2x {
-   height: 8px
-}
-
-.progress4 .cssProgress-bar.cssProgress-3x {
-   height: 10px
-}
-
-.progress4 .cssProgress-bar.cssProgress-4x {
-   height: 12px
-}
-
-.progress4 .cssProgress-bar.cssProgress-5x {
-   height: 14px
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow {
-   box-shadow: 5px 0px 15px 0px #3798D9
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow.cssProgress-info {
-   box-shadow: 5px 0px 15px 0px #9575cd
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow.cssProgress-danger {
-   box-shadow: 5px 0px 15px 0px #ef5350
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow.cssProgress-success {
-   box-shadow: 5px 0px 15px 0px #66bb6a
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow.cssProgress-warning {
-   box-shadow: 5px 0px 15px 0px #ffb74d
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow-active {
-   -webkit-animation: cssProgressGlowActive1 3s linear infinite;
-   -ms-animation: cssProgressGlowActive1 3s linear infinite;
-   animation: cssProgressGlowActive1 3s linear infinite
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow-active.cssProgress-info {
-   -webkit-animation: cssProgressGlowActive2 3s linear infinite;
-   -ms-animation: cssProgressGlowActive2 3s linear infinite;
-   animation: cssProgressGlowActive2 3s linear infinite
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow-active.cssProgress-danger {
-   -webkit-animation: cssProgressGlowActive3 3s linear infinite;
-   -ms-animation: cssProgressGlowActive3 3s linear infinite;
-   animation: cssProgressGlowActive3 3s linear infinite
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow-active.cssProgress-success {
-   -webkit-animation: cssProgressGlowActive4 3s linear infinite;
-   -ms-animation: cssProgressGlowActive4 3s linear infinite;
-   animation: cssProgressGlowActive4 3s linear infinite
-}
-
-.progress4 .cssProgress-bar.cssProgress-glow-active.cssProgress-warning {
-   -webkit-animation: cssProgressGlowActive5 3s linear infinite;
-   -ms-animation: cssProgressGlowActive5 3s linear infinite;
-   animation: cssProgressGlowActive5 3s linear infinite
-}
 
 @-webkit-keyframes cssProgressGlowActive1 {
 
