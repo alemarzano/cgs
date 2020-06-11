@@ -43,7 +43,16 @@
                </li>
 
                <li class="{%if activePage == 'informacion' %} active {%endif%} ">
-                  <a class=" link" href="informacion.html">Información</a>
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mr-1">Herramientas</span> <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="info-contenedores.html">Tipo de Contenedores</a>
+                        <a class="dropdown-item text-left" href="#.html">Incoterms</a>
+                        <a class="dropdown-item text-left" href="#">Documentos</a>
+                     </div>
+                  </div>
                </li>
                <li class="{%if activePage == 'contacto' %} active {%endif%}">
                   <a class=" link" href="contacto.html">Contacto</a>

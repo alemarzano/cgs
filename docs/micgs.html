@@ -7,7 +7,11 @@
       <title>CGS GROUP | Mi CGS</title>
       <!-- styles -->
       <script src="https://kit.fontawesome.com/ae45b49eac.js" crossorigin="anonymous"></script>
+<<<<<<< HEAD
       <script src="js/jquery.js"></script>
+=======
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+>>>>>>> ed9deaf8924f22d6f18fa1b2e5e72093b8cb48a3
 
       <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -94,7 +98,20 @@
                </li>
 
                <li class=" ">
+<<<<<<< HEAD
                   <a class=" link" href="informacion.html">Información</a>
+=======
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mr-1">Herramientas</span> <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="info-contenedores.html">Tipo de Contenedores</a>
+                        <a class="dropdown-item text-left" href="#.html">Incoterms</a>
+                        <a class="dropdown-item text-left" href="#">Documentos</a>
+                     </div>
+                  </div>
+>>>>>>> ed9deaf8924f22d6f18fa1b2e5e72093b8cb48a3
                </li>
                <li class="">
                   <a class=" link" href="contacto.html">Contacto</a>
@@ -132,10 +149,15 @@
       <main>
          
    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/bg_micgs.jpg')">
+   
       <div class="overlay"></div>
       <div class="container">
+      <div class="col-12 col-lg-9 mx-auto">
          <h1>MI CGS</h1>
       </div>
+         
+      </div>
+      
    </div>
    <section class="section-contact">
 
@@ -145,26 +167,27 @@
                <img class="img-fluid w-75" src="img/micgs.svg" alt="">
             </div>
             <div class="col-12 col-lg-7 d-flex flex-column justify-content-center cgs-tabs">
-               <ul class="nav nav-pills mt-4 mb-2 justify-content-center">
-                  <li class="nav-item">
-                     <a href="#cotizacion" aria-controls="cotizacion" role="tab" data-toggle="pill" class="nav-link active" aria-selected="true">
+
+               <ul class="nav nav-tabs nav-two mt-4 mb-2 justify-content-center" role="tablist">
+                  <li class="nav-item" role="presentation">
+                     <a href="#cotizacion" aria-controls="cotizacion" id="cotizacion-tab" role="tab" data-toggle="tab" class="nav-link " aria-selected="true">
                         <i class="fas fa-dollar-sign"></i>
                         Cotización</a>
                   </li>
-                  <li class="nav-item">
-                     <a href="#reserva" aria-controls="reserva" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                  <li class="nav-item" role="presentation">
+                     <a href="#reserva" aria-controls="reserva" id="reserva-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
                         <i class="fas fa-calendar-check"></i>
                         Reserva</a>
                   </li>
-                  <li class="nav-item">
-                     <a href="#seguimiento" aria-controls="seguimiento" role="tab" data-toggle="pill" class="nav-link" aria-selected="false">
+                  <li class="nav-item" role="presentation">
+                     <a href="#seguimiento" aria-controls="seguimiento" id="seguimiento-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
                         <i class="fas fa-map-marker-alt"></i>
                         Seguimiento</a>
                   </li>
 
                </ul>
                <div class="tab-content mt-4">
-                  <div role="tabpanel" class="tab-pane active fade show" id="cotizacion" aria-labelledby="secure-tab">
+                  <div role="tabpanel" class="tab-pane active fade" id="cotizacion" aria-labelledby="cotizacion-tab">
                      <form class="p-lg-4 justify-content: center;" id="formCotizacion">
 
                         <div class="form-group">
@@ -234,7 +257,7 @@
                      </form>
                   </div>
 
-                  <div role="tabpanel" class="tab-pane fade show" id="reserva" aria-labelledby="secure-tab">
+                  <div role="tabpanel" class="tab-pane fade" id="reserva" aria-labelledby="reserva-tab">
                      <div class="d-flex flex-column justify-content-center align-items-center">
                         <h4 class="text-center">¿Tiene un número de cotización?</h4>
                         <div class="button-cover">
@@ -323,7 +346,7 @@
                         <button type="submit" class="btn btn-first mt-4">Enviar Consulta</button>
                      </form>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="seguimiento" aria-labelledby="secure-tab">
+                  <div role="tabpanel" class="tab-pane fade" id="seguimiento" aria-labelledby="seguimiento-tab">
                      <form class="my-4 p-lg-4">
                         <div class="form-group">
                            <label for="nombre">Nombre de usuario</label>
@@ -569,6 +592,8 @@
          modal.find('button').click(function(){
             location.reload();
          })
+
+
       });
    </script>
 
