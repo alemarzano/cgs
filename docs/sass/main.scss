@@ -191,12 +191,18 @@ section {
 					font-size: 1.15em;
 					position: relative;
 					text-align: center;
-					display: inherit;
-
+					line-height: 30px;
+					// border-bottom:1px solid $gray-200;
+					img {
+						filter: grayscale(.8);
+						opacity: .5;
+						transition: $timing $transition;
+						
+					}
 					&::after {
 						content: '';
 						position: absolute;
-						bottom: 0;
+						bottom: -4px;
 						height: 3px;						
 						background-color: $primary-500;
 						width: 0;
@@ -221,6 +227,19 @@ section {
 
 						&::after {
 							width: 100%;
+						}
+						img {
+							filter: grayscale(0);
+							opacity: 1;
+
+						}
+					}
+					&:hover {
+						color: $primary-400;
+						img {
+							filter: grayscale(0);
+							opacity: 1;
+
 						}
 					}
 				}
