@@ -29,6 +29,67 @@ section {
 	padding: 2em 0;
 }
 
+/*==== LOADER */
+
+.loader {
+	background-color: $gray-800;
+	width:100vw;
+	height:100vh;
+	z-index: 9;
+	position:fixed;
+	.lds-facebook {
+		display: inline-block;
+		position: relative;
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: auto;
+		
+
+		div {
+			display: inline-block;
+			position: absolute;
+			left: 8px;
+			width: 16px;
+			background: #fff;
+			animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+
+			&:nth-child(1) {
+				left: 8px;
+				animation-delay: -0.32s;
+			}
+
+			&:nth-child(2) {
+				left: 32px;
+				animation-delay: -0.16s;
+			}
+
+			&:nth-child(3) {
+				left: 56px;
+				animation-delay: 0;
+			}
+		}
+	}
+}
+
+
+
+@keyframes lds-facebook {
+	0% {
+		top: 8px;
+		height: 64px;
+	}
+
+	50%,
+	100% {
+		top: 24px;
+		height: 32px;
+	}
+}
 
 
 
@@ -129,12 +190,14 @@ section {
 .cgs-tabs {
 	.nav-tabs {
 		justify-content: space-between;
-		border-bottom:1px solid $gray-200;
+		border-bottom: 1px solid $gray-200;
+
 		.nav-item {
 			flex: 1 1 45%;
 			margin: 0 4px;
-			&:first-of-type{
-				margin-left:0;
+
+			&:first-of-type {
+				margin-left: 0;
 			}
 
 			a {
@@ -145,7 +208,7 @@ section {
 				align-items: center;
 				transition: $transition $timing;
 				font-weight: 400;
-				border:none;
+				border: none;
 
 				i {
 					font-size: 24px;
@@ -158,14 +221,16 @@ section {
 				&.active {
 					background-color: $secondary-700;
 					color: white;
-					
+
 					i {
 						color: $secondary-200;
 					}
+
 					&:hover {
-						color:white;
+						color: white;
+
 						i {
-							color:white;
+							color: white;
 						}
 					}
 				}
@@ -184,7 +249,7 @@ section {
 
 		&.nav-two {
 			.nav-item {
-				
+
 				a {
 					background-color: white;
 					color: $gray-400;
@@ -192,24 +257,26 @@ section {
 					position: relative;
 					text-align: center;
 					line-height: 30px;
+
 					// border-bottom:1px solid $gray-200;
 					img {
 						filter: grayscale(.8);
 						opacity: .5;
 						transition: $timing $transition;
-						
+
 					}
+
 					&::after {
 						content: '';
 						position: absolute;
 						bottom: -4px;
-						height: 3px;						
+						height: 3px;
 						background-color: $primary-500;
 						width: 0;
 						transition: $timing $transition;
-						left:0;
-						right:0;
-						margin:auto;
+						left: 0;
+						right: 0;
+						margin: auto;
 					}
 
 					i {
@@ -221,6 +288,7 @@ section {
 						background-color: white;
 						box-shadow: none;
 						font-weight: 500;
+
 						i {
 							color: $primary-500;
 						}
@@ -228,14 +296,17 @@ section {
 						&::after {
 							width: 100%;
 						}
+
 						img {
 							filter: grayscale(0);
 							opacity: 1;
 
 						}
 					}
+
 					&:hover {
 						color: $primary-400;
+
 						img {
 							filter: grayscale(0);
 							opacity: 1;
@@ -294,7 +365,8 @@ section {
 			// padding-top: 64px;
 			color: white;
 			text-shadow: 0px 2px 6px $gray-800;
-			&.display-1{
+
+			&.display-1 {
 				font-size: 1.5em;
 			}
 
@@ -346,8 +418,9 @@ section {
 				font-family: $parrafos;
 				font-size: 1.15em;
 				margin: 12px 0;
+
 				&:first-of-type {
-					margin:0;
+					margin: 0;
 				}
 
 				span {
@@ -378,17 +451,21 @@ section {
 
 form {
 	text-align: right;
-	.form-group, .form-row {
+
+	.form-group,
+	.form-row {
 		text-align: left;
 	}
 }
+
 .micgs {
 
 	#reserva {
-		h4{
+		h4 {
 			text-transform: inherit;
-			color:$gray-500
+			color: $gray-500
 		}
+
 		.button-cover {
 			font-size: 24px;
 
@@ -413,6 +490,7 @@ form {
 					&:checked+.knobs span {
 						color: $gray-400;
 					}
+
 					&:checked+.layer {
 						background-color: black;
 					}
@@ -657,7 +735,8 @@ form {
 	.jumbotron {
 		align-items: flex-end;
 		background-position: top;
-		height:240px;
+		height: 240px;
+
 		h1 {
 			font-size: 3em;
 		}
@@ -688,16 +767,19 @@ form {
 			}
 		}
 	}
+
 	.micgs {
+
 		// 
 		form {
 			min-height: 860px;
-			display:flex;
+			display: flex;
 			flex-direction: column;
+
 			button {
-				align-self:end;
+				align-self: end;
 			}
-			
+
 		}
 	}
 }

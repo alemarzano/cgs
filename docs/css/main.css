@@ -522,6 +522,50 @@ ul {
 section {
   padding: 2em 0; }
 
+/*==== LOADER */
+.loader {
+  background-color: #212121;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  position: fixed; }
+  .loader .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto; }
+    .loader .lds-facebook div {
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      width: 16px;
+      background: #fff;
+      animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite; }
+      .loader .lds-facebook div:nth-child(1) {
+        left: 8px;
+        animation-delay: -0.32s; }
+      .loader .lds-facebook div:nth-child(2) {
+        left: 32px;
+        animation-delay: -0.16s; }
+      .loader .lds-facebook div:nth-child(3) {
+        left: 56px;
+        animation-delay: 0; }
+
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px; }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px; } }
+
 /* ===================== N A V  M E N U  ===================== */
 .topnavbar {
   width: 100%;
@@ -1887,7 +1931,8 @@ footer {
 
 form {
   text-align: right; }
-  form .form-group, form .form-row {
+  form .form-group,
+  form .form-row {
     text-align: left; }
 
 .micgs #reserva h4 {
