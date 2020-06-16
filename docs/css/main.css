@@ -691,12 +691,15 @@ section {
             font-weight: 500;
             color: #838384;
             letter-spacing: 1px; }
+            .topnavbar .container ul.navlinks li a.dropdown-item:hover {
+              background-color: #232463;
+              color: white; }
           .topnavbar .container ul.navlinks li .btn {
             font-size: .9em;
             letter-spacing: 1px;
             color: white;
             background-color: #232463; }
-          .topnavbar .container ul.navlinks li.active a.links {
+          .topnavbar .container ul.navlinks li.active a.link {
             color: #2f3084;
             font-weight: 700; }
       .topnavbar .container .logo img {
