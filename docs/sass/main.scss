@@ -33,10 +33,11 @@ section {
 
 .loader {
 	background-color: $gray-800;
-	width:100vw;
-	height:100vh;
+	width: 100vw;
+	height: 100vh;
 	z-index: 9;
-	position:fixed;
+	position: fixed;
+
 	.lds-facebook {
 		display: inline-block;
 		position: relative;
@@ -48,7 +49,7 @@ section {
 		top: 50%;
 		transform: translateY(-50%);
 		margin: auto;
-		
+
 
 		div {
 			display: inline-block;
@@ -315,6 +316,7 @@ section {
 					}
 				}
 			}
+
 		}
 	}
 
@@ -665,36 +667,60 @@ form {
 }
 
 @media only screen and (min-width:1024px) {
-	.cgs-tabs {
-		max-width: 720px;
-		margin-left: auto;
-		margin-right: auto;
-
-		.nav-tabs.nav-services {
-			.nav-item {
-				a {
-					&::after {
-						right: 0;
-						left: inherit;
-						margin: inherit;
-						height: 0;
-						bottom: inherit;
-						top: 50%;
-						transform: translateY(-50%);
-						background-color: $primary-500;
-						width: 3px !important;
-						transition: $timing $transition;
-					}
-
-					&.active {
-						&::after {
-							height: 75%;
+	.servicios {
+		background-color: $gray-100;
+		.cgs-tabs {
+			max-width: 720px;
+			margin-left: auto;
+			margin-right: auto;
+		
+	
+	
+			.nav-tabs.nav-two {
+				background-color: white;
+				&.containers {
+					border-bottom: none;
+					border: 1px solid $gray-200;
+					// box-shadow: $soft-shadow;
+	
+					// border-right:4px solid $primary-600;
+					.nav-item {
+						margin: 8px 0;
+						flex: 1 1 100%;
+	
+						a {
+							&::after {
+								bottom: inherit;
+								left: inherit;
+								height: 0;
+								right:-2px;
+								top: 50%;
+								width: 4px;
+								transform: translateY(-50%);
+								margin: 0;
+	
+								
+							}
+							&.active {
+								&::after {
+									height: 100%;
+								}
+							}
 						}
+	
+	
+	
 					}
 				}
 			}
+			.tab-content {
+				background-color: white;
+				padding:40px 24px;
+				border:1px solid $gray-200;
+			}
 		}
 	}
+	
 
 	section {
 		padding: 6em 0;

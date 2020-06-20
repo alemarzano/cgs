@@ -2055,23 +2055,35 @@ form {
     flex: 1 1 20%; } }
 
 @media only screen and (min-width: 1024px) {
-  .cgs-tabs {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto; }
-    .cgs-tabs .nav-tabs.nav-services .nav-item a::after {
-      right: 0;
-      left: inherit;
-      margin: inherit;
-      height: 0;
-      bottom: inherit;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #2f3084;
-      width: 3px !important;
-      transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03); }
-    .cgs-tabs .nav-tabs.nav-services .nav-item a.active::after {
-      height: 75%; }
+  .servicios {
+    background-color: #f3f3f3; }
+    .servicios .cgs-tabs {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto; }
+      .servicios .cgs-tabs .nav-tabs.nav-two {
+        background-color: white; }
+        .servicios .cgs-tabs .nav-tabs.nav-two.containers {
+          border-bottom: none;
+          border: 1px solid #e0e0e0; }
+          .servicios .cgs-tabs .nav-tabs.nav-two.containers .nav-item {
+            margin: 8px 0;
+            flex: 1 1 100%; }
+            .servicios .cgs-tabs .nav-tabs.nav-two.containers .nav-item a::after {
+              bottom: inherit;
+              left: inherit;
+              height: 0;
+              right: -2px;
+              top: 50%;
+              width: 4px;
+              transform: translateY(-50%);
+              margin: 0; }
+            .servicios .cgs-tabs .nav-tabs.nav-two.containers .nav-item a.active::after {
+              height: 100%; }
+      .servicios .cgs-tabs .tab-content {
+        background-color: white;
+        padding: 40px 24px;
+        border: 1px solid #e0e0e0; }
   section {
     padding: 6em 0; }
     section.hero, section.servicios {
