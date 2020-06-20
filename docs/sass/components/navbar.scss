@@ -193,10 +193,10 @@
                width: auto;
 
                a {
-                  font-size: .9em;
+                  font-size: .85em;
                   font-weight: 500;
                   color: $gray-500;
-                  letter-spacing: 1px;
+                  letter-spacing: .5px;
                   &.dropdown-item {
                      &:hover {
                         background-color: $primary-600;
