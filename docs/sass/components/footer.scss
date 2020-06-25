@@ -98,6 +98,17 @@ footer {
    img {
       width: 200px;
    }
+   .dropdown {
+      .dropdown-menu {
+         .dropdown-item {
+            color:$primary-700;
+            &:focus, &:active, &:hover {
+               background-color:$primary-700;
+               color:white;
+            }
+         }
+      }
+   }
 }
 
 @media (min-width:768px) {

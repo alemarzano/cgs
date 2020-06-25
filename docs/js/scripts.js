@@ -107,26 +107,46 @@ jQuery(function ($) {
     }
 
     $();
-    
-    if (viewport > 1200) {
-        // pic.attr('src', 'img/logo-w.png')
-        scrolled();
-        var thumbs = $('.sp-thumbnails').width().toString();
-        var slide = $('.sp-slide').find('.container');
-        slide.css('width', thumbs + 'px');
-        slide.css('maxWidth', thumbs + 'px');
+    var viewport = $(window).width();
+    var header = $(".topnavbar");
+    function scrolled() {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                header.addClass('scrolled');
+                // header.removeClass('transparent');
+                // pic.attr('src', 'img/logo.png');
+
+            } else {
+                header.removeClass("scrolled");
+                // header.addClass('transparent');
+                // pic.attr('src', 'img/logo-w.png');
+            }
+        });
+
     }
+    scrolled();
+    // if (viewport > 1200) {
+    //     // pic.attr('src', 'img/logo-w.png')
+       
+    //     var thumbs = $('.sp-thumbnails').width().toString();
+    //     var slide = $('.sp-slide').find('.container');
+    //     slide.css('width', thumbs + 'px');
+    //     slide.css('maxWidth', thumbs + 'px');
+    // }
 
 
 })
 var icon = $('.navTrigger');
 // var overlay = $("#overlay");
 var h = $('nav').height().toString();
-
+console.log(h)
 function openNav() {
     $(".navlinks").css('width', '100vw');
     $(".navlinks").css({
         height: `calc(100% - ${h}px)`,
+        // top: `${h}px`,
         // top: `${h}px`,
     });
     $('body').css('overflow', "hidden");

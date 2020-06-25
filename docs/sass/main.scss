@@ -115,6 +115,7 @@ section {
 		-webkit-mask-clip: padding;
 		mask-clip: padding;
 		position: relative;
+		min-height:300px;
 
 		img {
 			position: absolute;
@@ -250,7 +251,8 @@ section {
 
 		&.nav-two {
 			.nav-item {
-
+				flex:1 1 100%;
+				margin:4px 4px;
 				a {
 					background-color: white;
 					color: $gray-400;
@@ -264,6 +266,8 @@ section {
 						filter: grayscale(.8);
 						opacity: .5;
 						transition: $timing $transition;
+						width:48px;
+						max-width:100%;
 
 					}
 

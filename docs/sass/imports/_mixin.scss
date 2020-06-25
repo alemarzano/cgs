@@ -23,7 +23,7 @@ $soft-shadow:2px 4px 6px #5c5c5c5e;
 .btn-second {
    color:$primary-600;
    border:2px solid $primary-600;
-   &:hover{
+   &:hover, &:focus, &:active{
       background-color: $primary-600;
       color:$primary-100;
    }

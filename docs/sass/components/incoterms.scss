@@ -4,7 +4,44 @@
    position: relative;
    margin-bottom: 40px
 }
-
+.rotate {
+   align-items: center;
+   justify-content: center;
+   min-height: 50vh;   
+}
+.phone {
+   height: 50px;
+   width: 100px;
+   border: 3px solid $primary-700;
+   border-radius: 10px;
+   animation: rotate 1.5s ease-in-out infinite alternate;
+   /* display: none; */
+ }
+ 
+ .message {
+   color: $primary-700;
+   font-size: 1em;
+   margin-top: 40px;
+   /* display: none; */
+ }
+ 
+ @keyframes rotate {
+   0% {
+       transform: rotate(0deg)
+    }
+    50% {
+       transform: rotate(-90deg)
+    }
+    100% {
+       transform: rotate(-90deg)
+    }
+ }
+ 
+ @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+   .phone, .message {
+     display: block;
+   }
+ }
 .incoterms-bg {
    background-image: linear-gradient(90deg, #8ab6cc 0%, #fff 5%, #fff 50%, #c0d6e1 55%, #fff 55%, #fff 100%);
    background-size: 9%;
@@ -156,9 +193,7 @@
    margin: 7px 0px 4px 6px
 }
 
-.incoterm-data {
-   margin: 0 30px
-}
+
 
 .incoterm-legend {
    font-size: 0.875rem;

@@ -75,27 +75,41 @@
    ul {
       display: flex;
       list-style: none;
-      margin: 0;
-      padding: 0;
+      margin:0 ;
+      padding: 32px 0 0 0 ;
       height: 0;
       overflow-x: hidden;
       position: fixed;
-      top: 80px;
+      top: 72px;
       transition: width .5s;
       width: 0;
       left: 0;
       flex-direction: column;
       background-color: $primary-800;
-      justify-content: center;
+      justify-content: flex-start;
 
       li {
-         width: 100%;
+         width: 50%;
          text-align: right;
          padding: 0;
-         margin: .5em 0;
-         text-align: center;
+         margin: .5em auto .5em 32px;
+         text-align: left;
          font-size: 1.25em;
-
+         .brn-group {
+            -webkit-appearance: inherit;
+            a {
+               color:$primary-200;
+               text-align: left;
+               -webkit-appearance: inherit;
+            }
+            .dropdown-item {
+               color:$primary-700;
+               &:focus, &:active, &:hover {
+                  background-color:$primary-700;
+                  color:white;
+               }
+            }
+         }
          a {
             text-align: center;
             width: 100%;
@@ -114,12 +128,23 @@
                font-weight: bold;
                
             }
+            .brn-group {
+               a {
+                  color: $secondary-500;
+               }
+            }
 
          }
-
+         
          button {
             font-size: 1.25em;
-            color: $primary-700;
+            color: $secondary-200;
+            background-color:inherit;
+            border:2px solid $secondary-500;
+            &:hover,&:focus,&:active {
+               background-color:$secondary-500;
+               color:$primary-800;
+            }
          }
          
 
