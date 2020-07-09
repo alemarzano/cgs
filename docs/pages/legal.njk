@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+
+{% set page_title = 'CGS GROUP | Información Legal' %}
+
+{% block navbar %}
+   {% import "macros/navbar.njk" as nav %}
+   {{nav.active('home', 'es')}}
+{% endblock %}
+
+{% block secciones %}
+
+   <div class="jumbotron jumbotron-fluid" style="background-color: #232463;">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 col-lg-9 mx-auto">
+               <ul class="list-inline">
+                  <li class="list-inline-item d-none">
+                     <h1 class="display-1"></h1>
+                  </li>
+                  <li class="list-inline-item">
+                     <h1>Información Legal</h1>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="d-none scroll">
+      <div class="chevron"></div>
+   </div>
+
+   <!-- Single-Service-Start -->
+   <section class="servicios">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+               <div class="content">
+                  <p >Esta es una pagina web de CGS GROUP S.R.L.</p>
+                  <p >CGS GROUP S.R.L.</p>
+                  <p >Uruguay 265 2&ordm; Piso - Of. A, (C1015ABE)</p>
+                  <p >Ciudad Aut&oacute;noma de Buenos Aires</p>
+                  <p >Rep&uacute;blica Argentina.</p>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}

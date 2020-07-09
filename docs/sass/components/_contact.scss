@@ -13,7 +13,9 @@
          display: flex;
          align-items: center;
          justify-content: center;
-
+         &.mi {
+            background-image: url('../img/bg-mi.jpg');
+         }
 
          .departamentos {
             padding: 32px 0;
@@ -21,8 +23,8 @@
             li.box {
                margin: 16px auto 32px;
                color: white;
-               border-left: 3px solid rgba($primary-400, 0.6);
-               background-color: rgba($primary-900, 0.5);
+               border-left: 3px solid rgba($secondary-300, 0.6);
+               background-color: rgba($primary-900, 0.7);
                padding: 16px;
 
                p {
@@ -39,7 +41,7 @@
                ol {
                   li {
                      a {
-                        color: rgba($primary-300, 0.7);
+                        color: rgba($primary-100, 0.7);
                         padding: 2px 0;
                         &:hover, &:focus {
                             color: rgba($secondary-300, 1)

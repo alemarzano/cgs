@@ -212,6 +212,7 @@
             overflow: visible;
             width: 100%;
             background-color: transparent;
+            padding-top:0;
 
             li {
                margin: 0 .3em;
@@ -235,6 +236,7 @@
                   letter-spacing: 1px;
                   color:white;
                   background-color: $primary-600;
+                  border:none;
                }
                &.active {
                   a.link {

@@ -664,7 +664,7 @@ form {
 		}
 	}
 
-	.cgs-tabs .nav-tabs .nav-item {
+	.cgs-tabs .nav-tabs.nav-two .nav-item {
 		flex: 1 1 20%;
 	}
 
@@ -810,6 +810,11 @@ form {
 				align-self: end;
 			}
 
+		}
+	}
+	.section-contact {
+		.tab-content {
+			height:900px;
 		}
 	}
 }
