@@ -75,7 +75,7 @@
                            <label for="transporte" class=" mb-3">Modo de Transporte</label>
                            <select id="transporte" class="custom-select">
                               <option value="1">Marítimo FCL</option>
-                              <option value="2">Maritimo FCL</option>
+                              <option value="2">Maritimo LCL</option>
                               <option value="3">Aereo</option>
                               <option value="4">Terrestre</option>
                               <option value="5">Multimodal</option>
@@ -112,7 +112,7 @@
                            <textarea type="text" class="form-control" id="observaciones" rows="3"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-first mt-4">Enviar Consulta</button>
+                        <button type="submit" class="btn btn-first mt-4">Solicitar cotización</button>
                      </form>
                   </div>
 
@@ -133,6 +133,10 @@
                         <div class="form-group">
                            <label for="cotizacion">Número de cotización</label>
                            <input type="text" class="form-control" id="cotizacion">
+                        </div>
+                        <div class="form-group">
+                           <label for="emailReserva">Email</label>
+                           <input type="email" class="form-control" id="emailReserva">
                         </div>
 
                         <button type="submit" class="btn btn-first mt-4">Reservar</button>

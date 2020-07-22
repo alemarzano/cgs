@@ -141,7 +141,6 @@ jQuery(function ($) {
 var icon = $('.navTrigger');
 // var overlay = $("#overlay");
 var h = $('nav').height().toString();
-console.log(h)
 function openNav() {
     $(".navlinks").css('width', '100vw');
     $(".navlinks").css({
