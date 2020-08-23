@@ -4,7 +4,7 @@
 
 {% block navbar %}
    {% import "macros/navbar.njk" as nav %}
-   {{nav.active('incoterms', 'es')}}
+   {{nav.active('incoterms', 'es', 'incoterms', 'eng_incoterms')}}
 {% endblock %}
 
 {% block secciones %}
@@ -35,7 +35,7 @@
       <div class="rotate d-none d-md-flex d-lg-none">
          <div class="phone"></div>
          <div class="message">
-            Please rotate your device!
+            Por favor rote su dispositivo
          </div>
       </div>
       <div class="tablas d-none d-lg-block">

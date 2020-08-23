@@ -1,11 +1,11 @@
-{% macro active(activePage = '', lang = '') %}
+{% macro active(activePage = '', lang = '', section_es = '', section_eng = '') %}
 
    <nav class="nav topnavbar ">
 
       <div class="container langs">
          <i class="fas fa-language"></i>
-         <a class="{%if lang == 'es' %} active {%endif%}" href="index.html">ESP</a>
-         <a class="{%if lang == 'en' %} active {%endif%}" href="#">ENG</a>
+         <a class="{%if lang == 'es' %} active {%endif%}" href="{{section_es}}.html">ESP</a>
+         <a class="{%if lang == 'en' %} active {%endif%}" href="{{section_eng}}.html">ENG</a>
       </div>
       <div class="container py-md-2">
          <a class=" logo" href="index.html"><img src="img/logo.png" alt=""></a>
@@ -72,18 +72,62 @@
 
             {% endif %}
             {%if lang =='en'%}
-               <li class="{%if activePage == 'home' %} active {%endif%} ">
-                  <a href="index.html">Home</a>
+               <li class="{%if activePage == 'home' %} active {%endif%}">
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 pr-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-1">About US</span><span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="anchor dropdown-item text-left" href="eng_index.html#mision">Mission, vision & values</a>
+                        <a class="anchor dropdown-item text-left" href="eng_index.html#whyus">Why choose us?</a>
+                        <a class="anchor dropdown-item text-left" href="eng_index.html#world">World Coverage</a>
+
+                     </div>
+                  </div>   
                </li>
                <li class="{%if activePage == 'servicios' %} active {%endif%} ">
-                  <a href="eng_servicios.html">Services</a>
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 pr-2 link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mr-1">Services</span> <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="eng_services-ocean.html">Ocean Freight</a>
+                        <a class="dropdown-item text-left" href="eng_services-trucking.html">Land Transport</a>
+                        <a class="dropdown-item text-left" href="eng_services-air.html">Air Freight</a>
+                        <a class="dropdown-item text-left" href="eng_services-customs.html">Customs</a>
+                        <a class="dropdown-item text-left" href="eng_services-insurance.html">Insurance</a>
+
+                     </div>
+                  </div>
                </li>
 
                <li class="{%if activePage == 'informacion' %} active {%endif%} ">
-                  <a href="#">Information</a>
+                  <div class="brn-group">
+                     <a type="button" class="dropdown-toggle dropdown-toggle-split pl-0 ml-0 pr-2 link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mr-1">Tools</span> <span class="sr-only">Toggle Dropdown</span>
+                     </a>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="eng_containers.html">Containers</a>
+                        <a class="dropdown-item text-left" href="eng_incoterms.html">Incoterms</a>
+                        <a class="dropdown-item text-left" href="eng_documents.html">Documents</a>
+                     </div>
+                  </div>
                </li>
-               <li >
-                  <a data-toggle="modal" data-target="#quoteModal" href="#">Contact</a>
+               <li class="{%if activePage == 'contacto' %} active {%endif%}">
+                  <a class="pl-0 link" href="eng_contact.html">Contact</a>
+               </li>
+               <li class="mt-3 mt-lg-0">
+                  <div class="dropdown">
+                     <button class="btn btn-two-first dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My CGS
+                     </button>
+                     <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-left" href="eng_mycgs.html#cotizacion">Quote</a>
+                        <a class="dropdown-item text-left" href="eng_mycgs.html#reserva">Book</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-left" href="eng_mycgs.html#seguimiento">Track</a>
+                     </div>
+                  </div>
                </li>
             {% endif %}
 

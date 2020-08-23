@@ -1,0 +1,102 @@
+{% extends "layout_eng.njk" %}
+
+{% set page_title = 'CGS GROUP | Insurance Services' %}
+
+{% block navbar %}
+   {% import "macros/navbar.njk" as nav %}
+   {{nav.active('servicios', 'en', 'servicios-seguros', 'eng_services-insurance')}}
+{% endblock %}
+
+{% block secciones %}
+
+   <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-seguros.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-9 mx-auto">
+               <ul class="list-inline">
+                  <li class="list-inline-item">
+                     <h1 class="display-1">Services /</h1>
+                  </li>
+                  <li class="list-inline-item">
+                     <h1>Insurance</h1>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="d-none scroll">
+      <div class="chevron"></div>
+   </div>
+
+   <!-- Single-Service-Start -->
+   <section class="servicios">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+               <div class="content">
+
+                  <h3 class="section-title">Full coverage.</h3>
+                  <p>A complete and varied range of insurance policies for your import and export shipments, up to door-to-door coverage.</p>
+                  <p>The transport insurance covers the merchandise transported, from all the risks that surgical problems had in the trip, like thefts, breakages, losses, intermediate deposits, strikes, wars, gross breakdowns, etc.
+                  </p>
+                  <p>The goods transported are exposed to risks that can become claims, can generate great economic damages and market losses. That’s why we recommend taking insurance coverage to neutralize transportation risks. Insurance coverage begins when the cargo is withdrawn from the origin and finish at the place indicated as the final destination, and can be transported by sea, air and / or land.
+                  </p>
+                  
+
+                  <div class="row mt-4    ">
+                     <div class="col-12 col-md-6">
+                        <h6>The coverage contemplates:</h6>
+                        <ul class="fa-ul mb-3">
+
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Door to door route</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Intermediate Deposits</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Tax Deposits</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Free Zone</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Transshipment ports and airports</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Loading and unloading operations</li>
+
+                        </ul>
+                        <h6 class="mt-4">International Transit Coverage:</h6>
+                        <p class="mt-0">Covers all transport of merchandise and / or effects from abroad destined for any point within the territory of the Argentine Republic or vice versa, whether carried out by sea, air or land. </p>
+                        <p>A floating policy can be contracted covering all shipments..
+                        </p>
+                        <h6 class="mt-4">Local traffic coverage:</h6>
+                        <p class="mt-0">It covers the transit of merchandise within the territory of the Argentine Republic, carried out by land, air or rail. </p>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="img/servicio_seguros.jpg" alt="image"/>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "layout_eng.njk" %}
+
+{% set page_title = 'CGS GROUP | Customs Services' %}
+
+{% block navbar %}
+   {% import "macros/navbar.njk" as nav %}
+   {{nav.active('servicios', 'en', 'servicios-aduana','eng_services-customs')}}
+{% endblock %}
+
+{% block secciones %}
+
+   <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-aduana.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-9 mx-auto">
+               <ul class="list-inline">
+                  <li class="list-inline-item">
+                     <h1 class="display-1">Services /</h1>
+                  </li>
+                  <li class="list-inline-item">
+                     <h1>Customs</h1>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="d-none scroll">
+      <div class="chevron"></div>
+   </div>
+
+   <!-- Single-Service-Start -->
+   <section class="servicios">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
+               <div class="content">
+
+                  <h3 class="section-title">Comprehensive Support.</h3>
+                  <p>Our experienced teams handle the completion of export and import customs formalities. We also offer advice taxation and clearance procedures, to ensure your shipments clear customs swiftly and efficiently.</p>
+
+                  <div class="row mt-5">
+                     <div class="col-12 col-md-6">
+                        <ul class="fa-ul">
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Tariff Classifications</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>International relocation</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Boarding Permission</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Import Clearance</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Tránsitos</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Procedures with Formal authorities</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Customs Support</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Operational Control in FCL / LCL Cargos.</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Importers and Exporters registration</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>Monitoring of taxes Refunds</li>
+                           <li>
+                              <span class="fa-li">
+                                 <i class="fas fa-angle-double-right"></i>
+                              </span>IMO</li>
+
+                        </ul>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <img class="img-fluid" src="img/servicio_aduana.jpg" alt="image"/>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+<!-- Single-Service-End-->
+
+{% endblock %}

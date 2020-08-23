@@ -1,10 +1,10 @@
-{% extends "layout.njk" %}
+{% extends "layout_eng.njk" %}
 
-{% set page_title = 'CGS GROUP | Home' %}
+{% set page_title = 'CGS GROUP' %}
 
 {% block navbar %}
    {% import "macros/navbar.njk" as nav %}
-   {{nav.active('home', 'en')}}
+   {{nav.active('home', 'en', 'index', 'eng_index')}}
 {% endblock %}
 
 {% block secciones %}
@@ -14,12 +14,12 @@
             <!-- MARITIMO -->
             <div class="sp-slide">
                <img class="sp-image" src="css/images/blank.gif" data-src="img/maritimo.jpg"/>
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
-                     <h3 data-show-transition="left">COBERTURA GLOBAL</h3>
+                     <h3 data-show-transition="left">Connecting Ports</h3>
                      <hr>
-                     <p data-show-transition="left">Operamos en todas las rutas internacionales con el fin de garantizar a nuestros clientes una cobertura global completa para el tráfico de sus mercaderías.</p>
-                     <a href="servicios.html" class="btn">
+                     <p data-show-transition="left">We operate all sea routes, providing a full integrated transport solution for your products. </p>
+                     <a href="eng_services-ocean.html" class="btn btn-mag-second light">
                         <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
@@ -28,14 +28,14 @@
             </div>
             <!-- TERRESTRE -->
             <div class="sp-slide">
-               <img class="sp-image" src="css/images/blank.gif" data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_1.jpg" data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_1.jpg"/>
+               <img class="sp-image" src="css/images/blank.gif" data-src="img/terrestre.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
-                     <h3 data-show-transition="left">SEGUIMIENTO DE PUNTA A PUNTA</h3>
+                     <h3 data-show-transition="left">From one end to the Other</h3>
                      <hr>
-                     <p data-show-transition="left">Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
-                     <a href="servicios.html" class="btn">
+                     <p data-show-transition="left">Short, medium, and long-distance road services, with modern trucks and trailers to transport your goods safely and sustainably.</p>
+                     <a href="eng_services-trucking.html" class="btn btn-mag-second light">
                         <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
@@ -43,14 +43,14 @@
             </div>
             <!-- AEREO -->
             <div class="sp-slide">
-               <img class="sp-image" src="css/images/blank.gif" data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/11/slider_1.jpg" data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/11/slider_1.jpg"/>
+               <img class="sp-image" src="css/images/blank.gif" data-src="img/aereo.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
-                     <h3 data-show-transition="left">DESDE Y HACIA CUALQUIER AEROPUERTO</h3>
+                     <h3 data-show-transition="left">From and To every airport</h3>
                      <hr>
-                     <p data-show-transition="left">Nuestro servicio de flete aéreo, abarca desde y hacia cualquier aeropuerto del mundo. Nuestros especialistas organizaran su transporte aéreo con el objetivo de minimizar el tiempo de tránsito, optimizar el coste de transporte y asegurar la integridad de la mercadería bajo nuestra custodia, informando en forma precisa y detallada el movimiento de su carga durante todo el trayecto.</p>
-                     <a href="servicios.html" class="btn">
+                     <p data-show-transition="left">With daily flight frequency, we operate in all airports over the world, offering the best alternatives that each air cargo requires.</p>
+                     <a href="eng_services-air.html" class="btn btn-mag-second light">
                         <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
@@ -58,14 +58,14 @@
             </div>
             <!-- ADUANA -->
             <div class="sp-slide">
-               <img class="sp-image" src="css/images/blank.gif" data-src="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_4.jpg" data-retina="https://logistics.scdn6.secure.raxcdn.com/wp-content/uploads/2015/12/slider_4.jpg"/>
+               <img class="sp-image" src="css/images/blank.gif" data-src="img/aduana.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
-                     <h3 data-show-transition="left">ASESORAMIENTO INTEGRAL</h3>
+                     <h3 data-show-transition="left">Customs Clearance</h3>
                      <hr>
-                     <p data-show-transition="left">Asesoramiento en Régimen Legal Aduanero, clasificación Arancelaria de todo tipo de mercadería.</p>
-                     <a href="servicios.html" class="btn">
+                     <p data-show-transition="left">Wide range of services like duties and taxes calculation, inspections, declarations and documents required by official organisms.</p>
+                     <a href="eng_services-insurance.html" class="btn btn-mag-second light">
                         <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
@@ -73,14 +73,14 @@
             </div>
             <!-- SEGURO -->
             <div class="sp-slide">
-               <img class="sp-image" src="css/images/blank.gif" data-src="https://image.shutterstock.com/z/stock-photo-logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge-in-1388874713.jpg" data-retina="https://image.shutterstock.com/z/stock-photo-logistics-and-transportation-of-container-cargo-ship-and-cargo-plane-with-working-crane-bridge-in-1388874713.jpg"/>
+               <img class="sp-image" src="css/images/blank.gif" data-src="img/seguros.jpg"/>
 
-               <div class="mini-container">
+               <div class="container">
                   <div class="sp-layer frame-home" data-show-transition="left" data-hide-transition="right" data-show-delay="300">
-                     <h3 data-show-transition="left">COBERTURA TOTAL</h3>
+                     <h3 data-show-transition="left">Full Coverage</h3>
                      <hr>
-                     <p data-show-transition="left">Una completa y variada gama de seguros para sus embarques de importación y exportación, con cobertura puerta a puerta.</p>
-                     <a href="servicios.html" class="btn">
+                     <p data-show-transition="left">Varied options to safeguard your valuable merchandise from origin to destination.</p>
+                     <a href="eng_services-customs.html" class="btn btn-mag-second light">
                         <i class="fa fa-plus" aria-hidden="true" data-show-transition="right"></i>
                      </a>
                   </div>
@@ -100,7 +100,7 @@
                      <path d="m266 330c0 5.523438-4.476562 10-10 10s-10-4.476562-10-10 4.476562-10 10-10 10 4.476562 10 10zm0 0"/>
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">MARITIMO</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen ">OCEAN FREIGHT</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -138,7 +138,7 @@
                      </g>
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">TERRESTRE</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen" aria-labelledby="Land transport"> LAND TRANSPORT</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -153,7 +153,7 @@
                      <path d="m110.902344 147.980469c2.910156 2.90625 7.765625 2.90625 10.675781 0l28.179687-28.179688c2.945313-2.949219 2.945313-7.726562 0-10.675781-2.949218-2.945312-7.726562-2.945312-10.675781 0l-28.179687 28.179688c-2.945313 2.949218-2.945313 7.726562 0 10.675781zm0 0"/>
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">AÉREO</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen" aria-labelledby="Air freight"> AIR FREIGHT</h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -191,7 +191,7 @@
 
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">ADUANA</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen" aria-labelledby="Customs">CUSTOMS </h5>
             </div>
 
             <div class="sp-thumbnail">
@@ -212,129 +212,125 @@
 
                   </svg>
                </div>
-               <div class="sp-thumbnail-description hide-medium-screen ">SEGUROS</div>
+               <h5 class="sp-thumbnail-description hide-medium-screen" aria-labelledby="Insurance">INSURANCE</h5>
             </div>
 
          </div>
       </div>
    </div>
-
+   <div class="scroll">
+      <div class="chevron"></div>
+   </div>
    <!-- services start -->
-   <section class="service-home section-padding">
+   <section id="mision" class="service-home ">
       <div class="container ">
 
          <div class="row ">
             <div class="col-xs-12 col-sm-6">
                <div class="service">
 
-                  <h3>Mission, vision and values
+                  <h3 class="section-title">Mission, vision & values
                   </h3>
-                  <p>Our mission is to provide solutions in international transport field, fulfilling the growing needs from our customers.</p>
+                  <p>Our mission is to provide different solutions in international transport, and suggest the most suitable options for your shipments.</p>
 
-                  <p>Our mission, develop with our customers and suppliers the tightest commercial ties, based on the pillars of respect, ethics and professionalism.</p>
+                  <p>Our vision, to develop close commercial ties with our customers and suppliers that last over time, based in respect, ethics and professionalism.</p>
 
-                  <p>Our values are based on management suitability in our work, quality in our service, professionalism of our staff, and flexibility to adapt to change and searching for continuous improvement.</p>
+                  <p>Our values ​​are based on the commitment in the promises we make, the quality of the service we offer, the professionalism of our human resources, and the flexibility for changes and research for continuous improvement.</p>
 
                </div>
             </div>
             <!-- /.col-sm-4 -->
             <div class="col-xs-12 col-sm-6">
-               <div class="service-pic">
-                  <img src="img/misionvalores.jpg" alt="">
+               <div class="service-pic mt-lg-5">
+                  <img src="img/misionvalores.png" alt="">
                </div>
             </div>
 
          </div>
-         <!-- /.row -->
       </div>
-      <!-- /.container -->
    </section>
    <!-- services end -->
 
    <!-- counter start -->
-   <section class="counter-section" data-stellar-background-ratio="0.5">
+   <section id="whyus" class="counter-section hero">
       <div class="container">
          <div class="row">
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-boat">
-                     <strong class="timer">80</strong>Vehículos en curso</span>
+                     <strong >+<span class="timer">200</span></strong>
+                     <span class="text">Shipments in transit</span></span>
                </div>
             </div>
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-international">
-                     <strong class="timer">72</strong>Clientes Mundiales</span>
+                     <strong>+<span class="timer">150</span></strong>
+                     <span class="text">Offices worldwide</span></span>
                </div>
             </div>
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 px-md-1 px-xl-2">
                <div class="counter-block">
                   <span class="count-description flaticon-compass">
-                     <strong class="timer">521</strong>Entregas realizadas</span>
+                     <strong>+<span class="timer">10000</span></strong>
+                     <span class="text">Delivered Teus</span></span>
                </div>
             </div>
          </div>
          <!-- /.row -->
       </div>
-      <!-- /.container -->
    </section>
-   <!-- /.counter-section -->
    <!-- counter end -->
 
-   <!-- why-us-setion start -->
-   <section class="why-us-setion section-padding">
+   <!-- Por qué elegirnos -->
+   <section class="why-us">
       <div class="container">
-         <div class="row text-center">
-            <div class="col-xs-12">
-               <h2 class="section-title">WHY CHOOSE US?</h2>
-               <span class="section-sub">CGS GROUP SRL works as a freight agent, with a highly qualified staff in international freights field, with extensive experience coordinating full logistics services.</span>
+         <div class="row">
+            <div class="col-12 col-xl-5">
+               <h3 class="section-title ">Why choose us?</h3>
+               <p class="section-sub text-left ml-0">CGS GROUP SRL operates as a freight forwarder, built with highly trained personnel in international transport field, with vast experience in coordinating a wide and varied types of logistic services.</p>
             </div>
-         </div>
-         <!-- /.row -->
-
-         <div class="row content-row">
-            <div class="col-md-12">
-               <div class="css-tab" role="tabpanel">
-
+            <div class="col-12 col-xl-7 mt-2 mt-lg-0">
+               <div class="cgs-tabs">
                   <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" role="tablist">
-                     <li role="presentation" class="active">
-                        <a href="#secure" aria-controls="secure" role="tab" data-toggle="tab">
-                           <i class="flaticon-logistics15"></i>
-                           Secure</a>
+                  <ul class="nav nav-tabs mt-2 mt-lg-0" role="tablist">
+                     <li class="nav-item" role="presentation">
+                        <a href="#secure" aria-controls="secure" id="secure-tab" role="tab" data-toggle="tab" class="nav-link active" aria-selected="true">
+                           <i class="fas fa-lock"></i>
+                           Insurance</a>
                      </li>
-                     <li role="presentation">
-                        <a href="#trackable" aria-controls="trackable" role="tab" data-toggle="tab">
-                           <i class="flaticon-logistics18"></i>
+                     <li class="nav-item" role="presentation">
+                        <a href="#trackable" aria-controls="trackable" id="trackable-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
+                           <i class="fas fa-map-pin"></i>
                            Trackeable</a>
                      </li>
-                     <li role="presentation">
-                        <a href="#fast" aria-controls="fast" role="tab" data-toggle="tab">
-                           <i class="flaticon-logistics16"></i>
+                     <li class="nav-item" role="presentation">
+                        <a href="#fast" aria-controls="fast" id="fast-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
+                           <i class="fas fa-shipping-fast"></i>
                            Fast</a>
                      </li>
-                     <li role="presentation">
-                        <a href="#reliable" aria-controls="reliable" role="tab" data-toggle="tab">
-                           <i class="flaticon-broken43"></i>
-                           Trust</a>
+                     <li class="nav-item" role="presentation">
+                        <a href="#reliable" aria-controls="reliable" id="reliable-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
+                           <i class="fas fa-hands-helping"></i>
+                           Confidence</a>
                      </li>
-                     
+
                   </ul>
 
                   <!-- Tab panes -->
-                  <div class="tab-content">
-                     <div role="tabpanel" class="tab-pane active fade in" id="secure">
+                  <div class="tab-content  mt-5">
+                     <div role="tabpanel" class="tab-pane active fade show" id="secure" aria-labelledby="secure-tab">
                         <div class="css-tab-content">
                            <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/secure.png" alt="">
+                              <div class="col-12 col-md-6">
+                                 <img class="img-fluid" src="img/secure.png" alt="">
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-5 content-text">
-                                 <h3>Secure</h3>
+                              <div class="col-md-6 mt-5 mt-lg-0">
+                                 <h4>Insurance</h4>
 
-                                 <p>We consider extremely important the conviction of our customers to entrust us their shipments and we act in the same way when selecting our service suppliers. </p>
+                                 <p>You’ll find in us, a professional team that knows how to handle your transportation needs with efficiency and precision. Your cargo is in good hands</p>
 
                               </div>
                               <!-- /.col-md-6 -->
@@ -343,18 +339,18 @@
                         </div>
                         <!-- /.css-tab-content -->
                      </div>
-                     <div role="tabpanel" class="tab-pane fade" id="trackable">
+                     <div role="tabpanel" class="tab-pane fade" id="trackable" aria-labelledby="trackable-tab">
                         <div class="css-tab-content">
                            <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/track.png" alt="">
+                              <div class="col-12 col-md-6">
+                                 <img class="img-fluid" src="img/track.png" alt="">
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-5 content-text">
-                                 <h3>Trackeable</h3>
+                              <div class="col-md-6 mt-5 mt-lg-0">
+                                 <h4>Trackeable</h4>
 
-                                 <p>Follow your shipments. Never miss each event of the full journey. Use our Tracking dashboard to bookmark and monitor your shipments. Receive email notifications of important status updates. </p>
+                                 <p>Follow your shipments! Check the real-time information about the location and status of each of your shipments. Use our tracking tool to monitor and follow them. Receive email notifications with every update.</p>
 
                               </div>
                               <!-- /.col-md-6 -->
@@ -363,18 +359,18 @@
                         </div>
                         <!-- /.css-tab-content -->
                      </div>
-                     <div role="tabpanel" class="tab-pane fade" id="fast">
+                     <div role="tabpanel" class="tab-pane fade" id="fast" aria-labelledby="fast-tab">
                         <div class="css-tab-content">
                            <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/fast.png" alt="">
+                              <div class="col-12 col-md-6">
+                                 <img class="img-fluid" src="img/fast.png" alt="">
                               </div>
                               <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 content-text">
-                                 <h3>Fast</h3>
+                              <div class="col-md-6 mt-5 mt-lg-0">
+                                 <h4>Fast</h4>
 
-                                 <p></p>
+                                 <p>Our goal is to develop transport services that will save our customers time and money, offering fast, reliable, efficient and cost effective.</p>
                               </div>
                               <!-- /.col-md-6 -->
                            </div>
@@ -382,60 +378,49 @@
                         </div>
                         <!-- /.css-tab-content -->
                      </div>
-                     <div role="tabpanel" class="tab-pane fade" id="reliable">
-                        <div class="css-tab-content">
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <img src="img/reliable.png" alt="">
-                              </div>
-                              <!-- /.col-md-6 -->
+                     <div role="tabpanel" class="tab-pane fade" id="reliable" aria-labelledby="reliable-tab">
+                           <div class="css-tab-content">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <img class="img-fluid" src="img/trust.png" alt="">
+                                 </div>
+                                 <!-- /.col-md-6 -->
 
-                              <div class="col-md-6 content-text">
-                                 <h3>Trust</h3>
+                                 <div class="col-md-6 mt-5 mt-lg-0">
+                                    <h4>Confidence</h4>
 
-                                 <p></p>
+                                    <p>We consider that the conviction of our clients to entrust their shipments to us is extremely important, and we guarantee, in the same way, the highest rigor when selecting our service providers.</p>
+                                 </div>
+                                 <!-- /.col-md-6 -->
                               </div>
-                              <!-- /.col-md-6 -->
+                              <!-- /.row -->
                            </div>
-                           <!-- /.row -->
-                        </div>
-                        <!-- /.css-tab-content -->
+                           <!-- /.css-tab-content -->
                      </div>
                   </div>
+                  <!-- /.css-tab -->
                </div>
-               <!-- /.css-tab -->
+               <!-- /.col-md-12 -->
             </div>
-            <!-- /.col-md-12 -->
          </div>
-         <!-- /.row -->
-
       </div>
-      <!-- /.container -->
    </section>
-   <!-- why-us-setion end -->
-
-   <!-- agentes start -->
-   <section class="agentes section-padding">
+   <!-- Por qué elegirnos end -->
+   <!-- Agentes start -->
+   <section id="world" class="agentes">
       <div class="container">
-         <div class="row text-center">
-            <div class="col-xs-12">
-               <h2 class="section-title">Agents</h2>
-               <span class="section-sub">We have the support and the same commitment of CGS Group in different agencies located in the most important cities of the world. This way we can guarantee a quality service at origin and destination.</span>
+         <div class="row flex-lg-row-reverse">
+            <div class="col-12">
+               <h3 class="section-title">World coverage</h3>
+               <p class="section-sub text-left mr-0 ml-0">We have the same support and commitment from our agents located in the most important cities of the world. That’s why we can guarantee the same high quality service in each origin and destination. </p>
+            </div>
+            <div class="col-12 mt-lg-4">
+               <iframe src="https://www.google.com/maps/d/embed?mid=12ffp4Y49njvLWoQNdSd4-FAJ_NM" width="100%" height="100%" class="mt-lg-0"></iframe>
             </div>
          </div>
-         <!-- /.row -->
-
-         <div class="row content-row">
-            <div class="col-md-12">
-               <iframe src="https://www.google.com/maps/d/embed?mid=12ffp4Y49njvLWoQNdSd4-FAJ_NM" width="100%" height="480"></iframe>
-            </div>
-            <!-- /.col-md-12 -->
-         </div>
-         <!-- /.row -->
 
       </div>
       <!-- /.container -->
    </section>
-   
-   
+
 {% endblock %}

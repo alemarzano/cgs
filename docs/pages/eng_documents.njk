@@ -1,25 +1,25 @@
-{% extends "layout.njk" %}
+{% extends "layout_eng.njk" %}
 
-{% set page_title = 'CGS GROUP | Documentación' %}
+{% set page_title = 'CGS GROUP | Documents' %}
 
 {% block navbar %}
    {% import "macros/navbar.njk" as nav %}
-   {{nav.active('', 'es', 'documentos', 'eng_documents')}}
+   {{nav.active('', 'en', 'documentos', 'eng_documents')}}
 {% endblock %}
 
 {% block secciones %}
    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/bg_info.jpg')">
-      <div class="overlay"></div>
+   <div class="overlay"></div>
       <div class="container">
          <div class="row">
 
             <div class="col-12 col-lg-12 mx-auto">
                <ul class="list-inline">
                   <li class="list-inline-item">
-                     <h1 class="display-1">Herramientas /</h1>
+                     <h1 class="display-1">Tools /</h1>
                   </li>
                   <li class="list-inline-item">
-                     <h1>Documentación</h1>
+                     <h1>Documents</h1>
                   </li>
                </ul>
             </div>
@@ -28,50 +28,49 @@
    </div>
 
    <section class="container pt-5">
-    
-      <div class="table-responsive">
+     <div class="table-responsive">
          <table class="table table-striped">
             <thead class="thead-dark">
                <tr>
-                  <th scope="col">Nombre del Documento</th>
-                  <th scope="col">Fecha de Publicación</th>
+                  <th scope="col">Document name</th>
+                  <th scope="col">Publication date</th>
                   <th scope="col"></th>
                </tr>
             </thead>
             <tbody>
                <tr>
-                  <th scope="row">Carta de Garantía 2020</th>
+                  <th scope="row">Letter of Guarantee 2020</th>
                   <td>**/**/**</td>
                   <td>
                      <a href="docs/cgs_carta_de_garantia_2020.doc" download="download" class="btn btn-third">
-                        <i class="fas fa-file-download mr-2"></i>Descargar Documento</a>
+                        <i class="fas fa-file-download mr-2"></i>Download</a>
                   </td>
                </tr>
                <tr>
-                  <th scope="row">Declaración de Embarque</th>
+                  <th scope="row">Shipping Declaration</th>
                   <td>**/**/**</td>
                   <td>
                      <a href="docs/cgs_modelo_declaracion_de_embarque.docx" download="download" class="btn btn-third">
-                        <i class="fas fa-file-download mr-2"></i>Descargar Documento</a>
+                        <i class="fas fa-file-download mr-2"></i>Download</a>
                   </td>
                </tr>
                <tr>
-                  <th scope="row">Términos y Condiciones de HBL</th>
+                  <th scope="row">HBL Terms and Conditions</th>
                   <td>**/**/**</td>
                   <td>
                      <a href="docs/terminos_y_condiciones_HBL.pdf" download="download" class="btn btn-third">
-                        <i class="fas fa-file-download mr-2"></i>Descargar Documento</a>
+                        <i class="fas fa-file-download mr-2"></i>Download</a>
                   </td>
                </tr>
                <tr>
-                  <th scope="row">Términos y Condiciones de CRT</th>
+                  <th scope="row">CRT Terms and Conditions</th>
                   <td>**/**/**</td>
                   <td><a href="docs/terminos_y_condiciones_CRT.pdf" download="download" class="btn btn-third">
-               <i class="fas fa-file-download mr-2"></i>Descargar Documento</a></td>
+               <i class="fas fa-file-download mr-2"></i>Download</a></td>
                </tr>
             </tbody>
          </table>
       </div>
-
+      
    </section>
 {% endblock %}

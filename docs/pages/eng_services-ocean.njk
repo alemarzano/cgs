@@ -1,15 +1,15 @@
-{% extends "layout.njk" %}
+{% extends "layout_eng.njk" %}
 
-{% set page_title = 'CGS GROUP | Servicios Terrestre' %}
+{% set page_title = 'CGS GROUP | Ocean Freight' %}
 
 {% block navbar %}
     {% import "macros/navbar.njk" as nav %}
-    {{nav.active('servicios', 'es', 'servicios-terrestre', 'eng_services-trucking')}}
+    {{nav.active('servicios', 'en', 'servicios-maritimo', 'eng_services-ocean')}}
 {% endblock %}
 
 {% block secciones %}
 
-    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-terrestre.jpg')">
+    <div class="jumbotron jumbotron-fluid" style="background-image:url('img/info-mar.jpg')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -17,10 +17,10 @@
                 <div class="col-12 col-lg-9 mx-auto">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <h1 class="display-1">Servicios /</h1>
+                            <h1 class="display-1">Services /</h1>
                         </li>
                         <li class="list-inline-item">
-                            <h1>Terrestre</h1>
+                            <h1>Ocean Freight</h1>
                         </li>
                     </ul>
                 </div>
@@ -39,12 +39,10 @@
                 <div class="col-12 col-lg-9 mt-4 mt-lg-0 mx-auto">
                     <div class="content">
 
-                        <h3 class="section-title">Seguimiento de punta a punta.</h3>
-                        <p>Servicios de corta, media y larga distancia, con vehículos acordes a cada necesidad puntual. Cada unidad cuenta con Sistema de Posicionamiento Global proporcionado y administrado por empresa homologada. Nuestro departamento de operaciones coordina, administra y realiza el seguimiento de cada viaje e informa a nuestros clientes el estado del mismo durante todo el trayecto.</p>
-                        <p>Ofrecemos salidas regulares en Argentina, Chile, Uruguay, Brasil, Paraguay y Bolivia. Nuestra amplia flota y gama selecta de operadores garantizan la entrega segura y puntual de sus mercaderias.</p>
-                        <p>Nuestra cartera de servicios por carretera va desde la carga completa (FTL) a la carga consolidada (LTL). Ofrecemos servicios de transporte especializados para toda una gama de mercancías, entre ellas, cargas de grandes dimensiones y sobredimensionadas, alimentos y productos farmacéuticos sensibles a la temperatura, así como cargas frágiles y de alto coste.</p>
-                        <p>Nuestros operadores cuidadosamente seleccionados y nuestros centros operativos idealmente ubicados nos permiten ofrecer la mayor cobertura y flexibilidad.</p>
-                        <p>Ademas del control satelital de unidades, proveemos servicio de custodia durante todo el trayecto, de ser requerido.</p>
+                        <h3 class="section-title">Connecting Seaports.</h3>
+                        <p>We operate every international routes in order to guarantee to our clients a complete global coverage of their merchandise transport. Our ocean freight services are reliable and guarantee that your merchandise reaches any country in the world safely and on time. We offer ocean freight alternatives in full container load (FCL), less than container load (LCL) and Project Cargo.</p>
+                        <p>As a result of our experience and continuous work with the different maritime operators, we can be flexible, guaranteeing space on board and use our large volumes of shipments, to negotiate better conditions for shipping by sea. In addition to conventional shipments with dry units, we offer temperature controlled transport in Reefer Units, as well as special equipment for large loads, bulk transport, vehicle transport and others. The maritime service can be complemented with customs clearance services and transport insurance, as well as land transport services if necessary.</p>
+                        <p>Each instance of each shipment, will be informed in time by our team of professionals. Through “My CGS”, you can track your cargo online at any time. Our shipping experts have extensive experience in shipping all types of industrial and consumer goods, and will be at your disposal at any time.</p>
 
                         <div class="row mt-5">
                             <div class="col-12 col-md-6">
@@ -52,11 +50,11 @@
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Carga suelta</li>
+                                        </span>LCL Cargo</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Contenedores</li>
+                                        </span>FCL Cargo</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
@@ -64,15 +62,15 @@
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Carga con extra-medida</li>
+                                        </span>Loading with extra-measure</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Carga refrigerada y perecedera</li>
+                                        </span>Refrigerated and perishable cargo</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Carga a granel</li>
+                                        </span>Bulk cargo</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
@@ -80,15 +78,15 @@
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Proyectos industriales</li>
+                                        </span>Industrial Projects</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Consolidaci&oacute;n / Desconsolidaci&oacute;n</li>
+                                        </span>Stuffing / Unstuffing</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Inspecciones de carga</li>
+                                        </span>Cargo inspections</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
@@ -96,19 +94,19 @@
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Isotanque</li>
+                                        </span>Isotank</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Puerta a puerta</li>
+                                        </span>Door to door</li>
                                     <li>
                                         <span class="fa-li">
                                             <i class="fas fa-angle-double-right"></i>
-                                        </span>Despacho de Aduana</li>
+                                        </span>Customs clearance</li>
                                 </ul>
                             </div>
                             <div class="col-12 col-md-6">
-                                <img class="img-fluid" src="img/servicio_terrestre.jpg" alt="image"/>
+                                <img class="img-fluid" src="img/servicio_mar.jpg" alt="image"/>
                             </div>
                         </div>
                     </div>

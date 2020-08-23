@@ -1,10 +1,10 @@
-{% extends "layout.njk" %}
+{% extends "layout_eng.njk" %}
 
-{% set page_title = 'CGS GROUP | Mi CGS' %}
+{% set page_title = 'CGS GROUP | My CGS' %}
 
 {% block navbar %}
    {% import "macros/navbar.njk" as nav %}
-   {{nav.active('', 'es', 'micgs', 'eng_mycgs')}}
+   {{nav.active('', 'en', 'micgs', 'eng_mycgs')}}
 {% endblock %}
 
 {% block secciones %}
@@ -13,7 +13,7 @@
       <div class="overlay"></div>
       <div class="container">
       <div class="col-12 mx-auto">
-         <h1>MI CGS</h1>
+         <h1>My CGS</h1>
       </div>
          
       </div>
@@ -31,17 +31,17 @@
                   <li class="nav-item" role="presentation">
                      <a href="#cotizacion" aria-controls="cotizacion" id="cotizacion-tab" role="tab" data-toggle="tab" class="nav-link " aria-selected="true">
                         <i class="fas fa-dollar-sign"></i>
-                        Cotización</a>
+                        Quote</a>
                   </li>
                   <li class="nav-item" role="presentation">
                      <a href="#reserva" aria-controls="reserva" id="reserva-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
                         <i class="fas fa-calendar-check"></i>
-                        Reserva</a>
+                        Book</a>
                   </li>
                   <li class="nav-item" role="presentation">
                      <a href="#seguimiento" aria-controls="seguimiento" id="seguimiento-tab" role="tab" data-toggle="tab" class="nav-link" aria-selected="false">
                         <i class="fas fa-map-marker-alt"></i>
-                        Seguimiento</a>
+                        Track</a>
                   </li>
 
                </ul>
@@ -50,11 +50,11 @@
                      <form class="p-lg-4 justify-content: center;" id="formCotizacion">
 
                         <div class="form-group">
-                           <label for="empresa">Empresa</label>
+                           <label for="empresa"> Company</label>
                            <input type="text" class="form-control" id="empresa">
                         </div>
                         <div class="form-group">
-                           <label for="contacto">Contacto</label>
+                           <label for="contacto">Contact</label>
                            <input type="text" class="form-control" id="contacto">
 
                         </div>
@@ -65,14 +65,14 @@
 
                            </div>
                            <div class="col-12 col-md-6">
-                              <label for="telefono">Teléfono</label>
+                              <label for="telefono">Phone</label>
                               <input type="text" class="form-control" id="telefono">
 
                            </div>
                         </div>
 
                         <div class="form-group mt-4">
-                           <label for="transporte" class=" mb-3">Modo de Transporte</label>
+                           <label for="transporte" class=" mb-3">Transportation Mod</label>
                            <select id="transporte" class="custom-select">
                               <option value="1">Marítimo FCL</option>
                               <option value="2">Maritimo LCL</option>
@@ -84,11 +84,11 @@
 
                         <div class="form-row align-items-center">
                            <div class="col-12 col-md-6">
-                              <label for="origen">Origen</label>
+                              <label for="origen">Origin</label>
                               <input type="text" class="form-control" id="origen">
                            </div>
                            <div class="col-12 col-md-6">
-                              <label for="destino">Destino</label>
+                              <label for="destino">Destination</label>
                               <input type="text" class="form-control" id="destino">
                            </div>
                         </div>
@@ -104,15 +104,15 @@
                         </div>
 
                         <div class="form-group">
-                           <label for="mercaderia">Mercadería</label>
+                           <label for="mercaderia">Commodity</label>
                            <input type="text" class="form-control" id="mercaderia">
                         </div>
                         <div class="form-group">
-                           <label for="observaciones">Observaciones</label>
+                           <label for="observaciones">Comments</label>
                            <textarea type="text" class="form-control" id="observaciones" rows="3"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-first mt-4">Solicitar cotización</button>
+                        <button type="submit" class="btn btn-first mt-4">Request quote</button>
                      </form>
                   </div>
 
@@ -166,7 +166,7 @@
                         </div>
 
                         <div class="form-group mt-4">
-                           <label for="transporte" class=" mb-3">Modo de Transporte</label>
+                           <label for="transporte" class=" mb-3">Transportation Mod</label>
                            <select id="transporte" class="custom-select">
                               <option value="1">Marítimo FCL</option>
                               <option value="2">Maritimo FCL</option>
